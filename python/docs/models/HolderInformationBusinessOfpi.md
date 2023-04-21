@@ -1,0 +1,19 @@
+# belvo_client.model.holder_information_business_ofpi.HolderInformationBusinessOfpi
+
+Additional information about the bank account holder required in order to create the account for OFPI.
+
+## Model Type Info
+Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+dict, frozendict.frozendict,  | frozendict.frozendict,  | Additional information about the bank account holder required in order to create the account for OFPI. | 
+
+### Dictionary Keys
+Key | Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | ------------- | -------------
+**identifier** | str,  | str,  | The document number of the company&#x27;s ID. | 
+**identifier_type** | [**EnumCustomerIdentifierTypeOfpi**](EnumCustomerIdentifierTypeOfpi.md) | [**EnumCustomerIdentifierTypeOfpi**](EnumCustomerIdentifierTypeOfpi.md) |  | 
+**name** | str,  | str,  | The bank account holder&#x27;s first name. | 
+**any_string_name** | dict, frozendict.frozendict, str, date, datetime, int, float, bool, decimal.Decimal, None, list, tuple, bytes, io.FileIO, io.BufferedReader | frozendict.frozendict, str, BoolClass, decimal.Decimal, NoneClass, tuple, bytes, FileIO | any string name can be used but the value must be the correct type | [optional]
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

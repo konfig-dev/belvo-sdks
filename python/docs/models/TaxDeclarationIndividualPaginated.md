@@ -1,0 +1,31 @@
+# belvo_client.model.tax_declaration_individual_paginated.TaxDeclarationIndividualPaginated
+
+## Model Type Info
+Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+dict, frozendict.frozendict,  | frozendict.frozendict,  |  | 
+
+### Dictionary Keys
+Key | Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | ------------- | -------------
+**count** | decimal.Decimal, int,  | decimal.Decimal,  | The total number of results in your Belvo account. | [optional] value must be a 32 bit integer
+**next** | None, str,  | NoneClass, str,  | The URL to next page of results. Each page consists of up to 100 items. If there are not enough results for an additional page, the value is &#x60;null&#x60;.  In our documentation example, we use &#x60;{endpoint}&#x60; as a placeholder value. In production, this value will be replaced by the actual endpoint you are currently using (for example, &#x60;accounts&#x60; or &#x60;owners&#x60;).  | [optional] 
+**previous** | None, str,  | NoneClass, str,  | The URL to the previous page of results. If there is no previous page, the value is &#x60;null&#x60;. | [optional] 
+**[results](#results)** | list, tuple,  | tuple,  | Array of Individual Tax Declaration objects. | [optional] 
+
+# results
+
+Array of Individual Tax Declaration objects.
+
+## Model Type Info
+Input Type | Accessed Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+list, tuple,  | tuple,  | Array of Individual Tax Declaration objects. | 
+
+### Tuple Items
+Class Name | Input Type | Accessed Type | Description | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+[**TaxDeclarationIndividual**](TaxDeclarationIndividual.md) | [**TaxDeclarationIndividual**](TaxDeclarationIndividual.md) | [**TaxDeclarationIndividual**](TaxDeclarationIndividual.md) |  | 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

@@ -1,0 +1,27 @@
+
+
+# EnumAccountCategory
+
+## Enum
+
+
+* `CHECKING_ACCOUNT` (value: `"CHECKING_ACCOUNT"`)
+
+* `CREDIT_CARD` (value: `"CREDIT_CARD"`)
+
+* `INVESTMENT_ACCOUNT` (value: `"INVESTMENT_ACCOUNT"`)
+
+* `LOAN_ACCOUNT` (value: `"LOAN_ACCOUNT"`)
+
+* `PENSION_FUND_ACCOUNT` (value: `"PENSION_FUND_ACCOUNT"`)
+
+* `RECEIVABLES_ACCOUNT` (value: `"RECEIVABLES_ACCOUNT"`)
+
+* `SAVINGS_ACCOUNT` (value: `"SAVINGS_ACCOUNT"`)
+
+* `UNCATEGORIZED` (value: `"UNCATEGORIZED"`)
+
+* `NULL` (value: `"null"`)
+
+
+
