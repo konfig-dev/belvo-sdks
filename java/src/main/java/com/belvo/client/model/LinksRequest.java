@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -110,6 +111,9 @@ public class LinksRequest {
   }
 
   public LinksRequest institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -129,12 +133,18 @@ public class LinksRequest {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public LinksRequest username(String username) {
+
+    
+    
     
     
     this.username = username;
@@ -154,12 +164,18 @@ public class LinksRequest {
 
 
   public void setUsername(String username) {
+
+    
+    
     
     this.username = username;
   }
 
 
   public LinksRequest password(String password) {
+
+    
+    
     
     
     this.password = password;
@@ -179,13 +195,21 @@ public class LinksRequest {
 
 
   public void setPassword(String password) {
+
+    
+    
     
     this.password = password;
   }
 
 
   public LinksRequest externalId(String externalId) {
+
     
+    
+    if (externalId.length() < 3) {
+      throw new IllegalArgumentException("Invalid value for externalId. Length must be greater than or equal to 3.");
+    }
     
     this.externalId = externalId;
     return this;
@@ -204,12 +228,20 @@ public class LinksRequest {
 
 
   public void setExternalId(String externalId) {
+
     
+    
+    if (externalId.length() < 3) {
+      throw new IllegalArgumentException("Invalid value for externalId. Length must be greater than or equal to 3.");
+    }
     this.externalId = externalId;
   }
 
 
   public LinksRequest username2(String username2) {
+
+    
+    
     
     
     this.username2 = username2;
@@ -229,12 +261,18 @@ public class LinksRequest {
 
 
   public void setUsername2(String username2) {
+
+    
+    
     
     this.username2 = username2;
   }
 
 
   public LinksRequest username3(String username3) {
+
+    
+    
     
     
     this.username3 = username3;
@@ -254,12 +292,18 @@ public class LinksRequest {
 
 
   public void setUsername3(String username3) {
+
+    
+    
     
     this.username3 = username3;
   }
 
 
   public LinksRequest password2(String password2) {
+
+    
+    
     
     
     this.password2 = password2;
@@ -279,12 +323,18 @@ public class LinksRequest {
 
 
   public void setPassword2(String password2) {
+
+    
+    
     
     this.password2 = password2;
   }
 
 
   public LinksRequest token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -304,12 +354,18 @@ public class LinksRequest {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public LinksRequest accessMode(EnumLinkAccessModeRequest accessMode) {
+
+    
+    
     
     
     this.accessMode = accessMode;
@@ -329,12 +385,18 @@ public class LinksRequest {
 
 
   public void setAccessMode(EnumLinkAccessModeRequest accessMode) {
+
+    
+    
     
     this.accessMode = accessMode;
   }
 
 
   public LinksRequest fetchHistorical(Boolean fetchHistorical) {
+
+    
+    
     
     
     this.fetchHistorical = fetchHistorical;
@@ -354,12 +416,18 @@ public class LinksRequest {
 
 
   public void setFetchHistorical(Boolean fetchHistorical) {
+
+    
+    
     
     this.fetchHistorical = fetchHistorical;
   }
 
 
   public LinksRequest credentialsStorage(String credentialsStorage) {
+
+    
+    
     
     
     this.credentialsStorage = credentialsStorage;
@@ -379,12 +447,18 @@ public class LinksRequest {
 
 
   public void setCredentialsStorage(String credentialsStorage) {
+
+    
+    
     
     this.credentialsStorage = credentialsStorage;
   }
 
 
   public LinksRequest usernameType(String usernameType) {
+
+    
+    
     
     
     this.usernameType = usernameType;
@@ -404,12 +478,18 @@ public class LinksRequest {
 
 
   public void setUsernameType(String usernameType) {
+
+    
+    
     
     this.usernameType = usernameType;
   }
 
 
   public LinksRequest certificate(String certificate) {
+
+    
+    
     
     
     this.certificate = certificate;
@@ -429,12 +509,18 @@ public class LinksRequest {
 
 
   public void setCertificate(String certificate) {
+
+    
+    
     
     this.certificate = certificate;
   }
 
 
   public LinksRequest privateKey(String privateKey) {
+
+    
+    
     
     
     this.privateKey = privateKey;
@@ -454,6 +540,9 @@ public class LinksRequest {
 
 
   public void setPrivateKey(String privateKey) {
+
+    
+    
     
     this.privateKey = privateKey;
   }

@@ -44,7 +44,7 @@ class EnumInvoiceType(
         enum_value_to_name = {
             "OUTFLOW": "OUTFLOW",
             "INFLOW": "INFLOW",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

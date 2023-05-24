@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -57,6 +58,9 @@ public class HolderInformationBusinessPseResponse {
   }
 
   public HolderInformationBusinessPseResponse name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -76,6 +80,9 @@ public class HolderInformationBusinessPseResponse {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }

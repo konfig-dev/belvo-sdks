@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -98,6 +99,9 @@ public class TaxStatusAddressDian {
   }
 
   public TaxStatusAddressDian postalCode(String postalCode) {
+
+    
+    
     
     
     this.postalCode = postalCode;
@@ -117,12 +121,18 @@ public class TaxStatusAddressDian {
 
 
   public void setPostalCode(String postalCode) {
+
+    
+    
     
     this.postalCode = postalCode;
   }
 
 
   public TaxStatusAddressDian streetType(String streetType) {
+
+    
+    
     
     
     this.streetType = streetType;
@@ -142,12 +152,18 @@ public class TaxStatusAddressDian {
 
 
   public void setStreetType(String streetType) {
+
+    
+    
     
     this.streetType = streetType;
   }
 
 
   public TaxStatusAddressDian street(String street) {
+
+    
+    
     
     
     this.street = street;
@@ -167,12 +183,18 @@ public class TaxStatusAddressDian {
 
 
   public void setStreet(String street) {
+
+    
+    
     
     this.street = street;
   }
 
 
   public TaxStatusAddressDian exteriorNumber(String exteriorNumber) {
+
+    
+    
     
     
     this.exteriorNumber = exteriorNumber;
@@ -192,12 +214,18 @@ public class TaxStatusAddressDian {
 
 
   public void setExteriorNumber(String exteriorNumber) {
+
+    
+    
     
     this.exteriorNumber = exteriorNumber;
   }
 
 
   public TaxStatusAddressDian interiorNumber(String interiorNumber) {
+
+    
+    
     
     
     this.interiorNumber = interiorNumber;
@@ -217,12 +245,18 @@ public class TaxStatusAddressDian {
 
 
   public void setInteriorNumber(String interiorNumber) {
+
+    
+    
     
     this.interiorNumber = interiorNumber;
   }
 
 
   public TaxStatusAddressDian suburb(String suburb) {
+
+    
+    
     
     
     this.suburb = suburb;
@@ -242,12 +276,18 @@ public class TaxStatusAddressDian {
 
 
   public void setSuburb(String suburb) {
+
+    
+    
     
     this.suburb = suburb;
   }
 
 
   public TaxStatusAddressDian locality(String locality) {
+
+    
+    
     
     
     this.locality = locality;
@@ -267,12 +307,18 @@ public class TaxStatusAddressDian {
 
 
   public void setLocality(String locality) {
+
+    
+    
     
     this.locality = locality;
   }
 
 
   public TaxStatusAddressDian municipality(String municipality) {
+
+    
+    
     
     
     this.municipality = municipality;
@@ -292,12 +338,18 @@ public class TaxStatusAddressDian {
 
 
   public void setMunicipality(String municipality) {
+
+    
+    
     
     this.municipality = municipality;
   }
 
 
   public TaxStatusAddressDian state(String state) {
+
+    
+    
     
     
     this.state = state;
@@ -317,12 +369,18 @@ public class TaxStatusAddressDian {
 
 
   public void setState(String state) {
+
+    
+    
     
     this.state = state;
   }
 
 
   public TaxStatusAddressDian betweenStreet(List<TaxStatusAddressBetweenStreetDian> betweenStreet) {
+
+    
+    
     
     
     this.betweenStreet = betweenStreet;
@@ -350,6 +408,9 @@ public class TaxStatusAddressDian {
 
 
   public void setBetweenStreet(List<TaxStatusAddressBetweenStreetDian> betweenStreet) {
+
+    
+    
     
     this.betweenStreet = betweenStreet;
   }

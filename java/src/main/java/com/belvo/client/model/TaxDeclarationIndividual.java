@@ -42,6 +42,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -110,6 +111,9 @@ public class TaxDeclarationIndividual {
   }
 
   public TaxDeclarationIndividual id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -129,12 +133,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxDeclarationIndividual link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -154,12 +164,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxDeclarationIndividual collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -179,12 +195,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxDeclarationIndividual createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -204,12 +226,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxDeclarationIndividual documentInformation(DocumentInformationIndividual documentInformation) {
+
+    
+    
     
     
     this.documentInformation = documentInformation;
@@ -229,12 +257,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setDocumentInformation(DocumentInformationIndividual documentInformation) {
+
+    
+    
     
     this.documentInformation = documentInformation;
   }
 
 
   public TaxDeclarationIndividual taxPayerInformation(TaxPayerInformationIndividual taxPayerInformation) {
+
+    
+    
     
     
     this.taxPayerInformation = taxPayerInformation;
@@ -254,12 +288,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setTaxPayerInformation(TaxPayerInformationIndividual taxPayerInformation) {
+
+    
+    
     
     this.taxPayerInformation = taxPayerInformation;
   }
 
 
   public TaxDeclarationIndividual equityStatement(EquityStatementIndividual equityStatement) {
+
+    
+    
     
     
     this.equityStatement = equityStatement;
@@ -279,12 +319,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setEquityStatement(EquityStatementIndividual equityStatement) {
+
+    
+    
     
     this.equityStatement = equityStatement;
   }
 
 
   public TaxDeclarationIndividual annualIncomeStatement(AnnualIncomeStatementIndividual annualIncomeStatement) {
+
+    
+    
     
     
     this.annualIncomeStatement = annualIncomeStatement;
@@ -304,12 +350,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setAnnualIncomeStatement(AnnualIncomeStatementIndividual annualIncomeStatement) {
+
+    
+    
     
     this.annualIncomeStatement = annualIncomeStatement;
   }
 
 
   public TaxDeclarationIndividual pensionIncomeStatement(PensionIncomeStatementIndividual pensionIncomeStatement) {
+
+    
+    
     
     
     this.pensionIncomeStatement = pensionIncomeStatement;
@@ -329,12 +381,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setPensionIncomeStatement(PensionIncomeStatementIndividual pensionIncomeStatement) {
+
+    
+    
     
     this.pensionIncomeStatement = pensionIncomeStatement;
   }
 
 
   public TaxDeclarationIndividual taxAssessment(TaxAssessmentIndividual taxAssessment) {
+
+    
+    
     
     
     this.taxAssessment = taxAssessment;
@@ -354,12 +412,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setTaxAssessment(TaxAssessmentIndividual taxAssessment) {
+
+    
+    
     
     this.taxAssessment = taxAssessment;
   }
 
 
   public TaxDeclarationIndividual dateIssued(LocalDate dateIssued) {
+
+    
+    
     
     
     this.dateIssued = dateIssued;
@@ -379,12 +443,18 @@ public class TaxDeclarationIndividual {
 
 
   public void setDateIssued(LocalDate dateIssued) {
+
+    
+    
     
     this.dateIssued = dateIssued;
   }
 
 
   public TaxDeclarationIndividual pdf(String pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -404,6 +474,9 @@ public class TaxDeclarationIndividual {
 
 
   public void setPdf(String pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }

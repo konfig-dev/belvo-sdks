@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class AccountsReceivablesData {
   }
 
   public AccountsReceivablesData current(Float current) {
+
+    
+    
     
     
     this.current = current;
@@ -90,12 +94,18 @@ public class AccountsReceivablesData {
 
 
   public void setCurrent(Float current) {
+
+    
+    
     
     this.current = current;
   }
 
 
   public AccountsReceivablesData available(Float available) {
+
+    
+    
     
     
     this.available = available;
@@ -115,12 +125,18 @@ public class AccountsReceivablesData {
 
 
   public void setAvailable(Float available) {
+
+    
+    
     
     this.available = available;
   }
 
 
   public AccountsReceivablesData anticipated(Float anticipated) {
+
+    
+    
     
     
     this.anticipated = anticipated;
@@ -140,12 +156,18 @@ public class AccountsReceivablesData {
 
 
   public void setAnticipated(Float anticipated) {
+
+    
+    
     
     this.anticipated = anticipated;
   }
 
 
   public AccountsReceivablesData collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -165,6 +187,9 @@ public class AccountsReceivablesData {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }

@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -162,6 +163,9 @@ public class RiskInsightsTransactionMetrics {
   }
 
   public RiskInsightsTransactionMetrics numTransactions1w(Integer numTransactions1w) {
+
+    
+    
     
     
     this.numTransactions1w = numTransactions1w;
@@ -181,12 +185,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumTransactions1w(Integer numTransactions1w) {
+
+    
+    
     
     this.numTransactions1w = numTransactions1w;
   }
 
 
   public RiskInsightsTransactionMetrics numTransactions1m(Integer numTransactions1m) {
+
+    
+    
     
     
     this.numTransactions1m = numTransactions1m;
@@ -206,12 +216,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumTransactions1m(Integer numTransactions1m) {
+
+    
+    
     
     this.numTransactions1m = numTransactions1m;
   }
 
 
   public RiskInsightsTransactionMetrics numTransactions3m(Integer numTransactions3m) {
+
+    
+    
     
     
     this.numTransactions3m = numTransactions3m;
@@ -231,12 +247,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumTransactions3m(Integer numTransactions3m) {
+
+    
+    
     
     this.numTransactions3m = numTransactions3m;
   }
 
 
   public RiskInsightsTransactionMetrics numIncomingTransactions1w(Integer numIncomingTransactions1w) {
+
+    
+    
     
     
     this.numIncomingTransactions1w = numIncomingTransactions1w;
@@ -256,12 +278,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumIncomingTransactions1w(Integer numIncomingTransactions1w) {
+
+    
+    
     
     this.numIncomingTransactions1w = numIncomingTransactions1w;
   }
 
 
   public RiskInsightsTransactionMetrics numIncomingTransactions1m(Integer numIncomingTransactions1m) {
+
+    
+    
     
     
     this.numIncomingTransactions1m = numIncomingTransactions1m;
@@ -281,12 +309,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumIncomingTransactions1m(Integer numIncomingTransactions1m) {
+
+    
+    
     
     this.numIncomingTransactions1m = numIncomingTransactions1m;
   }
 
 
   public RiskInsightsTransactionMetrics numIncomingTransactions3m(Integer numIncomingTransactions3m) {
+
+    
+    
     
     
     this.numIncomingTransactions3m = numIncomingTransactions3m;
@@ -306,12 +340,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumIncomingTransactions3m(Integer numIncomingTransactions3m) {
+
+    
+    
     
     this.numIncomingTransactions3m = numIncomingTransactions3m;
   }
 
 
   public RiskInsightsTransactionMetrics numOutgoingTransactions1w(Integer numOutgoingTransactions1w) {
+
+    
+    
     
     
     this.numOutgoingTransactions1w = numOutgoingTransactions1w;
@@ -331,12 +371,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumOutgoingTransactions1w(Integer numOutgoingTransactions1w) {
+
+    
+    
     
     this.numOutgoingTransactions1w = numOutgoingTransactions1w;
   }
 
 
   public RiskInsightsTransactionMetrics numOutgoingTransactions1m(Integer numOutgoingTransactions1m) {
+
+    
+    
     
     
     this.numOutgoingTransactions1m = numOutgoingTransactions1m;
@@ -356,12 +402,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumOutgoingTransactions1m(Integer numOutgoingTransactions1m) {
+
+    
+    
     
     this.numOutgoingTransactions1m = numOutgoingTransactions1m;
   }
 
 
   public RiskInsightsTransactionMetrics numOutgoingTransactions3m(Integer numOutgoingTransactions3m) {
+
+    
+    
     
     
     this.numOutgoingTransactions3m = numOutgoingTransactions3m;
@@ -381,12 +433,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setNumOutgoingTransactions3m(Integer numOutgoingTransactions3m) {
+
+    
+    
     
     this.numOutgoingTransactions3m = numOutgoingTransactions3m;
   }
 
 
   public RiskInsightsTransactionMetrics sumIncomingAmount1w(Float sumIncomingAmount1w) {
+
+    
+    
     
     
     this.sumIncomingAmount1w = sumIncomingAmount1w;
@@ -406,12 +464,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumIncomingAmount1w(Float sumIncomingAmount1w) {
+
+    
+    
     
     this.sumIncomingAmount1w = sumIncomingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics sumIncomingAmount1m(Float sumIncomingAmount1m) {
+
+    
+    
     
     
     this.sumIncomingAmount1m = sumIncomingAmount1m;
@@ -431,12 +495,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumIncomingAmount1m(Float sumIncomingAmount1m) {
+
+    
+    
     
     this.sumIncomingAmount1m = sumIncomingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics sumIncomingAmount3m(Float sumIncomingAmount3m) {
+
+    
+    
     
     
     this.sumIncomingAmount3m = sumIncomingAmount3m;
@@ -456,12 +526,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumIncomingAmount3m(Float sumIncomingAmount3m) {
+
+    
+    
     
     this.sumIncomingAmount3m = sumIncomingAmount3m;
   }
 
 
   public RiskInsightsTransactionMetrics sumOutgoingAmount1w(Float sumOutgoingAmount1w) {
+
+    
+    
     
     
     this.sumOutgoingAmount1w = sumOutgoingAmount1w;
@@ -481,12 +557,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumOutgoingAmount1w(Float sumOutgoingAmount1w) {
+
+    
+    
     
     this.sumOutgoingAmount1w = sumOutgoingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics sumOutgoingAmount1m(Float sumOutgoingAmount1m) {
+
+    
+    
     
     
     this.sumOutgoingAmount1m = sumOutgoingAmount1m;
@@ -506,12 +588,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumOutgoingAmount1m(Float sumOutgoingAmount1m) {
+
+    
+    
     
     this.sumOutgoingAmount1m = sumOutgoingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics sumOutgoingAmount3m(Float sumOutgoingAmount3m) {
+
+    
+    
     
     
     this.sumOutgoingAmount3m = sumOutgoingAmount3m;
@@ -531,12 +619,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setSumOutgoingAmount3m(Float sumOutgoingAmount3m) {
+
+    
+    
     
     this.sumOutgoingAmount3m = sumOutgoingAmount3m;
   }
 
 
   public RiskInsightsTransactionMetrics maxIncomingAmount1w(Float maxIncomingAmount1w) {
+
+    
+    
     
     
     this.maxIncomingAmount1w = maxIncomingAmount1w;
@@ -556,12 +650,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxIncomingAmount1w(Float maxIncomingAmount1w) {
+
+    
+    
     
     this.maxIncomingAmount1w = maxIncomingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics maxIncomingAmount1m(Float maxIncomingAmount1m) {
+
+    
+    
     
     
     this.maxIncomingAmount1m = maxIncomingAmount1m;
@@ -581,12 +681,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxIncomingAmount1m(Float maxIncomingAmount1m) {
+
+    
+    
     
     this.maxIncomingAmount1m = maxIncomingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics maxIncomingAmount3m(Float maxIncomingAmount3m) {
+
+    
+    
     
     
     this.maxIncomingAmount3m = maxIncomingAmount3m;
@@ -606,12 +712,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxIncomingAmount3m(Float maxIncomingAmount3m) {
+
+    
+    
     
     this.maxIncomingAmount3m = maxIncomingAmount3m;
   }
 
 
   public RiskInsightsTransactionMetrics maxOutgoingAmount1w(Float maxOutgoingAmount1w) {
+
+    
+    
     
     
     this.maxOutgoingAmount1w = maxOutgoingAmount1w;
@@ -631,12 +743,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxOutgoingAmount1w(Float maxOutgoingAmount1w) {
+
+    
+    
     
     this.maxOutgoingAmount1w = maxOutgoingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics maxOutgoingAmount1m(Float maxOutgoingAmount1m) {
+
+    
+    
     
     
     this.maxOutgoingAmount1m = maxOutgoingAmount1m;
@@ -656,12 +774,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxOutgoingAmount1m(Float maxOutgoingAmount1m) {
+
+    
+    
     
     this.maxOutgoingAmount1m = maxOutgoingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics maxOutgoingAmount3m(Float maxOutgoingAmount3m) {
+
+    
+    
     
     
     this.maxOutgoingAmount3m = maxOutgoingAmount3m;
@@ -681,12 +805,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMaxOutgoingAmount3m(Float maxOutgoingAmount3m) {
+
+    
+    
     
     this.maxOutgoingAmount3m = maxOutgoingAmount3m;
   }
 
 
   public RiskInsightsTransactionMetrics meanIncomingAmount1w(Float meanIncomingAmount1w) {
+
+    
+    
     
     
     this.meanIncomingAmount1w = meanIncomingAmount1w;
@@ -706,12 +836,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanIncomingAmount1w(Float meanIncomingAmount1w) {
+
+    
+    
     
     this.meanIncomingAmount1w = meanIncomingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics meanIncomingAmount1m(Float meanIncomingAmount1m) {
+
+    
+    
     
     
     this.meanIncomingAmount1m = meanIncomingAmount1m;
@@ -731,12 +867,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanIncomingAmount1m(Float meanIncomingAmount1m) {
+
+    
+    
     
     this.meanIncomingAmount1m = meanIncomingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics meanIncomingAmount3m(Float meanIncomingAmount3m) {
+
+    
+    
     
     
     this.meanIncomingAmount3m = meanIncomingAmount3m;
@@ -756,12 +898,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanIncomingAmount3m(Float meanIncomingAmount3m) {
+
+    
+    
     
     this.meanIncomingAmount3m = meanIncomingAmount3m;
   }
 
 
   public RiskInsightsTransactionMetrics meanOutgoingAmount1w(Float meanOutgoingAmount1w) {
+
+    
+    
     
     
     this.meanOutgoingAmount1w = meanOutgoingAmount1w;
@@ -781,12 +929,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanOutgoingAmount1w(Float meanOutgoingAmount1w) {
+
+    
+    
     
     this.meanOutgoingAmount1w = meanOutgoingAmount1w;
   }
 
 
   public RiskInsightsTransactionMetrics meanOutgoingAmount1m(Float meanOutgoingAmount1m) {
+
+    
+    
     
     
     this.meanOutgoingAmount1m = meanOutgoingAmount1m;
@@ -806,12 +960,18 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanOutgoingAmount1m(Float meanOutgoingAmount1m) {
+
+    
+    
     
     this.meanOutgoingAmount1m = meanOutgoingAmount1m;
   }
 
 
   public RiskInsightsTransactionMetrics meanOutgoingAmount3m(Float meanOutgoingAmount3m) {
+
+    
+    
     
     
     this.meanOutgoingAmount3m = meanOutgoingAmount3m;
@@ -831,6 +991,9 @@ public class RiskInsightsTransactionMetrics {
 
 
   public void setMeanOutgoingAmount3m(Float meanOutgoingAmount3m) {
+
+    
+    
     
     this.meanOutgoingAmount3m = meanOutgoingAmount3m;
   }

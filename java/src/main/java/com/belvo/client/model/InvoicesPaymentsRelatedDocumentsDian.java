@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -82,6 +83,9 @@ public class InvoicesPaymentsRelatedDocumentsDian {
   }
 
   public InvoicesPaymentsRelatedDocumentsDian invoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     
     this.invoiceIdentification = invoiceIdentification;
@@ -101,12 +105,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setInvoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     this.invoiceIdentification = invoiceIdentification;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -126,12 +136,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian paymentMethod(String paymentMethod) {
+
+    
+    
     
     
     this.paymentMethod = paymentMethod;
@@ -151,12 +167,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setPaymentMethod(String paymentMethod) {
+
+    
+    
     
     this.paymentMethod = paymentMethod;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian partialityNumber(Integer partialityNumber) {
+
+    
+    
     
     
     this.partialityNumber = partialityNumber;
@@ -176,12 +198,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setPartialityNumber(Integer partialityNumber) {
+
+    
+    
     
     this.partialityNumber = partialityNumber;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian previousBalance(Float previousBalance) {
+
+    
+    
     
     
     this.previousBalance = previousBalance;
@@ -201,12 +229,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setPreviousBalance(Float previousBalance) {
+
+    
+    
     
     this.previousBalance = previousBalance;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian amountPaid(Float amountPaid) {
+
+    
+    
     
     
     this.amountPaid = amountPaid;
@@ -226,12 +260,18 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setAmountPaid(Float amountPaid) {
+
+    
+    
     
     this.amountPaid = amountPaid;
   }
 
 
   public InvoicesPaymentsRelatedDocumentsDian outstandingBalance(Float outstandingBalance) {
+
+    
+    
     
     
     this.outstandingBalance = outstandingBalance;
@@ -251,6 +291,9 @@ public class InvoicesPaymentsRelatedDocumentsDian {
 
 
   public void setOutstandingBalance(Float outstandingBalance) {
+
+    
+    
     
     this.outstandingBalance = outstandingBalance;
   }

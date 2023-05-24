@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -82,6 +83,9 @@ public class BeneficiaryBankAccountOfpi {
   }
 
   public BeneficiaryBankAccountOfpi id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -101,12 +105,18 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public BeneficiaryBankAccountOfpi createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -126,12 +136,18 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public BeneficiaryBankAccountOfpi createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -151,12 +167,18 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public BeneficiaryBankAccountOfpi institution(PaymentInstitution institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -176,12 +198,18 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setInstitution(PaymentInstitution institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public BeneficiaryBankAccountOfpi details(Object details) {
+
+    
+    
     
     
     this.details = details;
@@ -201,12 +229,18 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setDetails(Object details) {
+
+    
+    
     
     this.details = details;
   }
 
 
   public BeneficiaryBankAccountOfpi holder(HolderResponseOfpi holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -226,6 +260,9 @@ public class BeneficiaryBankAccountOfpi {
 
 
   public void setHolder(HolderResponseOfpi holder) {
+
+    
+    
     
     this.holder = holder;
   }

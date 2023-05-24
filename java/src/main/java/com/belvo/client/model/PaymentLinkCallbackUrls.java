@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -61,6 +62,9 @@ public class PaymentLinkCallbackUrls {
   }
 
   public PaymentLinkCallbackUrls cancel(String cancel) {
+
+    
+    
     
     
     this.cancel = cancel;
@@ -80,12 +84,18 @@ public class PaymentLinkCallbackUrls {
 
 
   public void setCancel(String cancel) {
+
+    
+    
     
     this.cancel = cancel;
   }
 
 
   public PaymentLinkCallbackUrls success(String success) {
+
+    
+    
     
     
     this.success = success;
@@ -105,6 +115,9 @@ public class PaymentLinkCallbackUrls {
 
 
   public void setSuccess(String success) {
+
+    
+    
     
     this.success = success;
   }

@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/owners | Retrieve owners for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> OwnersCompleteRequestResponse complete_request(patch_body)
 
 Complete an owners request
 
@@ -23,32 +21,26 @@ Used to resume an Owner retrieve session that was paused because an MFA token wa
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete an owners request
     complete_request_response = belvo.owners.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -216,8 +208,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete an owner
 
@@ -227,24 +217,21 @@ Delete a specific owner from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete an owner
     belvo.owners.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -330,8 +317,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> Owner get_details(id)
 
 Get an owner&#x27;s details
 
@@ -341,28 +326,23 @@ Get the details of a specific owner.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get an owner's details
     get_details_response = belvo.owners.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["internal_identification"])
@@ -491,8 +471,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> OwnersPaginatedResponse list()
 
 List all owners
 
@@ -502,38 +480,35 @@ Get a paginated list of all existing owners in your Belvo account. We return up 
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all owners
     list_response = belvo.owners.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'display_name__icontains': "Daniela",
-            'email': "lopes.d@gmail.com",
-            'id': "73694155-b871-41ec-94e3-37d17ff62b5d",
-            'id__in': "73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'link__in': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        display_name__icontains="Daniela",  # optional
+        email="lopes.d@gmail.com",  # optional
+        id="73694155-b871-41ec-94e3-37d17ff62b5d",  # optional
+        id__in="73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        link__in="8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -729,8 +704,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> OwnersRetrieveResponse retrieve(standard_request)
 
 Retrieve owners for a link
 
@@ -740,31 +713,25 @@ Retrieve owner information from a specific link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve owners for a link
     retrieve_response = belvo.owners.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.headers)

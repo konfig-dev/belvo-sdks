@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -126,6 +127,9 @@ public class IncomeStreamsBody {
   }
 
   public IncomeStreamsBody accountId(String accountId) {
+
+    
+    
     
     
     this.accountId = accountId;
@@ -145,12 +149,18 @@ public class IncomeStreamsBody {
 
 
   public void setAccountId(String accountId) {
+
+    
+    
     
     this.accountId = accountId;
   }
 
 
   public IncomeStreamsBody incomeType(EnumIncomeStreamType incomeType) {
+
+    
+    
     
     
     this.incomeType = incomeType;
@@ -170,12 +180,18 @@ public class IncomeStreamsBody {
 
 
   public void setIncomeType(EnumIncomeStreamType incomeType) {
+
+    
+    
     
     this.incomeType = incomeType;
   }
 
 
   public IncomeStreamsBody frequency(EnumIncomeStreamFrequency frequency) {
+
+    
+    
     
     
     this.frequency = frequency;
@@ -195,12 +211,18 @@ public class IncomeStreamsBody {
 
 
   public void setFrequency(EnumIncomeStreamFrequency frequency) {
+
+    
+    
     
     this.frequency = frequency;
   }
 
 
   public IncomeStreamsBody monthlyAverage(Float monthlyAverage) {
+
+    
+    
     
     
     this.monthlyAverage = monthlyAverage;
@@ -220,12 +242,18 @@ public class IncomeStreamsBody {
 
 
   public void setMonthlyAverage(Float monthlyAverage) {
+
+    
+    
     
     this.monthlyAverage = monthlyAverage;
   }
 
 
   public IncomeStreamsBody averageIncomeAmount(Float averageIncomeAmount) {
+
+    
+    
     
     
     this.averageIncomeAmount = averageIncomeAmount;
@@ -245,12 +273,18 @@ public class IncomeStreamsBody {
 
 
   public void setAverageIncomeAmount(Float averageIncomeAmount) {
+
+    
+    
     
     this.averageIncomeAmount = averageIncomeAmount;
   }
 
 
   public IncomeStreamsBody lastIncomeAmount(Float lastIncomeAmount) {
+
+    
+    
     
     
     this.lastIncomeAmount = lastIncomeAmount;
@@ -270,12 +304,18 @@ public class IncomeStreamsBody {
 
 
   public void setLastIncomeAmount(Float lastIncomeAmount) {
+
+    
+    
     
     this.lastIncomeAmount = lastIncomeAmount;
   }
 
 
   public IncomeStreamsBody currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -295,12 +335,18 @@ public class IncomeStreamsBody {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public IncomeStreamsBody lastIncomeDescription(Object lastIncomeDescription) {
+
+    
+    
     
     
     this.lastIncomeDescription = lastIncomeDescription;
@@ -320,12 +366,18 @@ public class IncomeStreamsBody {
 
 
   public void setLastIncomeDescription(Object lastIncomeDescription) {
+
+    
+    
     
     this.lastIncomeDescription = lastIncomeDescription;
   }
 
 
   public IncomeStreamsBody lastIncomeDate(LocalDate lastIncomeDate) {
+
+    
+    
     
     
     this.lastIncomeDate = lastIncomeDate;
@@ -345,12 +397,18 @@ public class IncomeStreamsBody {
 
 
   public void setLastIncomeDate(LocalDate lastIncomeDate) {
+
+    
+    
     
     this.lastIncomeDate = lastIncomeDate;
   }
 
 
   public IncomeStreamsBody stability(Float stability) {
+
+    
+    
     
     
     this.stability = stability;
@@ -370,12 +428,18 @@ public class IncomeStreamsBody {
 
 
   public void setStability(Float stability) {
+
+    
+    
     
     this.stability = stability;
   }
 
 
   public IncomeStreamsBody regularity(Float regularity) {
+
+    
+    
     
     
     this.regularity = regularity;
@@ -395,12 +459,18 @@ public class IncomeStreamsBody {
 
 
   public void setRegularity(Float regularity) {
+
+    
+    
     
     this.regularity = regularity;
   }
 
 
   public IncomeStreamsBody trend(Float trend) {
+
+    
+    
     
     
     this.trend = trend;
@@ -420,12 +490,18 @@ public class IncomeStreamsBody {
 
 
   public void setTrend(Float trend) {
+
+    
+    
     
     this.trend = trend;
   }
 
 
   public IncomeStreamsBody lookbackPeriods(Integer lookbackPeriods) {
+
+    
+    
     
     
     this.lookbackPeriods = lookbackPeriods;
@@ -445,12 +521,18 @@ public class IncomeStreamsBody {
 
 
   public void setLookbackPeriods(Integer lookbackPeriods) {
+
+    
+    
     
     this.lookbackPeriods = lookbackPeriods;
   }
 
 
   public IncomeStreamsBody fullPeriods(Integer fullPeriods) {
+
+    
+    
     
     
     this.fullPeriods = fullPeriods;
@@ -470,12 +552,18 @@ public class IncomeStreamsBody {
 
 
   public void setFullPeriods(Integer fullPeriods) {
+
+    
+    
     
     this.fullPeriods = fullPeriods;
   }
 
 
   public IncomeStreamsBody periodsWithIncome(Integer periodsWithIncome) {
+
+    
+    
     
     
     this.periodsWithIncome = periodsWithIncome;
@@ -495,12 +583,18 @@ public class IncomeStreamsBody {
 
 
   public void setPeriodsWithIncome(Integer periodsWithIncome) {
+
+    
+    
     
     this.periodsWithIncome = periodsWithIncome;
   }
 
 
   public IncomeStreamsBody numberOfIncomes(Integer numberOfIncomes) {
+
+    
+    
     
     
     this.numberOfIncomes = numberOfIncomes;
@@ -520,12 +614,18 @@ public class IncomeStreamsBody {
 
 
   public void setNumberOfIncomes(Integer numberOfIncomes) {
+
+    
+    
     
     this.numberOfIncomes = numberOfIncomes;
   }
 
 
   public IncomeStreamsBody confidence(EnumIncomeStreamConfidence confidence) {
+
+    
+    
     
     
     this.confidence = confidence;
@@ -545,6 +645,9 @@ public class IncomeStreamsBody {
 
 
   public void setConfidence(EnumIncomeStreamConfidence confidence) {
+
+    
+    
     
     this.confidence = confidence;
   }

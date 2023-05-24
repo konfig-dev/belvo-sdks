@@ -44,6 +44,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -144,6 +145,9 @@ public class PaymentIntentOfpi {
   }
 
   public PaymentIntentOfpi description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -163,12 +167,18 @@ public class PaymentIntentOfpi {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public PaymentIntentOfpi id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -188,12 +198,18 @@ public class PaymentIntentOfpi {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentIntentOfpi createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -213,12 +229,18 @@ public class PaymentIntentOfpi {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public PaymentIntentOfpi createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -238,12 +260,18 @@ public class PaymentIntentOfpi {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public PaymentIntentOfpi customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -263,12 +291,18 @@ public class PaymentIntentOfpi {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public PaymentIntentOfpi allowedPaymentMethodTypes(List<String> allowedPaymentMethodTypes) {
+
+    
+    
     
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -293,12 +327,18 @@ public class PaymentIntentOfpi {
 
 
   public void setAllowedPaymentMethodTypes(List<String> allowedPaymentMethodTypes) {
+
+    
+    
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
 
   public PaymentIntentOfpi amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -318,12 +358,18 @@ public class PaymentIntentOfpi {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public PaymentIntentOfpi currency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -343,12 +389,18 @@ public class PaymentIntentOfpi {
 
 
   public void setCurrency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public PaymentIntentOfpi failureCode(String failureCode) {
+
+    
+    
     
     
     this.failureCode = failureCode;
@@ -368,12 +420,18 @@ public class PaymentIntentOfpi {
 
 
   public void setFailureCode(String failureCode) {
+
+    
+    
     
     this.failureCode = failureCode;
   }
 
 
   public PaymentIntentOfpi failureMessage(String failureMessage) {
+
+    
+    
     
     
     this.failureMessage = failureMessage;
@@ -393,12 +451,18 @@ public class PaymentIntentOfpi {
 
 
   public void setFailureMessage(String failureMessage) {
+
+    
+    
     
     this.failureMessage = failureMessage;
   }
 
 
   public PaymentIntentOfpi metadata(Object metadata) {
+
+    
+    
     
     
     this.metadata = metadata;
@@ -418,12 +482,18 @@ public class PaymentIntentOfpi {
 
 
   public void setMetadata(Object metadata) {
+
+    
+    
     
     this.metadata = metadata;
   }
 
 
   public PaymentIntentOfpi nextStep(Object nextStep) {
+
+    
+    
     
     
     this.nextStep = nextStep;
@@ -443,12 +513,18 @@ public class PaymentIntentOfpi {
 
 
   public void setNextStep(Object nextStep) {
+
+    
+    
     
     this.nextStep = nextStep;
   }
 
 
   public PaymentIntentOfpi lastError(Object lastError) {
+
+    
+    
     
     
     this.lastError = lastError;
@@ -468,12 +544,18 @@ public class PaymentIntentOfpi {
 
 
   public void setLastError(Object lastError) {
+
+    
+    
     
     this.lastError = lastError;
   }
 
 
   public PaymentIntentOfpi paymentMethodDetails(PaymentIntentOfpiPaymentMethodDetails paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -493,12 +575,18 @@ public class PaymentIntentOfpi {
 
 
   public void setPaymentMethodDetails(PaymentIntentOfpiPaymentMethodDetails paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public PaymentIntentOfpi paymentMethodInformation(PaymentMethodInformationOfpi paymentMethodInformation) {
+
+    
+    
     
     
     this.paymentMethodInformation = paymentMethodInformation;
@@ -518,12 +606,18 @@ public class PaymentIntentOfpi {
 
 
   public void setPaymentMethodInformation(PaymentMethodInformationOfpi paymentMethodInformation) {
+
+    
+    
     
     this.paymentMethodInformation = paymentMethodInformation;
   }
 
 
   public PaymentIntentOfpi charges(List<Charge> charges) {
+
+    
+    
     
     
     this.charges = charges;
@@ -553,12 +647,18 @@ public class PaymentIntentOfpi {
 
 
   public void setCharges(List<Charge> charges) {
+
+    
+    
     
     this.charges = charges;
   }
 
 
   public PaymentIntentOfpi provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -578,12 +678,18 @@ public class PaymentIntentOfpi {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public PaymentIntentOfpi selectedPaymentMethodType(EnumPaymentLinkAllowedPaymentMethod selectedPaymentMethodType) {
+
+    
+    
     
     
     this.selectedPaymentMethodType = selectedPaymentMethodType;
@@ -603,12 +709,18 @@ public class PaymentIntentOfpi {
 
 
   public void setSelectedPaymentMethodType(EnumPaymentLinkAllowedPaymentMethod selectedPaymentMethodType) {
+
+    
+    
     
     this.selectedPaymentMethodType = selectedPaymentMethodType;
   }
 
 
   public PaymentIntentOfpi status(EnumPaymentIntentStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -628,12 +740,18 @@ public class PaymentIntentOfpi {
 
 
   public void setStatus(EnumPaymentIntentStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public PaymentIntentOfpi updatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     
     this.updatedAt = updatedAt;
@@ -653,6 +771,9 @@ public class PaymentIntentOfpi {
 
 
   public void setUpdatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     this.updatedAt = updatedAt;
   }

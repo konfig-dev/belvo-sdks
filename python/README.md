@@ -1,4 +1,4 @@
-# belvo-python-sdk
+# belvo-python-sdk@1.0.0
 # Introduction
 
 Belvo is an open banking API for Latin America that allows companies to access banking and fiscal information in a secure as well as agile way.
@@ -146,60 +146,41 @@ policies](https://developers.belvo.com/docs/integration-overview#error-retry-pol
 in the DevPortal.
 
 
-- API version: 1.35.0
-- Package version: 1.0.0
-For more information, please visit [https://developers.belvo.com](https://developers.belvo.com)
 
-## Requirements.
+## Requirements
 
 Python >=3.7
 
-## Installation & Usage
-### pip install
-
-If the python package is hosted on a repository, you can install directly using:
+## Installing
 
 ```sh
 pip install belvo-python-sdk==1.0.0
 ```
-(you may need to run `pip` with root permission: `sudo pip install belvo-python-sdk==1.0.0`)
 
-Then import the package:
-```python
-import belvo_client
-```
 ## Getting Started
-
-Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete an accounts request
     complete_request_response = belvo.accounts.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -213,6 +194,53 @@ except ApiException as e:
     pprint(e.reason)
     pprint(e.round_trip_time)
 ```
+
+## Async
+
+`async` support is available by prepending `a` to any method.
+
+```python
+import asyncio
+from pprint import pprint
+from belvo_client import Belvo, ApiException
+
+belvo = Belvo(
+    # Defining the host is optional and defaults to https://sandbox.belvo.com
+    # See configuration.py for a list of all supported configuration parameters.
+    host="https://sandbox.belvo.com",
+    # Configure HTTP basic authorization: basicAuth
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
+)
+
+
+async def main():
+    try:
+        # Complete an accounts request
+        complete_request_response = await belvo.accounts.acomplete_request(
+            session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+            link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+            token="1234ab",  # optional
+            save_data=True,  # optional
+            omit="link,balance",  # optional
+            fields="link,balance,account",  # optional
+        )
+        pprint(complete_request_response.body)
+        pprint(complete_request_response.headers)
+        pprint(complete_request_response.status)
+        pprint(complete_request_response.round_trip_time)
+    except ApiException as e:
+        print("Exception when calling AccountsApi.complete_request: %s\n" % e)
+        pprint(e.body)
+        pprint(e.headers)
+        pprint(e.status)
+        pprint(e.reason)
+        pprint(e.round_trip_time)
+
+
+asyncio.run(main())
+```
+
 
 ## Documentation for API Endpoints
 
@@ -1009,14 +1037,6 @@ Class | Method | HTTP request | Description
  - [UnexpectedError](docs/models/UnexpectedError.md)
  - [UnsupportedOperationError](docs/models/UnsupportedOperationError.md)
  - [ValidationError](docs/models/ValidationError.md)
-
-## Documentation For Authorization
-
- Authentication schemes defined for the API:
-## basicAuth
-
-- **Type**: HTTP basic authentication
-
 
 
 ## Author

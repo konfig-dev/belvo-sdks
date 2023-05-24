@@ -14,8 +14,6 @@ Method | HTTP request | Description
 [**update**](#update) | **put** /api/links/{id} | Update a link&#x27;s credentials
 
 # **change_access_mode**
-<a name="change_access_mode"></a>
-> Link change_access_mode(idchange_access_mode)
 
 Change a link&#x27;s access mode
 
@@ -25,32 +23,24 @@ Change a link's access mode from `single` to `recurrent` or from `recurrent` to 
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "access_mode": "recurrent",
-    }
 try:
     # Change a link's access mode
     change_access_mode_response = belvo.links.change_access_mode(
-        path_params = {
-            'id': "e4bb1afb-4a4f-4dd6-8be0-e615d233185b",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        access_mode="recurrent",  # required
+        id="e4bb1afb-4a4f-4dd6-8be0-e615d233185b",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(change_access_mode_response.body)
     pprint(change_access_mode_response.body["id"])
@@ -229,8 +219,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **complete_request**
-<a name="complete_request"></a>
-> Link complete_request(patch_body_without_save_data)
 
 Complete a links request
 
@@ -240,31 +228,25 @@ Used to resume a Link register session that was paused because an MFA token was 
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-    }
 try:
     # Complete a links request
     complete_request_response = belvo.links.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.body["id"])
@@ -414,8 +396,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **destroy**
-<a name="destroy"></a>
-> destroy(id)
 
 Delete a link
 
@@ -425,24 +405,21 @@ Delete a specific link and all associated accounts, transactions, and owners fro
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete a link
     belvo.links.destroy(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(destroy_response.headers)
     pprint(destroy_response.status)
@@ -528,8 +505,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> Link get_details(id)
 
 Get a link&#x27;s details
 
@@ -539,28 +514,23 @@ Get the details of a specific link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get a link's details
     get_details_response = belvo.links.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["id"])
@@ -687,8 +657,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> PaginatedResponseLink list()
 
 List all links
 
@@ -698,46 +666,43 @@ Get a paginated list of all the existing links in your Belvo account. By default
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all links
     list_response = belvo.links.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'access_mode': "single",
-            'created_at': "2022-05-01",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'created_by__not_in': "578947e2-3c9a-4401-bbad-59b2f2d2b91b,d3d941ab-4ca5-43c1-8b23-db329ee4cb7e",
-            'external_id': "InternalUser4000",
-            'external_id__in': "InternalUser4000,InternalUser4001",
-            'id': "73694155-b871-41ec-94e3-37d17ff62b5d",
-            'id__in': "73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",
-            'institution': "erebor_mx_retail",
-            'institution__in': "erebor_mx_retail,gringotts_co_retail",
-            'institution_user_id': "ezFoxjPDr7YnASnOaft5F3zt7D0kurgDNlLtZFjxUo0=",
-            'institution_user_id__in': "ezFoxjPDr7YnASnOaft5F3zt7D0kurgDNlLtZFjxUo0=,YwuTM0uEEh1BbVgDZBcNpa_-Tm3l2q8ZkZNrlhp-pNA=",
-            'refresh_rate': "24h",
-            'status': "invalid",
-            'status__in': "invalid,unconfirmed",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        access_mode="single",  # optional
+        created_at="2022-05-01",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        created_by__not_in="578947e2-3c9a-4401-bbad-59b2f2d2b91b,d3d941ab-4ca5-43c1-8b23-db329ee4cb7e",  # optional
+        external_id="InternalUser4000",  # optional
+        external_id__in="InternalUser4000,InternalUser4001",  # optional
+        id="73694155-b871-41ec-94e3-37d17ff62b5d",  # optional
+        id__in="73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",  # optional
+        institution="erebor_mx_retail",  # optional
+        institution__in="erebor_mx_retail,gringotts_co_retail",  # optional
+        institution_user_id="ezFoxjPDr7YnASnOaft5F3zt7D0kurgDNlLtZFjxUo0=",  # optional
+        institution_user_id__in="ezFoxjPDr7YnASnOaft5F3zt7D0kurgDNlLtZFjxUo0=,YwuTM0uEEh1BbVgDZBcNpa_-Tm3l2q8ZkZNrlhp-pNA=",  # optional
+        refresh_rate="24h",  # optional
+        status="invalid",  # optional
+        status__in="invalid,unconfirmed",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -997,8 +962,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **register**
-<a name="register"></a>
-> Link register(links_request)
 
 Register a new link
 
@@ -1008,42 +971,36 @@ Register a new link with your Belvo account.  <div style=\"background-color:#f4f
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "institution": "erebor_mx_retail",
-        "username": "username",
-        "password": "password",
-        "external_id": "56ab5706-6e00-48a4-91c9-ca55968678d9",
-        "username2": "secondusername",
-        "username3": "thirdusername",
-        "password2": "pin",
-        "token": "1234ab",
-        "access_mode": "recurrent",
-        "fetch_historical": True,
-        "credentials_storage": "store",
-        "username_type": "001",
-        "certificate": "1234567890abcd=",
-        "private_key": "1234567890abcd=",
-    }
 try:
     # Register a new link
     register_response = belvo.links.register(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        institution="erebor_mx_retail",  # required
+        username="username",  # required
+        password="password",  # optional
+        external_id="56ab5706-6e00-48a4-91c9-ca55968678d9",  # optional
+        username2="secondusername",  # optional
+        username3="thirdusername",  # optional
+        password2="pin",  # optional
+        token="1234ab",  # optional
+        access_mode="recurrent",  # optional
+        fetch_historical=True,  # optional
+        credentials_storage="store",  # optional
+        username_type="001",  # optional
+        certificate="1234567890abcd=",  # optional
+        private_key="1234567890abcd=",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(register_response.body)
     pprint(register_response.body["id"])
@@ -1193,8 +1150,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **update**
-<a name="update"></a>
-> Link update(idlinks_put_request)
 
 Update a link&#x27;s credentials
 
@@ -1204,37 +1159,29 @@ Update the credentials of a specific link. If the successfully updated link is a
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "password": "password",
-        "password2": "pin",
-        "token": "1234ab",
-        "username_type": "001",
-        "certificate": "1234567890abcd=",
-        "private_key": "1234567890abcd=",
-    }
 try:
     # Update a link's credentials
     update_response = belvo.links.update(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        password="password",  # required
+        id="id_example",  # required
+        password2="pin",  # optional
+        token="1234ab",  # optional
+        username_type="001",  # optional
+        certificate="1234567890abcd=",  # optional
+        private_key="1234567890abcd=",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(update_response.body)
     pprint(update_response.body["id"])

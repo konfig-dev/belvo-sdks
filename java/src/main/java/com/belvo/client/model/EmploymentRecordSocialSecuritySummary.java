@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -67,6 +68,9 @@ public class EmploymentRecordSocialSecuritySummary {
   }
 
   public EmploymentRecordSocialSecuritySummary weeksRedeemed(Integer weeksRedeemed) {
+
+    
+    
     
     
     this.weeksRedeemed = weeksRedeemed;
@@ -86,12 +90,18 @@ public class EmploymentRecordSocialSecuritySummary {
 
 
   public void setWeeksRedeemed(Integer weeksRedeemed) {
+
+    
+    
     
     this.weeksRedeemed = weeksRedeemed;
   }
 
 
   public EmploymentRecordSocialSecuritySummary weeksReinstated(Integer weeksReinstated) {
+
+    
+    
     
     
     this.weeksReinstated = weeksReinstated;
@@ -111,12 +121,18 @@ public class EmploymentRecordSocialSecuritySummary {
 
 
   public void setWeeksReinstated(Integer weeksReinstated) {
+
+    
+    
     
     this.weeksReinstated = weeksReinstated;
   }
 
 
   public EmploymentRecordSocialSecuritySummary weeksContributed(Integer weeksContributed) {
+
+    
+    
     
     
     this.weeksContributed = weeksContributed;
@@ -136,6 +152,9 @@ public class EmploymentRecordSocialSecuritySummary {
 
 
   public void setWeeksContributed(Integer weeksContributed) {
+
+    
+    
     
     this.weeksContributed = weeksContributed;
   }

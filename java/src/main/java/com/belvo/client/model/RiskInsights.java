@@ -42,6 +42,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -98,6 +99,9 @@ public class RiskInsights {
   }
 
   public RiskInsights id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -117,12 +121,18 @@ public class RiskInsights {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public RiskInsights link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -142,12 +152,18 @@ public class RiskInsights {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public RiskInsights accounts(List<UUID> accounts) {
+
+    
+    
     
     
     this.accounts = accounts;
@@ -172,12 +188,18 @@ public class RiskInsights {
 
 
   public void setAccounts(List<UUID> accounts) {
+
+    
+    
     
     this.accounts = accounts;
   }
 
 
   public RiskInsights createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -197,12 +219,18 @@ public class RiskInsights {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public RiskInsights transactionsMetrics(RiskInsightsTransactionMetrics transactionsMetrics) {
+
+    
+    
     
     
     this.transactionsMetrics = transactionsMetrics;
@@ -222,12 +250,18 @@ public class RiskInsights {
 
 
   public void setTransactionsMetrics(RiskInsightsTransactionMetrics transactionsMetrics) {
+
+    
+    
     
     this.transactionsMetrics = transactionsMetrics;
   }
 
 
   public RiskInsights balancesMetrics(RiskInsightsBalanceMetrics balancesMetrics) {
+
+    
+    
     
     
     this.balancesMetrics = balancesMetrics;
@@ -247,12 +281,18 @@ public class RiskInsights {
 
 
   public void setBalancesMetrics(RiskInsightsBalanceMetrics balancesMetrics) {
+
+    
+    
     
     this.balancesMetrics = balancesMetrics;
   }
 
 
   public RiskInsights cashflowMetrics(RiskInsightsCashflowMetrics cashflowMetrics) {
+
+    
+    
     
     
     this.cashflowMetrics = cashflowMetrics;
@@ -272,12 +312,18 @@ public class RiskInsights {
 
 
   public void setCashflowMetrics(RiskInsightsCashflowMetrics cashflowMetrics) {
+
+    
+    
     
     this.cashflowMetrics = cashflowMetrics;
   }
 
 
   public RiskInsights creditCardsMetrics(RiskInsightsCreditCardMetrics creditCardsMetrics) {
+
+    
+    
     
     
     this.creditCardsMetrics = creditCardsMetrics;
@@ -297,12 +343,18 @@ public class RiskInsights {
 
 
   public void setCreditCardsMetrics(RiskInsightsCreditCardMetrics creditCardsMetrics) {
+
+    
+    
     
     this.creditCardsMetrics = creditCardsMetrics;
   }
 
 
   public RiskInsights loansMetrics(RiskInsightsLoansMetrics loansMetrics) {
+
+    
+    
     
     
     this.loansMetrics = loansMetrics;
@@ -322,6 +374,9 @@ public class RiskInsights {
 
 
   public void setLoansMetrics(RiskInsightsLoansMetrics loansMetrics) {
+
+    
+    
     
     this.loansMetrics = loansMetrics;
   }

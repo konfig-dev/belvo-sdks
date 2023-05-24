@@ -44,6 +44,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -140,6 +141,9 @@ public class Transaction {
   }
 
   public Transaction description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -159,12 +163,18 @@ public class Transaction {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public Transaction id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -184,13 +194,21 @@ public class Transaction {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Transaction internalIdentification(String internalIdentification) {
+
     
+    
+    if (internalIdentification.length() < 1) {
+      throw new IllegalArgumentException("Invalid value for internalIdentification. Length must be greater than or equal to 1.");
+    }
     
     this.internalIdentification = internalIdentification;
     return this;
@@ -209,12 +227,20 @@ public class Transaction {
 
 
   public void setInternalIdentification(String internalIdentification) {
+
     
+    
+    if (internalIdentification.length() < 1) {
+      throw new IllegalArgumentException("Invalid value for internalIdentification. Length must be greater than or equal to 1.");
+    }
     this.internalIdentification = internalIdentification;
   }
 
 
   public Transaction account(Account account) {
+
+    
+    
     
     
     this.account = account;
@@ -234,12 +260,18 @@ public class Transaction {
 
 
   public void setAccount(Account account) {
+
+    
+    
     
     this.account = account;
   }
 
 
   public Transaction collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -259,12 +291,18 @@ public class Transaction {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public Transaction createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -284,12 +322,18 @@ public class Transaction {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Transaction valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -309,12 +353,18 @@ public class Transaction {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public Transaction accountingDate(OffsetDateTime accountingDate) {
+
+    
+    
     
     
     this.accountingDate = accountingDate;
@@ -334,12 +384,18 @@ public class Transaction {
 
 
   public void setAccountingDate(OffsetDateTime accountingDate) {
+
+    
+    
     
     this.accountingDate = accountingDate;
   }
 
 
   public Transaction amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -359,12 +415,18 @@ public class Transaction {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public Transaction balance(Float balance) {
+
+    
+    
     
     
     this.balance = balance;
@@ -384,12 +446,18 @@ public class Transaction {
 
 
   public void setBalance(Float balance) {
+
+    
+    
     
     this.balance = balance;
   }
 
 
   public Transaction currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -409,12 +477,18 @@ public class Transaction {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public Transaction observations(String observations) {
+
+    
+    
     
     
     this.observations = observations;
@@ -434,12 +508,18 @@ public class Transaction {
 
 
   public void setObservations(String observations) {
+
+    
+    
     
     this.observations = observations;
   }
 
 
   public Transaction merchant(TransactionMerchantData merchant) {
+
+    
+    
     
     
     this.merchant = merchant;
@@ -459,12 +539,18 @@ public class Transaction {
 
 
   public void setMerchant(TransactionMerchantData merchant) {
+
+    
+    
     
     this.merchant = merchant;
   }
 
 
   public Transaction category(EnumTransactionCategory category) {
+
+    
+    
     
     
     this.category = category;
@@ -484,12 +570,18 @@ public class Transaction {
 
 
   public void setCategory(EnumTransactionCategory category) {
+
+    
+    
     
     this.category = category;
   }
 
 
   public Transaction subcategory(EnumTransactionSubcategory subcategory) {
+
+    
+    
     
     
     this.subcategory = subcategory;
@@ -509,12 +601,18 @@ public class Transaction {
 
 
   public void setSubcategory(EnumTransactionSubcategory subcategory) {
+
+    
+    
     
     this.subcategory = subcategory;
   }
 
 
   public Transaction reference(String reference) {
+
+    
+    
     
     
     this.reference = reference;
@@ -534,12 +632,18 @@ public class Transaction {
 
 
   public void setReference(String reference) {
+
+    
+    
     
     this.reference = reference;
   }
 
 
   public Transaction type(EnumTransactionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -559,12 +663,18 @@ public class Transaction {
 
 
   public void setType(EnumTransactionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public Transaction status(EnumTransactionStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -584,12 +694,18 @@ public class Transaction {
 
 
   public void setStatus(EnumTransactionStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public Transaction creditCardData(TransactionCreditCardData creditCardData) {
+
+    
+    
     
     
     this.creditCardData = creditCardData;
@@ -609,6 +725,9 @@ public class Transaction {
 
 
   public void setCreditCardData(TransactionCreditCardData creditCardData) {
+
+    
+    
     
     this.creditCardData = creditCardData;
   }

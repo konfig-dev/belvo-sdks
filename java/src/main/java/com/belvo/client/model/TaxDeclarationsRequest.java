@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -75,6 +76,9 @@ public class TaxDeclarationsRequest {
   }
 
   public TaxDeclarationsRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -94,12 +98,18 @@ public class TaxDeclarationsRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxDeclarationsRequest yearFrom(String yearFrom) {
+
+    
+    
     
     
     this.yearFrom = yearFrom;
@@ -119,12 +129,18 @@ public class TaxDeclarationsRequest {
 
 
   public void setYearFrom(String yearFrom) {
+
+    
+    
     
     this.yearFrom = yearFrom;
   }
 
 
   public TaxDeclarationsRequest yearTo(String yearTo) {
+
+    
+    
     
     
     this.yearTo = yearTo;
@@ -144,12 +160,18 @@ public class TaxDeclarationsRequest {
 
 
   public void setYearTo(String yearTo) {
+
+    
+    
     
     this.yearTo = yearTo;
   }
 
 
   public TaxDeclarationsRequest attachPdf(Boolean attachPdf) {
+
+    
+    
     
     
     this.attachPdf = attachPdf;
@@ -169,12 +191,18 @@ public class TaxDeclarationsRequest {
 
 
   public void setAttachPdf(Boolean attachPdf) {
+
+    
+    
     
     this.attachPdf = attachPdf;
   }
 
 
   public TaxDeclarationsRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -194,6 +222,9 @@ public class TaxDeclarationsRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

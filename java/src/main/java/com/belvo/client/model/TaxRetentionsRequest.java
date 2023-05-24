@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -79,6 +80,9 @@ public class TaxRetentionsRequest {
   }
 
   public TaxRetentionsRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -98,12 +102,18 @@ public class TaxRetentionsRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxRetentionsRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -123,12 +133,18 @@ public class TaxRetentionsRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public TaxRetentionsRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -148,12 +164,18 @@ public class TaxRetentionsRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public TaxRetentionsRequest type(EnumTaxRetentionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -173,12 +195,18 @@ public class TaxRetentionsRequest {
 
 
   public void setType(EnumTaxRetentionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public TaxRetentionsRequest attachXml(Boolean attachXml) {
+
+    
+    
     
     
     this.attachXml = attachXml;
@@ -198,12 +226,18 @@ public class TaxRetentionsRequest {
 
 
   public void setAttachXml(Boolean attachXml) {
+
+    
+    
     
     this.attachXml = attachXml;
   }
 
 
   public TaxRetentionsRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -223,6 +257,9 @@ public class TaxRetentionsRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

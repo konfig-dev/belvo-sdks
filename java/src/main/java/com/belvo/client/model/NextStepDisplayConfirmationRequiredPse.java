@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -128,6 +129,9 @@ public class NextStepDisplayConfirmationRequiredPse {
   }
 
   public NextStepDisplayConfirmationRequiredPse type(TypeEnum type) {
+
+    
+    
     
     
     this.type = type;
@@ -147,12 +151,18 @@ public class NextStepDisplayConfirmationRequiredPse {
 
 
   public void setType(TypeEnum type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public NextStepDisplayConfirmationRequiredPse pseDisplayConfirmationRequired(DisplayConfirmationRequiredContentPse pseDisplayConfirmationRequired) {
+
+    
+    
     
     
     this.pseDisplayConfirmationRequired = pseDisplayConfirmationRequired;
@@ -172,12 +182,18 @@ public class NextStepDisplayConfirmationRequiredPse {
 
 
   public void setPseDisplayConfirmationRequired(DisplayConfirmationRequiredContentPse pseDisplayConfirmationRequired) {
+
+    
+    
     
     this.pseDisplayConfirmationRequired = pseDisplayConfirmationRequired;
   }
 
 
   public NextStepDisplayConfirmationRequiredPse readyToConfirm(Boolean readyToConfirm) {
+
+    
+    
     
     
     this.readyToConfirm = readyToConfirm;
@@ -197,6 +213,9 @@ public class NextStepDisplayConfirmationRequiredPse {
 
 
   public void setReadyToConfirm(Boolean readyToConfirm) {
+
+    
+    
     
     this.readyToConfirm = readyToConfirm;
   }

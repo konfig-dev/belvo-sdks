@@ -41,6 +41,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -121,6 +122,9 @@ public class CategorizationBody {
   }
 
   public CategorizationBody description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -140,12 +144,18 @@ public class CategorizationBody {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public CategorizationBody transactionId(String transactionId) {
+
+    
+    
     
     
     this.transactionId = transactionId;
@@ -165,12 +175,18 @@ public class CategorizationBody {
 
 
   public void setTransactionId(String transactionId) {
+
+    
+    
     
     this.transactionId = transactionId;
   }
 
 
   public CategorizationBody accountHolderType(EnumCategorizationAccountHolderType accountHolderType) {
+
+    
+    
     
     
     this.accountHolderType = accountHolderType;
@@ -190,12 +206,18 @@ public class CategorizationBody {
 
 
   public void setAccountHolderType(EnumCategorizationAccountHolderType accountHolderType) {
+
+    
+    
     
     this.accountHolderType = accountHolderType;
   }
 
 
   public CategorizationBody accountHolderId(String accountHolderId) {
+
+    
+    
     
     
     this.accountHolderId = accountHolderId;
@@ -215,12 +237,18 @@ public class CategorizationBody {
 
 
   public void setAccountHolderId(String accountHolderId) {
+
+    
+    
     
     this.accountHolderId = accountHolderId;
   }
 
 
   public CategorizationBody accountId(String accountId) {
+
+    
+    
     
     
     this.accountId = accountId;
@@ -240,12 +268,18 @@ public class CategorizationBody {
 
 
   public void setAccountId(String accountId) {
+
+    
+    
     
     this.accountId = accountId;
   }
 
 
   public CategorizationBody accountCategory(EnumCategorizationAccountCategory accountCategory) {
+
+    
+    
     
     
     this.accountCategory = accountCategory;
@@ -265,12 +299,18 @@ public class CategorizationBody {
 
 
   public void setAccountCategory(EnumCategorizationAccountCategory accountCategory) {
+
+    
+    
     
     this.accountCategory = accountCategory;
   }
 
 
   public CategorizationBody valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -290,12 +330,18 @@ public class CategorizationBody {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public CategorizationBody type(EnumCategorizationTransactionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -315,12 +361,18 @@ public class CategorizationBody {
 
 
   public void setType(EnumCategorizationTransactionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public CategorizationBody amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -340,12 +392,18 @@ public class CategorizationBody {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public CategorizationBody currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -365,12 +423,18 @@ public class CategorizationBody {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public CategorizationBody institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -390,12 +454,18 @@ public class CategorizationBody {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public CategorizationBody mcc(Integer mcc) {
+
+    
+    
     
     
     this.mcc = mcc;
@@ -415,12 +485,18 @@ public class CategorizationBody {
 
 
   public void setMcc(Integer mcc) {
+
+    
+    
     
     this.mcc = mcc;
   }
 
 
   public CategorizationBody category(EnumCategorizationTransactionCategory category) {
+
+    
+    
     
     
     this.category = category;
@@ -440,12 +516,18 @@ public class CategorizationBody {
 
 
   public void setCategory(EnumCategorizationTransactionCategory category) {
+
+    
+    
     
     this.category = category;
   }
 
 
   public CategorizationBody subcategory(EnumCategorizationTransactionSubcategory subcategory) {
+
+    
+    
     
     
     this.subcategory = subcategory;
@@ -465,12 +547,18 @@ public class CategorizationBody {
 
 
   public void setSubcategory(EnumCategorizationTransactionSubcategory subcategory) {
+
+    
+    
     
     this.subcategory = subcategory;
   }
 
 
   public CategorizationBody merchant(CategorizationMerchantData merchant) {
+
+    
+    
     
     
     this.merchant = merchant;
@@ -490,6 +578,9 @@ public class CategorizationBody {
 
 
   public void setMerchant(CategorizationMerchantData merchant) {
+
+    
+    
     
     this.merchant = merchant;
   }

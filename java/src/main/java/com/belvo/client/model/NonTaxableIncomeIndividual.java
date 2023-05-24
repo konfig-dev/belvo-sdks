@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -70,6 +71,9 @@ public class NonTaxableIncomeIndividual {
   }
 
   public NonTaxableIncomeIndividual earnedIncome(Float earnedIncome) {
+
+    
+    
     
     
     this.earnedIncome = earnedIncome;
@@ -89,12 +93,18 @@ public class NonTaxableIncomeIndividual {
 
 
   public void setEarnedIncome(Float earnedIncome) {
+
+    
+    
     
     this.earnedIncome = earnedIncome;
   }
 
 
   public NonTaxableIncomeIndividual feeBasedIncome(Float feeBasedIncome) {
+
+    
+    
     
     
     this.feeBasedIncome = feeBasedIncome;
@@ -114,12 +124,18 @@ public class NonTaxableIncomeIndividual {
 
 
   public void setFeeBasedIncome(Float feeBasedIncome) {
+
+    
+    
     
     this.feeBasedIncome = feeBasedIncome;
   }
 
 
   public NonTaxableIncomeIndividual capitalIncome(Float capitalIncome) {
+
+    
+    
     
     
     this.capitalIncome = capitalIncome;
@@ -139,12 +155,18 @@ public class NonTaxableIncomeIndividual {
 
 
   public void setCapitalIncome(Float capitalIncome) {
+
+    
+    
     
     this.capitalIncome = capitalIncome;
   }
 
 
   public NonTaxableIncomeIndividual nonLaborIncome(Float nonLaborIncome) {
+
+    
+    
     
     
     this.nonLaborIncome = nonLaborIncome;
@@ -164,6 +186,9 @@ public class NonTaxableIncomeIndividual {
 
 
   public void setNonLaborIncome(Float nonLaborIncome) {
+
+    
+    
     
     this.nonLaborIncome = nonLaborIncome;
   }

@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -88,6 +89,9 @@ public class InvoiceSenderDetailsDian {
   }
 
   public InvoiceSenderDetailsDian collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -107,12 +111,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public InvoiceSenderDetailsDian taxPayerType(String taxPayerType) {
+
+    
+    
     
     
     this.taxPayerType = taxPayerType;
@@ -132,12 +142,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setTaxPayerType(String taxPayerType) {
+
+    
+    
     
     this.taxPayerType = taxPayerType;
   }
 
 
   public InvoiceSenderDetailsDian regimen(String regimen) {
+
+    
+    
     
     
     this.regimen = regimen;
@@ -157,12 +173,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setRegimen(String regimen) {
+
+    
+    
     
     this.regimen = regimen;
   }
 
 
   public InvoiceSenderDetailsDian taxScheme(String taxScheme) {
+
+    
+    
     
     
     this.taxScheme = taxScheme;
@@ -182,12 +204,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setTaxScheme(String taxScheme) {
+
+    
+    
     
     this.taxScheme = taxScheme;
   }
 
 
   public InvoiceSenderDetailsDian country(String country) {
+
+    
+    
     
     
     this.country = country;
@@ -207,12 +235,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setCountry(String country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public InvoiceSenderDetailsDian address(String address) {
+
+    
+    
     
     
     this.address = address;
@@ -232,12 +266,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setAddress(String address) {
+
+    
+    
     
     this.address = address;
   }
 
 
   public InvoiceSenderDetailsDian phoneNumber(String phoneNumber) {
+
+    
+    
     
     
     this.phoneNumber = phoneNumber;
@@ -257,12 +297,18 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setPhoneNumber(String phoneNumber) {
+
+    
+    
     
     this.phoneNumber = phoneNumber;
   }
 
 
   public InvoiceSenderDetailsDian email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -282,6 +328,9 @@ public class InvoiceSenderDetailsDian {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }

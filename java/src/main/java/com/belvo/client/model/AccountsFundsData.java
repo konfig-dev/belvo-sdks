@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -77,6 +78,9 @@ public class AccountsFundsData {
   }
 
   public AccountsFundsData name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -96,12 +100,18 @@ public class AccountsFundsData {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public AccountsFundsData type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -121,12 +131,18 @@ public class AccountsFundsData {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public AccountsFundsData publicIdentifications(List<AccountsFundsDataPublicIdentifications> publicIdentifications) {
+
+    
+    
     
     
     this.publicIdentifications = publicIdentifications;
@@ -154,12 +170,18 @@ public class AccountsFundsData {
 
 
   public void setPublicIdentifications(List<AccountsFundsDataPublicIdentifications> publicIdentifications) {
+
+    
+    
     
     this.publicIdentifications = publicIdentifications;
   }
 
 
   public AccountsFundsData balance(Float balance) {
+
+    
+    
     
     
     this.balance = balance;
@@ -179,12 +201,18 @@ public class AccountsFundsData {
 
 
   public void setBalance(Float balance) {
+
+    
+    
     
     this.balance = balance;
   }
 
 
   public AccountsFundsData percentage(Float percentage) {
+
+    
+    
     
     
     this.percentage = percentage;
@@ -204,6 +232,9 @@ public class AccountsFundsData {
 
 
   public void setPercentage(Float percentage) {
+
+    
+    
     
     this.percentage = percentage;
   }

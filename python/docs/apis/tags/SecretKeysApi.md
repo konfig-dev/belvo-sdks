@@ -9,8 +9,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/secret-keys | List all secret keys
 
 # **create**
-<a name="create"></a>
-> SecretKeysCreateResponse create()
 
 Request API keys
 
@@ -20,16 +18,15 @@ Request API keys to use with Belvo's Payments API.  You will need to send throug
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
@@ -105,8 +102,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> SecretKeysPaginatedResponse list()
 
 List all secret keys
 
@@ -116,16 +111,15 @@ Get a paginated list of all existing secret keys in your Belvo account. We retur
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:

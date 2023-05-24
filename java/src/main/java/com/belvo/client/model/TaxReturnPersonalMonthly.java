@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -93,6 +94,9 @@ public class TaxReturnPersonalMonthly {
   }
 
   public TaxReturnPersonalMonthly id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -112,12 +116,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxReturnPersonalMonthly collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -137,12 +147,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxReturnPersonalMonthly createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -162,12 +178,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxReturnPersonalMonthly informacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     
     this.informacionGeneral = informacionGeneral;
@@ -187,12 +209,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setInformacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     this.informacionGeneral = informacionGeneral;
   }
 
 
   public TaxReturnPersonalMonthly isr(Object isr) {
+
+    
+    
     
     
     this.isr = isr;
@@ -212,12 +240,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setIsr(Object isr) {
+
+    
+    
     
     this.isr = isr;
   }
 
 
   public TaxReturnPersonalMonthly iva(Object iva) {
+
+    
+    
     
     
     this.iva = iva;
@@ -237,12 +271,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setIva(Object iva) {
+
+    
+    
     
     this.iva = iva;
   }
 
 
   public TaxReturnPersonalMonthly pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -254,7 +294,7 @@ public class TaxReturnPersonalMonthly {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@17e85bc4", required = true, value = "Tax return PDF as a binary.")
+  @ApiModelProperty(example = "[B@62944654", required = true, value = "Tax return PDF as a binary.")
 
   public File getPdf() {
     return pdf;
@@ -262,12 +302,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }
 
 
   public TaxReturnPersonalMonthly receiptPdf(File receiptPdf) {
+
+    
+    
     
     
     this.receiptPdf = receiptPdf;
@@ -279,7 +325,7 @@ public class TaxReturnPersonalMonthly {
    * @return receiptPdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@19a2e7e1", value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
+  @ApiModelProperty(example = "[B@2a2b00b0", value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
 
   public File getReceiptPdf() {
     return receiptPdf;
@@ -287,12 +333,18 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setReceiptPdf(File receiptPdf) {
+
+    
+    
     
     this.receiptPdf = receiptPdf;
   }
 
 
   public TaxReturnPersonalMonthly type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -312,6 +364,9 @@ public class TaxReturnPersonalMonthly {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }

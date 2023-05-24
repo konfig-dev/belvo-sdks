@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -83,6 +84,9 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
   }
 
   public PaymentIntentPaymentMethodDetailsBodyPse payerInstitution(UUID payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -102,12 +106,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setPayerInstitution(UUID payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse payerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     
     this.payerBankAccount = payerBankAccount;
@@ -127,12 +137,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setPayerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     this.payerBankAccount = payerBankAccount;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse beneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
@@ -152,12 +168,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setBeneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse username(String username) {
+
+    
+    
     
     
     this.username = username;
@@ -177,12 +199,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setUsername(String username) {
+
+    
+    
     
     this.username = username;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse password(String password) {
+
+    
+    
     
     
     this.password = password;
@@ -202,12 +230,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setPassword(String password) {
+
+    
+    
     
     this.password = password;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse callbackUrl(String callbackUrl) {
+
+    
+    
     
     
     this.callbackUrl = callbackUrl;
@@ -227,12 +261,18 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setCallbackUrl(String callbackUrl) {
+
+    
+    
     
     this.callbackUrl = callbackUrl;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyPse belvoFlow(Boolean belvoFlow) {
+
+    
+    
     
     
     this.belvoFlow = belvoFlow;
@@ -252,6 +292,9 @@ public class PaymentIntentPaymentMethodDetailsBodyPse {
 
 
   public void setBelvoFlow(Boolean belvoFlow) {
+
+    
+    
     
     this.belvoFlow = belvoFlow;
   }

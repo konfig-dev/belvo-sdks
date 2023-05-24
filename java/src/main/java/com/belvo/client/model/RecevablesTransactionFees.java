@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -63,6 +64,9 @@ public class RecevablesTransactionFees {
   }
 
   public RecevablesTransactionFees type(EnumReceivableTransactionFeeType type) {
+
+    
+    
     
     
     this.type = type;
@@ -82,12 +86,18 @@ public class RecevablesTransactionFees {
 
 
   public void setType(EnumReceivableTransactionFeeType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public RecevablesTransactionFees value(Float value) {
+
+    
+    
     
     
     this.value = value;
@@ -107,6 +117,9 @@ public class RecevablesTransactionFees {
 
 
   public void setValue(Float value) {
+
+    
+    
     
     this.value = value;
   }

@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -88,6 +89,9 @@ public class EmploymentRecordPersonalData {
   }
 
   public EmploymentRecordPersonalData officialName(String officialName) {
+
+    
+    
     
     
     this.officialName = officialName;
@@ -107,12 +111,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setOfficialName(String officialName) {
+
+    
+    
     
     this.officialName = officialName;
   }
 
 
   public EmploymentRecordPersonalData firstName(String firstName) {
+
+    
+    
     
     
     this.firstName = firstName;
@@ -132,12 +142,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setFirstName(String firstName) {
+
+    
+    
     
     this.firstName = firstName;
   }
 
 
   public EmploymentRecordPersonalData lastName(String lastName) {
+
+    
+    
     
     
     this.lastName = lastName;
@@ -157,12 +173,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setLastName(String lastName) {
+
+    
+    
     
     this.lastName = lastName;
   }
 
 
   public EmploymentRecordPersonalData email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -182,12 +204,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }
 
 
   public EmploymentRecordPersonalData birthDate(LocalDate birthDate) {
+
+    
+    
     
     
     this.birthDate = birthDate;
@@ -207,12 +235,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setBirthDate(LocalDate birthDate) {
+
+    
+    
     
     this.birthDate = birthDate;
   }
 
 
   public EmploymentRecordPersonalData entitlements(EmploymentRecordEntitlement entitlements) {
+
+    
+    
     
     
     this.entitlements = entitlements;
@@ -232,12 +266,18 @@ public class EmploymentRecordPersonalData {
 
 
   public void setEntitlements(EmploymentRecordEntitlement entitlements) {
+
+    
+    
     
     this.entitlements = entitlements;
   }
 
 
   public EmploymentRecordPersonalData documentIds(List<EmploymentRecordDocumentId> documentIds) {
+
+    
+    
     
     
     this.documentIds = documentIds;
@@ -265,6 +305,9 @@ public class EmploymentRecordPersonalData {
 
 
   public void setDocumentIds(List<EmploymentRecordDocumentId> documentIds) {
+
+    
+    
     
     this.documentIds = documentIds;
   }

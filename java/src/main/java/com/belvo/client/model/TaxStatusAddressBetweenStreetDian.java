@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class TaxStatusAddressBetweenStreetDian {
   }
 
   public TaxStatusAddressBetweenStreetDian streetOne(String streetOne) {
+
+    
+    
     
     
     this.streetOne = streetOne;
@@ -81,12 +85,18 @@ public class TaxStatusAddressBetweenStreetDian {
 
 
   public void setStreetOne(String streetOne) {
+
+    
+    
     
     this.streetOne = streetOne;
   }
 
 
   public TaxStatusAddressBetweenStreetDian streetTwo(String streetTwo) {
+
+    
+    
     
     
     this.streetTwo = streetTwo;
@@ -106,6 +116,9 @@ public class TaxStatusAddressBetweenStreetDian {
 
 
   public void setStreetTwo(String streetTwo) {
+
+    
+    
     
     this.streetTwo = streetTwo;
   }

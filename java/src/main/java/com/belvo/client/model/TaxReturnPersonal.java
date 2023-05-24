@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -113,6 +114,9 @@ public class TaxReturnPersonal {
   }
 
   public TaxReturnPersonal id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -132,12 +136,18 @@ public class TaxReturnPersonal {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxReturnPersonal link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -157,12 +167,18 @@ public class TaxReturnPersonal {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxReturnPersonal collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -182,12 +198,18 @@ public class TaxReturnPersonal {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxReturnPersonal createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -207,12 +229,18 @@ public class TaxReturnPersonal {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxReturnPersonal informacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     
     this.informacionGeneral = informacionGeneral;
@@ -232,12 +260,18 @@ public class TaxReturnPersonal {
 
 
   public void setInformacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     this.informacionGeneral = informacionGeneral;
   }
 
 
   public TaxReturnPersonal sueldosSalarios(Object sueldosSalarios) {
+
+    
+    
     
     
     this.sueldosSalarios = sueldosSalarios;
@@ -257,12 +291,18 @@ public class TaxReturnPersonal {
 
 
   public void setSueldosSalarios(Object sueldosSalarios) {
+
+    
+    
     
     this.sueldosSalarios = sueldosSalarios;
   }
 
 
   public TaxReturnPersonal serviciosProfesionales(Object serviciosProfesionales) {
+
+    
+    
     
     
     this.serviciosProfesionales = serviciosProfesionales;
@@ -282,12 +322,18 @@ public class TaxReturnPersonal {
 
 
   public void setServiciosProfesionales(Object serviciosProfesionales) {
+
+    
+    
     
     this.serviciosProfesionales = serviciosProfesionales;
   }
 
 
   public TaxReturnPersonal deduccionesPersonales(Object deduccionesPersonales) {
+
+    
+    
     
     
     this.deduccionesPersonales = deduccionesPersonales;
@@ -307,12 +353,18 @@ public class TaxReturnPersonal {
 
 
   public void setDeduccionesPersonales(Object deduccionesPersonales) {
+
+    
+    
     
     this.deduccionesPersonales = deduccionesPersonales;
   }
 
 
   public TaxReturnPersonal determinacionImpuesto(Object determinacionImpuesto) {
+
+    
+    
     
     
     this.determinacionImpuesto = determinacionImpuesto;
@@ -332,12 +384,18 @@ public class TaxReturnPersonal {
 
 
   public void setDeterminacionImpuesto(Object determinacionImpuesto) {
+
+    
+    
     
     this.determinacionImpuesto = determinacionImpuesto;
   }
 
 
   public TaxReturnPersonal retenciones(Object retenciones) {
+
+    
+    
     
     
     this.retenciones = retenciones;
@@ -357,12 +415,18 @@ public class TaxReturnPersonal {
 
 
   public void setRetenciones(Object retenciones) {
+
+    
+    
     
     this.retenciones = retenciones;
   }
 
 
   public TaxReturnPersonal dividendos(Object dividendos) {
+
+    
+    
     
     
     this.dividendos = dividendos;
@@ -382,12 +446,18 @@ public class TaxReturnPersonal {
 
 
   public void setDividendos(Object dividendos) {
+
+    
+    
     
     this.dividendos = dividendos;
   }
 
 
   public TaxReturnPersonal datosInformativos(Object datosInformativos) {
+
+    
+    
     
     
     this.datosInformativos = datosInformativos;
@@ -407,12 +477,18 @@ public class TaxReturnPersonal {
 
 
   public void setDatosInformativos(Object datosInformativos) {
+
+    
+    
     
     this.datosInformativos = datosInformativos;
   }
 
 
   public TaxReturnPersonal pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -424,7 +500,7 @@ public class TaxReturnPersonal {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@24fc44c8", required = true, value = "Tax return PDF as a binary.")
+  @ApiModelProperty(example = "[B@7f9f2ba0", required = true, value = "Tax return PDF as a binary.")
 
   public File getPdf() {
     return pdf;
@@ -432,12 +508,18 @@ public class TaxReturnPersonal {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }
 
 
   public TaxReturnPersonal receiptPdf(File receiptPdf) {
+
+    
+    
     
     
     this.receiptPdf = receiptPdf;
@@ -449,7 +531,7 @@ public class TaxReturnPersonal {
    * @return receiptPdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@1dea10bb", required = true, value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
+  @ApiModelProperty(example = "[B@67441091", required = true, value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
 
   public File getReceiptPdf() {
     return receiptPdf;
@@ -457,6 +539,9 @@ public class TaxReturnPersonal {
 
 
   public void setReceiptPdf(File receiptPdf) {
+
+    
+    
     
     this.receiptPdf = receiptPdf;
   }

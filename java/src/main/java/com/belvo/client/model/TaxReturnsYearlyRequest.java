@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -79,6 +80,9 @@ public class TaxReturnsYearlyRequest {
   }
 
   public TaxReturnsYearlyRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -98,12 +102,18 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxReturnsYearlyRequest attachPdf(Boolean attachPdf) {
+
+    
+    
     
     
     this.attachPdf = attachPdf;
@@ -123,12 +133,18 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setAttachPdf(Boolean attachPdf) {
+
+    
+    
     
     this.attachPdf = attachPdf;
   }
 
 
   public TaxReturnsYearlyRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -148,12 +164,18 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }
 
 
   public TaxReturnsYearlyRequest type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -173,12 +195,18 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public TaxReturnsYearlyRequest yearFrom(String yearFrom) {
+
+    
+    
     
     
     this.yearFrom = yearFrom;
@@ -198,12 +226,18 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setYearFrom(String yearFrom) {
+
+    
+    
     
     this.yearFrom = yearFrom;
   }
 
 
   public TaxReturnsYearlyRequest yearTo(String yearTo) {
+
+    
+    
     
     
     this.yearTo = yearTo;
@@ -223,6 +257,9 @@ public class TaxReturnsYearlyRequest {
 
 
   public void setYearTo(String yearTo) {
+
+    
+    
     
     this.yearTo = yearTo;
   }

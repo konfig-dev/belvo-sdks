@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class PaymentsRequestApiKeysResponse {
   }
 
   public PaymentsRequestApiKeysResponse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -81,12 +85,18 @@ public class PaymentsRequestApiKeysResponse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentsRequestApiKeysResponse password(String password) {
+
+    
+    
     
     
     this.password = password;
@@ -106,6 +116,9 @@ public class PaymentsRequestApiKeysResponse {
 
 
   public void setPassword(String password) {
+
+    
+    
     
     this.password = password;
   }

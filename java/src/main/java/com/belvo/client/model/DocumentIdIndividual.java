@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class DocumentIdIndividual {
   }
 
   public DocumentIdIndividual documentType(String documentType) {
+
+    
+    
     
     
     this.documentType = documentType;
@@ -81,12 +85,18 @@ public class DocumentIdIndividual {
 
 
   public void setDocumentType(String documentType) {
+
+    
+    
     
     this.documentType = documentType;
   }
 
 
   public DocumentIdIndividual documentNumber(String documentNumber) {
+
+    
+    
     
     
     this.documentNumber = documentNumber;
@@ -106,6 +116,9 @@ public class DocumentIdIndividual {
 
 
   public void setDocumentNumber(String documentNumber) {
+
+    
+    
     
     this.documentNumber = documentNumber;
   }

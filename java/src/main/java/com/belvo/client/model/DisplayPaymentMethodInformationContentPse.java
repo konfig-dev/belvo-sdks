@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class DisplayPaymentMethodInformationContentPse {
   }
 
   public DisplayPaymentMethodInformationContentPse customerBankAccounts(List<PaymentMethodInfoCustomerBankAccountsPse> customerBankAccounts) {
+
+    
+    
     
     
     this.customerBankAccounts = customerBankAccounts;
@@ -93,12 +97,18 @@ public class DisplayPaymentMethodInformationContentPse {
 
 
   public void setCustomerBankAccounts(List<PaymentMethodInfoCustomerBankAccountsPse> customerBankAccounts) {
+
+    
+    
     
     this.customerBankAccounts = customerBankAccounts;
   }
 
 
   public DisplayPaymentMethodInformationContentPse institutions(List<PaymentInstitution> institutions) {
+
+    
+    
     
     
     this.institutions = institutions;
@@ -126,6 +136,9 @@ public class DisplayPaymentMethodInformationContentPse {
 
 
   public void setInstitutions(List<PaymentInstitution> institutions) {
+
+    
+    
     
     this.institutions = institutions;
   }

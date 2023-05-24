@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class RetentionBreakdown {
   }
 
   public RetentionBreakdown baseAmount(Float baseAmount) {
+
+    
+    
     
     
     this.baseAmount = baseAmount;
@@ -90,12 +94,18 @@ public class RetentionBreakdown {
 
 
   public void setBaseAmount(Float baseAmount) {
+
+    
+    
     
     this.baseAmount = baseAmount;
   }
 
 
   public RetentionBreakdown taxType(String taxType) {
+
+    
+    
     
     
     this.taxType = taxType;
@@ -115,12 +125,18 @@ public class RetentionBreakdown {
 
 
   public void setTaxType(String taxType) {
+
+    
+    
     
     this.taxType = taxType;
   }
 
 
   public RetentionBreakdown retainedAmount(Float retainedAmount) {
+
+    
+    
     
     
     this.retainedAmount = retainedAmount;
@@ -140,12 +156,18 @@ public class RetentionBreakdown {
 
 
   public void setRetainedAmount(Float retainedAmount) {
+
+    
+    
     
     this.retainedAmount = retainedAmount;
   }
 
 
   public RetentionBreakdown paymentStatus(EnumTaxRetentionPaymentStatus paymentStatus) {
+
+    
+    
     
     
     this.paymentStatus = paymentStatus;
@@ -165,6 +187,9 @@ public class RetentionBreakdown {
 
 
   public void setPaymentStatus(EnumTaxRetentionPaymentStatus paymentStatus) {
+
+    
+    
     
     this.paymentStatus = paymentStatus;
   }

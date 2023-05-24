@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -86,6 +87,9 @@ public class IncomesRequest {
   }
 
   public IncomesRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -105,12 +109,18 @@ public class IncomesRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public IncomesRequest allowedIncomeTypes(List<EnumInvoiceAllowedIncomeTypesRequest> allowedIncomeTypes) {
+
+    
+    
     
     
     this.allowedIncomeTypes = allowedIncomeTypes;
@@ -138,12 +148,18 @@ public class IncomesRequest {
 
 
   public void setAllowedIncomeTypes(List<EnumInvoiceAllowedIncomeTypesRequest> allowedIncomeTypes) {
+
+    
+    
     
     this.allowedIncomeTypes = allowedIncomeTypes;
   }
 
 
   public IncomesRequest minimumConfidenceLevel(EnumIncomeMinimumConfidenceLevelRequest minimumConfidenceLevel) {
+
+    
+    
     
     
     this.minimumConfidenceLevel = minimumConfidenceLevel;
@@ -163,12 +179,18 @@ public class IncomesRequest {
 
 
   public void setMinimumConfidenceLevel(EnumIncomeMinimumConfidenceLevelRequest minimumConfidenceLevel) {
+
+    
+    
     
     this.minimumConfidenceLevel = minimumConfidenceLevel;
   }
 
 
   public IncomesRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -188,12 +210,18 @@ public class IncomesRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public IncomesRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -213,12 +241,18 @@ public class IncomesRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public IncomesRequest token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -238,12 +272,18 @@ public class IncomesRequest {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public IncomesRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -263,6 +303,9 @@ public class IncomesRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

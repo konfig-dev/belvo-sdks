@@ -41,6 +41,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -102,6 +103,9 @@ public class RecurringExpenses {
   }
 
   public RecurringExpenses id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -121,12 +125,18 @@ public class RecurringExpenses {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public RecurringExpenses account(Account account) {
+
+    
+    
     
     
     this.account = account;
@@ -146,12 +156,18 @@ public class RecurringExpenses {
 
 
   public void setAccount(Account account) {
+
+    
+    
     
     this.account = account;
   }
 
 
   public RecurringExpenses name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -171,12 +187,18 @@ public class RecurringExpenses {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public RecurringExpenses transactions(List<RecurringExpenseSourceTransaction> transactions) {
+
+    
+    
     
     
     this.transactions = transactions;
@@ -201,12 +223,18 @@ public class RecurringExpenses {
 
 
   public void setTransactions(List<RecurringExpenseSourceTransaction> transactions) {
+
+    
+    
     
     this.transactions = transactions;
   }
 
 
   public RecurringExpenses frequency(EnumRecurringExpenseFrequency frequency) {
+
+    
+    
     
     
     this.frequency = frequency;
@@ -226,12 +254,18 @@ public class RecurringExpenses {
 
 
   public void setFrequency(EnumRecurringExpenseFrequency frequency) {
+
+    
+    
     
     this.frequency = frequency;
   }
 
 
   public RecurringExpenses averageTransactionAmount(Float averageTransactionAmount) {
+
+    
+    
     
     
     this.averageTransactionAmount = averageTransactionAmount;
@@ -251,12 +285,18 @@ public class RecurringExpenses {
 
 
   public void setAverageTransactionAmount(Float averageTransactionAmount) {
+
+    
+    
     
     this.averageTransactionAmount = averageTransactionAmount;
   }
 
 
   public RecurringExpenses medianTransactionAmount(Float medianTransactionAmount) {
+
+    
+    
     
     
     this.medianTransactionAmount = medianTransactionAmount;
@@ -276,12 +316,18 @@ public class RecurringExpenses {
 
 
   public void setMedianTransactionAmount(Float medianTransactionAmount) {
+
+    
+    
     
     this.medianTransactionAmount = medianTransactionAmount;
   }
 
 
   public RecurringExpenses daysSinceLastTransaction(Integer daysSinceLastTransaction) {
+
+    
+    
     
     
     this.daysSinceLastTransaction = daysSinceLastTransaction;
@@ -301,12 +347,18 @@ public class RecurringExpenses {
 
 
   public void setDaysSinceLastTransaction(Integer daysSinceLastTransaction) {
+
+    
+    
     
     this.daysSinceLastTransaction = daysSinceLastTransaction;
   }
 
 
   public RecurringExpenses category(EnumRecurringExpenseCategory category) {
+
+    
+    
     
     
     this.category = category;
@@ -326,12 +378,18 @@ public class RecurringExpenses {
 
 
   public void setCategory(EnumRecurringExpenseCategory category) {
+
+    
+    
     
     this.category = category;
   }
 
 
   public RecurringExpenses paymentType(EnumRecurringExpensePaymentType paymentType) {
+
+    
+    
     
     
     this.paymentType = paymentType;
@@ -351,6 +409,9 @@ public class RecurringExpenses {
 
 
   public void setPaymentType(EnumRecurringExpensePaymentType paymentType) {
+
+    
+    
     
     this.paymentType = paymentType;
   }

@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/incomes | Retrieve incomes for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> IncomesCompleteRequestResponse complete_request(patch_body)
 
 Complete an incomes request
 
@@ -23,32 +21,26 @@ Used to resume an Income retrieve session that was paused because an MFA token w
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete an incomes request
     complete_request_response = belvo.incomes.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -216,8 +208,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete an income
 
@@ -227,24 +217,21 @@ Delete a specific income from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete an income
     belvo.incomes.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -330,8 +317,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> IncomesGetDetailsResponse get_details(id)
 
 Get an income&#x27;s details
 
@@ -341,28 +326,23 @@ Get the details of a specific income.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get an income's details
     get_details_response = belvo.incomes.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -479,8 +459,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> IncomesPaginatedResponse list()
 
 List all incomes
 
@@ -490,31 +468,28 @@ Get a paginated list of all incomes in your Belvo account. By default, we return
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all incomes
     list_response = belvo.incomes.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'account': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'account__in': "24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",
-            'link': "73694155-b871-41ec-94e3-37d17ff62b5d",
-            'link__in': "73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        account="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        account__in="24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",  # optional
+        link="73694155-b871-41ec-94e3-37d17ff62b5d",  # optional
+        link__in="73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -654,8 +629,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> Income retrieve(incomes_request)
 
 Retrieve incomes for a link
 
@@ -665,34 +638,29 @@ Retrieve income insights for <b>checking and savings accounts</b> from a specifi
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "minimum_confidence_level": "HIGH",
-        "date_from": "2020-08-01",
-        "date_to": "2020-12-30",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve incomes for a link
     retrieve_response = belvo.incomes.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        allowed_income_types=["string_example"],  # optional
+        minimum_confidence_level="HIGH",  # optional
+        date_from="2020-08-01",  # optional
+        date_to="2020-12-30",  # optional
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.body["id"])

@@ -49,7 +49,7 @@ For DIAN Colombia, we return one of the following values:
         enum_value_to_name = {
             "Contado": "CONTADO",
             "Crédito": "CRDITO",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

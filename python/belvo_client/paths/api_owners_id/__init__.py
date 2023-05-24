@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._API_OWNERS_ID
+path = PathValues.API_OWNERS_ID

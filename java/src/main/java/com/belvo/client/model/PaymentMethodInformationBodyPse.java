@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class PaymentMethodInformationBodyPse {
   }
 
   public PaymentMethodInformationBodyPse providerRequestId(String providerRequestId) {
+
+    
+    
     
     
     this.providerRequestId = providerRequestId;
@@ -85,12 +89,18 @@ public class PaymentMethodInformationBodyPse {
 
 
   public void setProviderRequestId(String providerRequestId) {
+
+    
+    
     
     this.providerRequestId = providerRequestId;
   }
 
 
   public PaymentMethodInformationBodyPse redirectUrl(String redirectUrl) {
+
+    
+    
     
     
     this.redirectUrl = redirectUrl;
@@ -110,12 +120,18 @@ public class PaymentMethodInformationBodyPse {
 
 
   public void setRedirectUrl(String redirectUrl) {
+
+    
+    
     
     this.redirectUrl = redirectUrl;
   }
 
 
   public PaymentMethodInformationBodyPse bankPaymentId(String bankPaymentId) {
+
+    
+    
     
     
     this.bankPaymentId = bankPaymentId;
@@ -135,6 +151,9 @@ public class PaymentMethodInformationBodyPse {
 
 
   public void setBankPaymentId(String bankPaymentId) {
+
+    
+    
     
     this.bankPaymentId = bankPaymentId;
   }

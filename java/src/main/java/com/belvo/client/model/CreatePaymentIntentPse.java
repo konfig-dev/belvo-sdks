@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -87,6 +88,9 @@ public class CreatePaymentIntentPse {
   }
 
   public CreatePaymentIntentPse description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -106,12 +110,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public CreatePaymentIntentPse amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -131,12 +141,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public CreatePaymentIntentPse customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -156,12 +172,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public CreatePaymentIntentPse allowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -186,12 +208,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setAllowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
 
   public CreatePaymentIntentPse paymentMethodDetails(PaymentIntentsPaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -211,12 +239,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setPaymentMethodDetails(PaymentIntentsPaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public CreatePaymentIntentPse provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -236,12 +270,18 @@ public class CreatePaymentIntentPse {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public CreatePaymentIntentPse metadata(Object metadata) {
+
+    
+    
     
     
     this.metadata = metadata;
@@ -261,6 +301,9 @@ public class CreatePaymentIntentPse {
 
 
   public void setMetadata(Object metadata) {
+
+    
+    
     
     this.metadata = metadata;
   }

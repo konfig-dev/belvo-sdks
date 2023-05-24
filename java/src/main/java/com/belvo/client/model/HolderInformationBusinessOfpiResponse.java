@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class HolderInformationBusinessOfpiResponse {
   }
 
   public HolderInformationBusinessOfpiResponse name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -85,12 +89,18 @@ public class HolderInformationBusinessOfpiResponse {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public HolderInformationBusinessOfpiResponse identifierType(EnumCustomerIdentifierTypeOfpi identifierType) {
+
+    
+    
     
     
     this.identifierType = identifierType;
@@ -110,12 +120,18 @@ public class HolderInformationBusinessOfpiResponse {
 
 
   public void setIdentifierType(EnumCustomerIdentifierTypeOfpi identifierType) {
+
+    
+    
     
     this.identifierType = identifierType;
   }
 
 
   public HolderInformationBusinessOfpiResponse identifier(String identifier) {
+
+    
+    
     
     
     this.identifier = identifier;
@@ -135,6 +151,9 @@ public class HolderInformationBusinessOfpiResponse {
 
 
   public void setIdentifier(String identifier) {
+
+    
+    
     
     this.identifier = identifier;
   }

@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -64,6 +65,9 @@ public class ReceivablesTransactionAccount {
   }
 
   public ReceivablesTransactionAccount id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -83,12 +87,18 @@ public class ReceivablesTransactionAccount {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public ReceivablesTransactionAccount institution(InstitutionAccount institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -108,6 +118,9 @@ public class ReceivablesTransactionAccount {
 
 
   public void setInstitution(InstitutionAccount institution) {
+
+    
+    
     
     this.institution = institution;
   }

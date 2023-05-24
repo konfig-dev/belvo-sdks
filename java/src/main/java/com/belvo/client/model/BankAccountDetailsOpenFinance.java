@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class BankAccountDetailsOpenFinance {
   }
 
   public BankAccountDetailsOpenFinance country(EnumPaymentsCountry country) {
+
+    
+    
     
     
     this.country = country;
@@ -90,12 +94,18 @@ public class BankAccountDetailsOpenFinance {
 
 
   public void setCountry(EnumPaymentsCountry country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public BankAccountDetailsOpenFinance accountType(EnumBankAccountPixAccountTypeOfpi accountType) {
+
+    
+    
     
     
     this.accountType = accountType;
@@ -115,12 +125,18 @@ public class BankAccountDetailsOpenFinance {
 
 
   public void setAccountType(EnumBankAccountPixAccountTypeOfpi accountType) {
+
+    
+    
     
     this.accountType = accountType;
   }
 
 
   public BankAccountDetailsOpenFinance agency(String agency) {
+
+    
+    
     
     
     this.agency = agency;
@@ -140,12 +156,18 @@ public class BankAccountDetailsOpenFinance {
 
 
   public void setAgency(String agency) {
+
+    
+    
     
     this.agency = agency;
   }
 
 
   public BankAccountDetailsOpenFinance number(String number) {
+
+    
+    
     
     
     this.number = number;
@@ -165,6 +187,9 @@ public class BankAccountDetailsOpenFinance {
 
 
   public void setNumber(String number) {
+
+    
+    
     
     this.number = number;
   }

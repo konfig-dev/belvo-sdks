@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -73,6 +74,9 @@ public class InstitutionsFormFieldValues {
   }
 
   public InstitutionsFormFieldValues code(String code) {
+
+    
+    
     
     
     this.code = code;
@@ -92,12 +96,18 @@ public class InstitutionsFormFieldValues {
 
 
   public void setCode(String code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public InstitutionsFormFieldValues label(String label) {
+
+    
+    
     
     
     this.label = label;
@@ -117,12 +127,18 @@ public class InstitutionsFormFieldValues {
 
 
   public void setLabel(String label) {
+
+    
+    
     
     this.label = label;
   }
 
 
   public InstitutionsFormFieldValues validation(String validation) {
+
+    
+    
     
     
     this.validation = validation;
@@ -142,12 +158,18 @@ public class InstitutionsFormFieldValues {
 
 
   public void setValidation(String validation) {
+
+    
+    
     
     this.validation = validation;
   }
 
 
   public InstitutionsFormFieldValues validationMessage(String validationMessage) {
+
+    
+    
     
     
     this.validationMessage = validationMessage;
@@ -167,12 +189,18 @@ public class InstitutionsFormFieldValues {
 
 
   public void setValidationMessage(String validationMessage) {
+
+    
+    
     
     this.validationMessage = validationMessage;
   }
 
 
   public InstitutionsFormFieldValues placeholder(String placeholder) {
+
+    
+    
     
     
     this.placeholder = placeholder;
@@ -192,6 +220,9 @@ public class InstitutionsFormFieldValues {
 
 
   public void setPlaceholder(String placeholder) {
+
+    
+    
     
     this.placeholder = placeholder;
   }

@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -102,6 +103,9 @@ public class EyodIncomeVerificationBodyRequest {
   }
 
   public EyodIncomeVerificationBodyRequest description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -121,12 +125,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public EyodIncomeVerificationBodyRequest transactionId(String transactionId) {
+
+    
+    
     
     
     this.transactionId = transactionId;
@@ -146,12 +156,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setTransactionId(String transactionId) {
+
+    
+    
     
     this.transactionId = transactionId;
   }
 
 
   public EyodIncomeVerificationBodyRequest accountHolderType(EnumIncomeVerificationAccountHolderType accountHolderType) {
+
+    
+    
     
     
     this.accountHolderType = accountHolderType;
@@ -171,12 +187,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setAccountHolderType(EnumIncomeVerificationAccountHolderType accountHolderType) {
+
+    
+    
     
     this.accountHolderType = accountHolderType;
   }
 
 
   public EyodIncomeVerificationBodyRequest accountHolderId(UUID accountHolderId) {
+
+    
+    
     
     
     this.accountHolderId = accountHolderId;
@@ -196,12 +218,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setAccountHolderId(UUID accountHolderId) {
+
+    
+    
     
     this.accountHolderId = accountHolderId;
   }
 
 
   public EyodIncomeVerificationBodyRequest accountId(String accountId) {
+
+    
+    
     
     
     this.accountId = accountId;
@@ -221,12 +249,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setAccountId(String accountId) {
+
+    
+    
     
     this.accountId = accountId;
   }
 
 
   public EyodIncomeVerificationBodyRequest accountCategory(EnumIncomeVerificationAccountCategory accountCategory) {
+
+    
+    
     
     
     this.accountCategory = accountCategory;
@@ -246,12 +280,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setAccountCategory(EnumIncomeVerificationAccountCategory accountCategory) {
+
+    
+    
     
     this.accountCategory = accountCategory;
   }
 
 
   public EyodIncomeVerificationBodyRequest valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -271,12 +311,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public EyodIncomeVerificationBodyRequest type(EnumIncomeVerificationType type) {
+
+    
+    
     
     
     this.type = type;
@@ -296,12 +342,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setType(EnumIncomeVerificationType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public EyodIncomeVerificationBodyRequest amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -321,12 +373,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public EyodIncomeVerificationBodyRequest currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -346,12 +404,18 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public EyodIncomeVerificationBodyRequest institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -371,6 +435,9 @@ public class EyodIncomeVerificationBodyRequest {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }

@@ -40,6 +40,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -145,6 +146,9 @@ public class Income {
   }
 
   public Income id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -164,12 +168,18 @@ public class Income {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Income link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -189,12 +199,18 @@ public class Income {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public Income createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -214,12 +230,18 @@ public class Income {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Income incomeStreams(List<IncomeStreamsBody> incomeStreams) {
+
+    
+    
     
     
     this.incomeStreams = incomeStreams;
@@ -244,12 +266,18 @@ public class Income {
 
 
   public void setIncomeStreams(List<IncomeStreamsBody> incomeStreams) {
+
+    
+    
     
     this.incomeStreams = incomeStreams;
   }
 
 
   public Income institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -269,12 +297,18 @@ public class Income {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public Income incomeSourceType(EnumIncomeSourceType incomeSourceType) {
+
+    
+    
     
     
     this.incomeSourceType = incomeSourceType;
@@ -294,12 +328,18 @@ public class Income {
 
 
   public void setIncomeSourceType(EnumIncomeSourceType incomeSourceType) {
+
+    
+    
     
     this.incomeSourceType = incomeSourceType;
   }
 
 
   public Income firstTransactionDate(LocalDate firstTransactionDate) {
+
+    
+    
     
     
     this.firstTransactionDate = firstTransactionDate;
@@ -319,12 +359,18 @@ public class Income {
 
 
   public void setFirstTransactionDate(LocalDate firstTransactionDate) {
+
+    
+    
     
     this.firstTransactionDate = firstTransactionDate;
   }
 
 
   public Income lastTransactionDate(LocalDate lastTransactionDate) {
+
+    
+    
     
     
     this.lastTransactionDate = lastTransactionDate;
@@ -344,12 +390,18 @@ public class Income {
 
 
   public void setLastTransactionDate(LocalDate lastTransactionDate) {
+
+    
+    
     
     this.lastTransactionDate = lastTransactionDate;
   }
 
 
   public Income numberOfIncomeStreams(Integer numberOfIncomeStreams) {
+
+    
+    
     
     
     this.numberOfIncomeStreams = numberOfIncomeStreams;
@@ -369,12 +421,18 @@ public class Income {
 
 
   public void setNumberOfIncomeStreams(Integer numberOfIncomeStreams) {
+
+    
+    
     
     this.numberOfIncomeStreams = numberOfIncomeStreams;
   }
 
 
   public Income monthlyAverage(Float monthlyAverage) {
+
+    
+    
     
     
     this.monthlyAverage = monthlyAverage;
@@ -394,12 +452,18 @@ public class Income {
 
 
   public void setMonthlyAverage(Float monthlyAverage) {
+
+    
+    
     
     this.monthlyAverage = monthlyAverage;
   }
 
 
   public Income monthlyAverageRegular(Float monthlyAverageRegular) {
+
+    
+    
     
     
     this.monthlyAverageRegular = monthlyAverageRegular;
@@ -419,12 +483,18 @@ public class Income {
 
 
   public void setMonthlyAverageRegular(Float monthlyAverageRegular) {
+
+    
+    
     
     this.monthlyAverageRegular = monthlyAverageRegular;
   }
 
 
   public Income monthlyAverageIrregular(Float monthlyAverageIrregular) {
+
+    
+    
     
     
     this.monthlyAverageIrregular = monthlyAverageIrregular;
@@ -444,12 +514,18 @@ public class Income {
 
 
   public void setMonthlyAverageIrregular(Float monthlyAverageIrregular) {
+
+    
+    
     
     this.monthlyAverageIrregular = monthlyAverageIrregular;
   }
 
 
   public Income monthlyAverageLowConfidence(Float monthlyAverageLowConfidence) {
+
+    
+    
     
     
     this.monthlyAverageLowConfidence = monthlyAverageLowConfidence;
@@ -469,12 +545,18 @@ public class Income {
 
 
   public void setMonthlyAverageLowConfidence(Float monthlyAverageLowConfidence) {
+
+    
+    
     
     this.monthlyAverageLowConfidence = monthlyAverageLowConfidence;
   }
 
 
   public Income monthlyAverageMediumConfidence(Float monthlyAverageMediumConfidence) {
+
+    
+    
     
     
     this.monthlyAverageMediumConfidence = monthlyAverageMediumConfidence;
@@ -494,12 +576,18 @@ public class Income {
 
 
   public void setMonthlyAverageMediumConfidence(Float monthlyAverageMediumConfidence) {
+
+    
+    
     
     this.monthlyAverageMediumConfidence = monthlyAverageMediumConfidence;
   }
 
 
   public Income monthlyAverageHighConfidence(Float monthlyAverageHighConfidence) {
+
+    
+    
     
     
     this.monthlyAverageHighConfidence = monthlyAverageHighConfidence;
@@ -519,12 +607,18 @@ public class Income {
 
 
   public void setMonthlyAverageHighConfidence(Float monthlyAverageHighConfidence) {
+
+    
+    
     
     this.monthlyAverageHighConfidence = monthlyAverageHighConfidence;
   }
 
 
   public Income totalIncomeAmount(Float totalIncomeAmount) {
+
+    
+    
     
     
     this.totalIncomeAmount = totalIncomeAmount;
@@ -544,12 +638,18 @@ public class Income {
 
 
   public void setTotalIncomeAmount(Float totalIncomeAmount) {
+
+    
+    
     
     this.totalIncomeAmount = totalIncomeAmount;
   }
 
 
   public Income totalRegularIncomeAmount(Float totalRegularIncomeAmount) {
+
+    
+    
     
     
     this.totalRegularIncomeAmount = totalRegularIncomeAmount;
@@ -569,12 +669,18 @@ public class Income {
 
 
   public void setTotalRegularIncomeAmount(Float totalRegularIncomeAmount) {
+
+    
+    
     
     this.totalRegularIncomeAmount = totalRegularIncomeAmount;
   }
 
 
   public Income totalIrregularIncomeAmount(Float totalIrregularIncomeAmount) {
+
+    
+    
     
     
     this.totalIrregularIncomeAmount = totalIrregularIncomeAmount;
@@ -594,12 +700,18 @@ public class Income {
 
 
   public void setTotalIrregularIncomeAmount(Float totalIrregularIncomeAmount) {
+
+    
+    
     
     this.totalIrregularIncomeAmount = totalIrregularIncomeAmount;
   }
 
 
   public Income totalLowConfidence(Float totalLowConfidence) {
+
+    
+    
     
     
     this.totalLowConfidence = totalLowConfidence;
@@ -619,12 +731,18 @@ public class Income {
 
 
   public void setTotalLowConfidence(Float totalLowConfidence) {
+
+    
+    
     
     this.totalLowConfidence = totalLowConfidence;
   }
 
 
   public Income totalMediumConfidence(Float totalMediumConfidence) {
+
+    
+    
     
     
     this.totalMediumConfidence = totalMediumConfidence;
@@ -644,12 +762,18 @@ public class Income {
 
 
   public void setTotalMediumConfidence(Float totalMediumConfidence) {
+
+    
+    
     
     this.totalMediumConfidence = totalMediumConfidence;
   }
 
 
   public Income totalHighConfidence(Float totalHighConfidence) {
+
+    
+    
     
     
     this.totalHighConfidence = totalHighConfidence;
@@ -669,6 +793,9 @@ public class Income {
 
 
   public void setTotalHighConfidence(Float totalHighConfidence) {
+
+    
+    
     
     this.totalHighConfidence = totalHighConfidence;
   }

@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -73,6 +74,9 @@ public class EmploymentRecordEntitlement {
   }
 
   public EmploymentRecordEntitlement entitledToHealthInsurance(Boolean entitledToHealthInsurance) {
+
+    
+    
     
     
     this.entitledToHealthInsurance = entitledToHealthInsurance;
@@ -92,12 +96,18 @@ public class EmploymentRecordEntitlement {
 
 
   public void setEntitledToHealthInsurance(Boolean entitledToHealthInsurance) {
+
+    
+    
     
     this.entitledToHealthInsurance = entitledToHealthInsurance;
   }
 
 
   public EmploymentRecordEntitlement entitledToCompanyBenefits(Boolean entitledToCompanyBenefits) {
+
+    
+    
     
     
     this.entitledToCompanyBenefits = entitledToCompanyBenefits;
@@ -117,12 +127,18 @@ public class EmploymentRecordEntitlement {
 
 
   public void setEntitledToCompanyBenefits(Boolean entitledToCompanyBenefits) {
+
+    
+    
     
     this.entitledToCompanyBenefits = entitledToCompanyBenefits;
   }
 
 
   public EmploymentRecordEntitlement validUntil(LocalDate validUntil) {
+
+    
+    
     
     
     this.validUntil = validUntil;
@@ -142,12 +158,18 @@ public class EmploymentRecordEntitlement {
 
 
   public void setValidUntil(LocalDate validUntil) {
+
+    
+    
     
     this.validUntil = validUntil;
   }
 
 
   public EmploymentRecordEntitlement status(EnumEmploymentRecordStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -167,6 +189,9 @@ public class EmploymentRecordEntitlement {
 
 
   public void setStatus(EnumEmploymentRecordStatus status) {
+
+    
+    
     
     this.status = status;
   }

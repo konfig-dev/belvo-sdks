@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -90,6 +91,9 @@ public class TaxAssessmentBusiness {
   }
 
   public TaxAssessmentBusiness netIncomeTaxable(Float netIncomeTaxable) {
+
+    
+    
     
     
     this.netIncomeTaxable = netIncomeTaxable;
@@ -109,12 +113,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setNetIncomeTaxable(Float netIncomeTaxable) {
+
+    
+    
     
     this.netIncomeTaxable = netIncomeTaxable;
   }
 
 
   public TaxAssessmentBusiness fortuitousProfitTax(Float fortuitousProfitTax) {
+
+    
+    
     
     
     this.fortuitousProfitTax = fortuitousProfitTax;
@@ -134,12 +144,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setFortuitousProfitTax(Float fortuitousProfitTax) {
+
+    
+    
     
     this.fortuitousProfitTax = fortuitousProfitTax;
   }
 
 
   public TaxAssessmentBusiness totalTaxOnTaxableNetIncome(Float totalTaxOnTaxableNetIncome) {
+
+    
+    
     
     
     this.totalTaxOnTaxableNetIncome = totalTaxOnTaxableNetIncome;
@@ -159,12 +175,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalTaxOnTaxableNetIncome(Float totalTaxOnTaxableNetIncome) {
+
+    
+    
     
     this.totalTaxOnTaxableNetIncome = totalTaxOnTaxableNetIncome;
   }
 
 
   public TaxAssessmentBusiness netIncomeTax(Float netIncomeTax) {
+
+    
+    
     
     
     this.netIncomeTax = netIncomeTax;
@@ -184,12 +206,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setNetIncomeTax(Float netIncomeTax) {
+
+    
+    
     
     this.netIncomeTax = netIncomeTax;
   }
 
 
   public TaxAssessmentBusiness totalTaxDue(Float totalTaxDue) {
+
+    
+    
     
     
     this.totalTaxDue = totalTaxDue;
@@ -209,12 +237,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalTaxDue(Float totalTaxDue) {
+
+    
+    
     
     this.totalTaxDue = totalTaxDue;
   }
 
 
   public TaxAssessmentBusiness totalWithholdingsForTheTaxableYearToBeDeclared(Float totalWithholdingsForTheTaxableYearToBeDeclared) {
+
+    
+    
     
     
     this.totalWithholdingsForTheTaxableYearToBeDeclared = totalWithholdingsForTheTaxableYearToBeDeclared;
@@ -234,12 +268,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalWithholdingsForTheTaxableYearToBeDeclared(Float totalWithholdingsForTheTaxableYearToBeDeclared) {
+
+    
+    
     
     this.totalWithholdingsForTheTaxableYearToBeDeclared = totalWithholdingsForTheTaxableYearToBeDeclared;
   }
 
 
   public TaxAssessmentBusiness totalBalancePayable(Float totalBalancePayable) {
+
+    
+    
     
     
     this.totalBalancePayable = totalBalancePayable;
@@ -259,12 +299,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalBalancePayable(Float totalBalancePayable) {
+
+    
+    
     
     this.totalBalancePayable = totalBalancePayable;
   }
 
 
   public TaxAssessmentBusiness totalBalanceInFavor(Float totalBalanceInFavor) {
+
+    
+    
     
     
     this.totalBalanceInFavor = totalBalanceInFavor;
@@ -284,12 +330,18 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalBalanceInFavor(Float totalBalanceInFavor) {
+
+    
+    
     
     this.totalBalanceInFavor = totalBalanceInFavor;
   }
 
 
   public TaxAssessmentBusiness totalPayment(Float totalPayment) {
+
+    
+    
     
     
     this.totalPayment = totalPayment;
@@ -309,6 +361,9 @@ public class TaxAssessmentBusiness {
 
 
   public void setTotalPayment(Float totalPayment) {
+
+    
+    
     
     this.totalPayment = totalPayment;
   }

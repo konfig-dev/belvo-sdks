@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -90,6 +91,9 @@ public class TaxAssessmentIndividual {
   }
 
   public TaxAssessmentIndividual fortuitousProfitTax(Float fortuitousProfitTax) {
+
+    
+    
     
     
     this.fortuitousProfitTax = fortuitousProfitTax;
@@ -109,12 +113,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setFortuitousProfitTax(Float fortuitousProfitTax) {
+
+    
+    
     
     this.fortuitousProfitTax = fortuitousProfitTax;
   }
 
 
   public TaxAssessmentIndividual totalTaxOnTaxableNetIncome(Float totalTaxOnTaxableNetIncome) {
+
+    
+    
     
     
     this.totalTaxOnTaxableNetIncome = totalTaxOnTaxableNetIncome;
@@ -134,12 +144,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setTotalTaxOnTaxableNetIncome(Float totalTaxOnTaxableNetIncome) {
+
+    
+    
     
     this.totalTaxOnTaxableNetIncome = totalTaxOnTaxableNetIncome;
   }
 
 
   public TaxAssessmentIndividual netIncomeTax(Float netIncomeTax) {
+
+    
+    
     
     
     this.netIncomeTax = netIncomeTax;
@@ -159,12 +175,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setNetIncomeTax(Float netIncomeTax) {
+
+    
+    
     
     this.netIncomeTax = netIncomeTax;
   }
 
 
   public TaxAssessmentIndividual totalTaxDue(Float totalTaxDue) {
+
+    
+    
     
     
     this.totalTaxDue = totalTaxDue;
@@ -184,12 +206,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setTotalTaxDue(Float totalTaxDue) {
+
+    
+    
     
     this.totalTaxDue = totalTaxDue;
   }
 
 
   public TaxAssessmentIndividual previousYearBalance(Float previousYearBalance) {
+
+    
+    
     
     
     this.previousYearBalance = previousYearBalance;
@@ -209,12 +237,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setPreviousYearBalance(Float previousYearBalance) {
+
+    
+    
     
     this.previousYearBalance = previousYearBalance;
   }
 
 
   public TaxAssessmentIndividual totalWithheldTax(Float totalWithheldTax) {
+
+    
+    
     
     
     this.totalWithheldTax = totalWithheldTax;
@@ -234,12 +268,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setTotalWithheldTax(Float totalWithheldTax) {
+
+    
+    
     
     this.totalWithheldTax = totalWithheldTax;
   }
 
 
   public TaxAssessmentIndividual balancePayable(Float balancePayable) {
+
+    
+    
     
     
     this.balancePayable = balancePayable;
@@ -259,12 +299,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setBalancePayable(Float balancePayable) {
+
+    
+    
     
     this.balancePayable = balancePayable;
   }
 
 
   public TaxAssessmentIndividual balanceRefundable(Float balanceRefundable) {
+
+    
+    
     
     
     this.balanceRefundable = balanceRefundable;
@@ -284,12 +330,18 @@ public class TaxAssessmentIndividual {
 
 
   public void setBalanceRefundable(Float balanceRefundable) {
+
+    
+    
     
     this.balanceRefundable = balanceRefundable;
   }
 
 
   public TaxAssessmentIndividual totalPayment(Float totalPayment) {
+
+    
+    
     
     
     this.totalPayment = totalPayment;
@@ -309,6 +361,9 @@ public class TaxAssessmentIndividual {
 
 
   public void setTotalPayment(Float totalPayment) {
+
+    
+    
     
     this.totalPayment = totalPayment;
   }

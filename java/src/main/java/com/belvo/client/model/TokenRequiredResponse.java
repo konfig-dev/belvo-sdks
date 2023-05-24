@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -84,6 +85,9 @@ public class TokenRequiredResponse {
   }
 
   public TokenRequiredResponse code(String code) {
+
+    
+    
     
     
     this.code = code;
@@ -103,12 +107,18 @@ public class TokenRequiredResponse {
 
 
   public void setCode(String code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public TokenRequiredResponse message(String message) {
+
+    
+    
     
     
     this.message = message;
@@ -128,12 +138,18 @@ public class TokenRequiredResponse {
 
 
   public void setMessage(String message) {
+
+    
+    
     
     this.message = message;
   }
 
 
   public TokenRequiredResponse requestId(String requestId) {
+
+    
+    
     
     
     this.requestId = requestId;
@@ -153,12 +169,18 @@ public class TokenRequiredResponse {
 
 
   public void setRequestId(String requestId) {
+
+    
+    
     
     this.requestId = requestId;
   }
 
 
   public TokenRequiredResponse session(String session) {
+
+    
+    
     
     
     this.session = session;
@@ -178,12 +200,18 @@ public class TokenRequiredResponse {
 
 
   public void setSession(String session) {
+
+    
+    
     
     this.session = session;
   }
 
 
   public TokenRequiredResponse expiry(Integer expiry) {
+
+    
+    
     
     
     this.expiry = expiry;
@@ -203,12 +231,18 @@ public class TokenRequiredResponse {
 
 
   public void setExpiry(Integer expiry) {
+
+    
+    
     
     this.expiry = expiry;
   }
 
 
   public TokenRequiredResponse link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -228,12 +262,18 @@ public class TokenRequiredResponse {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TokenRequiredResponse tokenGenerationData(TokenRequiredResponseTokenGenerationData tokenGenerationData) {
+
+    
+    
     
     
     this.tokenGenerationData = tokenGenerationData;
@@ -253,6 +293,9 @@ public class TokenRequiredResponse {
 
 
   public void setTokenGenerationData(TokenRequiredResponseTokenGenerationData tokenGenerationData) {
+
+    
+    
     
     this.tokenGenerationData = tokenGenerationData;
   }

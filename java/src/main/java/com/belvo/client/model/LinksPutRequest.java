@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -77,6 +78,9 @@ public class LinksPutRequest {
   }
 
   public LinksPutRequest password(String password) {
+
+    
+    
     
     
     this.password = password;
@@ -96,12 +100,18 @@ public class LinksPutRequest {
 
 
   public void setPassword(String password) {
+
+    
+    
     
     this.password = password;
   }
 
 
   public LinksPutRequest password2(String password2) {
+
+    
+    
     
     
     this.password2 = password2;
@@ -121,12 +131,18 @@ public class LinksPutRequest {
 
 
   public void setPassword2(String password2) {
+
+    
+    
     
     this.password2 = password2;
   }
 
 
   public LinksPutRequest token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -146,12 +162,18 @@ public class LinksPutRequest {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public LinksPutRequest usernameType(String usernameType) {
+
+    
+    
     
     
     this.usernameType = usernameType;
@@ -171,12 +193,18 @@ public class LinksPutRequest {
 
 
   public void setUsernameType(String usernameType) {
+
+    
+    
     
     this.usernameType = usernameType;
   }
 
 
   public LinksPutRequest certificate(String certificate) {
+
+    
+    
     
     
     this.certificate = certificate;
@@ -196,12 +224,18 @@ public class LinksPutRequest {
 
 
   public void setCertificate(String certificate) {
+
+    
+    
     
     this.certificate = certificate;
   }
 
 
   public LinksPutRequest privateKey(String privateKey) {
+
+    
+    
     
     
     this.privateKey = privateKey;
@@ -221,6 +255,9 @@ public class LinksPutRequest {
 
 
   public void setPrivateKey(String privateKey) {
+
+    
+    
     
     this.privateKey = privateKey;
   }

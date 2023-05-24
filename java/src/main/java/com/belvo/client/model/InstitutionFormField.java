@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -92,6 +93,9 @@ public class InstitutionFormField {
   }
 
   public InstitutionFormField name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -111,12 +115,18 @@ public class InstitutionFormField {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public InstitutionFormField type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -136,12 +146,18 @@ public class InstitutionFormField {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InstitutionFormField label(String label) {
+
+    
+    
     
     
     this.label = label;
@@ -161,12 +177,18 @@ public class InstitutionFormField {
 
 
   public void setLabel(String label) {
+
+    
+    
     
     this.label = label;
   }
 
 
   public InstitutionFormField validation(String validation) {
+
+    
+    
     
     
     this.validation = validation;
@@ -186,12 +208,18 @@ public class InstitutionFormField {
 
 
   public void setValidation(String validation) {
+
+    
+    
     
     this.validation = validation;
   }
 
 
   public InstitutionFormField placeholder(String placeholder) {
+
+    
+    
     
     
     this.placeholder = placeholder;
@@ -211,12 +239,18 @@ public class InstitutionFormField {
 
 
   public void setPlaceholder(String placeholder) {
+
+    
+    
     
     this.placeholder = placeholder;
   }
 
 
   public InstitutionFormField validationMessage(String validationMessage) {
+
+    
+    
     
     
     this.validationMessage = validationMessage;
@@ -236,12 +270,18 @@ public class InstitutionFormField {
 
 
   public void setValidationMessage(String validationMessage) {
+
+    
+    
     
     this.validationMessage = validationMessage;
   }
 
 
   public InstitutionFormField values(List<InstitutionsFormFieldValues> values) {
+
+    
+    
     
     
     this.values = values;
@@ -269,12 +309,18 @@ public class InstitutionFormField {
 
 
   public void setValues(List<InstitutionsFormFieldValues> values) {
+
+    
+    
     
     this.values = values;
   }
 
 
   public InstitutionFormField length(Integer length) {
+
+    
+    
     
     
     this.length = length;
@@ -294,12 +340,18 @@ public class InstitutionFormField {
 
 
   public void setLength(Integer length) {
+
+    
+    
     
     this.length = length;
   }
 
 
   public InstitutionFormField optional(Boolean optional) {
+
+    
+    
     
     
     this.optional = optional;
@@ -319,6 +371,9 @@ public class InstitutionFormField {
 
 
   public void setOptional(Boolean optional) {
+
+    
+    
     
     this.optional = optional;
   }

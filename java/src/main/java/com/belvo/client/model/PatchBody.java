@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class PatchBody {
   }
 
   public PatchBody session(String session) {
+
+    
+    
     
     
     this.session = session;
@@ -90,12 +94,18 @@ public class PatchBody {
 
 
   public void setSession(String session) {
+
+    
+    
     
     this.session = session;
   }
 
 
   public PatchBody token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -115,12 +125,18 @@ public class PatchBody {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public PatchBody link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -140,12 +156,18 @@ public class PatchBody {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public PatchBody saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -165,6 +187,9 @@ public class PatchBody {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

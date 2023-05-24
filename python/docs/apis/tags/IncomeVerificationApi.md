@@ -8,8 +8,6 @@ Method | HTTP request | Description
 [**verify**](#verify) | **post** /api/enrich/incomes | Verify incomes
 
 # **verify**
-<a name="verify"></a>
-> IncomeVerificationVerifyResponse verify(eyod_income_verification_request)
 
 Verify incomes
 
@@ -19,21 +17,22 @@ Send through your raw data and receive enriched information for each of your use
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "language": "pt",
-        "transactions": [
+try:
+    # Verify incomes
+    verify_response = belvo.income_verification.verify(
+        language="pt",  # required
+        transactions=[
             {
                 "description": "SALÁRIO MENSAL",
                 "transaction_id": "3CWE4927CF15355",
@@ -47,15 +46,11 @@ body = {
                 "currency": "BRL",
                 "institution": "Erebor Brazil",
             }
-        ],
-        "date_from": "2022-08-01",
-        "date_to": "2022-12-30",
-        "minimum_confidence_level": "HIGH",
-    }
-try:
-    # Verify incomes
-    verify_response = belvo.income_verification.verify(
-        body=body
+        ],  # required
+        date_from="2022-08-01",  # optional
+        date_to="2022-12-30",  # optional
+        allowed_income_types=["string_example"],  # optional
+        minimum_confidence_level="HIGH",  # optional
     )
     pprint(verify_response.body)
     pprint(verify_response.headers)

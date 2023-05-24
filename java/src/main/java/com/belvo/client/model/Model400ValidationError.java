@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class Model400ValidationError {
   }
 
   public Model400ValidationError code(String code) {
+
+    
+    
     
     
     this.code = code;
@@ -90,12 +94,18 @@ public class Model400ValidationError {
 
 
   public void setCode(String code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public Model400ValidationError message(String message) {
+
+    
+    
     
     
     this.message = message;
@@ -115,12 +125,18 @@ public class Model400ValidationError {
 
 
   public void setMessage(String message) {
+
+    
+    
     
     this.message = message;
   }
 
 
   public Model400ValidationError requestId(String requestId) {
+
+    
+    
     
     
     this.requestId = requestId;
@@ -140,12 +156,18 @@ public class Model400ValidationError {
 
 
   public void setRequestId(String requestId) {
+
+    
+    
     
     this.requestId = requestId;
   }
 
 
   public Model400ValidationError field(String field) {
+
+    
+    
     
     
     this.field = field;
@@ -165,6 +187,9 @@ public class Model400ValidationError {
 
 
   public void setField(String field) {
+
+    
+    
     
     this.field = field;
   }

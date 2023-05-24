@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -106,6 +107,9 @@ public class InvoicesPaymentsDian {
   }
 
   public InvoicesPaymentsDian date(OffsetDateTime date) {
+
+    
+    
     
     
     this.date = date;
@@ -125,12 +129,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setDate(OffsetDateTime date) {
+
+    
+    
     
     this.date = date;
   }
 
 
   public InvoicesPaymentsDian paymentType(String paymentType) {
+
+    
+    
     
     
     this.paymentType = paymentType;
@@ -150,12 +160,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setPaymentType(String paymentType) {
+
+    
+    
     
     this.paymentType = paymentType;
   }
 
 
   public InvoicesPaymentsDian currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -175,12 +191,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvoicesPaymentsDian exchangeRate(String exchangeRate) {
+
+    
+    
     
     
     this.exchangeRate = exchangeRate;
@@ -200,12 +222,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setExchangeRate(String exchangeRate) {
+
+    
+    
     
     this.exchangeRate = exchangeRate;
   }
 
 
   public InvoicesPaymentsDian amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -225,12 +253,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public InvoicesPaymentsDian operationNumber(String operationNumber) {
+
+    
+    
     
     
     this.operationNumber = operationNumber;
@@ -250,12 +284,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setOperationNumber(String operationNumber) {
+
+    
+    
     
     this.operationNumber = operationNumber;
   }
 
 
   public InvoicesPaymentsDian beneficiaryRfc(String beneficiaryRfc) {
+
+    
+    
     
     
     this.beneficiaryRfc = beneficiaryRfc;
@@ -275,12 +315,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setBeneficiaryRfc(String beneficiaryRfc) {
+
+    
+    
     
     this.beneficiaryRfc = beneficiaryRfc;
   }
 
 
   public InvoicesPaymentsDian beneficiaryAccountNumber(String beneficiaryAccountNumber) {
+
+    
+    
     
     
     this.beneficiaryAccountNumber = beneficiaryAccountNumber;
@@ -300,12 +346,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setBeneficiaryAccountNumber(String beneficiaryAccountNumber) {
+
+    
+    
     
     this.beneficiaryAccountNumber = beneficiaryAccountNumber;
   }
 
 
   public InvoicesPaymentsDian payerRfc(String payerRfc) {
+
+    
+    
     
     
     this.payerRfc = payerRfc;
@@ -325,12 +377,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setPayerRfc(String payerRfc) {
+
+    
+    
     
     this.payerRfc = payerRfc;
   }
 
 
   public InvoicesPaymentsDian payerAccountNumber(String payerAccountNumber) {
+
+    
+    
     
     
     this.payerAccountNumber = payerAccountNumber;
@@ -350,12 +408,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setPayerAccountNumber(String payerAccountNumber) {
+
+    
+    
     
     this.payerAccountNumber = payerAccountNumber;
   }
 
 
   public InvoicesPaymentsDian payerBankName(String payerBankName) {
+
+    
+    
     
     
     this.payerBankName = payerBankName;
@@ -375,12 +439,18 @@ public class InvoicesPaymentsDian {
 
 
   public void setPayerBankName(String payerBankName) {
+
+    
+    
     
     this.payerBankName = payerBankName;
   }
 
 
   public InvoicesPaymentsDian relatedDocuments(List<InvoicesPaymentsRelatedDocumentsDian> relatedDocuments) {
+
+    
+    
     
     
     this.relatedDocuments = relatedDocuments;
@@ -405,6 +475,9 @@ public class InvoicesPaymentsDian {
 
 
   public void setRelatedDocuments(List<InvoicesPaymentsRelatedDocumentsDian> relatedDocuments) {
+
+    
+    
     
     this.relatedDocuments = relatedDocuments;
   }

@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._API_ENRICH_INCOMES
+path = PathValues.API_ENRICH_INCOMES

@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -122,6 +123,9 @@ public class NextStepDisplayPaymentMethodInformation {
   }
 
   public NextStepDisplayPaymentMethodInformation type(TypeEnum type) {
+
+    
+    
     
     
     this.type = type;
@@ -141,12 +145,18 @@ public class NextStepDisplayPaymentMethodInformation {
 
 
   public void setType(TypeEnum type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public NextStepDisplayPaymentMethodInformation openFinanceDisplayPaymentMethodInformation(DisplayPaymentMethodInformationContentOfpi openFinanceDisplayPaymentMethodInformation) {
+
+    
+    
     
     
     this.openFinanceDisplayPaymentMethodInformation = openFinanceDisplayPaymentMethodInformation;
@@ -166,12 +176,18 @@ public class NextStepDisplayPaymentMethodInformation {
 
 
   public void setOpenFinanceDisplayPaymentMethodInformation(DisplayPaymentMethodInformationContentOfpi openFinanceDisplayPaymentMethodInformation) {
+
+    
+    
     
     this.openFinanceDisplayPaymentMethodInformation = openFinanceDisplayPaymentMethodInformation;
   }
 
 
   public NextStepDisplayPaymentMethodInformation readyToConfirm(Boolean readyToConfirm) {
+
+    
+    
     
     
     this.readyToConfirm = readyToConfirm;
@@ -191,6 +207,9 @@ public class NextStepDisplayPaymentMethodInformation {
 
 
   public void setReadyToConfirm(Boolean readyToConfirm) {
+
+    
+    
     
     this.readyToConfirm = readyToConfirm;
   }

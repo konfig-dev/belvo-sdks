@@ -152,6 +152,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling TaxReturnsApi#getDetails");
@@ -305,6 +306,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling TaxReturnsApi#list");
@@ -419,6 +421,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling TaxReturnsApi#retrieve");

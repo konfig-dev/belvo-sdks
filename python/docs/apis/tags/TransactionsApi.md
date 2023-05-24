@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/transactions | Retrieve transactions for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> TransactionsCompleteRequestResponse complete_request(patch_body)
 
 Complete a transactions request
 
@@ -23,32 +21,26 @@ Used to resume a Transaction retrieve session that was paused because an MFA tok
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete a transactions request
     complete_request_response = belvo.transactions.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -216,8 +208,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete a transaction
 
@@ -227,24 +217,21 @@ Delete a specific transaction from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete a transaction
     belvo.transactions.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -330,8 +317,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> Transaction get_details(id)
 
 Get a transaction&#x27;s details
 
@@ -341,28 +326,23 @@ Get the details of a specific transaction.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get a transaction's details
     get_details_response = belvo.transactions.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["description"])
@@ -498,8 +478,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> TransactionsPaginatedResponse list(link)
 
 List all transactions
 
@@ -509,81 +487,78 @@ Get a paginated list of all existing transactions in your Belvo account. By defa
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all transactions
     list_response = belvo.transactions.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'account': "d979df3a-5d0f-4cc9-9bd4-b75c28b45963",
-            'account__balance__available': "4000.00",
-            'account__balance__available__lt': "6000.00",
-            'account__balance__available__lte': "5999.00",
-            'account__balance__available__range': "3000.00,4350.00",
-            'account__balance__current': "4000.00",
-            'account__balance__current__gt': "4020.00",
-            'account__balance__current__gte': "4019.00",
-            'account__balance__current__lt': "3000.00",
-            'account__balance__current__lte': "2999.00",
-            'account__balance__current__range': "2999.00,4000.00",
-            'account__in': "24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",
-            'account_type': "Cuentas de efectivo",
-            'account_type__in': "Cuentas de efectivo,Depositos Ahorro",
-            'accounting_date': "2022-05-05",
-            'accounting_date__gt': "2022-05-06",
-            'accounting_date__gte': "2022-05-04",
-            'accounting_date__lt': "2022-03-02",
-            'accounting_date__lte': "2022-03-01",
-            'accounting_date__range': "2022-03-01,2022-05-06",
-            'amount': "1000.00",
-            'amount__gt': "520.00",
-            'amount__gte': "519.00",
-            'amount__lt': "540.00",
-            'amount__lte': "541.00",
-            'amount__range': "519.00,541.00",
-            'collected_at': "2022-05-01",
-            'collected_at__gt': "2022-05-05",
-            'collected_at__gte': "2022-05-04",
-            'collected_at__lt': "2022-04-01",
-            'collected_at__lte': "2022-03-30",
-            'collected_at__range': "2022-03-03,2022-05-04",
-            'created_at': "2022-05-01",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'credit_card_data__bill_name__in': "maio-2022,feb-2022",
-            'currency': "COP",
-            'currency__in': "COP,MXN",
-            'reference': "085904452810319225",
-            'reference__in': "085904452810319225,8703",
-            'status': "PENDING",
-            'status__in': "PENDING,PROCESSED",
-            'type': "OUTFLOW",
-            'type__in': "INFLOW,OUTFLOW",
-            'value_date': "2022-05-05",
-            'value_date__gt': "2022-05-06",
-            'value_date__gte': "2022-05-04",
-            'value_date__lt': "2022-03-02",
-            'value_date__lte': "2022-03-01",
-            'value_date__range': "2022-03-01,2022-05-06",
-        },
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # required
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        account="d979df3a-5d0f-4cc9-9bd4-b75c28b45963",  # optional
+        account__balance__available="4000.00",  # optional
+        account__balance__available__lt="6000.00",  # optional
+        account__balance__available__lte="5999.00",  # optional
+        account__balance__available__range="3000.00,4350.00",  # optional
+        account__balance__current="4000.00",  # optional
+        account__balance__current__gt="4020.00",  # optional
+        account__balance__current__gte="4019.00",  # optional
+        account__balance__current__lt="3000.00",  # optional
+        account__balance__current__lte="2999.00",  # optional
+        account__balance__current__range="2999.00,4000.00",  # optional
+        account__in="24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",  # optional
+        account_type="Cuentas de efectivo",  # optional
+        account_type__in="Cuentas de efectivo,Depositos Ahorro",  # optional
+        accounting_date="2022-05-05",  # optional
+        accounting_date__gt="2022-05-06",  # optional
+        accounting_date__gte="2022-05-04",  # optional
+        accounting_date__lt="2022-03-02",  # optional
+        accounting_date__lte="2022-03-01",  # optional
+        accounting_date__range="2022-03-01,2022-05-06",  # optional
+        amount="1000.00",  # optional
+        amount__gt="520.00",  # optional
+        amount__gte="519.00",  # optional
+        amount__lt="540.00",  # optional
+        amount__lte="541.00",  # optional
+        amount__range="519.00,541.00",  # optional
+        collected_at="2022-05-01",  # optional
+        collected_at__gt="2022-05-05",  # optional
+        collected_at__gte="2022-05-04",  # optional
+        collected_at__lt="2022-04-01",  # optional
+        collected_at__lte="2022-03-30",  # optional
+        collected_at__range="2022-03-03,2022-05-04",  # optional
+        created_at="2022-05-01",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        credit_card_data__bill_name__in="maio-2022,feb-2022",  # optional
+        currency="COP",  # optional
+        currency__in="COP,MXN",  # optional
+        reference="085904452810319225",  # optional
+        reference__in="085904452810319225,8703",  # optional
+        status="PENDING",  # optional
+        status__in="PENDING,PROCESSED",  # optional
+        type="OUTFLOW",  # optional
+        type__in="INFLOW,OUTFLOW",  # optional
+        value_date="2022-05-05",  # optional
+        value_date__gt="2022-05-06",  # optional
+        value_date__gte="2022-05-04",  # optional
+        value_date__lt="2022-03-02",  # optional
+        value_date__lte="2022-03-01",  # optional
+        value_date__range="2022-03-01,2022-05-06",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -1123,8 +1098,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> TransactionsRetrieveResponse retrieve(transactions_request)
 
 Retrieve transactions for a link
 
@@ -1134,37 +1107,29 @@ Retrieve transactions for one or more accounts from a specific link. <div style=
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "account": "d4617561-1c01-4b2f-83b6-a594f7b3bc57",
-        "date_from": "2020-08-05",
-        "date_to": "2020-10-05",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve transactions for a link
     retrieve_response = belvo.transactions.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        header_params = {
-            'X-Belvo-Request-Mode': "async",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        date_from="2020-08-05",  # required
+        date_to="2020-10-05",  # required
+        account="d4617561-1c01-4b2f-83b6-a594f7b3bc57",  # optional
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        x_belvo_request_mode="async",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.headers)

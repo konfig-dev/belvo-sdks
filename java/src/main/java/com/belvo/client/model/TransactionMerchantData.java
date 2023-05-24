@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -67,6 +68,9 @@ public class TransactionMerchantData {
   }
 
   public TransactionMerchantData logo(String logo) {
+
+    
+    
     
     
     this.logo = logo;
@@ -86,12 +90,18 @@ public class TransactionMerchantData {
 
 
   public void setLogo(String logo) {
+
+    
+    
     
     this.logo = logo;
   }
 
 
   public TransactionMerchantData website(String website) {
+
+    
+    
     
     
     this.website = website;
@@ -111,12 +121,18 @@ public class TransactionMerchantData {
 
 
   public void setWebsite(String website) {
+
+    
+    
     
     this.website = website;
   }
 
 
   public TransactionMerchantData merchantName(String merchantName) {
+
+    
+    
     
     
     this.merchantName = merchantName;
@@ -136,6 +152,9 @@ public class TransactionMerchantData {
 
 
   public void setMerchantName(String merchantName) {
+
+    
+    
     
     this.merchantName = merchantName;
   }

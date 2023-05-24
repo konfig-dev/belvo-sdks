@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._API_TAXDECLARATIONS_ID
+path = PathValues.API_TAXDECLARATIONS_ID

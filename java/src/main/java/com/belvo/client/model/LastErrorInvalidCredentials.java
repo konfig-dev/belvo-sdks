@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class LastErrorInvalidCredentials {
   }
 
   public LastErrorInvalidCredentials errorCode(String errorCode) {
+
+    
+    
     
     
     this.errorCode = errorCode;
@@ -81,12 +85,18 @@ public class LastErrorInvalidCredentials {
 
 
   public void setErrorCode(String errorCode) {
+
+    
+    
     
     this.errorCode = errorCode;
   }
 
 
   public LastErrorInvalidCredentials errorMessage(String errorMessage) {
+
+    
+    
     
     
     this.errorMessage = errorMessage;
@@ -106,6 +116,9 @@ public class LastErrorInvalidCredentials {
 
 
   public void setErrorMessage(String errorMessage) {
+
+    
+    
     
     this.errorMessage = errorMessage;
   }

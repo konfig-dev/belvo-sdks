@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -64,6 +65,9 @@ public class HolderBusinessResponsePse {
   }
 
   public HolderBusinessResponsePse type(EnumBankAccountHolderTypePse type) {
+
+    
+    
     
     
     this.type = type;
@@ -83,12 +87,18 @@ public class HolderBusinessResponsePse {
 
 
   public void setType(EnumBankAccountHolderTypePse type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public HolderBusinessResponsePse information(HolderInformationBusinessPseResponse information) {
+
+    
+    
     
     
     this.information = information;
@@ -108,6 +118,9 @@ public class HolderBusinessResponsePse {
 
 
   public void setInformation(HolderInformationBusinessPseResponse information) {
+
+    
+    
     
     this.information = information;
   }

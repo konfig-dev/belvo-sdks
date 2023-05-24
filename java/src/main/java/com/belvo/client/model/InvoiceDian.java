@@ -48,6 +48,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -232,6 +233,9 @@ public class InvoiceDian {
   }
 
   public InvoiceDian version(String version) {
+
+    
+    
     
     
     this.version = version;
@@ -251,12 +255,18 @@ public class InvoiceDian {
 
 
   public void setVersion(String version) {
+
+    
+    
     
     this.version = version;
   }
 
 
   public InvoiceDian id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -276,12 +286,18 @@ public class InvoiceDian {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public InvoiceDian link(String link) {
+
+    
+    
     
     
     this.link = link;
@@ -301,12 +317,18 @@ public class InvoiceDian {
 
 
   public void setLink(String link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public InvoiceDian collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -326,12 +348,18 @@ public class InvoiceDian {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public InvoiceDian createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -351,12 +379,18 @@ public class InvoiceDian {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public InvoiceDian invoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     
     this.invoiceIdentification = invoiceIdentification;
@@ -376,12 +410,18 @@ public class InvoiceDian {
 
 
   public void setInvoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     this.invoiceIdentification = invoiceIdentification;
   }
 
 
   public InvoiceDian invoiceDate(LocalDate invoiceDate) {
+
+    
+    
     
     
     this.invoiceDate = invoiceDate;
@@ -401,12 +441,18 @@ public class InvoiceDian {
 
 
   public void setInvoiceDate(LocalDate invoiceDate) {
+
+    
+    
     
     this.invoiceDate = invoiceDate;
   }
 
 
   public InvoiceDian status(String status) {
+
+    
+    
     
     
     this.status = status;
@@ -426,12 +472,18 @@ public class InvoiceDian {
 
 
   public void setStatus(String status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public InvoiceDian expirationDate(LocalDate expirationDate) {
+
+    
+    
     
     
     this.expirationDate = expirationDate;
@@ -451,12 +503,18 @@ public class InvoiceDian {
 
 
   public void setExpirationDate(LocalDate expirationDate) {
+
+    
+    
     
     this.expirationDate = expirationDate;
   }
 
 
   public InvoiceDian invoiceType(EnumInvoiceDianInvoiceType invoiceType) {
+
+    
+    
     
     
     this.invoiceType = invoiceType;
@@ -476,12 +534,18 @@ public class InvoiceDian {
 
 
   public void setInvoiceType(EnumInvoiceDianInvoiceType invoiceType) {
+
+    
+    
     
     this.invoiceType = invoiceType;
   }
 
 
   public InvoiceDian type(EnumInvoiceType type) {
+
+    
+    
     
     
     this.type = type;
@@ -501,12 +565,18 @@ public class InvoiceDian {
 
 
   public void setType(EnumInvoiceType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvoiceDian senderId(String senderId) {
+
+    
+    
     
     
     this.senderId = senderId;
@@ -526,12 +596,18 @@ public class InvoiceDian {
 
 
   public void setSenderId(String senderId) {
+
+    
+    
     
     this.senderId = senderId;
   }
 
 
   public InvoiceDian senderName(String senderName) {
+
+    
+    
     
     
     this.senderName = senderName;
@@ -551,12 +627,18 @@ public class InvoiceDian {
 
 
   public void setSenderName(String senderName) {
+
+    
+    
     
     this.senderName = senderName;
   }
 
 
   public InvoiceDian senderDetails(InvoiceSenderDetailsDian senderDetails) {
+
+    
+    
     
     
     this.senderDetails = senderDetails;
@@ -576,12 +658,18 @@ public class InvoiceDian {
 
 
   public void setSenderDetails(InvoiceSenderDetailsDian senderDetails) {
+
+    
+    
     
     this.senderDetails = senderDetails;
   }
 
 
   public InvoiceDian senderTaxFraudStatus(String senderTaxFraudStatus) {
+
+    
+    
     
     
     this.senderTaxFraudStatus = senderTaxFraudStatus;
@@ -601,12 +689,18 @@ public class InvoiceDian {
 
 
   public void setSenderTaxFraudStatus(String senderTaxFraudStatus) {
+
+    
+    
     
     this.senderTaxFraudStatus = senderTaxFraudStatus;
   }
 
 
   public InvoiceDian receiverId(String receiverId) {
+
+    
+    
     
     
     this.receiverId = receiverId;
@@ -626,12 +720,18 @@ public class InvoiceDian {
 
 
   public void setReceiverId(String receiverId) {
+
+    
+    
     
     this.receiverId = receiverId;
   }
 
 
   public InvoiceDian receiverName(String receiverName) {
+
+    
+    
     
     
     this.receiverName = receiverName;
@@ -651,12 +751,18 @@ public class InvoiceDian {
 
 
   public void setReceiverName(String receiverName) {
+
+    
+    
     
     this.receiverName = receiverName;
   }
 
 
   public InvoiceDian receiverDetails(InvoicesReceiverDetailsDian receiverDetails) {
+
+    
+    
     
     
     this.receiverDetails = receiverDetails;
@@ -676,12 +782,18 @@ public class InvoiceDian {
 
 
   public void setReceiverDetails(InvoicesReceiverDetailsDian receiverDetails) {
+
+    
+    
     
     this.receiverDetails = receiverDetails;
   }
 
 
   public InvoiceDian receiverTaxFraudStatus(String receiverTaxFraudStatus) {
+
+    
+    
     
     
     this.receiverTaxFraudStatus = receiverTaxFraudStatus;
@@ -701,12 +813,18 @@ public class InvoiceDian {
 
 
   public void setReceiverTaxFraudStatus(String receiverTaxFraudStatus) {
+
+    
+    
     
     this.receiverTaxFraudStatus = receiverTaxFraudStatus;
   }
 
 
   public InvoiceDian cancelationStatus(String cancelationStatus) {
+
+    
+    
     
     
     this.cancelationStatus = cancelationStatus;
@@ -726,12 +844,18 @@ public class InvoiceDian {
 
 
   public void setCancelationStatus(String cancelationStatus) {
+
+    
+    
     
     this.cancelationStatus = cancelationStatus;
   }
 
 
   public InvoiceDian cancelationUpdateDate(LocalDate cancelationUpdateDate) {
+
+    
+    
     
     
     this.cancelationUpdateDate = cancelationUpdateDate;
@@ -751,12 +875,18 @@ public class InvoiceDian {
 
 
   public void setCancelationUpdateDate(LocalDate cancelationUpdateDate) {
+
+    
+    
     
     this.cancelationUpdateDate = cancelationUpdateDate;
   }
 
 
   public InvoiceDian certificationDate(LocalDate certificationDate) {
+
+    
+    
     
     
     this.certificationDate = certificationDate;
@@ -776,12 +906,18 @@ public class InvoiceDian {
 
 
   public void setCertificationDate(LocalDate certificationDate) {
+
+    
+    
     
     this.certificationDate = certificationDate;
   }
 
 
   public InvoiceDian certificationAuthority(String certificationAuthority) {
+
+    
+    
     
     
     this.certificationAuthority = certificationAuthority;
@@ -801,12 +937,18 @@ public class InvoiceDian {
 
 
   public void setCertificationAuthority(String certificationAuthority) {
+
+    
+    
     
     this.certificationAuthority = certificationAuthority;
   }
 
 
   public InvoiceDian paymentType(String paymentType) {
+
+    
+    
     
     
     this.paymentType = paymentType;
@@ -826,12 +968,18 @@ public class InvoiceDian {
 
 
   public void setPaymentType(String paymentType) {
+
+    
+    
     
     this.paymentType = paymentType;
   }
 
 
   public InvoiceDian paymentTypeDescription(String paymentTypeDescription) {
+
+    
+    
     
     
     this.paymentTypeDescription = paymentTypeDescription;
@@ -851,12 +999,18 @@ public class InvoiceDian {
 
 
   public void setPaymentTypeDescription(String paymentTypeDescription) {
+
+    
+    
     
     this.paymentTypeDescription = paymentTypeDescription;
   }
 
 
   public InvoiceDian paymentMethod(EnumInvoiceDianPaymentMethod paymentMethod) {
+
+    
+    
     
     
     this.paymentMethod = paymentMethod;
@@ -876,12 +1030,18 @@ public class InvoiceDian {
 
 
   public void setPaymentMethod(EnumInvoiceDianPaymentMethod paymentMethod) {
+
+    
+    
     
     this.paymentMethod = paymentMethod;
   }
 
 
   public InvoiceDian paymentMethodDescription(String paymentMethodDescription) {
+
+    
+    
     
     
     this.paymentMethodDescription = paymentMethodDescription;
@@ -903,12 +1063,18 @@ public class InvoiceDian {
 
 
   public void setPaymentMethodDescription(String paymentMethodDescription) {
+
+    
+    
     
     this.paymentMethodDescription = paymentMethodDescription;
   }
 
 
   public InvoiceDian usage(String usage) {
+
+    
+    
     
     
     this.usage = usage;
@@ -928,12 +1094,18 @@ public class InvoiceDian {
 
 
   public void setUsage(String usage) {
+
+    
+    
     
     this.usage = usage;
   }
 
 
   public InvoiceDian placeOfIssue(String placeOfIssue) {
+
+    
+    
     
     
     this.placeOfIssue = placeOfIssue;
@@ -953,12 +1125,18 @@ public class InvoiceDian {
 
 
   public void setPlaceOfIssue(String placeOfIssue) {
+
+    
+    
     
     this.placeOfIssue = placeOfIssue;
   }
 
 
   public InvoiceDian invoiceDetails(List<InvoiceDetailDian> invoiceDetails) {
+
+    
+    
     
     
     this.invoiceDetails = invoiceDetails;
@@ -983,12 +1161,18 @@ public class InvoiceDian {
 
 
   public void setInvoiceDetails(List<InvoiceDetailDian> invoiceDetails) {
+
+    
+    
     
     this.invoiceDetails = invoiceDetails;
   }
 
 
   public InvoiceDian currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -1008,12 +1192,18 @@ public class InvoiceDian {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvoiceDian subtotalAmount(Float subtotalAmount) {
+
+    
+    
     
     
     this.subtotalAmount = subtotalAmount;
@@ -1033,12 +1223,18 @@ public class InvoiceDian {
 
 
   public void setSubtotalAmount(Float subtotalAmount) {
+
+    
+    
     
     this.subtotalAmount = subtotalAmount;
   }
 
 
   public InvoiceDian exchangeRate(Float exchangeRate) {
+
+    
+    
     
     
     this.exchangeRate = exchangeRate;
@@ -1058,12 +1254,18 @@ public class InvoiceDian {
 
 
   public void setExchangeRate(Float exchangeRate) {
+
+    
+    
     
     this.exchangeRate = exchangeRate;
   }
 
 
   public InvoiceDian taxAmount(Float taxAmount) {
+
+    
+    
     
     
     this.taxAmount = taxAmount;
@@ -1083,12 +1285,18 @@ public class InvoiceDian {
 
 
   public void setTaxAmount(Float taxAmount) {
+
+    
+    
     
     this.taxAmount = taxAmount;
   }
 
 
   public InvoiceDian discountAmount(Float discountAmount) {
+
+    
+    
     
     
     this.discountAmount = discountAmount;
@@ -1108,12 +1316,18 @@ public class InvoiceDian {
 
 
   public void setDiscountAmount(Float discountAmount) {
+
+    
+    
     
     this.discountAmount = discountAmount;
   }
 
 
   public InvoiceDian totalAmount(Float totalAmount) {
+
+    
+    
     
     
     this.totalAmount = totalAmount;
@@ -1133,12 +1347,18 @@ public class InvoiceDian {
 
 
   public void setTotalAmount(Float totalAmount) {
+
+    
+    
     
     this.totalAmount = totalAmount;
   }
 
 
   public InvoiceDian payments(List<InvoicesPaymentsDian> payments) {
+
+    
+    
     
     
     this.payments = payments;
@@ -1163,12 +1383,18 @@ public class InvoiceDian {
 
 
   public void setPayments(List<InvoicesPaymentsDian> payments) {
+
+    
+    
     
     this.payments = payments;
   }
 
 
   public InvoiceDian payroll(InvoicesPayrollDian payroll) {
+
+    
+    
     
     
     this.payroll = payroll;
@@ -1188,12 +1414,18 @@ public class InvoiceDian {
 
 
   public void setPayroll(InvoicesPayrollDian payroll) {
+
+    
+    
     
     this.payroll = payroll;
   }
 
 
   public InvoiceDian folio(String folio) {
+
+    
+    
     
     
     this.folio = folio;
@@ -1213,12 +1445,18 @@ public class InvoiceDian {
 
 
   public void setFolio(String folio) {
+
+    
+    
     
     this.folio = folio;
   }
 
 
   public InvoiceDian xml(String xml) {
+
+    
+    
     
     
     this.xml = xml;
@@ -1238,12 +1476,18 @@ public class InvoiceDian {
 
 
   public void setXml(String xml) {
+
+    
+    
     
     this.xml = xml;
   }
 
 
   public InvoiceDian warnings(InvoiceWarningsDian warnings) {
+
+    
+    
     
     
     this.warnings = warnings;
@@ -1263,6 +1507,9 @@ public class InvoiceDian {
 
 
   public void setWarnings(InvoiceWarningsDian warnings) {
+
+    
+    
     
     this.warnings = warnings;
   }

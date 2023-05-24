@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /investments/portfolios | Retrieve portfolios for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> InvestmentsPortfolio complete_request(patch_body_without_save_data)
 
 Complete a portfolios request
 
@@ -23,31 +21,25 @@ Used to resume a portfolio retrieve session that was paused because an MFA token
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-    }
 try:
     # Complete a portfolios request
     complete_request_response = belvo.investment_portfolios.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.body["name"])
@@ -209,8 +201,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete a portfolio
 
@@ -220,24 +210,21 @@ Delete a specific investment portfolio and all associated instruments, transacti
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete a portfolio
     belvo.investment_portfolios.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -323,8 +310,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> InvestmentsPortfolio get_details(id)
 
 Get a portfolio&#x27;s details
 
@@ -334,28 +319,23 @@ Get the details of a specific portfolio.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get a portfolio's details
     get_details_response = belvo.investment_portfolios.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["name"])
@@ -480,8 +460,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> InvestmentsPortfoliosPaginatedResponse list()
 
 List all portfolios
 
@@ -491,34 +469,31 @@ Get a paginated list of all the existing portfolios (and their instruments) in y
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all portfolios
     list_response = belvo.investment_portfolios.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'created_at__gt': "string_example",
-            'created_at__gte': "string_example",
-            'created_at__lt': "string_example",
-            'created_at__lte': "string_example",
-            'created_at__range': "string_example",
-            'link__in': "string_example",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        created_at__gt="string_example",  # optional
+        created_at__gte="string_example",  # optional
+        created_at__lt="string_example",  # optional
+        created_at__lte="string_example",  # optional
+        created_at__range="string_example",  # optional
+        link__in="string_example",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -682,8 +657,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> InvestmentsPortfolio retrieve(standard_request)
 
 Retrieve portfolios for a link
 
@@ -693,31 +666,25 @@ Retrieve all portfolios for an existing link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve portfolios for a link
     retrieve_response = belvo.investment_portfolios.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.body["name"])

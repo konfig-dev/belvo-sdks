@@ -57,7 +57,7 @@ We return one of the following values:
             "MASTERCARD_DEBIT": "MASTERCARD_DEBIT",
             "ELO_CREDIT": "ELO_CREDIT",
             "ELO_DEBIT": "ELO_DEBIT",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class EquityStatementIndividual {
   }
 
   public EquityStatementIndividual totalGrossEquity(Float totalGrossEquity) {
+
+    
+    
     
     
     this.totalGrossEquity = totalGrossEquity;
@@ -85,12 +89,18 @@ public class EquityStatementIndividual {
 
 
   public void setTotalGrossEquity(Float totalGrossEquity) {
+
+    
+    
     
     this.totalGrossEquity = totalGrossEquity;
   }
 
 
   public EquityStatementIndividual totalDebts(Float totalDebts) {
+
+    
+    
     
     
     this.totalDebts = totalDebts;
@@ -110,12 +120,18 @@ public class EquityStatementIndividual {
 
 
   public void setTotalDebts(Float totalDebts) {
+
+    
+    
     
     this.totalDebts = totalDebts;
   }
 
 
   public EquityStatementIndividual totalNetEquity(Float totalNetEquity) {
+
+    
+    
     
     
     this.totalNetEquity = totalNetEquity;
@@ -135,6 +151,9 @@ public class EquityStatementIndividual {
 
 
   public void setTotalNetEquity(Float totalNetEquity) {
+
+    
+    
     
     this.totalNetEquity = totalNetEquity;
   }

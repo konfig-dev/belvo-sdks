@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -72,6 +73,9 @@ public class BeneficiaryBankAccountPse {
   }
 
   public BeneficiaryBankAccountPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -91,12 +95,18 @@ public class BeneficiaryBankAccountPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public BeneficiaryBankAccountPse institution(UUID institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -116,12 +126,18 @@ public class BeneficiaryBankAccountPse {
 
 
   public void setInstitution(UUID institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public BeneficiaryBankAccountPse number(String number) {
+
+    
+    
     
     
     this.number = number;
@@ -141,12 +157,18 @@ public class BeneficiaryBankAccountPse {
 
 
   public void setNumber(String number) {
+
+    
+    
     
     this.number = number;
   }
 
 
   public BeneficiaryBankAccountPse holder(HolderBusinessResponsePse holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -166,6 +188,9 @@ public class BeneficiaryBankAccountPse {
 
 
   public void setHolder(HolderBusinessResponsePse holder) {
+
+    
+    
     
     this.holder = holder;
   }

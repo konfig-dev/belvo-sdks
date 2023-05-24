@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -70,6 +71,9 @@ public class TokenRequiredResponseTokenGenerationData {
   }
 
   public TokenRequiredResponseTokenGenerationData instructions(String instructions) {
+
+    
+    
     
     
     this.instructions = instructions;
@@ -89,12 +93,18 @@ public class TokenRequiredResponseTokenGenerationData {
 
 
   public void setInstructions(String instructions) {
+
+    
+    
     
     this.instructions = instructions;
   }
 
 
   public TokenRequiredResponseTokenGenerationData type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -114,12 +124,18 @@ public class TokenRequiredResponseTokenGenerationData {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public TokenRequiredResponseTokenGenerationData value(String value) {
+
+    
+    
     
     
     this.value = value;
@@ -139,12 +155,18 @@ public class TokenRequiredResponseTokenGenerationData {
 
 
   public void setValue(String value) {
+
+    
+    
     
     this.value = value;
   }
 
 
   public TokenRequiredResponseTokenGenerationData expectsUserInput(Boolean expectsUserInput) {
+
+    
+    
     
     
     this.expectsUserInput = expectsUserInput;
@@ -164,6 +186,9 @@ public class TokenRequiredResponseTokenGenerationData {
 
 
   public void setExpectsUserInput(Boolean expectsUserInput) {
+
+    
+    
     
     this.expectsUserInput = expectsUserInput;
   }

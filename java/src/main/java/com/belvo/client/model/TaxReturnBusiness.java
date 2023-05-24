@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -117,6 +118,9 @@ public class TaxReturnBusiness {
   }
 
   public TaxReturnBusiness id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -136,12 +140,18 @@ public class TaxReturnBusiness {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxReturnBusiness collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -161,12 +171,18 @@ public class TaxReturnBusiness {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxReturnBusiness createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -186,12 +202,18 @@ public class TaxReturnBusiness {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxReturnBusiness informacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     
     this.informacionGeneral = informacionGeneral;
@@ -211,12 +233,18 @@ public class TaxReturnBusiness {
 
 
   public void setInformacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     this.informacionGeneral = informacionGeneral;
   }
 
 
   public TaxReturnBusiness datosAdicionales(Object datosAdicionales) {
+
+    
+    
     
     
     this.datosAdicionales = datosAdicionales;
@@ -236,12 +264,18 @@ public class TaxReturnBusiness {
 
 
   public void setDatosAdicionales(Object datosAdicionales) {
+
+    
+    
     
     this.datosAdicionales = datosAdicionales;
   }
 
 
   public TaxReturnBusiness estadoResultados(Object estadoResultados) {
+
+    
+    
     
     
     this.estadoResultados = estadoResultados;
@@ -261,12 +295,18 @@ public class TaxReturnBusiness {
 
 
   public void setEstadoResultados(Object estadoResultados) {
+
+    
+    
     
     this.estadoResultados = estadoResultados;
   }
 
 
   public TaxReturnBusiness estadoPosicionFinancieraBalance(Object estadoPosicionFinancieraBalance) {
+
+    
+    
     
     
     this.estadoPosicionFinancieraBalance = estadoPosicionFinancieraBalance;
@@ -286,12 +326,18 @@ public class TaxReturnBusiness {
 
 
   public void setEstadoPosicionFinancieraBalance(Object estadoPosicionFinancieraBalance) {
+
+    
+    
     
     this.estadoPosicionFinancieraBalance = estadoPosicionFinancieraBalance;
   }
 
 
   public TaxReturnBusiness conciliacionEntreResultadoContableFiscal(Object conciliacionEntreResultadoContableFiscal) {
+
+    
+    
     
     
     this.conciliacionEntreResultadoContableFiscal = conciliacionEntreResultadoContableFiscal;
@@ -311,12 +357,18 @@ public class TaxReturnBusiness {
 
 
   public void setConciliacionEntreResultadoContableFiscal(Object conciliacionEntreResultadoContableFiscal) {
+
+    
+    
     
     this.conciliacionEntreResultadoContableFiscal = conciliacionEntreResultadoContableFiscal;
   }
 
 
   public TaxReturnBusiness deduccionesAutorizadas(Object deduccionesAutorizadas) {
+
+    
+    
     
     
     this.deduccionesAutorizadas = deduccionesAutorizadas;
@@ -336,12 +388,18 @@ public class TaxReturnBusiness {
 
 
   public void setDeduccionesAutorizadas(Object deduccionesAutorizadas) {
+
+    
+    
     
     this.deduccionesAutorizadas = deduccionesAutorizadas;
   }
 
 
   public TaxReturnBusiness cifrasCierreEjercicio(Object cifrasCierreEjercicio) {
+
+    
+    
     
     
     this.cifrasCierreEjercicio = cifrasCierreEjercicio;
@@ -361,12 +419,18 @@ public class TaxReturnBusiness {
 
 
   public void setCifrasCierreEjercicio(Object cifrasCierreEjercicio) {
+
+    
+    
     
     this.cifrasCierreEjercicio = cifrasCierreEjercicio;
   }
 
 
   public TaxReturnBusiness determinacionDelImpuestoSobreLaRenta(Object determinacionDelImpuestoSobreLaRenta) {
+
+    
+    
     
     
     this.determinacionDelImpuestoSobreLaRenta = determinacionDelImpuestoSobreLaRenta;
@@ -386,12 +450,18 @@ public class TaxReturnBusiness {
 
 
   public void setDeterminacionDelImpuestoSobreLaRenta(Object determinacionDelImpuestoSobreLaRenta) {
+
+    
+    
     
     this.determinacionDelImpuestoSobreLaRenta = determinacionDelImpuestoSobreLaRenta;
   }
 
 
   public TaxReturnBusiness dividendosOUtilidadesDistribuidos(Object dividendosOUtilidadesDistribuidos) {
+
+    
+    
     
     
     this.dividendosOUtilidadesDistribuidos = dividendosOUtilidadesDistribuidos;
@@ -411,12 +481,18 @@ public class TaxReturnBusiness {
 
 
   public void setDividendosOUtilidadesDistribuidos(Object dividendosOUtilidadesDistribuidos) {
+
+    
+    
     
     this.dividendosOUtilidadesDistribuidos = dividendosOUtilidadesDistribuidos;
   }
 
 
   public TaxReturnBusiness detallePagoR1IsrPersonasMorales(Object detallePagoR1IsrPersonasMorales) {
+
+    
+    
     
     
     this.detallePagoR1IsrPersonasMorales = detallePagoR1IsrPersonasMorales;
@@ -436,12 +512,18 @@ public class TaxReturnBusiness {
 
 
   public void setDetallePagoR1IsrPersonasMorales(Object detallePagoR1IsrPersonasMorales) {
+
+    
+    
     
     this.detallePagoR1IsrPersonasMorales = detallePagoR1IsrPersonasMorales;
   }
 
 
   public TaxReturnBusiness pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -453,7 +535,7 @@ public class TaxReturnBusiness {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@5fbe3a19", required = true, value = "Tax return PDF as a binary.")
+  @ApiModelProperty(example = "[B@2cefec7e", required = true, value = "Tax return PDF as a binary.")
 
   public File getPdf() {
     return pdf;
@@ -461,12 +543,18 @@ public class TaxReturnBusiness {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }
 
 
   public TaxReturnBusiness receiptPdf(File receiptPdf) {
+
+    
+    
     
     
     this.receiptPdf = receiptPdf;
@@ -478,7 +566,7 @@ public class TaxReturnBusiness {
    * @return receiptPdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@129c869d", required = true, value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
+  @ApiModelProperty(example = "[B@6be8b1ea", required = true, value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
 
   public File getReceiptPdf() {
     return receiptPdf;
@@ -486,6 +574,9 @@ public class TaxReturnBusiness {
 
 
   public void setReceiptPdf(File receiptPdf) {
+
+    
+    
     
     this.receiptPdf = receiptPdf;
   }

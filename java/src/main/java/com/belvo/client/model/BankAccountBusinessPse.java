@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -92,6 +93,9 @@ public class BankAccountBusinessPse {
   }
 
   public BankAccountBusinessPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -111,12 +115,18 @@ public class BankAccountBusinessPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public BankAccountBusinessPse createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -136,12 +146,18 @@ public class BankAccountBusinessPse {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public BankAccountBusinessPse createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -161,12 +177,18 @@ public class BankAccountBusinessPse {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public BankAccountBusinessPse customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -186,12 +208,18 @@ public class BankAccountBusinessPse {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public BankAccountBusinessPse institution(UUID institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -211,12 +239,18 @@ public class BankAccountBusinessPse {
 
 
   public void setInstitution(UUID institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public BankAccountBusinessPse number(String number) {
+
+    
+    
     
     
     this.number = number;
@@ -236,12 +270,18 @@ public class BankAccountBusinessPse {
 
 
   public void setNumber(String number) {
+
+    
+    
     
     this.number = number;
   }
 
 
   public BankAccountBusinessPse holder(HolderBusinessResponsePse holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -261,12 +301,18 @@ public class BankAccountBusinessPse {
 
 
   public void setHolder(HolderBusinessResponsePse holder) {
+
+    
+    
     
     this.holder = holder;
   }
 
 
   public BankAccountBusinessPse details(Object details) {
+
+    
+    
     
     
     this.details = details;
@@ -286,12 +332,18 @@ public class BankAccountBusinessPse {
 
 
   public void setDetails(Object details) {
+
+    
+    
     
     this.details = details;
   }
 
 
   public BankAccountBusinessPse metadata(Object metadata) {
+
+    
+    
     
     
     this.metadata = metadata;
@@ -311,6 +363,9 @@ public class BankAccountBusinessPse {
 
 
   public void setMetadata(Object metadata) {
+
+    
+    
     
     this.metadata = metadata;
   }

@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -106,6 +107,9 @@ public class InvoicesPaymentsSat {
   }
 
   public InvoicesPaymentsSat date(OffsetDateTime date) {
+
+    
+    
     
     
     this.date = date;
@@ -125,12 +129,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setDate(OffsetDateTime date) {
+
+    
+    
     
     this.date = date;
   }
 
 
   public InvoicesPaymentsSat paymentType(String paymentType) {
+
+    
+    
     
     
     this.paymentType = paymentType;
@@ -150,12 +160,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setPaymentType(String paymentType) {
+
+    
+    
     
     this.paymentType = paymentType;
   }
 
 
   public InvoicesPaymentsSat currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -175,12 +191,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvoicesPaymentsSat exchangeRate(String exchangeRate) {
+
+    
+    
     
     
     this.exchangeRate = exchangeRate;
@@ -200,12 +222,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setExchangeRate(String exchangeRate) {
+
+    
+    
     
     this.exchangeRate = exchangeRate;
   }
 
 
   public InvoicesPaymentsSat amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -225,12 +253,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public InvoicesPaymentsSat operationNumber(String operationNumber) {
+
+    
+    
     
     
     this.operationNumber = operationNumber;
@@ -250,12 +284,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setOperationNumber(String operationNumber) {
+
+    
+    
     
     this.operationNumber = operationNumber;
   }
 
 
   public InvoicesPaymentsSat beneficiaryRfc(String beneficiaryRfc) {
+
+    
+    
     
     
     this.beneficiaryRfc = beneficiaryRfc;
@@ -275,12 +315,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setBeneficiaryRfc(String beneficiaryRfc) {
+
+    
+    
     
     this.beneficiaryRfc = beneficiaryRfc;
   }
 
 
   public InvoicesPaymentsSat beneficiaryAccountNumber(String beneficiaryAccountNumber) {
+
+    
+    
     
     
     this.beneficiaryAccountNumber = beneficiaryAccountNumber;
@@ -300,12 +346,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setBeneficiaryAccountNumber(String beneficiaryAccountNumber) {
+
+    
+    
     
     this.beneficiaryAccountNumber = beneficiaryAccountNumber;
   }
 
 
   public InvoicesPaymentsSat payerRfc(String payerRfc) {
+
+    
+    
     
     
     this.payerRfc = payerRfc;
@@ -325,12 +377,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setPayerRfc(String payerRfc) {
+
+    
+    
     
     this.payerRfc = payerRfc;
   }
 
 
   public InvoicesPaymentsSat payerAccountNumber(String payerAccountNumber) {
+
+    
+    
     
     
     this.payerAccountNumber = payerAccountNumber;
@@ -350,12 +408,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setPayerAccountNumber(String payerAccountNumber) {
+
+    
+    
     
     this.payerAccountNumber = payerAccountNumber;
   }
 
 
   public InvoicesPaymentsSat payerBankName(String payerBankName) {
+
+    
+    
     
     
     this.payerBankName = payerBankName;
@@ -375,12 +439,18 @@ public class InvoicesPaymentsSat {
 
 
   public void setPayerBankName(String payerBankName) {
+
+    
+    
     
     this.payerBankName = payerBankName;
   }
 
 
   public InvoicesPaymentsSat relatedDocuments(List<InvoicesPaymentsRelatedDocumentsSat> relatedDocuments) {
+
+    
+    
     
     
     this.relatedDocuments = relatedDocuments;
@@ -405,6 +475,9 @@ public class InvoicesPaymentsSat {
 
 
   public void setRelatedDocuments(List<InvoicesPaymentsRelatedDocumentsSat> relatedDocuments) {
+
+    
+    
     
     this.relatedDocuments = relatedDocuments;
   }

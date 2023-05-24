@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -106,6 +107,9 @@ public class CategorizationBodyRequest {
   }
 
   public CategorizationBodyRequest description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -125,12 +129,18 @@ public class CategorizationBodyRequest {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public CategorizationBodyRequest transactionId(String transactionId) {
+
+    
+    
     
     
     this.transactionId = transactionId;
@@ -150,12 +160,18 @@ public class CategorizationBodyRequest {
 
 
   public void setTransactionId(String transactionId) {
+
+    
+    
     
     this.transactionId = transactionId;
   }
 
 
   public CategorizationBodyRequest accountHolderType(EnumCategorizationAccountHolderType accountHolderType) {
+
+    
+    
     
     
     this.accountHolderType = accountHolderType;
@@ -175,12 +191,18 @@ public class CategorizationBodyRequest {
 
 
   public void setAccountHolderType(EnumCategorizationAccountHolderType accountHolderType) {
+
+    
+    
     
     this.accountHolderType = accountHolderType;
   }
 
 
   public CategorizationBodyRequest accountHolderId(String accountHolderId) {
+
+    
+    
     
     
     this.accountHolderId = accountHolderId;
@@ -200,12 +222,18 @@ public class CategorizationBodyRequest {
 
 
   public void setAccountHolderId(String accountHolderId) {
+
+    
+    
     
     this.accountHolderId = accountHolderId;
   }
 
 
   public CategorizationBodyRequest accountId(String accountId) {
+
+    
+    
     
     
     this.accountId = accountId;
@@ -225,12 +253,18 @@ public class CategorizationBodyRequest {
 
 
   public void setAccountId(String accountId) {
+
+    
+    
     
     this.accountId = accountId;
   }
 
 
   public CategorizationBodyRequest accountCategory(EnumCategorizationAccountCategory accountCategory) {
+
+    
+    
     
     
     this.accountCategory = accountCategory;
@@ -250,12 +284,18 @@ public class CategorizationBodyRequest {
 
 
   public void setAccountCategory(EnumCategorizationAccountCategory accountCategory) {
+
+    
+    
     
     this.accountCategory = accountCategory;
   }
 
 
   public CategorizationBodyRequest valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -275,12 +315,18 @@ public class CategorizationBodyRequest {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public CategorizationBodyRequest type(EnumCategorizationTransactionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -300,12 +346,18 @@ public class CategorizationBodyRequest {
 
 
   public void setType(EnumCategorizationTransactionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public CategorizationBodyRequest amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -325,12 +377,18 @@ public class CategorizationBodyRequest {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public CategorizationBodyRequest currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -350,12 +408,18 @@ public class CategorizationBodyRequest {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public CategorizationBodyRequest institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -375,12 +439,18 @@ public class CategorizationBodyRequest {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public CategorizationBodyRequest mcc(Integer mcc) {
+
+    
+    
     
     
     this.mcc = mcc;
@@ -400,6 +470,9 @@ public class CategorizationBodyRequest {
 
 
   public void setMcc(Integer mcc) {
+
+    
+    
     
     this.mcc = mcc;
   }

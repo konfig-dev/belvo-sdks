@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -74,6 +75,9 @@ public class AnnualCostsAndDeductionsStatementBusiness {
   }
 
   public AnnualCostsAndDeductionsStatementBusiness costs(Float costs) {
+
+    
+    
     
     
     this.costs = costs;
@@ -93,12 +97,18 @@ public class AnnualCostsAndDeductionsStatementBusiness {
 
 
   public void setCosts(Float costs) {
+
+    
+    
     
     this.costs = costs;
   }
 
 
   public AnnualCostsAndDeductionsStatementBusiness administrationExpenses(Float administrationExpenses) {
+
+    
+    
     
     
     this.administrationExpenses = administrationExpenses;
@@ -118,12 +128,18 @@ public class AnnualCostsAndDeductionsStatementBusiness {
 
 
   public void setAdministrationExpenses(Float administrationExpenses) {
+
+    
+    
     
     this.administrationExpenses = administrationExpenses;
   }
 
 
   public AnnualCostsAndDeductionsStatementBusiness distributionAndSalesExpenses(Float distributionAndSalesExpenses) {
+
+    
+    
     
     
     this.distributionAndSalesExpenses = distributionAndSalesExpenses;
@@ -143,12 +159,18 @@ public class AnnualCostsAndDeductionsStatementBusiness {
 
 
   public void setDistributionAndSalesExpenses(Float distributionAndSalesExpenses) {
+
+    
+    
     
     this.distributionAndSalesExpenses = distributionAndSalesExpenses;
   }
 
 
   public AnnualCostsAndDeductionsStatementBusiness financialExpenses(Float financialExpenses) {
+
+    
+    
     
     
     this.financialExpenses = financialExpenses;
@@ -168,12 +190,18 @@ public class AnnualCostsAndDeductionsStatementBusiness {
 
 
   public void setFinancialExpenses(Float financialExpenses) {
+
+    
+    
     
     this.financialExpenses = financialExpenses;
   }
 
 
   public AnnualCostsAndDeductionsStatementBusiness totalCostsAndDeductibleExpenses(Float totalCostsAndDeductibleExpenses) {
+
+    
+    
     
     
     this.totalCostsAndDeductibleExpenses = totalCostsAndDeductibleExpenses;
@@ -193,6 +221,9 @@ public class AnnualCostsAndDeductionsStatementBusiness {
 
 
   public void setTotalCostsAndDeductibleExpenses(Float totalCostsAndDeductibleExpenses) {
+
+    
+    
     
     this.totalCostsAndDeductibleExpenses = totalCostsAndDeductibleExpenses;
   }

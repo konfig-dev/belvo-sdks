@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -74,6 +75,9 @@ public class ReceivableTransactionRequest {
   }
 
   public ReceivableTransactionRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -93,12 +97,18 @@ public class ReceivableTransactionRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public ReceivableTransactionRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -118,12 +128,18 @@ public class ReceivableTransactionRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public ReceivableTransactionRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -143,12 +159,18 @@ public class ReceivableTransactionRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public ReceivableTransactionRequest token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -168,12 +190,18 @@ public class ReceivableTransactionRequest {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public ReceivableTransactionRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -193,6 +221,9 @@ public class ReceivableTransactionRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -78,6 +79,9 @@ public class BalancesRequest {
   }
 
   public BalancesRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -97,12 +101,18 @@ public class BalancesRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public BalancesRequest account(UUID account) {
+
+    
+    
     
     
     this.account = account;
@@ -122,12 +132,18 @@ public class BalancesRequest {
 
 
   public void setAccount(UUID account) {
+
+    
+    
     
     this.account = account;
   }
 
 
   public BalancesRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -147,12 +163,18 @@ public class BalancesRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public BalancesRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -172,12 +194,18 @@ public class BalancesRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public BalancesRequest token(String token) {
+
+    
+    
     
     
     this.token = token;
@@ -197,12 +225,18 @@ public class BalancesRequest {
 
 
   public void setToken(String token) {
+
+    
+    
     
     this.token = token;
   }
 
 
   public BalancesRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -222,6 +256,9 @@ public class BalancesRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

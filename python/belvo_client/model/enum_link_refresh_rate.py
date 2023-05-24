@@ -53,7 +53,7 @@ We return one of the following enum values:
             "24h": "_24H",
             "7d": "_7D",
             "30d": "_30D",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

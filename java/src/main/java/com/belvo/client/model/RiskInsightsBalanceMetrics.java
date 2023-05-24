@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -110,6 +111,9 @@ public class RiskInsightsBalanceMetrics {
   }
 
   public RiskInsightsBalanceMetrics minBalance1w(Float minBalance1w) {
+
+    
+    
     
     
     this.minBalance1w = minBalance1w;
@@ -129,12 +133,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMinBalance1w(Float minBalance1w) {
+
+    
+    
     
     this.minBalance1w = minBalance1w;
   }
 
 
   public RiskInsightsBalanceMetrics minBalance1m(Float minBalance1m) {
+
+    
+    
     
     
     this.minBalance1m = minBalance1m;
@@ -154,12 +164,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMinBalance1m(Float minBalance1m) {
+
+    
+    
     
     this.minBalance1m = minBalance1m;
   }
 
 
   public RiskInsightsBalanceMetrics minBalance3m(Float minBalance3m) {
+
+    
+    
     
     
     this.minBalance3m = minBalance3m;
@@ -179,12 +195,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMinBalance3m(Float minBalance3m) {
+
+    
+    
     
     this.minBalance3m = minBalance3m;
   }
 
 
   public RiskInsightsBalanceMetrics maxBalance1w(Float maxBalance1w) {
+
+    
+    
     
     
     this.maxBalance1w = maxBalance1w;
@@ -204,12 +226,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMaxBalance1w(Float maxBalance1w) {
+
+    
+    
     
     this.maxBalance1w = maxBalance1w;
   }
 
 
   public RiskInsightsBalanceMetrics maxBalance1m(Float maxBalance1m) {
+
+    
+    
     
     
     this.maxBalance1m = maxBalance1m;
@@ -229,12 +257,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMaxBalance1m(Float maxBalance1m) {
+
+    
+    
     
     this.maxBalance1m = maxBalance1m;
   }
 
 
   public RiskInsightsBalanceMetrics maxBalance3m(Float maxBalance3m) {
+
+    
+    
     
     
     this.maxBalance3m = maxBalance3m;
@@ -254,12 +288,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setMaxBalance3m(Float maxBalance3m) {
+
+    
+    
     
     this.maxBalance3m = maxBalance3m;
   }
 
 
   public RiskInsightsBalanceMetrics closingBalance(Float closingBalance) {
+
+    
+    
     
     
     this.closingBalance = closingBalance;
@@ -279,12 +319,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setClosingBalance(Float closingBalance) {
+
+    
+    
     
     this.closingBalance = closingBalance;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelow01w(Integer daysBalanceBelow01w) {
+
+    
+    
     
     
     this.daysBalanceBelow01w = daysBalanceBelow01w;
@@ -304,12 +350,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelow01w(Integer daysBalanceBelow01w) {
+
+    
+    
     
     this.daysBalanceBelow01w = daysBalanceBelow01w;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelow01m(Integer daysBalanceBelow01m) {
+
+    
+    
     
     
     this.daysBalanceBelow01m = daysBalanceBelow01m;
@@ -329,12 +381,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelow01m(Integer daysBalanceBelow01m) {
+
+    
+    
     
     this.daysBalanceBelow01m = daysBalanceBelow01m;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelow03m(Integer daysBalanceBelow03m) {
+
+    
+    
     
     
     this.daysBalanceBelow03m = daysBalanceBelow03m;
@@ -354,12 +412,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelow03m(Integer daysBalanceBelow03m) {
+
+    
+    
     
     this.daysBalanceBelow03m = daysBalanceBelow03m;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelowX1w(Integer daysBalanceBelowX1w) {
+
+    
+    
     
     
     this.daysBalanceBelowX1w = daysBalanceBelowX1w;
@@ -379,12 +443,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelowX1w(Integer daysBalanceBelowX1w) {
+
+    
+    
     
     this.daysBalanceBelowX1w = daysBalanceBelowX1w;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelowX1m(Integer daysBalanceBelowX1m) {
+
+    
+    
     
     
     this.daysBalanceBelowX1m = daysBalanceBelowX1m;
@@ -404,12 +474,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelowX1m(Integer daysBalanceBelowX1m) {
+
+    
+    
     
     this.daysBalanceBelowX1m = daysBalanceBelowX1m;
   }
 
 
   public RiskInsightsBalanceMetrics daysBalanceBelowX3m(Integer daysBalanceBelowX3m) {
+
+    
+    
     
     
     this.daysBalanceBelowX3m = daysBalanceBelowX3m;
@@ -429,12 +505,18 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setDaysBalanceBelowX3m(Integer daysBalanceBelowX3m) {
+
+    
+    
     
     this.daysBalanceBelowX3m = daysBalanceBelowX3m;
   }
 
 
   public RiskInsightsBalanceMetrics balanceThresholdX(Float balanceThresholdX) {
+
+    
+    
     
     
     this.balanceThresholdX = balanceThresholdX;
@@ -454,6 +536,9 @@ public class RiskInsightsBalanceMetrics {
 
 
   public void setBalanceThresholdX(Float balanceThresholdX) {
+
+    
+    
     
     this.balanceThresholdX = balanceThresholdX;
   }

@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -79,6 +80,9 @@ public class TaxReturnsMonthlyRequest {
   }
 
   public TaxReturnsMonthlyRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -98,12 +102,18 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxReturnsMonthlyRequest attachPdf(Boolean attachPdf) {
+
+    
+    
     
     
     this.attachPdf = attachPdf;
@@ -123,12 +133,18 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setAttachPdf(Boolean attachPdf) {
+
+    
+    
     
     this.attachPdf = attachPdf;
   }
 
 
   public TaxReturnsMonthlyRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -148,12 +164,18 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }
 
 
   public TaxReturnsMonthlyRequest type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -173,12 +195,18 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public TaxReturnsMonthlyRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -198,12 +226,18 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public TaxReturnsMonthlyRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -223,6 +257,9 @@ public class TaxReturnsMonthlyRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }

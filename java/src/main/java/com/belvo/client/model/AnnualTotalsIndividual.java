@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -70,6 +71,9 @@ public class AnnualTotalsIndividual {
   }
 
   public AnnualTotalsIndividual totalExemptIncome(Float totalExemptIncome) {
+
+    
+    
     
     
     this.totalExemptIncome = totalExemptIncome;
@@ -89,12 +93,18 @@ public class AnnualTotalsIndividual {
 
 
   public void setTotalExemptIncome(Float totalExemptIncome) {
+
+    
+    
     
     this.totalExemptIncome = totalExemptIncome;
   }
 
 
   public AnnualTotalsIndividual totalApplicableDeductions(Float totalApplicableDeductions) {
+
+    
+    
     
     
     this.totalApplicableDeductions = totalApplicableDeductions;
@@ -114,12 +124,18 @@ public class AnnualTotalsIndividual {
 
 
   public void setTotalApplicableDeductions(Float totalApplicableDeductions) {
+
+    
+    
     
     this.totalApplicableDeductions = totalApplicableDeductions;
   }
 
 
   public AnnualTotalsIndividual totalExemptionsAndDeductions(Float totalExemptionsAndDeductions) {
+
+    
+    
     
     
     this.totalExemptionsAndDeductions = totalExemptionsAndDeductions;
@@ -139,12 +155,18 @@ public class AnnualTotalsIndividual {
 
 
   public void setTotalExemptionsAndDeductions(Float totalExemptionsAndDeductions) {
+
+    
+    
     
     this.totalExemptionsAndDeductions = totalExemptionsAndDeductions;
   }
 
 
   public AnnualTotalsIndividual totalOrdinaryNetIncome(Float totalOrdinaryNetIncome) {
+
+    
+    
     
     
     this.totalOrdinaryNetIncome = totalOrdinaryNetIncome;
@@ -164,6 +186,9 @@ public class AnnualTotalsIndividual {
 
 
   public void setTotalOrdinaryNetIncome(Float totalOrdinaryNetIncome) {
+
+    
+    
     
     this.totalOrdinaryNetIncome = totalOrdinaryNetIncome;
   }

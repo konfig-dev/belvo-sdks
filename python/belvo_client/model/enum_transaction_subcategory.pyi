@@ -202,7 +202,7 @@ We return one of the following enum values:
             "Public Transit": "PUBLIC_TRANSIT",
             "Taxis & Rideshares": "TAXIS__RIDESHARES",
             "Other": "OTHER",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

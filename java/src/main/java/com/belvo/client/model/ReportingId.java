@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class ReportingId {
   }
 
   public ReportingId reportingType(String reportingType) {
+
+    
+    
     
     
     this.reportingType = reportingType;
@@ -81,12 +85,18 @@ public class ReportingId {
 
 
   public void setReportingType(String reportingType) {
+
+    
+    
     
     this.reportingType = reportingType;
   }
 
 
   public ReportingId reportingValue(String reportingValue) {
+
+    
+    
     
     
     this.reportingValue = reportingValue;
@@ -106,6 +116,9 @@ public class ReportingId {
 
 
   public void setReportingValue(String reportingValue) {
+
+    
+    
     
     this.reportingValue = reportingValue;
   }

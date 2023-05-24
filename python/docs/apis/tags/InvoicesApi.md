@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/invoices | Retrieve invoices for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> InvoicesCompleteRequestResponse complete_request(patch_body)
 
 Complete an invoices request
 
@@ -23,32 +21,26 @@ Used to resume an Invoice retrieve session that was paused because an MFA token 
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete an invoices request
     complete_request_response = belvo.invoices.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -216,8 +208,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete an invoice
 
@@ -227,24 +217,21 @@ Delete a specific invoice from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete an invoice
     belvo.invoices.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -330,8 +317,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> InvoicesGetDetailsResponse get_details(id)
 
 Get an invoice&#x27;s details
 
@@ -341,28 +326,23 @@ Get the details of a specific invoice.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get an invoice's details
     get_details_response = belvo.invoices.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -479,8 +459,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> InvoicesResponsePaginatedResponse list()
 
 List all invoices
 
@@ -490,54 +468,51 @@ Get a paginated list of all existing invoices in your Belvo account. By default,
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all invoices
     list_response = belvo.invoices.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'id': "73694155-b871-41ec-94e3-37d17ff62b5d",
-            'id__in': "73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",
-            'invoice_date': "2022-05-05",
-            'invoice_date__lt': "2022-03-02",
-            'invoice_date__lte': "2022-03-01",
-            'invoice_date__gt': "2022-05-06",
-            'invoice_date__gte': "2022-05-04",
-            'invoice_date__range': "2022-03-01,2022-05-06",
-            'invoice_identification': "862B9918-3K6H-4E0B-NAI9-2BE2D833B840",
-            'invoice_identification__in': "862B9918-3K6H-4E0B-NAI9-2BE2D833B840,992B9918-3G6H-4E0B-DAI9-2BE2D833B833",
-            'link__in': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",
-            'status': "Vigente",
-            'status__in': "Vigente,Cancelado",
-            'total_amount': "1000.00",
-            'total_amount__lt': "540.00",
-            'total_amount__lte': "541.00",
-            'total_amount__gt': "520.00",
-            'total_amount__gte': "519.00",
-            'total_amount__range': "519.00,541.00",
-            'type': "OUTFLOW",
-            'type__in': "OUTFLOW,INFLOW",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        id="73694155-b871-41ec-94e3-37d17ff62b5d",  # optional
+        id__in="73694155-b871-41ec-94e3-37d17ff62b5d,40968d42-7d89-49e3-9931-78baa8e0544e",  # optional
+        invoice_date="2022-05-05",  # optional
+        invoice_date__lt="2022-03-02",  # optional
+        invoice_date__lte="2022-03-01",  # optional
+        invoice_date__gt="2022-05-06",  # optional
+        invoice_date__gte="2022-05-04",  # optional
+        invoice_date__range="2022-03-01,2022-05-06",  # optional
+        invoice_identification="862B9918-3K6H-4E0B-NAI9-2BE2D833B840",  # optional
+        invoice_identification__in="862B9918-3K6H-4E0B-NAI9-2BE2D833B840,992B9918-3G6H-4E0B-DAI9-2BE2D833B833",  # optional
+        link__in="8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",  # optional
+        status="Vigente",  # optional
+        status__in="Vigente,Cancelado",  # optional
+        total_amount="1000.00",  # optional
+        total_amount__lt="540.00",  # optional
+        total_amount__lte="541.00",  # optional
+        total_amount__gt="520.00",  # optional
+        total_amount__gte="519.00",  # optional
+        total_amount__range="519.00,541.00",  # optional
+        type="OUTFLOW",  # optional
+        type__in="OUTFLOW,INFLOW",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -861,8 +836,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> InvoicesRetrieveResponse retrieve(invoices_request)
 
 Retrieve invoices for a link
 
@@ -872,34 +845,28 @@ Retrieve invoice information from a specific fiscal link. <div style=\"backgroun
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "d4617561-1c01-4b2f-83b6-a594f7b3bc57",
-        "date_from": "2020-01-01",
-        "date_to": "2020-02-01",
-        "type": "INFLOW",
-        "attach_xml": False,
-        "save_data": True,
-    }
 try:
     # Retrieve invoices for a link
     retrieve_response = belvo.invoices.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="d4617561-1c01-4b2f-83b6-a594f7b3bc57",  # required
+        date_from="2020-01-01",  # required
+        date_to="2020-02-01",  # required
+        type="INFLOW",  # required
+        attach_xml=False,  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.headers)

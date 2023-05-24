@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._INVESTMENTS_PORTFOLIOS_ID
+path = PathValues.INVESTMENTS_PORTFOLIOS_ID

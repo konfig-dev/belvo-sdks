@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -110,6 +111,9 @@ public class InvoiceDetailSat {
   }
 
   public InvoiceDetailSat description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -129,12 +133,18 @@ public class InvoiceDetailSat {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public InvoiceDetailSat productIdentification(String productIdentification) {
+
+    
+    
     
     
     this.productIdentification = productIdentification;
@@ -154,12 +164,18 @@ public class InvoiceDetailSat {
 
 
   public void setProductIdentification(String productIdentification) {
+
+    
+    
     
     this.productIdentification = productIdentification;
   }
 
 
   public InvoiceDetailSat quantity(Integer quantity) {
+
+    
+    
     
     
     this.quantity = quantity;
@@ -179,12 +195,18 @@ public class InvoiceDetailSat {
 
 
   public void setQuantity(Integer quantity) {
+
+    
+    
     
     this.quantity = quantity;
   }
 
 
   public InvoiceDetailSat unitCode(String unitCode) {
+
+    
+    
     
     
     this.unitCode = unitCode;
@@ -204,12 +226,18 @@ public class InvoiceDetailSat {
 
 
   public void setUnitCode(String unitCode) {
+
+    
+    
     
     this.unitCode = unitCode;
   }
 
 
   public InvoiceDetailSat unitDescription(String unitDescription) {
+
+    
+    
     
     
     this.unitDescription = unitDescription;
@@ -229,12 +257,18 @@ public class InvoiceDetailSat {
 
 
   public void setUnitDescription(String unitDescription) {
+
+    
+    
     
     this.unitDescription = unitDescription;
   }
 
 
   public InvoiceDetailSat unitAmount(Float unitAmount) {
+
+    
+    
     
     
     this.unitAmount = unitAmount;
@@ -254,12 +288,18 @@ public class InvoiceDetailSat {
 
 
   public void setUnitAmount(Float unitAmount) {
+
+    
+    
     
     this.unitAmount = unitAmount;
   }
 
 
   public InvoiceDetailSat taxType(String taxType) {
+
+    
+    
     
     
     this.taxType = taxType;
@@ -279,12 +319,18 @@ public class InvoiceDetailSat {
 
 
   public void setTaxType(String taxType) {
+
+    
+    
     
     this.taxType = taxType;
   }
 
 
   public InvoiceDetailSat preTaxAmount(Float preTaxAmount) {
+
+    
+    
     
     
     this.preTaxAmount = preTaxAmount;
@@ -304,12 +350,18 @@ public class InvoiceDetailSat {
 
 
   public void setPreTaxAmount(Float preTaxAmount) {
+
+    
+    
     
     this.preTaxAmount = preTaxAmount;
   }
 
 
   public InvoiceDetailSat taxPercentage(Float taxPercentage) {
+
+    
+    
     
     
     this.taxPercentage = taxPercentage;
@@ -329,12 +381,18 @@ public class InvoiceDetailSat {
 
 
   public void setTaxPercentage(Float taxPercentage) {
+
+    
+    
     
     this.taxPercentage = taxPercentage;
   }
 
 
   public InvoiceDetailSat taxAmount(Float taxAmount) {
+
+    
+    
     
     
     this.taxAmount = taxAmount;
@@ -354,12 +412,18 @@ public class InvoiceDetailSat {
 
 
   public void setTaxAmount(Float taxAmount) {
+
+    
+    
     
     this.taxAmount = taxAmount;
   }
 
 
   public InvoiceDetailSat totalAmount(Float totalAmount) {
+
+    
+    
     
     
     this.totalAmount = totalAmount;
@@ -379,12 +443,18 @@ public class InvoiceDetailSat {
 
 
   public void setTotalAmount(Float totalAmount) {
+
+    
+    
     
     this.totalAmount = totalAmount;
   }
 
 
   public InvoiceDetailSat retainedTaxes(List<InvoiceDetailRetainedTaxSat> retainedTaxes) {
+
+    
+    
     
     
     this.retainedTaxes = retainedTaxes;
@@ -412,12 +482,18 @@ public class InvoiceDetailSat {
 
 
   public void setRetainedTaxes(List<InvoiceDetailRetainedTaxSat> retainedTaxes) {
+
+    
+    
     
     this.retainedTaxes = retainedTaxes;
   }
 
 
   public InvoiceDetailSat collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -437,6 +513,9 @@ public class InvoiceDetailSat {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }

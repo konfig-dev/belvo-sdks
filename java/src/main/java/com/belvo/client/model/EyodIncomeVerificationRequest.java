@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -82,6 +83,9 @@ public class EyodIncomeVerificationRequest {
   }
 
   public EyodIncomeVerificationRequest language(String language) {
+
+    
+    
     
     
     this.language = language;
@@ -101,12 +105,18 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setLanguage(String language) {
+
+    
+    
     
     this.language = language;
   }
 
 
   public EyodIncomeVerificationRequest transactions(List<EyodIncomeVerificationBodyRequest> transactions) {
+
+    
+    
     
     
     this.transactions = transactions;
@@ -131,12 +141,18 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setTransactions(List<EyodIncomeVerificationBodyRequest> transactions) {
+
+    
+    
     
     this.transactions = transactions;
   }
 
 
   public EyodIncomeVerificationRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -156,12 +172,18 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public EyodIncomeVerificationRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -181,12 +203,18 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public EyodIncomeVerificationRequest allowedIncomeTypes(List<EnumInvoiceAllowedIncomeTypesRequest> allowedIncomeTypes) {
+
+    
+    
     
     
     this.allowedIncomeTypes = allowedIncomeTypes;
@@ -214,12 +242,18 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setAllowedIncomeTypes(List<EnumInvoiceAllowedIncomeTypesRequest> allowedIncomeTypes) {
+
+    
+    
     
     this.allowedIncomeTypes = allowedIncomeTypes;
   }
 
 
   public EyodIncomeVerificationRequest minimumConfidenceLevel(EnumIncomeMinimumConfidenceLevelRequest minimumConfidenceLevel) {
+
+    
+    
     
     
     this.minimumConfidenceLevel = minimumConfidenceLevel;
@@ -239,6 +273,9 @@ public class EyodIncomeVerificationRequest {
 
 
   public void setMinimumConfidenceLevel(EnumIncomeMinimumConfidenceLevelRequest minimumConfidenceLevel) {
+
+    
+    
     
     this.minimumConfidenceLevel = minimumConfidenceLevel;
   }

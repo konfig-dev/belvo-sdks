@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class BankAccountDetailsOpenFinancePix {
   }
 
   public BankAccountDetailsOpenFinancePix country(EnumPaymentsCountry country) {
+
+    
+    
     
     
     this.country = country;
@@ -81,12 +85,18 @@ public class BankAccountDetailsOpenFinancePix {
 
 
   public void setCountry(EnumPaymentsCountry country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public BankAccountDetailsOpenFinancePix pixKey(String pixKey) {
+
+    
+    
     
     
     this.pixKey = pixKey;
@@ -106,6 +116,9 @@ public class BankAccountDetailsOpenFinancePix {
 
 
   public void setPixKey(String pixKey) {
+
+    
+    
     
     this.pixKey = pixKey;
   }

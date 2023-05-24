@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -84,6 +85,9 @@ public class BankAccountOfpiResponse {
   }
 
   public BankAccountOfpiResponse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -103,12 +107,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public BankAccountOfpiResponse createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -128,12 +138,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public BankAccountOfpiResponse createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -153,12 +169,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public BankAccountOfpiResponse customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -178,12 +200,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public BankAccountOfpiResponse institution(UUID institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -203,12 +231,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setInstitution(UUID institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public BankAccountOfpiResponse details(Object details) {
+
+    
+    
     
     
     this.details = details;
@@ -228,12 +262,18 @@ public class BankAccountOfpiResponse {
 
 
   public void setDetails(Object details) {
+
+    
+    
     
     this.details = details;
   }
 
 
   public BankAccountOfpiResponse holder(HolderResponseOfpi holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -253,6 +293,9 @@ public class BankAccountOfpiResponse {
 
 
   public void setHolder(HolderResponseOfpi holder) {
+
+    
+    
     
     this.holder = holder;
   }

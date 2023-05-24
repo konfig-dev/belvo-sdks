@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -143,6 +144,9 @@ public class TaxRetentions {
   }
 
   public TaxRetentions version(String version) {
+
+    
+    
     
     
     this.version = version;
@@ -162,12 +166,18 @@ public class TaxRetentions {
 
 
   public void setVersion(String version) {
+
+    
+    
     
     this.version = version;
   }
 
 
   public TaxRetentions id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -187,12 +197,18 @@ public class TaxRetentions {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxRetentions link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -212,12 +228,18 @@ public class TaxRetentions {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxRetentions collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -237,12 +259,18 @@ public class TaxRetentions {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxRetentions createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -262,12 +290,18 @@ public class TaxRetentions {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxRetentions invoiceIdentification(UUID invoiceIdentification) {
+
+    
+    
     
     
     this.invoiceIdentification = invoiceIdentification;
@@ -287,12 +321,18 @@ public class TaxRetentions {
 
 
   public void setInvoiceIdentification(UUID invoiceIdentification) {
+
+    
+    
     
     this.invoiceIdentification = invoiceIdentification;
   }
 
 
   public TaxRetentions code(Integer code) {
+
+    
+    
     
     
     this.code = code;
@@ -312,12 +352,18 @@ public class TaxRetentions {
 
 
   public void setCode(Integer code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public TaxRetentions issuedAt(OffsetDateTime issuedAt) {
+
+    
+    
     
     
     this.issuedAt = issuedAt;
@@ -337,12 +383,18 @@ public class TaxRetentions {
 
 
   public void setIssuedAt(OffsetDateTime issuedAt) {
+
+    
+    
     
     this.issuedAt = issuedAt;
   }
 
 
   public TaxRetentions certifiedAt(OffsetDateTime certifiedAt) {
+
+    
+    
     
     
     this.certifiedAt = certifiedAt;
@@ -362,12 +414,18 @@ public class TaxRetentions {
 
 
   public void setCertifiedAt(OffsetDateTime certifiedAt) {
+
+    
+    
     
     this.certifiedAt = certifiedAt;
   }
 
 
   public TaxRetentions cancelledAt(OffsetDateTime cancelledAt) {
+
+    
+    
     
     
     this.cancelledAt = cancelledAt;
@@ -387,12 +445,18 @@ public class TaxRetentions {
 
 
   public void setCancelledAt(OffsetDateTime cancelledAt) {
+
+    
+    
     
     this.cancelledAt = cancelledAt;
   }
 
 
   public TaxRetentions senderId(String senderId) {
+
+    
+    
     
     
     this.senderId = senderId;
@@ -412,12 +476,18 @@ public class TaxRetentions {
 
 
   public void setSenderId(String senderId) {
+
+    
+    
     
     this.senderId = senderId;
   }
 
 
   public TaxRetentions senderName(String senderName) {
+
+    
+    
     
     
     this.senderName = senderName;
@@ -437,12 +507,18 @@ public class TaxRetentions {
 
 
   public void setSenderName(String senderName) {
+
+    
+    
     
     this.senderName = senderName;
   }
 
 
   public TaxRetentions receiverNationality(EnumTaxRetentionReceiverNationality receiverNationality) {
+
+    
+    
     
     
     this.receiverNationality = receiverNationality;
@@ -462,12 +538,18 @@ public class TaxRetentions {
 
 
   public void setReceiverNationality(EnumTaxRetentionReceiverNationality receiverNationality) {
+
+    
+    
     
     this.receiverNationality = receiverNationality;
   }
 
 
   public TaxRetentions receiverId(String receiverId) {
+
+    
+    
     
     
     this.receiverId = receiverId;
@@ -487,12 +569,18 @@ public class TaxRetentions {
 
 
   public void setReceiverId(String receiverId) {
+
+    
+    
     
     this.receiverId = receiverId;
   }
 
 
   public TaxRetentions receiverName(String receiverName) {
+
+    
+    
     
     
     this.receiverName = receiverName;
@@ -512,12 +600,18 @@ public class TaxRetentions {
 
 
   public void setReceiverName(String receiverName) {
+
+    
+    
     
     this.receiverName = receiverName;
   }
 
 
   public TaxRetentions totalInvoiceAmount(Float totalInvoiceAmount) {
+
+    
+    
     
     
     this.totalInvoiceAmount = totalInvoiceAmount;
@@ -537,12 +631,18 @@ public class TaxRetentions {
 
 
   public void setTotalInvoiceAmount(Float totalInvoiceAmount) {
+
+    
+    
     
     this.totalInvoiceAmount = totalInvoiceAmount;
   }
 
 
   public TaxRetentions totalExemptAmount(Float totalExemptAmount) {
+
+    
+    
     
     
     this.totalExemptAmount = totalExemptAmount;
@@ -562,12 +662,18 @@ public class TaxRetentions {
 
 
   public void setTotalExemptAmount(Float totalExemptAmount) {
+
+    
+    
     
     this.totalExemptAmount = totalExemptAmount;
   }
 
 
   public TaxRetentions totalRetainedAmount(Float totalRetainedAmount) {
+
+    
+    
     
     
     this.totalRetainedAmount = totalRetainedAmount;
@@ -587,12 +693,18 @@ public class TaxRetentions {
 
 
   public void setTotalRetainedAmount(Float totalRetainedAmount) {
+
+    
+    
     
     this.totalRetainedAmount = totalRetainedAmount;
   }
 
 
   public TaxRetentions totalTaxableAmount(Float totalTaxableAmount) {
+
+    
+    
     
     
     this.totalTaxableAmount = totalTaxableAmount;
@@ -612,12 +724,18 @@ public class TaxRetentions {
 
 
   public void setTotalTaxableAmount(Float totalTaxableAmount) {
+
+    
+    
     
     this.totalTaxableAmount = totalTaxableAmount;
   }
 
 
   public TaxRetentions retentionBreakdown(List<RetentionBreakdown> retentionBreakdown) {
+
+    
+    
     
     
     this.retentionBreakdown = retentionBreakdown;
@@ -642,12 +760,18 @@ public class TaxRetentions {
 
 
   public void setRetentionBreakdown(List<RetentionBreakdown> retentionBreakdown) {
+
+    
+    
     
     this.retentionBreakdown = retentionBreakdown;
   }
 
 
   public TaxRetentions xml(String xml) {
+
+    
+    
     
     
     this.xml = xml;
@@ -667,6 +791,9 @@ public class TaxRetentions {
 
 
   public void setXml(String xml) {
+
+    
+    
     
     this.xml = xml;
   }

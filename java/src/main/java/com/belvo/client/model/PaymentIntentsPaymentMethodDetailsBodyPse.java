@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -67,6 +68,9 @@ public class PaymentIntentsPaymentMethodDetailsBodyPse {
   }
 
   public PaymentIntentsPaymentMethodDetailsBodyPse beneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
@@ -86,12 +90,18 @@ public class PaymentIntentsPaymentMethodDetailsBodyPse {
 
 
   public void setBeneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
   }
 
 
   public PaymentIntentsPaymentMethodDetailsBodyPse callbackUrl(String callbackUrl) {
+
+    
+    
     
     
     this.callbackUrl = callbackUrl;
@@ -111,12 +121,18 @@ public class PaymentIntentsPaymentMethodDetailsBodyPse {
 
 
   public void setCallbackUrl(String callbackUrl) {
+
+    
+    
     
     this.callbackUrl = callbackUrl;
   }
 
 
   public PaymentIntentsPaymentMethodDetailsBodyPse belvoFlow(Boolean belvoFlow) {
+
+    
+    
     
     
     this.belvoFlow = belvoFlow;
@@ -136,6 +152,9 @@ public class PaymentIntentsPaymentMethodDetailsBodyPse {
 
 
   public void setBelvoFlow(Boolean belvoFlow) {
+
+    
+    
     
     this.belvoFlow = belvoFlow;
   }

@@ -42,6 +42,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -126,6 +127,9 @@ public class InvestmentsPortfolioInstrument {
   }
 
   public InvestmentsPortfolioInstrument id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -145,12 +149,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public InvestmentsPortfolioInstrument publicId(List<InvestmentsPortfolioInstrumentPublicId> publicId) {
+
+    
+    
     
     
     this.publicId = publicId;
@@ -175,12 +185,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setPublicId(List<InvestmentsPortfolioInstrumentPublicId> publicId) {
+
+    
+    
     
     this.publicId = publicId;
   }
 
 
   public InvestmentsPortfolioInstrument type(EnumInvestmentPortfolioInstrumentType type) {
+
+    
+    
     
     
     this.type = type;
@@ -200,12 +216,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setType(EnumInvestmentPortfolioInstrumentType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvestmentsPortfolioInstrument subtype(String subtype) {
+
+    
+    
     
     
     this.subtype = subtype;
@@ -225,12 +247,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setSubtype(String subtype) {
+
+    
+    
     
     this.subtype = subtype;
   }
 
 
   public InvestmentsPortfolioInstrument name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -250,12 +278,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public InvestmentsPortfolioInstrument currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -275,12 +309,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvestmentsPortfolioInstrument price(Float price) {
+
+    
+    
     
     
     this.price = price;
@@ -300,12 +340,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setPrice(Float price) {
+
+    
+    
     
     this.price = price;
   }
 
 
   public InvestmentsPortfolioInstrument quantity(Float quantity) {
+
+    
+    
     
     
     this.quantity = quantity;
@@ -325,12 +371,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setQuantity(Float quantity) {
+
+    
+    
     
     this.quantity = quantity;
   }
 
 
   public InvestmentsPortfolioInstrument balanceGross(Float balanceGross) {
+
+    
+    
     
     
     this.balanceGross = balanceGross;
@@ -350,12 +402,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setBalanceGross(Float balanceGross) {
+
+    
+    
     
     this.balanceGross = balanceGross;
   }
 
 
   public InvestmentsPortfolioInstrument balanceNet(Float balanceNet) {
+
+    
+    
     
     
     this.balanceNet = balanceNet;
@@ -375,12 +433,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setBalanceNet(Float balanceNet) {
+
+    
+    
     
     this.balanceNet = balanceNet;
   }
 
 
   public InvestmentsPortfolioInstrument averageAcquisitionPrice(Float averageAcquisitionPrice) {
+
+    
+    
     
     
     this.averageAcquisitionPrice = averageAcquisitionPrice;
@@ -400,12 +464,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setAverageAcquisitionPrice(Float averageAcquisitionPrice) {
+
+    
+    
     
     this.averageAcquisitionPrice = averageAcquisitionPrice;
   }
 
 
   public InvestmentsPortfolioInstrument profit(Float profit) {
+
+    
+    
     
     
     this.profit = profit;
@@ -425,12 +495,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setProfit(Float profit) {
+
+    
+    
     
     this.profit = profit;
   }
 
 
   public InvestmentsPortfolioInstrument openDate(LocalDate openDate) {
+
+    
+    
     
     
     this.openDate = openDate;
@@ -450,12 +526,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setOpenDate(LocalDate openDate) {
+
+    
+    
     
     this.openDate = openDate;
   }
 
 
   public InvestmentsPortfolioInstrument redemptionConditions(List<InvestmentsPortfolioInstrumentRedemptionConditions> redemptionConditions) {
+
+    
+    
     
     
     this.redemptionConditions = redemptionConditions;
@@ -480,12 +562,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setRedemptionConditions(List<InvestmentsPortfolioInstrumentRedemptionConditions> redemptionConditions) {
+
+    
+    
     
     this.redemptionConditions = redemptionConditions;
   }
 
 
   public InvestmentsPortfolioInstrument fees(List<InvestmentsPortfolioInstrumentFees> fees) {
+
+    
+    
     
     
     this.fees = fees;
@@ -510,12 +598,18 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setFees(List<InvestmentsPortfolioInstrumentFees> fees) {
+
+    
+    
     
     this.fees = fees;
   }
 
 
   public InvestmentsPortfolioInstrument interestRates(List<InvestmentsPortfolioInstrumentInterestRate> interestRates) {
+
+    
+    
     
     
     this.interestRates = interestRates;
@@ -540,6 +634,9 @@ public class InvestmentsPortfolioInstrument {
 
 
   public void setInterestRates(List<InvestmentsPortfolioInstrumentInterestRate> interestRates) {
+
+    
+    
     
     this.interestRates = interestRates;
   }

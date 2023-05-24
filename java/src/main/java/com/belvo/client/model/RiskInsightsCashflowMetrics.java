@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -90,6 +91,9 @@ public class RiskInsightsCashflowMetrics {
   }
 
   public RiskInsightsCashflowMetrics sumPositive1w(Float sumPositive1w) {
+
+    
+    
     
     
     this.sumPositive1w = sumPositive1w;
@@ -109,12 +113,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumPositive1w(Float sumPositive1w) {
+
+    
+    
     
     this.sumPositive1w = sumPositive1w;
   }
 
 
   public RiskInsightsCashflowMetrics sumPositive1m(Float sumPositive1m) {
+
+    
+    
     
     
     this.sumPositive1m = sumPositive1m;
@@ -134,12 +144,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumPositive1m(Float sumPositive1m) {
+
+    
+    
     
     this.sumPositive1m = sumPositive1m;
   }
 
 
   public RiskInsightsCashflowMetrics sumPositive3m(Float sumPositive3m) {
+
+    
+    
     
     
     this.sumPositive3m = sumPositive3m;
@@ -159,12 +175,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumPositive3m(Float sumPositive3m) {
+
+    
+    
     
     this.sumPositive3m = sumPositive3m;
   }
 
 
   public RiskInsightsCashflowMetrics sumNegative1w(Float sumNegative1w) {
+
+    
+    
     
     
     this.sumNegative1w = sumNegative1w;
@@ -184,12 +206,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumNegative1w(Float sumNegative1w) {
+
+    
+    
     
     this.sumNegative1w = sumNegative1w;
   }
 
 
   public RiskInsightsCashflowMetrics sumNegative1m(Float sumNegative1m) {
+
+    
+    
     
     
     this.sumNegative1m = sumNegative1m;
@@ -209,12 +237,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumNegative1m(Float sumNegative1m) {
+
+    
+    
     
     this.sumNegative1m = sumNegative1m;
   }
 
 
   public RiskInsightsCashflowMetrics sumNegative3m(Float sumNegative3m) {
+
+    
+    
     
     
     this.sumNegative3m = sumNegative3m;
@@ -234,12 +268,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setSumNegative3m(Float sumNegative3m) {
+
+    
+    
     
     this.sumNegative3m = sumNegative3m;
   }
 
 
   public RiskInsightsCashflowMetrics positiveToNegativeRatio1w(Float positiveToNegativeRatio1w) {
+
+    
+    
     
     
     this.positiveToNegativeRatio1w = positiveToNegativeRatio1w;
@@ -259,12 +299,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setPositiveToNegativeRatio1w(Float positiveToNegativeRatio1w) {
+
+    
+    
     
     this.positiveToNegativeRatio1w = positiveToNegativeRatio1w;
   }
 
 
   public RiskInsightsCashflowMetrics positiveToNegativeRatio1m(Float positiveToNegativeRatio1m) {
+
+    
+    
     
     
     this.positiveToNegativeRatio1m = positiveToNegativeRatio1m;
@@ -284,12 +330,18 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setPositiveToNegativeRatio1m(Float positiveToNegativeRatio1m) {
+
+    
+    
     
     this.positiveToNegativeRatio1m = positiveToNegativeRatio1m;
   }
 
 
   public RiskInsightsCashflowMetrics positiveToNegativeRatio3m(Float positiveToNegativeRatio3m) {
+
+    
+    
     
     
     this.positiveToNegativeRatio3m = positiveToNegativeRatio3m;
@@ -309,6 +361,9 @@ public class RiskInsightsCashflowMetrics {
 
 
   public void setPositiveToNegativeRatio3m(Float positiveToNegativeRatio3m) {
+
+    
+    
     
     this.positiveToNegativeRatio3m = positiveToNegativeRatio3m;
   }

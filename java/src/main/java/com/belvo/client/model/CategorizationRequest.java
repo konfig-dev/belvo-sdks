@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -64,6 +65,9 @@ public class CategorizationRequest {
   }
 
   public CategorizationRequest language(String language) {
+
+    
+    
     
     
     this.language = language;
@@ -83,12 +87,18 @@ public class CategorizationRequest {
 
 
   public void setLanguage(String language) {
+
+    
+    
     
     this.language = language;
   }
 
 
   public CategorizationRequest transactions(List<CategorizationBodyRequest> transactions) {
+
+    
+    
     
     
     this.transactions = transactions;
@@ -113,6 +123,9 @@ public class CategorizationRequest {
 
 
   public void setTransactions(List<CategorizationBodyRequest> transactions) {
+
+    
+    
     
     this.transactions = transactions;
   }

@@ -46,6 +46,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -226,6 +227,9 @@ public class InvoiceWithIdSat {
   }
 
   public InvoiceWithIdSat version(String version) {
+
+    
+    
     
     
     this.version = version;
@@ -245,12 +249,18 @@ public class InvoiceWithIdSat {
 
 
   public void setVersion(String version) {
+
+    
+    
     
     this.version = version;
   }
 
 
   public InvoiceWithIdSat id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -270,12 +280,18 @@ public class InvoiceWithIdSat {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public InvoiceWithIdSat link(String link) {
+
+    
+    
     
     
     this.link = link;
@@ -295,12 +311,18 @@ public class InvoiceWithIdSat {
 
 
   public void setLink(String link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public InvoiceWithIdSat collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -320,12 +342,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public InvoiceWithIdSat createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -345,12 +373,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public InvoiceWithIdSat invoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     
     this.invoiceIdentification = invoiceIdentification;
@@ -370,12 +404,18 @@ public class InvoiceWithIdSat {
 
 
   public void setInvoiceIdentification(String invoiceIdentification) {
+
+    
+    
     
     this.invoiceIdentification = invoiceIdentification;
   }
 
 
   public InvoiceWithIdSat invoiceDate(LocalDate invoiceDate) {
+
+    
+    
     
     
     this.invoiceDate = invoiceDate;
@@ -395,12 +435,18 @@ public class InvoiceWithIdSat {
 
 
   public void setInvoiceDate(LocalDate invoiceDate) {
+
+    
+    
     
     this.invoiceDate = invoiceDate;
   }
 
 
   public InvoiceWithIdSat status(String status) {
+
+    
+    
     
     
     this.status = status;
@@ -420,12 +466,18 @@ public class InvoiceWithIdSat {
 
 
   public void setStatus(String status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public InvoiceWithIdSat invoiceType(EnumInvoiceSatInvoiceType invoiceType) {
+
+    
+    
     
     
     this.invoiceType = invoiceType;
@@ -445,12 +497,18 @@ public class InvoiceWithIdSat {
 
 
   public void setInvoiceType(EnumInvoiceSatInvoiceType invoiceType) {
+
+    
+    
     
     this.invoiceType = invoiceType;
   }
 
 
   public InvoiceWithIdSat type(EnumInvoiceType type) {
+
+    
+    
     
     
     this.type = type;
@@ -470,12 +528,18 @@ public class InvoiceWithIdSat {
 
 
   public void setType(EnumInvoiceType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvoiceWithIdSat senderId(String senderId) {
+
+    
+    
     
     
     this.senderId = senderId;
@@ -495,12 +559,18 @@ public class InvoiceWithIdSat {
 
 
   public void setSenderId(String senderId) {
+
+    
+    
     
     this.senderId = senderId;
   }
 
 
   public InvoiceWithIdSat senderName(String senderName) {
+
+    
+    
     
     
     this.senderName = senderName;
@@ -520,12 +590,18 @@ public class InvoiceWithIdSat {
 
 
   public void setSenderName(String senderName) {
+
+    
+    
     
     this.senderName = senderName;
   }
 
 
   public InvoiceWithIdSat senderTaxFraudStatus(String senderTaxFraudStatus) {
+
+    
+    
     
     
     this.senderTaxFraudStatus = senderTaxFraudStatus;
@@ -545,12 +621,18 @@ public class InvoiceWithIdSat {
 
 
   public void setSenderTaxFraudStatus(String senderTaxFraudStatus) {
+
+    
+    
     
     this.senderTaxFraudStatus = senderTaxFraudStatus;
   }
 
 
   public InvoiceWithIdSat receiverId(String receiverId) {
+
+    
+    
     
     
     this.receiverId = receiverId;
@@ -570,12 +652,18 @@ public class InvoiceWithIdSat {
 
 
   public void setReceiverId(String receiverId) {
+
+    
+    
     
     this.receiverId = receiverId;
   }
 
 
   public InvoiceWithIdSat receiverName(String receiverName) {
+
+    
+    
     
     
     this.receiverName = receiverName;
@@ -595,12 +683,18 @@ public class InvoiceWithIdSat {
 
 
   public void setReceiverName(String receiverName) {
+
+    
+    
     
     this.receiverName = receiverName;
   }
 
 
   public InvoiceWithIdSat receiverTaxFraudStatus(String receiverTaxFraudStatus) {
+
+    
+    
     
     
     this.receiverTaxFraudStatus = receiverTaxFraudStatus;
@@ -620,12 +714,18 @@ public class InvoiceWithIdSat {
 
 
   public void setReceiverTaxFraudStatus(String receiverTaxFraudStatus) {
+
+    
+    
     
     this.receiverTaxFraudStatus = receiverTaxFraudStatus;
   }
 
 
   public InvoiceWithIdSat cancelationStatus(String cancelationStatus) {
+
+    
+    
     
     
     this.cancelationStatus = cancelationStatus;
@@ -645,12 +745,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCancelationStatus(String cancelationStatus) {
+
+    
+    
     
     this.cancelationStatus = cancelationStatus;
   }
 
 
   public InvoiceWithIdSat cancelationUpdateDate(LocalDate cancelationUpdateDate) {
+
+    
+    
     
     
     this.cancelationUpdateDate = cancelationUpdateDate;
@@ -670,12 +776,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCancelationUpdateDate(LocalDate cancelationUpdateDate) {
+
+    
+    
     
     this.cancelationUpdateDate = cancelationUpdateDate;
   }
 
 
   public InvoiceWithIdSat certificationDate(LocalDate certificationDate) {
+
+    
+    
     
     
     this.certificationDate = certificationDate;
@@ -695,12 +807,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCertificationDate(LocalDate certificationDate) {
+
+    
+    
     
     this.certificationDate = certificationDate;
   }
 
 
   public InvoiceWithIdSat certificationAuthority(String certificationAuthority) {
+
+    
+    
     
     
     this.certificationAuthority = certificationAuthority;
@@ -720,12 +838,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCertificationAuthority(String certificationAuthority) {
+
+    
+    
     
     this.certificationAuthority = certificationAuthority;
   }
 
 
   public InvoiceWithIdSat paymentType(String paymentType) {
+
+    
+    
     
     
     this.paymentType = paymentType;
@@ -745,12 +869,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPaymentType(String paymentType) {
+
+    
+    
     
     this.paymentType = paymentType;
   }
 
 
   public InvoiceWithIdSat paymentTypeDescription(String paymentTypeDescription) {
+
+    
+    
     
     
     this.paymentTypeDescription = paymentTypeDescription;
@@ -772,12 +902,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPaymentTypeDescription(String paymentTypeDescription) {
+
+    
+    
     
     this.paymentTypeDescription = paymentTypeDescription;
   }
 
 
   public InvoiceWithIdSat paymentMethod(EnumInvoiceSatPaymentMethod paymentMethod) {
+
+    
+    
     
     
     this.paymentMethod = paymentMethod;
@@ -797,12 +933,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPaymentMethod(EnumInvoiceSatPaymentMethod paymentMethod) {
+
+    
+    
     
     this.paymentMethod = paymentMethod;
   }
 
 
   public InvoiceWithIdSat paymentMethodDescription(String paymentMethodDescription) {
+
+    
+    
     
     
     this.paymentMethodDescription = paymentMethodDescription;
@@ -824,12 +966,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPaymentMethodDescription(String paymentMethodDescription) {
+
+    
+    
     
     this.paymentMethodDescription = paymentMethodDescription;
   }
 
 
   public InvoiceWithIdSat usage(String usage) {
+
+    
+    
     
     
     this.usage = usage;
@@ -849,12 +997,18 @@ public class InvoiceWithIdSat {
 
 
   public void setUsage(String usage) {
+
+    
+    
     
     this.usage = usage;
   }
 
 
   public InvoiceWithIdSat placeOfIssue(String placeOfIssue) {
+
+    
+    
     
     
     this.placeOfIssue = placeOfIssue;
@@ -874,12 +1028,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPlaceOfIssue(String placeOfIssue) {
+
+    
+    
     
     this.placeOfIssue = placeOfIssue;
   }
 
 
   public InvoiceWithIdSat invoiceDetails(List<InvoiceDetailSat> invoiceDetails) {
+
+    
+    
     
     
     this.invoiceDetails = invoiceDetails;
@@ -904,12 +1064,18 @@ public class InvoiceWithIdSat {
 
 
   public void setInvoiceDetails(List<InvoiceDetailSat> invoiceDetails) {
+
+    
+    
     
     this.invoiceDetails = invoiceDetails;
   }
 
 
   public InvoiceWithIdSat currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -929,12 +1095,18 @@ public class InvoiceWithIdSat {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvoiceWithIdSat subtotalAmount(Float subtotalAmount) {
+
+    
+    
     
     
     this.subtotalAmount = subtotalAmount;
@@ -954,12 +1126,18 @@ public class InvoiceWithIdSat {
 
 
   public void setSubtotalAmount(Float subtotalAmount) {
+
+    
+    
     
     this.subtotalAmount = subtotalAmount;
   }
 
 
   public InvoiceWithIdSat exchangeRate(Float exchangeRate) {
+
+    
+    
     
     
     this.exchangeRate = exchangeRate;
@@ -979,12 +1157,18 @@ public class InvoiceWithIdSat {
 
 
   public void setExchangeRate(Float exchangeRate) {
+
+    
+    
     
     this.exchangeRate = exchangeRate;
   }
 
 
   public InvoiceWithIdSat taxAmount(Float taxAmount) {
+
+    
+    
     
     
     this.taxAmount = taxAmount;
@@ -1004,12 +1188,18 @@ public class InvoiceWithIdSat {
 
 
   public void setTaxAmount(Float taxAmount) {
+
+    
+    
     
     this.taxAmount = taxAmount;
   }
 
 
   public InvoiceWithIdSat discountAmount(Float discountAmount) {
+
+    
+    
     
     
     this.discountAmount = discountAmount;
@@ -1029,12 +1219,18 @@ public class InvoiceWithIdSat {
 
 
   public void setDiscountAmount(Float discountAmount) {
+
+    
+    
     
     this.discountAmount = discountAmount;
   }
 
 
   public InvoiceWithIdSat totalAmount(Float totalAmount) {
+
+    
+    
     
     
     this.totalAmount = totalAmount;
@@ -1054,12 +1250,18 @@ public class InvoiceWithIdSat {
 
 
   public void setTotalAmount(Float totalAmount) {
+
+    
+    
     
     this.totalAmount = totalAmount;
   }
 
 
   public InvoiceWithIdSat payments(List<InvoicesPaymentsSat> payments) {
+
+    
+    
     
     
     this.payments = payments;
@@ -1084,12 +1286,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPayments(List<InvoicesPaymentsSat> payments) {
+
+    
+    
     
     this.payments = payments;
   }
 
 
   public InvoiceWithIdSat payroll(InvoicesPayrollSat payroll) {
+
+    
+    
     
     
     this.payroll = payroll;
@@ -1109,12 +1317,18 @@ public class InvoiceWithIdSat {
 
 
   public void setPayroll(InvoicesPayrollSat payroll) {
+
+    
+    
     
     this.payroll = payroll;
   }
 
 
   public InvoiceWithIdSat folio(String folio) {
+
+    
+    
     
     
     this.folio = folio;
@@ -1134,12 +1348,18 @@ public class InvoiceWithIdSat {
 
 
   public void setFolio(String folio) {
+
+    
+    
     
     this.folio = folio;
   }
 
 
   public InvoiceWithIdSat xml(String xml) {
+
+    
+    
     
     
     this.xml = xml;
@@ -1159,12 +1379,18 @@ public class InvoiceWithIdSat {
 
 
   public void setXml(String xml) {
+
+    
+    
     
     this.xml = xml;
   }
 
 
   public InvoiceWithIdSat warnings(InvoiceWarningsSat warnings) {
+
+    
+    
     
     
     this.warnings = warnings;
@@ -1184,12 +1410,18 @@ public class InvoiceWithIdSat {
 
 
   public void setWarnings(InvoiceWarningsSat warnings) {
+
+    
+    
     
     this.warnings = warnings;
   }
 
 
   public InvoiceWithIdSat senderBlacklistStatus(String senderBlacklistStatus) {
+
+    
+    
     
     
     this.senderBlacklistStatus = senderBlacklistStatus;
@@ -1211,12 +1443,18 @@ public class InvoiceWithIdSat {
 
 
   public void setSenderBlacklistStatus(String senderBlacklistStatus) {
+
+    
+    
     
     this.senderBlacklistStatus = senderBlacklistStatus;
   }
 
 
   public InvoiceWithIdSat receiverBlacklistStatus(String receiverBlacklistStatus) {
+
+    
+    
     
     
     this.receiverBlacklistStatus = receiverBlacklistStatus;
@@ -1238,6 +1476,9 @@ public class InvoiceWithIdSat {
 
 
   public void setReceiverBlacklistStatus(String receiverBlacklistStatus) {
+
+    
+    
     
     this.receiverBlacklistStatus = receiverBlacklistStatus;
   }

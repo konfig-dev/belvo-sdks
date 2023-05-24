@@ -11,8 +11,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /receivables/transactions | Retrieve receivable transactions for a link
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete a receivable transaction
 
@@ -22,24 +20,21 @@ Delete a specific receivable transaction from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete a receivable transaction
     belvo.receivable_transactions.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -125,8 +120,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> ReceivablesTransaction get_details(id)
 
 Get a receivable transaction&#x27;s details
 
@@ -136,28 +129,23 @@ Get the details of a specific receivable transaction.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get a receivable transaction's details
     get_details_response = belvo.receivable_transactions.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["id"])
@@ -292,8 +280,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> ReceivablesTransactionsPaginatedResponse list()
 
 List all receivable transactions
 
@@ -303,42 +289,39 @@ Get a paginated list of all the existing receivable transactions in your Belvo a
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all receivable transactions
     list_response = belvo.receivable_transactions.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'account': "d979df3a-5d0f-4cc9-9bd4-b75c28b45963",
-            'account__in': "24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'link__in': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",
-            'value_date': "2022-05-05",
-            'value_date__gt': "2022-05-06",
-            'value_date__gte': "2022-05-04",
-            'value_date__lt': "2022-03-02",
-            'value_date__lte': "2022-03-01",
-            'value_date__range': "2022-03-01,2022-05-06",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        account="d979df3a-5d0f-4cc9-9bd4-b75c28b45963",  # optional
+        account__in="24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        link__in="8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",  # optional
+        value_date="2022-05-05",  # optional
+        value_date__gt="2022-05-06",  # optional
+        value_date__gte="2022-05-04",  # optional
+        value_date__lt="2022-03-02",  # optional
+        value_date__lte="2022-03-01",  # optional
+        value_date__range="2022-03-01,2022-05-06",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -566,8 +549,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> ReceivablesTransaction retrieve(receivable_transaction_request)
 
 Retrieve receivable transactions for a link
 
@@ -577,33 +558,27 @@ Retrieve all receivable transactions for an existing link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "date_from": "2020-08-05",
-        "date_to": "2020-10-05",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve receivable transactions for a link
     retrieve_response = belvo.receivable_transactions.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        date_from="2020-08-05",  # required
+        date_to="2020-10-05",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.body["id"])

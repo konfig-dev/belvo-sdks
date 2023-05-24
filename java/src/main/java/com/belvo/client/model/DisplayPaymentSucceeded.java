@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -59,6 +60,9 @@ public class DisplayPaymentSucceeded {
   }
 
   public DisplayPaymentSucceeded payerInstitution(PaymentInstitution payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -78,6 +82,9 @@ public class DisplayPaymentSucceeded {
 
 
   public void setPayerInstitution(PaymentInstitution payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }

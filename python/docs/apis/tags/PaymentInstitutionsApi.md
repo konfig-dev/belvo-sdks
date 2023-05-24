@@ -9,8 +9,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/institutions | List all payment institutions
 
 # **get_details**
-<a name="get_details"></a>
-> PaymentInstitution get_details(id)
 
 Get details about a payment institution
 
@@ -20,24 +18,21 @@ Get the details about a specific payment institution
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a payment institution
     get_details_response = belvo.payment_institutions.get_details(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
     )
     pprint(get_details_response.headers)
     pprint(get_details_response.status)
@@ -129,8 +124,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> PaymentsInstitutionsPaginatedResponse list()
 
 List all payment institutions
 
@@ -140,32 +133,29 @@ List all available payment institutions.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all payment institutions
     list_response = belvo.payment_institutions.list(
-        query_params = {
-            'page': 1,
-            'country': "COL",
-            'country__in': "COL,BRA",
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-        },
+        page=1,  # optional
+        country="COL",  # optional
+        country__in="COL,BRA",  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -101,6 +102,9 @@ public class TaxReturnBusinessMonthly {
   }
 
   public TaxReturnBusinessMonthly id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -120,12 +124,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxReturnBusinessMonthly collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -145,12 +155,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxReturnBusinessMonthly createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -170,12 +186,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxReturnBusinessMonthly informacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     
     this.informacionGeneral = informacionGeneral;
@@ -195,12 +217,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setInformacionGeneral(Object informacionGeneral) {
+
+    
+    
     
     this.informacionGeneral = informacionGeneral;
   }
 
 
   public TaxReturnBusinessMonthly determinacionIsr(Object determinacionIsr) {
+
+    
+    
     
     
     this.determinacionIsr = determinacionIsr;
@@ -220,12 +248,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setDeterminacionIsr(Object determinacionIsr) {
+
+    
+    
     
     this.determinacionIsr = determinacionIsr;
   }
 
 
   public TaxReturnBusinessMonthly detallePagoIsr(Object detallePagoIsr) {
+
+    
+    
     
     
     this.detallePagoIsr = detallePagoIsr;
@@ -245,12 +279,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setDetallePagoIsr(Object detallePagoIsr) {
+
+    
+    
     
     this.detallePagoIsr = detallePagoIsr;
   }
 
 
   public TaxReturnBusinessMonthly determinacionIva(Object determinacionIva) {
+
+    
+    
     
     
     this.determinacionIva = determinacionIva;
@@ -270,12 +310,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setDeterminacionIva(Object determinacionIva) {
+
+    
+    
     
     this.determinacionIva = determinacionIva;
   }
 
 
   public TaxReturnBusinessMonthly detallePagoIva(Object detallePagoIva) {
+
+    
+    
     
     
     this.detallePagoIva = detallePagoIva;
@@ -295,12 +341,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setDetallePagoIva(Object detallePagoIva) {
+
+    
+    
     
     this.detallePagoIva = detallePagoIva;
   }
 
 
   public TaxReturnBusinessMonthly pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -312,7 +364,7 @@ public class TaxReturnBusinessMonthly {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@47ffd971", required = true, value = "Tax return PDF as a binary.")
+  @ApiModelProperty(example = "[B@2b0eec25", required = true, value = "Tax return PDF as a binary.")
 
   public File getPdf() {
     return pdf;
@@ -320,12 +372,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }
 
 
   public TaxReturnBusinessMonthly receiptPdf(File receiptPdf) {
+
+    
+    
     
     
     this.receiptPdf = receiptPdf;
@@ -337,7 +395,7 @@ public class TaxReturnBusinessMonthly {
    * @return receiptPdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@496cb380", value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
+  @ApiModelProperty(example = "[B@59525774", value = "The acknowledgement receipt from the fiscal institution confirming that they received the tax return.")
 
   public File getReceiptPdf() {
     return receiptPdf;
@@ -345,12 +403,18 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setReceiptPdf(File receiptPdf) {
+
+    
+    
     
     this.receiptPdf = receiptPdf;
   }
 
 
   public TaxReturnBusinessMonthly type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -370,6 +434,9 @@ public class TaxReturnBusinessMonthly {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }

@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -102,6 +103,9 @@ public class PaymentLinkListPse {
   }
 
   public PaymentLinkListPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -121,12 +125,18 @@ public class PaymentLinkListPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentLinkListPse createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -146,12 +156,18 @@ public class PaymentLinkListPse {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public PaymentLinkListPse createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -171,12 +187,18 @@ public class PaymentLinkListPse {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public PaymentLinkListPse paymentUrl(String paymentUrl) {
+
+    
+    
     
     
     this.paymentUrl = paymentUrl;
@@ -196,12 +218,18 @@ public class PaymentLinkListPse {
 
 
   public void setPaymentUrl(String paymentUrl) {
+
+    
+    
     
     this.paymentUrl = paymentUrl;
   }
 
 
   public PaymentLinkListPse accessToken(String accessToken) {
+
+    
+    
     
     
     this.accessToken = accessToken;
@@ -221,12 +249,18 @@ public class PaymentLinkListPse {
 
 
   public void setAccessToken(String accessToken) {
+
+    
+    
     
     this.accessToken = accessToken;
   }
 
 
   public PaymentLinkListPse callbackUrls(PaymentLinkCallbackUrlsResponse callbackUrls) {
+
+    
+    
     
     
     this.callbackUrls = callbackUrls;
@@ -246,12 +280,18 @@ public class PaymentLinkListPse {
 
 
   public void setCallbackUrls(PaymentLinkCallbackUrlsResponse callbackUrls) {
+
+    
+    
     
     this.callbackUrls = callbackUrls;
   }
 
 
   public PaymentLinkListPse paymentIntent(UUID paymentIntent) {
+
+    
+    
     
     
     this.paymentIntent = paymentIntent;
@@ -271,12 +311,18 @@ public class PaymentLinkListPse {
 
 
   public void setPaymentIntent(UUID paymentIntent) {
+
+    
+    
     
     this.paymentIntent = paymentIntent;
   }
 
 
   public PaymentLinkListPse updatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     
     this.updatedAt = updatedAt;
@@ -296,12 +342,18 @@ public class PaymentLinkListPse {
 
 
   public void setUpdatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     this.updatedAt = updatedAt;
   }
 
 
   public PaymentLinkListPse status(EnumPaymentLinksStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -321,12 +373,18 @@ public class PaymentLinkListPse {
 
 
   public void setStatus(EnumPaymentLinksStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public PaymentLinkListPse expiresIn(String expiresIn) {
+
+    
+    
     
     
     this.expiresIn = expiresIn;
@@ -346,12 +404,18 @@ public class PaymentLinkListPse {
 
 
   public void setExpiresIn(String expiresIn) {
+
+    
+    
     
     this.expiresIn = expiresIn;
   }
 
 
   public PaymentLinkListPse expiresAt(OffsetDateTime expiresAt) {
+
+    
+    
     
     
     this.expiresAt = expiresAt;
@@ -371,6 +435,9 @@ public class PaymentLinkListPse {
 
 
   public void setExpiresAt(OffsetDateTime expiresAt) {
+
+    
+    
     
     this.expiresAt = expiresAt;
   }

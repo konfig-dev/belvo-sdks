@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -88,6 +89,9 @@ public class TaxPayerInformationBusiness {
   }
 
   public TaxPayerInformationBusiness firstLastName(String firstLastName) {
+
+    
+    
     
     
     this.firstLastName = firstLastName;
@@ -107,12 +111,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setFirstLastName(String firstLastName) {
+
+    
+    
     
     this.firstLastName = firstLastName;
   }
 
 
   public TaxPayerInformationBusiness secondLastName(String secondLastName) {
+
+    
+    
     
     
     this.secondLastName = secondLastName;
@@ -132,12 +142,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setSecondLastName(String secondLastName) {
+
+    
+    
     
     this.secondLastName = secondLastName;
   }
 
 
   public TaxPayerInformationBusiness firstName(String firstName) {
+
+    
+    
     
     
     this.firstName = firstName;
@@ -157,12 +173,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setFirstName(String firstName) {
+
+    
+    
     
     this.firstName = firstName;
   }
 
 
   public TaxPayerInformationBusiness otherNames(String otherNames) {
+
+    
+    
     
     
     this.otherNames = otherNames;
@@ -182,12 +204,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setOtherNames(String otherNames) {
+
+    
+    
     
     this.otherNames = otherNames;
   }
 
 
   public TaxPayerInformationBusiness companyName(String companyName) {
+
+    
+    
     
     
     this.companyName = companyName;
@@ -207,12 +235,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setCompanyName(String companyName) {
+
+    
+    
     
     this.companyName = companyName;
   }
 
 
   public TaxPayerInformationBusiness mainEconomicActivity(String mainEconomicActivity) {
+
+    
+    
     
     
     this.mainEconomicActivity = mainEconomicActivity;
@@ -232,12 +266,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setMainEconomicActivity(String mainEconomicActivity) {
+
+    
+    
     
     this.mainEconomicActivity = mainEconomicActivity;
   }
 
 
   public TaxPayerInformationBusiness documentId(DocumentIdBusiness documentId) {
+
+    
+    
     
     
     this.documentId = documentId;
@@ -257,12 +297,18 @@ public class TaxPayerInformationBusiness {
 
 
   public void setDocumentId(DocumentIdBusiness documentId) {
+
+    
+    
     
     this.documentId = documentId;
   }
 
 
   public TaxPayerInformationBusiness reportingId(ReportingId reportingId) {
+
+    
+    
     
     
     this.reportingId = reportingId;
@@ -282,6 +328,9 @@ public class TaxPayerInformationBusiness {
 
 
   public void setReportingId(ReportingId reportingId) {
+
+    
+    
     
     this.reportingId = reportingId;
   }

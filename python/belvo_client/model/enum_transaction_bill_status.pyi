@@ -53,7 +53,7 @@ class EnumTransactionBillStatus(
             "CLOSED": "CLOSED",
             "OPEN": "OPEN",
             "FUTURE": "FUTURE",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

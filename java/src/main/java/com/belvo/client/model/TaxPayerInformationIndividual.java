@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -84,6 +85,9 @@ public class TaxPayerInformationIndividual {
   }
 
   public TaxPayerInformationIndividual firstLastName(String firstLastName) {
+
+    
+    
     
     
     this.firstLastName = firstLastName;
@@ -103,12 +107,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setFirstLastName(String firstLastName) {
+
+    
+    
     
     this.firstLastName = firstLastName;
   }
 
 
   public TaxPayerInformationIndividual secondLastName(String secondLastName) {
+
+    
+    
     
     
     this.secondLastName = secondLastName;
@@ -128,12 +138,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setSecondLastName(String secondLastName) {
+
+    
+    
     
     this.secondLastName = secondLastName;
   }
 
 
   public TaxPayerInformationIndividual firstName(String firstName) {
+
+    
+    
     
     
     this.firstName = firstName;
@@ -153,12 +169,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setFirstName(String firstName) {
+
+    
+    
     
     this.firstName = firstName;
   }
 
 
   public TaxPayerInformationIndividual otherNames(String otherNames) {
+
+    
+    
     
     
     this.otherNames = otherNames;
@@ -178,12 +200,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setOtherNames(String otherNames) {
+
+    
+    
     
     this.otherNames = otherNames;
   }
 
 
   public TaxPayerInformationIndividual mainEconomicActivity(String mainEconomicActivity) {
+
+    
+    
     
     
     this.mainEconomicActivity = mainEconomicActivity;
@@ -203,12 +231,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setMainEconomicActivity(String mainEconomicActivity) {
+
+    
+    
     
     this.mainEconomicActivity = mainEconomicActivity;
   }
 
 
   public TaxPayerInformationIndividual documentId(DocumentIdIndividual documentId) {
+
+    
+    
     
     
     this.documentId = documentId;
@@ -228,12 +262,18 @@ public class TaxPayerInformationIndividual {
 
 
   public void setDocumentId(DocumentIdIndividual documentId) {
+
+    
+    
     
     this.documentId = documentId;
   }
 
 
   public TaxPayerInformationIndividual reportingId(ReportingId reportingId) {
+
+    
+    
     
     
     this.reportingId = reportingId;
@@ -253,6 +293,9 @@ public class TaxPayerInformationIndividual {
 
 
   public void setReportingId(ReportingId reportingId) {
+
+    
+    
     
     this.reportingId = reportingId;
   }

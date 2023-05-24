@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -68,6 +69,9 @@ public class EmploymentRecordEmploymentStatusUpdates {
   }
 
   public EmploymentRecordEmploymentStatusUpdates event(EnumEmploymentRecordStatusUpdateEvents event) {
+
+    
+    
     
     
     this.event = event;
@@ -87,12 +91,18 @@ public class EmploymentRecordEmploymentStatusUpdates {
 
 
   public void setEvent(EnumEmploymentRecordStatusUpdateEvents event) {
+
+    
+    
     
     this.event = event;
   }
 
 
   public EmploymentRecordEmploymentStatusUpdates baseSalary(Float baseSalary) {
+
+    
+    
     
     
     this.baseSalary = baseSalary;
@@ -112,12 +122,18 @@ public class EmploymentRecordEmploymentStatusUpdates {
 
 
   public void setBaseSalary(Float baseSalary) {
+
+    
+    
     
     this.baseSalary = baseSalary;
   }
 
 
   public EmploymentRecordEmploymentStatusUpdates updateDate(LocalDate updateDate) {
+
+    
+    
     
     
     this.updateDate = updateDate;
@@ -137,6 +153,9 @@ public class EmploymentRecordEmploymentStatusUpdates {
 
 
   public void setUpdateDate(LocalDate updateDate) {
+
+    
+    
     
     this.updateDate = updateDate;
   }

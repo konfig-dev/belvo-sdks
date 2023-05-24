@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -103,6 +104,9 @@ public class InvoiceDetailDian {
   }
 
   public InvoiceDetailDian description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -122,12 +126,18 @@ public class InvoiceDetailDian {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public InvoiceDetailDian productIdentification(String productIdentification) {
+
+    
+    
     
     
     this.productIdentification = productIdentification;
@@ -147,12 +157,18 @@ public class InvoiceDetailDian {
 
 
   public void setProductIdentification(String productIdentification) {
+
+    
+    
     
     this.productIdentification = productIdentification;
   }
 
 
   public InvoiceDetailDian quantity(Float quantity) {
+
+    
+    
     
     
     this.quantity = quantity;
@@ -172,12 +188,18 @@ public class InvoiceDetailDian {
 
 
   public void setQuantity(Float quantity) {
+
+    
+    
     
     this.quantity = quantity;
   }
 
 
   public InvoiceDetailDian unitCode(String unitCode) {
+
+    
+    
     
     
     this.unitCode = unitCode;
@@ -197,12 +219,18 @@ public class InvoiceDetailDian {
 
 
   public void setUnitCode(String unitCode) {
+
+    
+    
     
     this.unitCode = unitCode;
   }
 
 
   public InvoiceDetailDian unitDescription(String unitDescription) {
+
+    
+    
     
     
     this.unitDescription = unitDescription;
@@ -222,12 +250,18 @@ public class InvoiceDetailDian {
 
 
   public void setUnitDescription(String unitDescription) {
+
+    
+    
     
     this.unitDescription = unitDescription;
   }
 
 
   public InvoiceDetailDian unitAmount(Float unitAmount) {
+
+    
+    
     
     
     this.unitAmount = unitAmount;
@@ -247,12 +281,18 @@ public class InvoiceDetailDian {
 
 
   public void setUnitAmount(Float unitAmount) {
+
+    
+    
     
     this.unitAmount = unitAmount;
   }
 
 
   public InvoiceDetailDian taxType(String taxType) {
+
+    
+    
     
     
     this.taxType = taxType;
@@ -272,12 +312,18 @@ public class InvoiceDetailDian {
 
 
   public void setTaxType(String taxType) {
+
+    
+    
     
     this.taxType = taxType;
   }
 
 
   public InvoiceDetailDian preTaxAmount(Float preTaxAmount) {
+
+    
+    
     
     
     this.preTaxAmount = preTaxAmount;
@@ -297,12 +343,18 @@ public class InvoiceDetailDian {
 
 
   public void setPreTaxAmount(Float preTaxAmount) {
+
+    
+    
     
     this.preTaxAmount = preTaxAmount;
   }
 
 
   public InvoiceDetailDian taxPercentage(Float taxPercentage) {
+
+    
+    
     
     
     this.taxPercentage = taxPercentage;
@@ -322,12 +374,18 @@ public class InvoiceDetailDian {
 
 
   public void setTaxPercentage(Float taxPercentage) {
+
+    
+    
     
     this.taxPercentage = taxPercentage;
   }
 
 
   public InvoiceDetailDian taxAmount(Float taxAmount) {
+
+    
+    
     
     
     this.taxAmount = taxAmount;
@@ -347,12 +405,18 @@ public class InvoiceDetailDian {
 
 
   public void setTaxAmount(Float taxAmount) {
+
+    
+    
     
     this.taxAmount = taxAmount;
   }
 
 
   public InvoiceDetailDian totalAmount(Float totalAmount) {
+
+    
+    
     
     
     this.totalAmount = totalAmount;
@@ -372,12 +436,18 @@ public class InvoiceDetailDian {
 
 
   public void setTotalAmount(Float totalAmount) {
+
+    
+    
     
     this.totalAmount = totalAmount;
   }
 
 
   public InvoiceDetailDian collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -397,6 +467,9 @@ public class InvoiceDetailDian {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }

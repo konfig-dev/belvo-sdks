@@ -9,8 +9,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/transactions | List all payment transactions
 
 # **get_details**
-<a name="get_details"></a>
-> PaymentTransaction get_details(id)
 
 Get details about a payment transaction
 
@@ -20,24 +18,21 @@ Get the details about a specific payment transaction.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a payment transaction
     get_details_response = belvo.payment_transactions.get_details(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
     )
     pprint(get_details_response.headers)
     pprint(get_details_response.status)
@@ -129,8 +124,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> PaymentsTransactionsPaginatedResponse list()
 
 List all payment transactions
 
@@ -140,46 +133,43 @@ List all payment transactions associated with your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all payment transactions
     list_response = belvo.payment_transactions.list(
-        query_params = {
-            'page': 1,
-            'id__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-            'charge': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'charge__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'beneficiary': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'beneficiary__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'payer': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'payer__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'transaction__type': "INFLOW",
-            'currency': "COP",
-            'description': "Training shoes",
-            'amount': "1000.00",
-            'amount__gt': "1000.00",
-            'amount__gte': "1000.00",
-            'amount__lt': "1000.00",
-            'amount__lte': "1000.00",
-            'amount__range': "1000.00,2000.00",
-        },
+        page=1,  # optional
+        id__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
+        charge="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        charge__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        beneficiary="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        beneficiary__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        payer="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        payer__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        transaction__type="INFLOW",  # optional
+        currency="COP",  # optional
+        description="Training shoes",  # optional
+        amount="1000.00",  # optional
+        amount__gt="1000.00",  # optional
+        amount__gte="1000.00",  # optional
+        amount__lt="1000.00",  # optional
+        amount__lte="1000.00",  # optional
+        amount__range="1000.00,2000.00",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

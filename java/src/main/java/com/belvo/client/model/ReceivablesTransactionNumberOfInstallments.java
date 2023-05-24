@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class ReceivablesTransactionNumberOfInstallments {
   }
 
   public ReceivablesTransactionNumberOfInstallments paid(Integer paid) {
+
+    
+    
     
     
     this.paid = paid;
@@ -81,12 +85,18 @@ public class ReceivablesTransactionNumberOfInstallments {
 
 
   public void setPaid(Integer paid) {
+
+    
+    
     
     this.paid = paid;
   }
 
 
   public ReceivablesTransactionNumberOfInstallments total(Integer total) {
+
+    
+    
     
     
     this.total = total;
@@ -106,6 +116,9 @@ public class ReceivablesTransactionNumberOfInstallments {
 
 
   public void setTotal(Integer total) {
+
+    
+    
     
     this.total = total;
   }

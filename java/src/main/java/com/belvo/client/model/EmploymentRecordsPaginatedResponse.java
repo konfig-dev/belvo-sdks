@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -73,6 +74,9 @@ public class EmploymentRecordsPaginatedResponse {
   }
 
   public EmploymentRecordsPaginatedResponse count(Integer count) {
+
+    
+    
     
     
     this.count = count;
@@ -92,12 +96,18 @@ public class EmploymentRecordsPaginatedResponse {
 
 
   public void setCount(Integer count) {
+
+    
+    
     
     this.count = count;
   }
 
 
   public EmploymentRecordsPaginatedResponse next(String next) {
+
+    
+    
     
     
     this.next = next;
@@ -117,12 +127,18 @@ public class EmploymentRecordsPaginatedResponse {
 
 
   public void setNext(String next) {
+
+    
+    
     
     this.next = next;
   }
 
 
   public EmploymentRecordsPaginatedResponse previous(String previous) {
+
+    
+    
     
     
     this.previous = previous;
@@ -142,12 +158,18 @@ public class EmploymentRecordsPaginatedResponse {
 
 
   public void setPrevious(String previous) {
+
+    
+    
     
     this.previous = previous;
   }
 
 
   public EmploymentRecordsPaginatedResponse results(List<EmploymentRecord> results) {
+
+    
+    
     
     
     this.results = results;
@@ -175,6 +197,9 @@ public class EmploymentRecordsPaginatedResponse {
 
 
   public void setResults(List<EmploymentRecord> results) {
+
+    
+    
     
     this.results = results;
   }

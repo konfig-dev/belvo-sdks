@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -104,6 +105,9 @@ public class TaxStatusTaxPayerInformationDian {
   }
 
   public TaxStatusTaxPayerInformationDian rfc(String rfc) {
+
+    
+    
     
     
     this.rfc = rfc;
@@ -123,12 +127,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setRfc(String rfc) {
+
+    
+    
     
     this.rfc = rfc;
   }
 
 
   public TaxStatusTaxPayerInformationDian curp(String curp) {
+
+    
+    
     
     
     this.curp = curp;
@@ -148,12 +158,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setCurp(String curp) {
+
+    
+    
     
     this.curp = curp;
   }
 
 
   public TaxStatusTaxPayerInformationDian name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -173,12 +189,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public TaxStatusTaxPayerInformationDian firstLastName(String firstLastName) {
+
+    
+    
     
     
     this.firstLastName = firstLastName;
@@ -198,12 +220,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setFirstLastName(String firstLastName) {
+
+    
+    
     
     this.firstLastName = firstLastName;
   }
 
 
   public TaxStatusTaxPayerInformationDian secondLastName(String secondLastName) {
+
+    
+    
     
     
     this.secondLastName = secondLastName;
@@ -223,12 +251,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setSecondLastName(String secondLastName) {
+
+    
+    
     
     this.secondLastName = secondLastName;
   }
 
 
   public TaxStatusTaxPayerInformationDian startOperationsDate(LocalDate startOperationsDate) {
+
+    
+    
     
     
     this.startOperationsDate = startOperationsDate;
@@ -248,12 +282,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setStartOperationsDate(LocalDate startOperationsDate) {
+
+    
+    
     
     this.startOperationsDate = startOperationsDate;
   }
 
 
   public TaxStatusTaxPayerInformationDian statusPadron(String statusPadron) {
+
+    
+    
     
     
     this.statusPadron = statusPadron;
@@ -273,12 +313,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setStatusPadron(String statusPadron) {
+
+    
+    
     
     this.statusPadron = statusPadron;
   }
 
 
   public TaxStatusTaxPayerInformationDian lastStatusChangeDate(LocalDate lastStatusChangeDate) {
+
+    
+    
     
     
     this.lastStatusChangeDate = lastStatusChangeDate;
@@ -298,12 +344,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setLastStatusChangeDate(LocalDate lastStatusChangeDate) {
+
+    
+    
     
     this.lastStatusChangeDate = lastStatusChangeDate;
   }
 
 
   public TaxStatusTaxPayerInformationDian commercialName(String commercialName) {
+
+    
+    
     
     
     this.commercialName = commercialName;
@@ -323,12 +375,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setCommercialName(String commercialName) {
+
+    
+    
     
     this.commercialName = commercialName;
   }
 
 
   public TaxStatusTaxPayerInformationDian socialName(String socialName) {
+
+    
+    
     
     
     this.socialName = socialName;
@@ -348,12 +406,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setSocialName(String socialName) {
+
+    
+    
     
     this.socialName = socialName;
   }
 
 
   public TaxStatusTaxPayerInformationDian email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -373,12 +437,18 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }
 
 
   public TaxStatusTaxPayerInformationDian phone(String phone) {
+
+    
+    
     
     
     this.phone = phone;
@@ -398,6 +468,9 @@ public class TaxStatusTaxPayerInformationDian {
 
 
   public void setPhone(String phone) {
+
+    
+    
     
     this.phone = phone;
   }

@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -75,6 +76,9 @@ public class InvoiceDetailRetainedTaxSat {
   }
 
   public InvoiceDetailRetainedTaxSat collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -94,12 +98,18 @@ public class InvoiceDetailRetainedTaxSat {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public InvoiceDetailRetainedTaxSat taxType(String taxType) {
+
+    
+    
     
     
     this.taxType = taxType;
@@ -119,12 +129,18 @@ public class InvoiceDetailRetainedTaxSat {
 
 
   public void setTaxType(String taxType) {
+
+    
+    
     
     this.taxType = taxType;
   }
 
 
   public InvoiceDetailRetainedTaxSat tax(String tax) {
+
+    
+    
     
     
     this.tax = tax;
@@ -144,12 +160,18 @@ public class InvoiceDetailRetainedTaxSat {
 
 
   public void setTax(String tax) {
+
+    
+    
     
     this.tax = tax;
   }
 
 
   public InvoiceDetailRetainedTaxSat taxPercentage(Float taxPercentage) {
+
+    
+    
     
     
     this.taxPercentage = taxPercentage;
@@ -169,12 +191,18 @@ public class InvoiceDetailRetainedTaxSat {
 
 
   public void setTaxPercentage(Float taxPercentage) {
+
+    
+    
     
     this.taxPercentage = taxPercentage;
   }
 
 
   public InvoiceDetailRetainedTaxSat retainedTaxAmount(Float retainedTaxAmount) {
+
+    
+    
     
     
     this.retainedTaxAmount = retainedTaxAmount;
@@ -194,6 +222,9 @@ public class InvoiceDetailRetainedTaxSat {
 
 
   public void setRetainedTaxAmount(Float retainedTaxAmount) {
+
+    
+    
     
     this.retainedTaxAmount = retainedTaxAmount;
   }

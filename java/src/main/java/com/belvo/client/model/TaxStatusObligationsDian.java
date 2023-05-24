@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -72,6 +73,9 @@ public class TaxStatusObligationsDian {
   }
 
   public TaxStatusObligationsDian obligation(String obligation) {
+
+    
+    
     
     
     this.obligation = obligation;
@@ -91,12 +95,18 @@ public class TaxStatusObligationsDian {
 
 
   public void setObligation(String obligation) {
+
+    
+    
     
     this.obligation = obligation;
   }
 
 
   public TaxStatusObligationsDian expiration(String expiration) {
+
+    
+    
     
     
     this.expiration = expiration;
@@ -116,12 +126,18 @@ public class TaxStatusObligationsDian {
 
 
   public void setExpiration(String expiration) {
+
+    
+    
     
     this.expiration = expiration;
   }
 
 
   public TaxStatusObligationsDian initialDate(LocalDate initialDate) {
+
+    
+    
     
     
     this.initialDate = initialDate;
@@ -141,12 +157,18 @@ public class TaxStatusObligationsDian {
 
 
   public void setInitialDate(LocalDate initialDate) {
+
+    
+    
     
     this.initialDate = initialDate;
   }
 
 
   public TaxStatusObligationsDian endDate(LocalDate endDate) {
+
+    
+    
     
     
     this.endDate = endDate;
@@ -166,6 +188,9 @@ public class TaxStatusObligationsDian {
 
 
   public void setEndDate(LocalDate endDate) {
+
+    
+    
     
     this.endDate = endDate;
   }

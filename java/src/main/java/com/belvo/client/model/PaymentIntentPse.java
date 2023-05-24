@@ -44,6 +44,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -144,6 +145,9 @@ public class PaymentIntentPse {
   }
 
   public PaymentIntentPse description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -163,12 +167,18 @@ public class PaymentIntentPse {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public PaymentIntentPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -188,12 +198,18 @@ public class PaymentIntentPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentIntentPse createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -213,12 +229,18 @@ public class PaymentIntentPse {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public PaymentIntentPse createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -238,12 +260,18 @@ public class PaymentIntentPse {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public PaymentIntentPse customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -263,12 +291,18 @@ public class PaymentIntentPse {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public PaymentIntentPse allowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -293,12 +327,18 @@ public class PaymentIntentPse {
 
 
   public void setAllowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
 
   public PaymentIntentPse amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -318,12 +358,18 @@ public class PaymentIntentPse {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public PaymentIntentPse currency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -343,12 +389,18 @@ public class PaymentIntentPse {
 
 
   public void setCurrency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public PaymentIntentPse failureCode(String failureCode) {
+
+    
+    
     
     
     this.failureCode = failureCode;
@@ -368,12 +420,18 @@ public class PaymentIntentPse {
 
 
   public void setFailureCode(String failureCode) {
+
+    
+    
     
     this.failureCode = failureCode;
   }
 
 
   public PaymentIntentPse failureMessage(String failureMessage) {
+
+    
+    
     
     
     this.failureMessage = failureMessage;
@@ -393,12 +451,18 @@ public class PaymentIntentPse {
 
 
   public void setFailureMessage(String failureMessage) {
+
+    
+    
     
     this.failureMessage = failureMessage;
   }
 
 
   public PaymentIntentPse metadata(Object metadata) {
+
+    
+    
     
     
     this.metadata = metadata;
@@ -418,12 +482,18 @@ public class PaymentIntentPse {
 
 
   public void setMetadata(Object metadata) {
+
+    
+    
     
     this.metadata = metadata;
   }
 
 
   public PaymentIntentPse nextStep(Object nextStep) {
+
+    
+    
     
     
     this.nextStep = nextStep;
@@ -443,12 +513,18 @@ public class PaymentIntentPse {
 
 
   public void setNextStep(Object nextStep) {
+
+    
+    
     
     this.nextStep = nextStep;
   }
 
 
   public PaymentIntentPse lastError(Object lastError) {
+
+    
+    
     
     
     this.lastError = lastError;
@@ -468,12 +544,18 @@ public class PaymentIntentPse {
 
 
   public void setLastError(Object lastError) {
+
+    
+    
     
     this.lastError = lastError;
   }
 
 
   public PaymentIntentPse paymentMethodDetails(PaymentIntentPaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -493,12 +575,18 @@ public class PaymentIntentPse {
 
 
   public void setPaymentMethodDetails(PaymentIntentPaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public PaymentIntentPse paymentMethodInformation(PaymentMethodInformationPse paymentMethodInformation) {
+
+    
+    
     
     
     this.paymentMethodInformation = paymentMethodInformation;
@@ -518,12 +606,18 @@ public class PaymentIntentPse {
 
 
   public void setPaymentMethodInformation(PaymentMethodInformationPse paymentMethodInformation) {
+
+    
+    
     
     this.paymentMethodInformation = paymentMethodInformation;
   }
 
 
   public PaymentIntentPse charges(List<Charge> charges) {
+
+    
+    
     
     
     this.charges = charges;
@@ -553,12 +647,18 @@ public class PaymentIntentPse {
 
 
   public void setCharges(List<Charge> charges) {
+
+    
+    
     
     this.charges = charges;
   }
 
 
   public PaymentIntentPse provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -578,12 +678,18 @@ public class PaymentIntentPse {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public PaymentIntentPse selectedPaymentMethodType(EnumPaymentLinkAllowedPaymentMethod selectedPaymentMethodType) {
+
+    
+    
     
     
     this.selectedPaymentMethodType = selectedPaymentMethodType;
@@ -603,12 +709,18 @@ public class PaymentIntentPse {
 
 
   public void setSelectedPaymentMethodType(EnumPaymentLinkAllowedPaymentMethod selectedPaymentMethodType) {
+
+    
+    
     
     this.selectedPaymentMethodType = selectedPaymentMethodType;
   }
 
 
   public PaymentIntentPse status(EnumPaymentIntentStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -628,12 +740,18 @@ public class PaymentIntentPse {
 
 
   public void setStatus(EnumPaymentIntentStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public PaymentIntentPse updatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     
     this.updatedAt = updatedAt;
@@ -653,6 +771,9 @@ public class PaymentIntentPse {
 
 
   public void setUpdatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     this.updatedAt = updatedAt;
   }

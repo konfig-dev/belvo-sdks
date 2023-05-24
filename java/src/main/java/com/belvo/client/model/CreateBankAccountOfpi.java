@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class CreateBankAccountOfpi {
   }
 
   public CreateBankAccountOfpi institution(UUID institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -85,12 +89,18 @@ public class CreateBankAccountOfpi {
 
 
   public void setInstitution(UUID institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public CreateBankAccountOfpi holder(Object holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -110,12 +120,18 @@ public class CreateBankAccountOfpi {
 
 
   public void setHolder(Object holder) {
+
+    
+    
     
     this.holder = holder;
   }
 
 
   public CreateBankAccountOfpi details(Object details) {
+
+    
+    
     
     
     this.details = details;
@@ -135,6 +151,9 @@ public class CreateBankAccountOfpi {
 
 
   public void setDetails(Object details) {
+
+    
+    
     
     this.details = details;
   }

@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class HolderBankAccountInformationPse {
   }
 
   public HolderBankAccountInformationPse firstName(String firstName) {
+
+    
+    
     
     
     this.firstName = firstName;
@@ -81,12 +85,18 @@ public class HolderBankAccountInformationPse {
 
 
   public void setFirstName(String firstName) {
+
+    
+    
     
     this.firstName = firstName;
   }
 
 
   public HolderBankAccountInformationPse lastName(String lastName) {
+
+    
+    
     
     
     this.lastName = lastName;
@@ -106,6 +116,9 @@ public class HolderBankAccountInformationPse {
 
 
   public void setLastName(String lastName) {
+
+    
+    
     
     this.lastName = lastName;
   }

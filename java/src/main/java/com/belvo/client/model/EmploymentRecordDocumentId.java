@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -64,6 +65,9 @@ public class EmploymentRecordDocumentId {
   }
 
   public EmploymentRecordDocumentId documentType(EnumEmploymentRecordDocumentType documentType) {
+
+    
+    
     
     
     this.documentType = documentType;
@@ -83,12 +87,18 @@ public class EmploymentRecordDocumentId {
 
 
   public void setDocumentType(EnumEmploymentRecordDocumentType documentType) {
+
+    
+    
     
     this.documentType = documentType;
   }
 
 
   public EmploymentRecordDocumentId documentNumber(String documentNumber) {
+
+    
+    
     
     
     this.documentNumber = documentNumber;
@@ -108,6 +118,9 @@ public class EmploymentRecordDocumentId {
 
 
   public void setDocumentNumber(String documentNumber) {
+
+    
+    
     
     this.documentNumber = documentNumber;
   }

@@ -8,8 +8,6 @@ Method | HTTP request | Description
 [**categorize_transactions**](#categorize_transactions) | **post** /api/categorization | Categorize transactions
 
 # **categorize_transactions**
-<a name="categorize_transactions"></a>
-> Categorization categorize_transactions(categorization_request)
 
 Categorize transactions
 
@@ -19,21 +17,22 @@ Send through your raw transaction data and receive enriched information for each
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "language": "pt",
-        "transactions": [
+try:
+    # Categorize transactions
+    categorize_transactions_response = belvo.categorization.categorize_transactions(
+        language="pt",  # required
+        transactions=[
             {
                 "description": "APPL3STORE",
                 "transaction_id": "3CWE4927CF15355",
@@ -48,12 +47,7 @@ body = {
                 "institution": "BBVA",
                 "mcc": 2345,
             }
-        ],
-    }
-try:
-    # Categorize transactions
-    categorize_transactions_response = belvo.categorization.categorize_transactions(
-        body=body
+        ],  # required
     )
     pprint(categorize_transactions_response.body)
     pprint(categorize_transactions_response.body["transactions"])

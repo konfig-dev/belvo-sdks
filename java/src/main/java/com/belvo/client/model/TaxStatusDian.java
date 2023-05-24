@@ -44,6 +44,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -124,6 +125,9 @@ public class TaxStatusDian {
   }
 
   public TaxStatusDian id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -143,12 +147,18 @@ public class TaxStatusDian {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxStatusDian link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -168,12 +178,18 @@ public class TaxStatusDian {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxStatusDian collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -193,12 +209,18 @@ public class TaxStatusDian {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxStatusDian createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -218,12 +240,18 @@ public class TaxStatusDian {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxStatusDian placeAndDateOfIssuance(String placeAndDateOfIssuance) {
+
+    
+    
     
     
     this.placeAndDateOfIssuance = placeAndDateOfIssuance;
@@ -243,12 +271,18 @@ public class TaxStatusDian {
 
 
   public void setPlaceAndDateOfIssuance(String placeAndDateOfIssuance) {
+
+    
+    
     
     this.placeAndDateOfIssuance = placeAndDateOfIssuance;
   }
 
 
   public TaxStatusDian officialName(String officialName) {
+
+    
+    
     
     
     this.officialName = officialName;
@@ -268,12 +302,18 @@ public class TaxStatusDian {
 
 
   public void setOfficialName(String officialName) {
+
+    
+    
     
     this.officialName = officialName;
   }
 
 
   public TaxStatusDian idCif(String idCif) {
+
+    
+    
     
     
     this.idCif = idCif;
@@ -293,12 +333,18 @@ public class TaxStatusDian {
 
 
   public void setIdCif(String idCif) {
+
+    
+    
     
     this.idCif = idCif;
   }
 
 
   public TaxStatusDian taxPayerInformation(TaxStatusTaxPayerInformationDian taxPayerInformation) {
+
+    
+    
     
     
     this.taxPayerInformation = taxPayerInformation;
@@ -318,12 +364,18 @@ public class TaxStatusDian {
 
 
   public void setTaxPayerInformation(TaxStatusTaxPayerInformationDian taxPayerInformation) {
+
+    
+    
     
     this.taxPayerInformation = taxPayerInformation;
   }
 
 
   public TaxStatusDian address(TaxStatusAddressDian address) {
+
+    
+    
     
     
     this.address = address;
@@ -343,12 +395,18 @@ public class TaxStatusDian {
 
 
   public void setAddress(TaxStatusAddressDian address) {
+
+    
+    
     
     this.address = address;
   }
 
 
   public TaxStatusDian economicActivity(List<TaxStatusEconomicActivityDian> economicActivity) {
+
+    
+    
     
     
     this.economicActivity = economicActivity;
@@ -373,12 +431,18 @@ public class TaxStatusDian {
 
 
   public void setEconomicActivity(List<TaxStatusEconomicActivityDian> economicActivity) {
+
+    
+    
     
     this.economicActivity = economicActivity;
   }
 
 
   public TaxStatusDian regimens(List<TaxStatusRegimensDian> regimens) {
+
+    
+    
     
     
     this.regimens = regimens;
@@ -406,12 +470,18 @@ public class TaxStatusDian {
 
 
   public void setRegimens(List<TaxStatusRegimensDian> regimens) {
+
+    
+    
     
     this.regimens = regimens;
   }
 
 
   public TaxStatusDian obligations(List<TaxStatusObligationsDian> obligations) {
+
+    
+    
     
     
     this.obligations = obligations;
@@ -436,12 +506,18 @@ public class TaxStatusDian {
 
 
   public void setObligations(List<TaxStatusObligationsDian> obligations) {
+
+    
+    
     
     this.obligations = obligations;
   }
 
 
   public TaxStatusDian digitalStamp(String digitalStamp) {
+
+    
+    
     
     
     this.digitalStamp = digitalStamp;
@@ -461,12 +537,18 @@ public class TaxStatusDian {
 
 
   public void setDigitalStamp(String digitalStamp) {
+
+    
+    
     
     this.digitalStamp = digitalStamp;
   }
 
 
   public TaxStatusDian digitalStampChain(String digitalStampChain) {
+
+    
+    
     
     
     this.digitalStampChain = digitalStampChain;
@@ -486,12 +568,18 @@ public class TaxStatusDian {
 
 
   public void setDigitalStampChain(String digitalStampChain) {
+
+    
+    
     
     this.digitalStampChain = digitalStampChain;
   }
 
 
   public TaxStatusDian pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -503,7 +591,7 @@ public class TaxStatusDian {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@11f2ec50", required = true, value = "Tax status PDF as a binary string.")
+  @ApiModelProperty(example = "[B@24444b66", required = true, value = "Tax status PDF as a binary string.")
 
   public File getPdf() {
     return pdf;
@@ -511,6 +599,9 @@ public class TaxStatusDian {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }

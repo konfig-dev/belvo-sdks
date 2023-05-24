@@ -10,8 +10,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/customers | List all customers
 
 # **create**
-<a name="create"></a>
-> CustomersCreateResponse create()
 
 Create a new customer
 
@@ -21,23 +19,29 @@ Create a new customer to send or request funds.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = None
 try:
     # Create a new customer
     create_response = belvo.customers.create(
-        body=body
+        body=None,  # optional
+        customer_type="INDIVIDUAL",  # optional
+        name="Carlos Vives",  # optional
+        country="COL",  # optional
+        email="carlos.vives@musicacolombia.co",  # optional
+        identifier="1018760936",  # optional
+        identifier_type="CC",  # optional
+        address="Calle Carlos Vives 432, 80300 Bogota",  # optional
+        phone="3210-9876",  # optional
     )
     pprint(create_response.body)
     pprint(create_response.headers)
@@ -139,8 +143,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> CustomersGetDetailsResponse get_details(id)
 
 Get details about a customer
 
@@ -150,24 +152,21 @@ Get the details about a specific customer
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a customer
     get_details_response = belvo.customers.get_details(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -260,8 +259,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> CustomerPaginatedResponse list()
 
 List all customers
 
@@ -271,33 +268,30 @@ List all customers associated with your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all customers
     list_response = belvo.customers.list(
-        query_params = {
-            'page': 1,
-            'id__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-            'customer__type': "INDIVIDUAL",
-            'search': "car",
-        },
+        page=1,  # optional
+        id__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
+        customer__type="INDIVIDUAL",  # optional
+        search="car",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

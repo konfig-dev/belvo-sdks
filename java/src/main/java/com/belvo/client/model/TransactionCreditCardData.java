@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -77,6 +78,9 @@ public class TransactionCreditCardData {
   }
 
   public TransactionCreditCardData collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -96,12 +100,18 @@ public class TransactionCreditCardData {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TransactionCreditCardData billName(String billName) {
+
+    
+    
     
     
     this.billName = billName;
@@ -121,12 +131,18 @@ public class TransactionCreditCardData {
 
 
   public void setBillName(String billName) {
+
+    
+    
     
     this.billName = billName;
   }
 
 
   public TransactionCreditCardData billStatus(EnumTransactionBillStatus billStatus) {
+
+    
+    
     
     
     this.billStatus = billStatus;
@@ -146,12 +162,18 @@ public class TransactionCreditCardData {
 
 
   public void setBillStatus(EnumTransactionBillStatus billStatus) {
+
+    
+    
     
     this.billStatus = billStatus;
   }
 
 
   public TransactionCreditCardData billAmount(Float billAmount) {
+
+    
+    
     
     
     this.billAmount = billAmount;
@@ -171,12 +193,18 @@ public class TransactionCreditCardData {
 
 
   public void setBillAmount(Float billAmount) {
+
+    
+    
     
     this.billAmount = billAmount;
   }
 
 
   public TransactionCreditCardData previousBillTotal(String previousBillTotal) {
+
+    
+    
     
     
     this.previousBillTotal = previousBillTotal;
@@ -196,6 +224,9 @@ public class TransactionCreditCardData {
 
 
   public void setPreviousBillTotal(String previousBillTotal) {
+
+    
+    
     
     this.previousBillTotal = previousBillTotal;
   }

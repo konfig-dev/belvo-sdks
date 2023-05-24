@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -74,6 +75,9 @@ public class AnnualIncomeStatementIndividual {
   }
 
   public AnnualIncomeStatementIndividual grossIncome(GrossIncomeIndividual grossIncome) {
+
+    
+    
     
     
     this.grossIncome = grossIncome;
@@ -93,12 +97,18 @@ public class AnnualIncomeStatementIndividual {
 
 
   public void setGrossIncome(GrossIncomeIndividual grossIncome) {
+
+    
+    
     
     this.grossIncome = grossIncome;
   }
 
 
   public AnnualIncomeStatementIndividual nonTaxableIncome(NonTaxableIncomeIndividual nonTaxableIncome) {
+
+    
+    
     
     
     this.nonTaxableIncome = nonTaxableIncome;
@@ -118,12 +128,18 @@ public class AnnualIncomeStatementIndividual {
 
 
   public void setNonTaxableIncome(NonTaxableIncomeIndividual nonTaxableIncome) {
+
+    
+    
     
     this.nonTaxableIncome = nonTaxableIncome;
   }
 
 
   public AnnualIncomeStatementIndividual netIncome(NetIncomeIndividual netIncome) {
+
+    
+    
     
     
     this.netIncome = netIncome;
@@ -143,12 +159,18 @@ public class AnnualIncomeStatementIndividual {
 
 
   public void setNetIncome(NetIncomeIndividual netIncome) {
+
+    
+    
     
     this.netIncome = netIncome;
   }
 
 
   public AnnualIncomeStatementIndividual annualTotals(AnnualTotalsIndividual annualTotals) {
+
+    
+    
     
     
     this.annualTotals = annualTotals;
@@ -168,6 +190,9 @@ public class AnnualIncomeStatementIndividual {
 
 
   public void setAnnualTotals(AnnualTotalsIndividual annualTotals) {
+
+    
+    
     
     this.annualTotals = annualTotals;
   }

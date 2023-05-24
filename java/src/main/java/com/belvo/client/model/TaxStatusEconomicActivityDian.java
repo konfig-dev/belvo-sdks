@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -75,6 +76,9 @@ public class TaxStatusEconomicActivityDian {
   }
 
   public TaxStatusEconomicActivityDian economicActivity(String economicActivity) {
+
+    
+    
     
     
     this.economicActivity = economicActivity;
@@ -94,12 +98,18 @@ public class TaxStatusEconomicActivityDian {
 
 
   public void setEconomicActivity(String economicActivity) {
+
+    
+    
     
     this.economicActivity = economicActivity;
   }
 
 
   public TaxStatusEconomicActivityDian initialDate(LocalDate initialDate) {
+
+    
+    
     
     
     this.initialDate = initialDate;
@@ -119,12 +129,18 @@ public class TaxStatusEconomicActivityDian {
 
 
   public void setInitialDate(LocalDate initialDate) {
+
+    
+    
     
     this.initialDate = initialDate;
   }
 
 
   public TaxStatusEconomicActivityDian endDate(LocalDate endDate) {
+
+    
+    
     
     
     this.endDate = endDate;
@@ -144,12 +160,18 @@ public class TaxStatusEconomicActivityDian {
 
 
   public void setEndDate(LocalDate endDate) {
+
+    
+    
     
     this.endDate = endDate;
   }
 
 
   public TaxStatusEconomicActivityDian order(String order) {
+
+    
+    
     
     
     this.order = order;
@@ -169,12 +191,18 @@ public class TaxStatusEconomicActivityDian {
 
 
   public void setOrder(String order) {
+
+    
+    
     
     this.order = order;
   }
 
 
   public TaxStatusEconomicActivityDian percentage(String percentage) {
+
+    
+    
     
     
     this.percentage = percentage;
@@ -194,6 +222,9 @@ public class TaxStatusEconomicActivityDian {
 
 
   public void setPercentage(String percentage) {
+
+    
+    
     
     this.percentage = percentage;
   }

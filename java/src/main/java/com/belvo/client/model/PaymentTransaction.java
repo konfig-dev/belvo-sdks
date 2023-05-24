@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -101,6 +102,9 @@ public class PaymentTransaction {
   }
 
   public PaymentTransaction description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -120,12 +124,18 @@ public class PaymentTransaction {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public PaymentTransaction id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -145,12 +155,18 @@ public class PaymentTransaction {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentTransaction createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -170,12 +186,18 @@ public class PaymentTransaction {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public PaymentTransaction createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -195,12 +217,18 @@ public class PaymentTransaction {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public PaymentTransaction amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -220,12 +248,18 @@ public class PaymentTransaction {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public PaymentTransaction currency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -245,12 +279,18 @@ public class PaymentTransaction {
 
 
   public void setCurrency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public PaymentTransaction transactionType(EnumPaymentTransactionType transactionType) {
+
+    
+    
     
     
     this.transactionType = transactionType;
@@ -270,12 +310,18 @@ public class PaymentTransaction {
 
 
   public void setTransactionType(EnumPaymentTransactionType transactionType) {
+
+    
+    
     
     this.transactionType = transactionType;
   }
 
 
   public PaymentTransaction beneficiary(UUID beneficiary) {
+
+    
+    
     
     
     this.beneficiary = beneficiary;
@@ -295,12 +341,18 @@ public class PaymentTransaction {
 
 
   public void setBeneficiary(UUID beneficiary) {
+
+    
+    
     
     this.beneficiary = beneficiary;
   }
 
 
   public PaymentTransaction payer(Object payer) {
+
+    
+    
     
     
     this.payer = payer;
@@ -320,12 +372,18 @@ public class PaymentTransaction {
 
 
   public void setPayer(Object payer) {
+
+    
+    
     
     this.payer = payer;
   }
 
 
   public PaymentTransaction paymentIntent(UUID paymentIntent) {
+
+    
+    
     
     
     this.paymentIntent = paymentIntent;
@@ -345,12 +403,18 @@ public class PaymentTransaction {
 
 
   public void setPaymentIntent(UUID paymentIntent) {
+
+    
+    
     
     this.paymentIntent = paymentIntent;
   }
 
 
   public PaymentTransaction customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -370,6 +434,9 @@ public class PaymentTransaction {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }

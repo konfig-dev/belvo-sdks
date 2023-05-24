@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -103,6 +104,9 @@ public class CustomerPse {
   }
 
   public CustomerPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -122,12 +126,18 @@ public class CustomerPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public CustomerPse createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -147,12 +157,18 @@ public class CustomerPse {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public CustomerPse createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -172,12 +188,18 @@ public class CustomerPse {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public CustomerPse customerType(EnumCustomerType customerType) {
+
+    
+    
     
     
     this.customerType = customerType;
@@ -197,13 +219,21 @@ public class CustomerPse {
 
 
   public void setCustomerType(EnumCustomerType customerType) {
+
+    
+    
     
     this.customerType = customerType;
   }
 
 
   public CustomerPse name(String name) {
+
     
+    
+    if (name.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for name. Length must be greater than or equal to 5.");
+    }
     
     this.name = name;
     return this;
@@ -222,12 +252,20 @@ public class CustomerPse {
 
 
   public void setName(String name) {
+
     
+    
+    if (name.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for name. Length must be greater than or equal to 5.");
+    }
     this.name = name;
   }
 
 
   public CustomerPse country(EnumPaymentsCountry country) {
+
+    
+    
     
     
     this.country = country;
@@ -247,12 +285,18 @@ public class CustomerPse {
 
 
   public void setCountry(EnumPaymentsCountry country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public CustomerPse email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -272,12 +316,18 @@ public class CustomerPse {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }
 
 
   public CustomerPse identifier(String identifier) {
+
+    
+    
     
     
     this.identifier = identifier;
@@ -297,12 +347,18 @@ public class CustomerPse {
 
 
   public void setIdentifier(String identifier) {
+
+    
+    
     
     this.identifier = identifier;
   }
 
 
   public CustomerPse identifierType(EnumCustomerIdentifierTypePse identifierType) {
+
+    
+    
     
     
     this.identifierType = identifierType;
@@ -322,13 +378,21 @@ public class CustomerPse {
 
 
   public void setIdentifierType(EnumCustomerIdentifierTypePse identifierType) {
+
+    
+    
     
     this.identifierType = identifierType;
   }
 
 
   public CustomerPse address(String address) {
+
     
+    
+    if (address.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for address. Length must be greater than or equal to 5.");
+    }
     
     this.address = address;
     return this;
@@ -347,12 +411,20 @@ public class CustomerPse {
 
 
   public void setAddress(String address) {
+
     
+    
+    if (address.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for address. Length must be greater than or equal to 5.");
+    }
     this.address = address;
   }
 
 
   public CustomerPse phone(String phone) {
+
+    
+    
     
     
     this.phone = phone;
@@ -372,6 +444,9 @@ public class CustomerPse {
 
 
   public void setPhone(String phone) {
+
+    
+    
     
     this.phone = phone;
   }

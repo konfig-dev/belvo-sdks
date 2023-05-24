@@ -9,8 +9,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /api/institutions | List all institutions
 
 # **get_details**
-<a name="get_details"></a>
-> Institution get_details(id)
 
 Get an institution&#x27;s details
 
@@ -20,28 +18,23 @@ Get the details of a specific institution.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get an institution's details
     get_details_response = belvo.institutions.get_details(
-        path_params = {
-            'id': "4",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="4",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["id"])
@@ -173,8 +166,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> InstitutionsPaginatedResponse list()
 
 List all institutions
 
@@ -184,38 +175,35 @@ Get a paginated list of all the institutions currently supported by Belvo. By de
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all institutions
     list_response = belvo.institutions.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'country_code': "MX",
-            'country_code__in': "CO,BR",
-            'display_name': "Erebor Bank",
-            'name': "string_example",
-            'name__in': "erebor_br_retail,gotham_co_business",
-            'resources__allin': "ACCOUNTS,OWNERS,TRANSACTIONS",
-            'status': "healthy",
-            'status__in': "healthy,down",
-            'type': "fiscal",
-            'type__in': "fiscal,bank",
-            'website': "https://www.erebor.mx",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        country_code="MX",  # optional
+        country_code__in="CO,BR",  # optional
+        display_name="Erebor Bank",  # optional
+        name="string_example",  # optional
+        name__in="erebor_br_retail,gotham_co_business",  # optional
+        resources__allin="ACCOUNTS,OWNERS,TRANSACTIONS",  # optional
+        status="healthy",  # optional
+        status__in="healthy,down",  # optional
+        type="fiscal",  # optional
+        type__in="fiscal,bank",  # optional
+        website="https://www.erebor.mx",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

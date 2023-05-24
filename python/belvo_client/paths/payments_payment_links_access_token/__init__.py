@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._PAYMENTS_PAYMENTLINKS_ACCESS_TOKEN
+path = PathValues.PAYMENTS_PAYMENTLINKS_ACCESS_TOKEN

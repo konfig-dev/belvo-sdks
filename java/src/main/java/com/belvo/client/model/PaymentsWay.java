@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -61,6 +62,9 @@ public class PaymentsWay {
   }
 
   public PaymentsWay terminalId(Integer terminalId) {
+
+    
+    
     
     
     this.terminalId = terminalId;
@@ -80,12 +84,18 @@ public class PaymentsWay {
 
 
   public void setTerminalId(Integer terminalId) {
+
+    
+    
     
     this.terminalId = terminalId;
   }
 
 
   public PaymentsWay formId(Integer formId) {
+
+    
+    
     
     
     this.formId = formId;
@@ -105,6 +115,9 @@ public class PaymentsWay {
 
 
   public void setFormId(Integer formId) {
+
+    
+    
     
     this.formId = formId;
   }

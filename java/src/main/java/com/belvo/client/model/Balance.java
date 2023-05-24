@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -86,6 +87,9 @@ public class Balance {
   }
 
   public Balance id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -105,12 +109,18 @@ public class Balance {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Balance account(Account account) {
+
+    
+    
     
     
     this.account = account;
@@ -130,12 +140,18 @@ public class Balance {
 
 
   public void setAccount(Account account) {
+
+    
+    
     
     this.account = account;
   }
 
 
   public Balance valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -155,12 +171,18 @@ public class Balance {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public Balance balance(Float balance) {
+
+    
+    
     
     
     this.balance = balance;
@@ -180,12 +202,18 @@ public class Balance {
 
 
   public void setBalance(Float balance) {
+
+    
+    
     
     this.balance = balance;
   }
 
 
   public Balance currentBalance(Double currentBalance) {
+
+    
+    
     
     
     this.currentBalance = currentBalance;
@@ -193,6 +221,9 @@ public class Balance {
   }
 
   public Balance currentBalance(Integer currentBalance) {
+
+    
+    
     
     
     this.currentBalance = currentBalance.doubleValue();
@@ -214,12 +245,18 @@ public class Balance {
 
 
   public void setCurrentBalance(Double currentBalance) {
+
+    
+    
     
     this.currentBalance = currentBalance;
   }
 
 
   public Balance statement(String statement) {
+
+    
+    
     
     
     this.statement = statement;
@@ -241,12 +278,18 @@ public class Balance {
 
 
   public void setStatement(String statement) {
+
+    
+    
     
     this.statement = statement;
   }
 
 
   public Balance collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -268,6 +311,9 @@ public class Balance {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }

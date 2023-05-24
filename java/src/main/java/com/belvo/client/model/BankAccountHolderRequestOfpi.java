@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -63,6 +64,9 @@ public class BankAccountHolderRequestOfpi {
   }
 
   public BankAccountHolderRequestOfpi type(EnumBankAccountHolderTypeOfpi type) {
+
+    
+    
     
     
     this.type = type;
@@ -82,12 +86,18 @@ public class BankAccountHolderRequestOfpi {
 
 
   public void setType(EnumBankAccountHolderTypeOfpi type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public BankAccountHolderRequestOfpi information(Object information) {
+
+    
+    
     
     
     this.information = information;
@@ -107,6 +117,9 @@ public class BankAccountHolderRequestOfpi {
 
 
   public void setInformation(Object information) {
+
+    
+    
     
     this.information = information;
   }

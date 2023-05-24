@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -71,6 +72,9 @@ public class PaymentIntentPaymentMethodDetailsBodyBusinessOfpi {
   }
 
   public PaymentIntentPaymentMethodDetailsBodyBusinessOfpi beneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
@@ -90,12 +94,18 @@ public class PaymentIntentPaymentMethodDetailsBodyBusinessOfpi {
 
 
   public void setBeneficiaryBankAccount(UUID beneficiaryBankAccount) {
+
+    
+    
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyBusinessOfpi payerInstitution(UUID payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -115,12 +125,18 @@ public class PaymentIntentPaymentMethodDetailsBodyBusinessOfpi {
 
 
   public void setPayerInstitution(UUID payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyBusinessOfpi callbackUrl(String callbackUrl) {
+
+    
+    
     
     
     this.callbackUrl = callbackUrl;
@@ -140,12 +156,18 @@ public class PaymentIntentPaymentMethodDetailsBodyBusinessOfpi {
 
 
   public void setCallbackUrl(String callbackUrl) {
+
+    
+    
     
     this.callbackUrl = callbackUrl;
   }
 
 
   public PaymentIntentPaymentMethodDetailsBodyBusinessOfpi cpf(String cpf) {
+
+    
+    
     
     
     this.cpf = cpf;
@@ -165,6 +187,9 @@ public class PaymentIntentPaymentMethodDetailsBodyBusinessOfpi {
 
 
   public void setCpf(String cpf) {
+
+    
+    
     
     this.cpf = cpf;
   }

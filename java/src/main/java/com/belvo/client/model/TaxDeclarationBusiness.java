@@ -42,6 +42,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -110,6 +111,9 @@ public class TaxDeclarationBusiness {
   }
 
   public TaxDeclarationBusiness id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -129,12 +133,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxDeclarationBusiness link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -154,12 +164,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxDeclarationBusiness collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -179,12 +195,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxDeclarationBusiness createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -204,12 +226,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxDeclarationBusiness documentInformation(DocumentInformationBusiness documentInformation) {
+
+    
+    
     
     
     this.documentInformation = documentInformation;
@@ -229,12 +257,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setDocumentInformation(DocumentInformationBusiness documentInformation) {
+
+    
+    
     
     this.documentInformation = documentInformation;
   }
 
 
   public TaxDeclarationBusiness taxPayerInformation(TaxPayerInformationBusiness taxPayerInformation) {
+
+    
+    
     
     
     this.taxPayerInformation = taxPayerInformation;
@@ -254,12 +288,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setTaxPayerInformation(TaxPayerInformationBusiness taxPayerInformation) {
+
+    
+    
     
     this.taxPayerInformation = taxPayerInformation;
   }
 
 
   public TaxDeclarationBusiness equityStatement(EquityStatementBusiness equityStatement) {
+
+    
+    
     
     
     this.equityStatement = equityStatement;
@@ -279,12 +319,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setEquityStatement(EquityStatementBusiness equityStatement) {
+
+    
+    
     
     this.equityStatement = equityStatement;
   }
 
 
   public TaxDeclarationBusiness annualIncomeStatement(AnnualIncomeStatementBusiness annualIncomeStatement) {
+
+    
+    
     
     
     this.annualIncomeStatement = annualIncomeStatement;
@@ -304,12 +350,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setAnnualIncomeStatement(AnnualIncomeStatementBusiness annualIncomeStatement) {
+
+    
+    
     
     this.annualIncomeStatement = annualIncomeStatement;
   }
 
 
   public TaxDeclarationBusiness annualCostsAndDeductionsStatement(AnnualCostsAndDeductionsStatementBusiness annualCostsAndDeductionsStatement) {
+
+    
+    
     
     
     this.annualCostsAndDeductionsStatement = annualCostsAndDeductionsStatement;
@@ -329,12 +381,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setAnnualCostsAndDeductionsStatement(AnnualCostsAndDeductionsStatementBusiness annualCostsAndDeductionsStatement) {
+
+    
+    
     
     this.annualCostsAndDeductionsStatement = annualCostsAndDeductionsStatement;
   }
 
 
   public TaxDeclarationBusiness taxAssessment(TaxAssessmentBusiness taxAssessment) {
+
+    
+    
     
     
     this.taxAssessment = taxAssessment;
@@ -354,12 +412,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setTaxAssessment(TaxAssessmentBusiness taxAssessment) {
+
+    
+    
     
     this.taxAssessment = taxAssessment;
   }
 
 
   public TaxDeclarationBusiness dateIssued(LocalDate dateIssued) {
+
+    
+    
     
     
     this.dateIssued = dateIssued;
@@ -379,12 +443,18 @@ public class TaxDeclarationBusiness {
 
 
   public void setDateIssued(LocalDate dateIssued) {
+
+    
+    
     
     this.dateIssued = dateIssued;
   }
 
 
   public TaxDeclarationBusiness pdf(String pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -404,6 +474,9 @@ public class TaxDeclarationBusiness {
 
 
   public void setPdf(String pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }

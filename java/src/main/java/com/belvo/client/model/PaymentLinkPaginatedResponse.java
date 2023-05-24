@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -72,6 +73,9 @@ public class PaymentLinkPaginatedResponse {
   }
 
   public PaymentLinkPaginatedResponse count(Integer count) {
+
+    
+    
     
     
     this.count = count;
@@ -91,12 +95,18 @@ public class PaymentLinkPaginatedResponse {
 
 
   public void setCount(Integer count) {
+
+    
+    
     
     this.count = count;
   }
 
 
   public PaymentLinkPaginatedResponse next(String next) {
+
+    
+    
     
     
     this.next = next;
@@ -116,12 +126,18 @@ public class PaymentLinkPaginatedResponse {
 
 
   public void setNext(String next) {
+
+    
+    
     
     this.next = next;
   }
 
 
   public PaymentLinkPaginatedResponse previous(String previous) {
+
+    
+    
     
     
     this.previous = previous;
@@ -141,12 +157,18 @@ public class PaymentLinkPaginatedResponse {
 
 
   public void setPrevious(String previous) {
+
+    
+    
     
     this.previous = previous;
   }
 
 
   public PaymentLinkPaginatedResponse results(List<Object> results) {
+
+    
+    
     
     
     this.results = results;
@@ -174,6 +196,9 @@ public class PaymentLinkPaginatedResponse {
 
 
   public void setResults(List<Object> results) {
+
+    
+    
     
     this.results = results;
   }

@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -84,6 +85,9 @@ public class InstitutionsFormField {
   }
 
   public InstitutionsFormField name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -103,12 +107,18 @@ public class InstitutionsFormField {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public InstitutionsFormField type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -128,12 +138,18 @@ public class InstitutionsFormField {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InstitutionsFormField label(String label) {
+
+    
+    
     
     
     this.label = label;
@@ -153,12 +169,18 @@ public class InstitutionsFormField {
 
 
   public void setLabel(String label) {
+
+    
+    
     
     this.label = label;
   }
 
 
   public InstitutionsFormField validation(String validation) {
+
+    
+    
     
     
     this.validation = validation;
@@ -178,12 +200,18 @@ public class InstitutionsFormField {
 
 
   public void setValidation(String validation) {
+
+    
+    
     
     this.validation = validation;
   }
 
 
   public InstitutionsFormField placeholder(String placeholder) {
+
+    
+    
     
     
     this.placeholder = placeholder;
@@ -203,12 +231,18 @@ public class InstitutionsFormField {
 
 
   public void setPlaceholder(String placeholder) {
+
+    
+    
     
     this.placeholder = placeholder;
   }
 
 
   public InstitutionsFormField validationMessage(String validationMessage) {
+
+    
+    
     
     
     this.validationMessage = validationMessage;
@@ -228,12 +262,18 @@ public class InstitutionsFormField {
 
 
   public void setValidationMessage(String validationMessage) {
+
+    
+    
     
     this.validationMessage = validationMessage;
   }
 
 
   public InstitutionsFormField values(List<InstitutionsFormFieldValues> values) {
+
+    
+    
     
     
     this.values = values;
@@ -261,6 +301,9 @@ public class InstitutionsFormField {
 
 
   public void setValues(List<InstitutionsFormFieldValues> values) {
+
+    
+    
     
     this.values = values;
   }

@@ -16,6 +16,7 @@ import urllib3
 import json
 from urllib3._collections import HTTPHeaderDict
 
+from belvo_client.api_response import AsyncGeneratorResponse
 from belvo_client import api_client, exceptions
 from datetime import date, datetime  # noqa: F401
 import decimal  # noqa: F401
@@ -30,8 +31,11 @@ import frozendict  # noqa: F401
 
 from belvo_client import schemas  # noqa: F401
 
-from belvo_client.model.paginated_response_link import PaginatedResponseLink
-from belvo_client.model.links_list_response import LinksListResponse
+from belvo_client.model.paginated_response_link import PaginatedResponseLink as PaginatedResponseLinkSchema
+from belvo_client.model.links_list_response import LinksListResponse as LinksListResponseSchema
+
+from belvo_client.type.paginated_response_link import PaginatedResponseLink
+from belvo_client.type.links_list_response import LinksListResponse
 
 from . import path
 
@@ -250,35 +254,43 @@ request_query_status__in = api_client.QueryParameter(
 _auth = [
     'basicAuth',
 ]
-SchemaFor200ResponseBodyApplicationJson = PaginatedResponseLink
+SchemaFor200ResponseBodyApplicationJson = PaginatedResponseLinkSchema
 
 
 @dataclass
 class ApiResponseFor200(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor200ResponseBodyApplicationJson,
-    ]
+    body: PaginatedResponseLink
+
+
+@dataclass
+class ApiResponseFor200Async(api_client.AsyncApiResponse):
+    body: PaginatedResponseLink
 
 
 _response_for_200 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor200,
+    response_cls_async=ApiResponseFor200Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor200ResponseBodyApplicationJson),
     },
 )
-SchemaFor401ResponseBodyApplicationJson = LinksListResponse
+SchemaFor401ResponseBodyApplicationJson = LinksListResponseSchema
 
 
 @dataclass
 class ApiResponseFor401(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor401ResponseBodyApplicationJson,
-    ]
+    body: LinksListResponse
+
+
+@dataclass
+class ApiResponseFor401Async(api_client.AsyncApiResponse):
+    body: LinksListResponse
 
 
 _response_for_401 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor401,
+    response_cls_async=ApiResponseFor401Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor401ResponseBodyApplicationJson),
@@ -294,49 +306,96 @@ _all_accept_content_types = (
 
 
 class BaseApi(api_client.Api):
-    @typing.overload
-    def _list_oapg(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-    ]: ...
 
-    @typing.overload
-    def _list_oapg(
+    def _list_mapped_args(
         self,
-        skip_deserialization: typing_extensions.Literal[True],
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
+        page: typing.Optional[int] = None,
+        page_size: typing.Optional[int] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+        access_mode: typing.Optional[str] = None,
+        created_at: typing.Optional[str] = None,
+        created_at__gt: typing.Optional[str] = None,
+        created_at__gte: typing.Optional[str] = None,
+        created_at__lt: typing.Optional[str] = None,
+        created_at__lte: typing.Optional[str] = None,
+        created_at__range: typing.Optional[str] = None,
+        created_by__not_in: typing.Optional[str] = None,
+        external_id: typing.Optional[str] = None,
+        external_id__in: typing.Optional[str] = None,
+        id: typing.Optional[str] = None,
+        id__in: typing.Optional[str] = None,
+        institution: typing.Optional[str] = None,
+        institution__in: typing.Optional[str] = None,
+        institution_user_id: typing.Optional[str] = None,
+        institution_user_id__in: typing.Optional[str] = None,
+        refresh_rate: typing.Optional[str] = None,
+        status: typing.Optional[str] = None,
+        status__in: typing.Optional[str] = None,
+    ) -> api_client.MappedArgs:
+        args: api_client.MappedArgs = api_client.MappedArgs()
+        _query_params = {}
+        if page is not None:
+            _query_params["page"] = page
+        if page_size is not None:
+            _query_params["page_size"] = page_size
+        if omit is not None:
+            _query_params["omit"] = omit
+        if fields is not None:
+            _query_params["fields"] = fields
+        if access_mode is not None:
+            _query_params["access_mode"] = access_mode
+        if created_at is not None:
+            _query_params["created_at"] = created_at
+        if created_at__gt is not None:
+            _query_params["created_at__gt"] = created_at__gt
+        if created_at__gte is not None:
+            _query_params["created_at__gte"] = created_at__gte
+        if created_at__lt is not None:
+            _query_params["created_at__lt"] = created_at__lt
+        if created_at__lte is not None:
+            _query_params["created_at__lte"] = created_at__lte
+        if created_at__range is not None:
+            _query_params["created_at__range"] = created_at__range
+        if created_by__not_in is not None:
+            _query_params["created_by__not_in"] = created_by__not_in
+        if external_id is not None:
+            _query_params["external_id"] = external_id
+        if external_id__in is not None:
+            _query_params["external_id__in"] = external_id__in
+        if id is not None:
+            _query_params["id"] = id
+        if id__in is not None:
+            _query_params["id__in"] = id__in
+        if institution is not None:
+            _query_params["institution"] = institution
+        if institution__in is not None:
+            _query_params["institution__in"] = institution__in
+        if institution_user_id is not None:
+            _query_params["institution_user_id"] = institution_user_id
+        if institution_user_id__in is not None:
+            _query_params["institution_user_id__in"] = institution_user_id__in
+        if refresh_rate is not None:
+            _query_params["refresh_rate"] = refresh_rate
+        if status is not None:
+            _query_params["status"] = status
+        if status__in is not None:
+            _query_params["status__in"] = status__in
+        args.query = _query_params
+        return args
 
-    @typing.overload
-    def _list_oapg(
+    async def _alist_oapg(
         self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def _list_oapg(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+            query_params: typing.Optional[dict] = {},
         skip_deserialization: bool = False,
-    ):
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+    ) -> typing.Union[
+        ApiResponseFor200Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
         """
         List all links
         :param skip_deserialization: If true then api_response.response will be set but
@@ -345,7 +404,7 @@ class BaseApi(api_client.Api):
         """
         self._verify_typed_dict_inputs_oapg(RequestQueryParams, query_params)
         used_path = path.value
-
+    
         prefix_separator_iterator = None
         for parameter in (
             request_query_page,
@@ -380,30 +439,144 @@ class BaseApi(api_client.Api):
             serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
             for serialized_value in serialized_data.values():
                 used_path += serialized_value
-
+    
         _headers = HTTPHeaderDict()
         # TODO add cookie handling
         if accept_content_types:
             for accept_content_type in accept_content_types:
                 _headers.add('Accept', accept_content_type)
+    
+        response = await self.api_client.async_call_api(
+            resource_path=used_path,
+            method='get'.upper(),
+            headers=_headers,
+            auth_settings=_auth,
+            prefix_separator_iterator=prefix_separator_iterator,
+            timeout=timeout,
+        )
+        
+        if stream:
+            async def stream_iterator():
+                """
+                iterates over response.http_response.content and closes connection once iteration has finished
+                """
+                async for line in response.http_response.content:
+                    if line == b'\r\n':
+                        continue
+                    yield line
+                response.http_response.close()
+                await response.session.close()
+            return AsyncGeneratorResponse(
+                content=stream_iterator(),
+                headers=response.http_response.headers,
+                status=response.http_response.status,
+                response=response.http_response
+            )
+    
+        response_for_status = _status_code_to_response.get(str(response.http_response.status))
+        if response_for_status:
+            api_response = await response_for_status.deserialize_async(
+                                                    response,
+                                                    self.api_client.configuration,
+                                                    skip_deserialization=skip_deserialization
+                                                )
+        else:
+            # If response data is JSON then deserialize for SDK consumer convenience
+            is_json = api_client.JSONDetector._content_type_is_json(response.http_response.headers.get('Content-Type', ''))
+            api_response = api_client.ApiResponseWithoutDeserializationAsync(
+                body=await response.http_response.json() if is_json else await response.http_response.text(),
+                response=response.http_response,
+                round_trip_time=response.round_trip_time,
+                status=response.http_response.status,
+                headers=response.http_response.headers,
+            )
+    
+        if not 200 <= api_response.status <= 299:
+            raise exceptions.ApiException(api_response=api_response)
+    
+        # cleanup session / response
+        response.http_response.close()
+        await response.session.close()
+    
+        return api_response
 
+    def _list_oapg(
+        self,
+            query_params: typing.Optional[dict] = {},
+        skip_deserialization: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        stream: bool = False,
+    ) -> typing.Union[
+        ApiResponseFor200,
+        api_client.ApiResponseWithoutDeserialization,
+    ]:
+        """
+        List all links
+        :param skip_deserialization: If true then api_response.response will be set but
+            api_response.body and api_response.headers will not be deserialized into schema
+            class instances
+        """
+        self._verify_typed_dict_inputs_oapg(RequestQueryParams, query_params)
+        used_path = path.value
+    
+        prefix_separator_iterator = None
+        for parameter in (
+            request_query_page,
+            request_query_page_size,
+            request_query_omit,
+            request_query_fields,
+            request_query_access_mode,
+            request_query_created_at,
+            request_query_created_at__gt,
+            request_query_created_at__gte,
+            request_query_created_at__lt,
+            request_query_created_at__lte,
+            request_query_created_at__range,
+            request_query_created_by__not_in,
+            request_query_external_id,
+            request_query_external_id__in,
+            request_query_id,
+            request_query_id__in,
+            request_query_institution,
+            request_query_institution__in,
+            request_query_institution_user_id,
+            request_query_institution_user_id__in,
+            request_query_refresh_rate,
+            request_query_status,
+            request_query_status__in,
+        ):
+            parameter_data = query_params.get(parameter.name, schemas.unset)
+            if parameter_data is schemas.unset:
+                continue
+            if prefix_separator_iterator is None:
+                prefix_separator_iterator = parameter.get_prefix_separator_iterator()
+            serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
+            for serialized_value in serialized_data.values():
+                used_path += serialized_value
+    
+        _headers = HTTPHeaderDict()
+        # TODO add cookie handling
+        if accept_content_types:
+            for accept_content_type in accept_content_types:
+                _headers.add('Accept', accept_content_type)
+    
         response = self.api_client.call_api(
             resource_path=used_path,
             method='get'.upper(),
             headers=_headers,
             auth_settings=_auth,
             prefix_separator_iterator=prefix_separator_iterator,
-            stream=stream,
             timeout=timeout,
         )
-
+    
         response_for_status = _status_code_to_response.get(str(response.http_response.status))
         if response_for_status:
             api_response = response_for_status.deserialize(
-                                                   response,
-                                                   self.api_client.configuration,
-                                                   skip_deserialization=skip_deserialization
-                                               )
+                                                    response,
+                                                    self.api_client.configuration,
+                                                    skip_deserialization=skip_deserialization
+                                                )
         else:
             # If response data is JSON then deserialize for SDK consumer convenience
             is_json = api_client.JSONDetector._content_type_is_json(response.http_response.headers.get('Content-Type', ''))
@@ -414,120 +587,249 @@ class BaseApi(api_client.Api):
                 status=response.http_response.status,
                 headers=response.http_response.headers,
             )
-
+    
         if not 200 <= api_response.status <= 299:
             raise exceptions.ApiException(api_response=api_response)
-
+    
         return api_response
-
 
 class List(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
-    @typing.overload
-    def list(
+    async def alist(
         self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
+        page: typing.Optional[int] = None,
+        page_size: typing.Optional[int] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+        access_mode: typing.Optional[str] = None,
+        created_at: typing.Optional[str] = None,
+        created_at__gt: typing.Optional[str] = None,
+        created_at__gte: typing.Optional[str] = None,
+        created_at__lt: typing.Optional[str] = None,
+        created_at__lte: typing.Optional[str] = None,
+        created_at__range: typing.Optional[str] = None,
+        created_by__not_in: typing.Optional[str] = None,
+        external_id: typing.Optional[str] = None,
+        external_id__in: typing.Optional[str] = None,
+        id: typing.Optional[str] = None,
+        id__in: typing.Optional[str] = None,
+        institution: typing.Optional[str] = None,
+        institution__in: typing.Optional[str] = None,
+        institution_user_id: typing.Optional[str] = None,
+        institution_user_id__in: typing.Optional[str] = None,
+        refresh_rate: typing.Optional[str] = None,
+        status: typing.Optional[str] = None,
+        status__in: typing.Optional[str] = None,
     ) -> typing.Union[
-        ApiResponseFor200,
-    ]: ...
-
-    @typing.overload
+        ApiResponseFor200Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
+        args = self._list_mapped_args(
+            page=page,
+            page_size=page_size,
+            omit=omit,
+            fields=fields,
+            access_mode=access_mode,
+            created_at=created_at,
+            created_at__gt=created_at__gt,
+            created_at__gte=created_at__gte,
+            created_at__lt=created_at__lt,
+            created_at__lte=created_at__lte,
+            created_at__range=created_at__range,
+            created_by__not_in=created_by__not_in,
+            external_id=external_id,
+            external_id__in=external_id__in,
+            id=id,
+            id__in=id__in,
+            institution=institution,
+            institution__in=institution__in,
+            institution_user_id=institution_user_id,
+            institution_user_id__in=institution_user_id__in,
+            refresh_rate=refresh_rate,
+            status=status,
+            status__in=status__in,
+        )
+        return await self._alist_oapg(
+            query_params=args.query,
+        )
+    
     def list(
         self,
-        skip_deserialization: typing_extensions.Literal[True],
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
-
-    @typing.overload
-    def list(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
+        page: typing.Optional[int] = None,
+        page_size: typing.Optional[int] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+        access_mode: typing.Optional[str] = None,
+        created_at: typing.Optional[str] = None,
+        created_at__gt: typing.Optional[str] = None,
+        created_at__gte: typing.Optional[str] = None,
+        created_at__lt: typing.Optional[str] = None,
+        created_at__lte: typing.Optional[str] = None,
+        created_at__range: typing.Optional[str] = None,
+        created_by__not_in: typing.Optional[str] = None,
+        external_id: typing.Optional[str] = None,
+        external_id__in: typing.Optional[str] = None,
+        id: typing.Optional[str] = None,
+        id__in: typing.Optional[str] = None,
+        institution: typing.Optional[str] = None,
+        institution__in: typing.Optional[str] = None,
+        institution_user_id: typing.Optional[str] = None,
+        institution_user_id__in: typing.Optional[str] = None,
+        refresh_rate: typing.Optional[str] = None,
+        status: typing.Optional[str] = None,
+        status__in: typing.Optional[str] = None,
     ) -> typing.Union[
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def list(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = False,
-    ):
-        return self._list_oapg(
-            query_params=query_params,
-            accept_content_types=accept_content_types,
-            stream=stream,
-            timeout=timeout,
-            skip_deserialization=skip_deserialization
+    ]:
+        args = self._list_mapped_args(
+            page=page,
+            page_size=page_size,
+            omit=omit,
+            fields=fields,
+            access_mode=access_mode,
+            created_at=created_at,
+            created_at__gt=created_at__gt,
+            created_at__gte=created_at__gte,
+            created_at__lt=created_at__lt,
+            created_at__lte=created_at__lte,
+            created_at__range=created_at__range,
+            created_by__not_in=created_by__not_in,
+            external_id=external_id,
+            external_id__in=external_id__in,
+            id=id,
+            id__in=id__in,
+            institution=institution,
+            institution__in=institution__in,
+            institution_user_id=institution_user_id,
+            institution_user_id__in=institution_user_id__in,
+            refresh_rate=refresh_rate,
+            status=status,
+            status__in=status__in,
         )
-
+        return self._list_oapg(
+            query_params=args.query,
+        )
 
 class ApiForget(BaseApi):
     # this class is used by api classes that refer to endpoints by path and http method names
 
-    @typing.overload
-    def get(
+    async def aget(
         self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
+        page: typing.Optional[int] = None,
+        page_size: typing.Optional[int] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+        access_mode: typing.Optional[str] = None,
+        created_at: typing.Optional[str] = None,
+        created_at__gt: typing.Optional[str] = None,
+        created_at__gte: typing.Optional[str] = None,
+        created_at__lt: typing.Optional[str] = None,
+        created_at__lte: typing.Optional[str] = None,
+        created_at__range: typing.Optional[str] = None,
+        created_by__not_in: typing.Optional[str] = None,
+        external_id: typing.Optional[str] = None,
+        external_id__in: typing.Optional[str] = None,
+        id: typing.Optional[str] = None,
+        id__in: typing.Optional[str] = None,
+        institution: typing.Optional[str] = None,
+        institution__in: typing.Optional[str] = None,
+        institution_user_id: typing.Optional[str] = None,
+        institution_user_id__in: typing.Optional[str] = None,
+        refresh_rate: typing.Optional[str] = None,
+        status: typing.Optional[str] = None,
+        status__in: typing.Optional[str] = None,
     ) -> typing.Union[
-        ApiResponseFor200,
-    ]: ...
-
-    @typing.overload
+        ApiResponseFor200Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
+        args = self._list_mapped_args(
+            page=page,
+            page_size=page_size,
+            omit=omit,
+            fields=fields,
+            access_mode=access_mode,
+            created_at=created_at,
+            created_at__gt=created_at__gt,
+            created_at__gte=created_at__gte,
+            created_at__lt=created_at__lt,
+            created_at__lte=created_at__lte,
+            created_at__range=created_at__range,
+            created_by__not_in=created_by__not_in,
+            external_id=external_id,
+            external_id__in=external_id__in,
+            id=id,
+            id__in=id__in,
+            institution=institution,
+            institution__in=institution__in,
+            institution_user_id=institution_user_id,
+            institution_user_id__in=institution_user_id__in,
+            refresh_rate=refresh_rate,
+            status=status,
+            status__in=status__in,
+        )
+        return await self._alist_oapg(
+            query_params=args.query,
+        )
+    
     def get(
         self,
-        skip_deserialization: typing_extensions.Literal[True],
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
-
-    @typing.overload
-    def get(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
+        page: typing.Optional[int] = None,
+        page_size: typing.Optional[int] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+        access_mode: typing.Optional[str] = None,
+        created_at: typing.Optional[str] = None,
+        created_at__gt: typing.Optional[str] = None,
+        created_at__gte: typing.Optional[str] = None,
+        created_at__lt: typing.Optional[str] = None,
+        created_at__lte: typing.Optional[str] = None,
+        created_at__range: typing.Optional[str] = None,
+        created_by__not_in: typing.Optional[str] = None,
+        external_id: typing.Optional[str] = None,
+        external_id__in: typing.Optional[str] = None,
+        id: typing.Optional[str] = None,
+        id__in: typing.Optional[str] = None,
+        institution: typing.Optional[str] = None,
+        institution__in: typing.Optional[str] = None,
+        institution_user_id: typing.Optional[str] = None,
+        institution_user_id__in: typing.Optional[str] = None,
+        refresh_rate: typing.Optional[str] = None,
+        status: typing.Optional[str] = None,
+        status__in: typing.Optional[str] = None,
     ) -> typing.Union[
         ApiResponseFor200,
         api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def get(
-        self,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = False,
-    ):
-        return self._list_oapg(
-            query_params=query_params,
-            accept_content_types=accept_content_types,
-            stream=stream,
-            timeout=timeout,
-            skip_deserialization=skip_deserialization
+    ]:
+        args = self._list_mapped_args(
+            page=page,
+            page_size=page_size,
+            omit=omit,
+            fields=fields,
+            access_mode=access_mode,
+            created_at=created_at,
+            created_at__gt=created_at__gt,
+            created_at__gte=created_at__gte,
+            created_at__lt=created_at__lt,
+            created_at__lte=created_at__lte,
+            created_at__range=created_at__range,
+            created_by__not_in=created_by__not_in,
+            external_id=external_id,
+            external_id__in=external_id__in,
+            id=id,
+            id__in=id__in,
+            institution=institution,
+            institution__in=institution__in,
+            institution_user_id=institution_user_id,
+            institution_user_id__in=institution_user_id__in,
+            refresh_rate=refresh_rate,
+            status=status,
+            status__in=status__in,
         )
-
+        return self._list_oapg(
+            query_params=args.query,
+        )
 

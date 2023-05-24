@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -70,6 +71,9 @@ public class RiskInsightsLoansMetrics {
   }
 
   public RiskInsightsLoansMetrics numAccounts(Integer numAccounts) {
+
+    
+    
     
     
     this.numAccounts = numAccounts;
@@ -89,12 +93,18 @@ public class RiskInsightsLoansMetrics {
 
 
   public void setNumAccounts(Integer numAccounts) {
+
+    
+    
     
     this.numAccounts = numAccounts;
   }
 
 
   public RiskInsightsLoansMetrics sumLoansPrincipal(Float sumLoansPrincipal) {
+
+    
+    
     
     
     this.sumLoansPrincipal = sumLoansPrincipal;
@@ -114,12 +124,18 @@ public class RiskInsightsLoansMetrics {
 
 
   public void setSumLoansPrincipal(Float sumLoansPrincipal) {
+
+    
+    
     
     this.sumLoansPrincipal = sumLoansPrincipal;
   }
 
 
   public RiskInsightsLoansMetrics sumLoansOutstandingPrincipal(Float sumLoansOutstandingPrincipal) {
+
+    
+    
     
     
     this.sumLoansOutstandingPrincipal = sumLoansOutstandingPrincipal;
@@ -139,12 +155,18 @@ public class RiskInsightsLoansMetrics {
 
 
   public void setSumLoansOutstandingPrincipal(Float sumLoansOutstandingPrincipal) {
+
+    
+    
     
     this.sumLoansOutstandingPrincipal = sumLoansOutstandingPrincipal;
   }
 
 
   public RiskInsightsLoansMetrics sumLoansMonthlyPayment(Float sumLoansMonthlyPayment) {
+
+    
+    
     
     
     this.sumLoansMonthlyPayment = sumLoansMonthlyPayment;
@@ -164,6 +186,9 @@ public class RiskInsightsLoansMetrics {
 
 
   public void setSumLoansMonthlyPayment(Float sumLoansMonthlyPayment) {
+
+    
+    
     
     this.sumLoansMonthlyPayment = sumLoansMonthlyPayment;
   }

@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -91,6 +92,9 @@ public class InvestmentsPortfolio {
   }
 
   public InvestmentsPortfolio id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -110,12 +114,18 @@ public class InvestmentsPortfolio {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public InvestmentsPortfolio name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -135,12 +145,18 @@ public class InvestmentsPortfolio {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public InvestmentsPortfolio type(EnumInvestmentPortfolioType type) {
+
+    
+    
     
     
     this.type = type;
@@ -160,12 +176,18 @@ public class InvestmentsPortfolio {
 
 
   public void setType(EnumInvestmentPortfolioType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvestmentsPortfolio balanceType(String balanceType) {
+
+    
+    
     
     
     this.balanceType = balanceType;
@@ -185,12 +207,18 @@ public class InvestmentsPortfolio {
 
 
   public void setBalanceType(String balanceType) {
+
+    
+    
     
     this.balanceType = balanceType;
   }
 
 
   public InvestmentsPortfolio balanceGross(Float balanceGross) {
+
+    
+    
     
     
     this.balanceGross = balanceGross;
@@ -210,12 +238,18 @@ public class InvestmentsPortfolio {
 
 
   public void setBalanceGross(Float balanceGross) {
+
+    
+    
     
     this.balanceGross = balanceGross;
   }
 
 
   public InvestmentsPortfolio balanceNet(Float balanceNet) {
+
+    
+    
     
     
     this.balanceNet = balanceNet;
@@ -235,12 +269,18 @@ public class InvestmentsPortfolio {
 
 
   public void setBalanceNet(Float balanceNet) {
+
+    
+    
     
     this.balanceNet = balanceNet;
   }
 
 
   public InvestmentsPortfolio currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -260,12 +300,18 @@ public class InvestmentsPortfolio {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public InvestmentsPortfolio instruments(List<InvestmentsPortfolioInstrument> instruments) {
+
+    
+    
     
     
     this.instruments = instruments;
@@ -293,6 +339,9 @@ public class InvestmentsPortfolio {
 
 
   public void setInstruments(List<InvestmentsPortfolioInstrument> instruments) {
+
+    
+    
     
     this.instruments = instruments;
   }

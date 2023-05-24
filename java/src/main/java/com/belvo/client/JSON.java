@@ -397,6 +397,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.belvo.client.model.UnexpectedError.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.belvo.client.model.UnsupportedOperationError.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.belvo.client.model.ValidationError.CustomTypeAdapterFactory());
+        gsonBuilder.disableHtmlEscaping();
         gson = gsonBuilder.create();
     }
 

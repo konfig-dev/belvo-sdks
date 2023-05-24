@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -61,6 +62,9 @@ public class PatchPaymentIntentPse {
   }
 
   public PatchPaymentIntentPse paymentMethodDetails(Object paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -80,12 +84,18 @@ public class PatchPaymentIntentPse {
 
 
   public void setPaymentMethodDetails(Object paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public PatchPaymentIntentPse confirm(Boolean confirm) {
+
+    
+    
     
     
     this.confirm = confirm;
@@ -105,6 +115,9 @@ public class PatchPaymentIntentPse {
 
 
   public void setConfirm(Boolean confirm) {
+
+    
+    
     
     this.confirm = confirm;
   }

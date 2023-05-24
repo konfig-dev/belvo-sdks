@@ -12,8 +12,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/accounts | Retrieve accounts for a link
 
 # **complete_request**
-<a name="complete_request"></a>
-> AccountsCompleteRequestResponse complete_request(patch_body)
 
 Complete an accounts request
 
@@ -23,32 +21,26 @@ Used to resume an Account retrieve session that was paused because an MFA token 
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "session": "6e7b283c6efa449c9c028a16b5c249fa",
-        "token": "1234ab",
-        "link": "683005d6-f45c-4adb-b289-f1a12f50f80c",
-        "save_data": True,
-    }
 try:
     # Complete an accounts request
     complete_request_response = belvo.accounts.complete_request(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        session="6e7b283c6efa449c9c028a16b5c249fa",  # required
+        link="683005d6-f45c-4adb-b289-f1a12f50f80c",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(complete_request_response.body)
     pprint(complete_request_response.headers)
@@ -216,8 +208,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete an account
 
@@ -227,24 +217,21 @@ Delete a specific account and all associated transactions, as well as owners, fr
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete an account
     belvo.accounts.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -330,8 +317,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> Account get_details(id)
 
 Get an account&#x27;s details
 
@@ -341,28 +326,23 @@ Get the details of a specific account.    > 🚧 Scheduled field deprecation   >
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get an account's details
     get_details_response = belvo.accounts.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.body["collected_at"])
@@ -500,8 +480,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> AccountsPaginatedResponse list()
 
 List all accounts
 
@@ -511,61 +489,58 @@ Get a paginated list of all existing accounts in your Belvo account. By default,
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all accounts
     list_response = belvo.accounts.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'balance__available': "4000.00",
-            'balance__available__lt': "6000.00",
-            'balance__available__lte': "5999.00",
-            'balance__available__gt': "2000.00",
-            'balance__available__gte': "1999.00",
-            'balance__available__range': "3000.00,4350.00",
-            'balance__current': "4000.00",
-            'balance__current__lt': "6000.00",
-            'balance__current__lte': "5999.00",
-            'balance__current__gt': "2000.00",
-            'balance__current__gte': "1999.00",
-            'balance__current__range': "3000.00,4350.00",
-            'category': "CREDIT_ACCOUNT",
-            'category__in': "CHECKING_ACCOUNT,SAVINGS_ACCOUNT",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'currency': "COP",
-            'currency__in': "COP,MXN",
-            'id': "24ccab1d-3a86-4136-a6eb-e04bf52b356f",
-            'id__in': "24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",
-            'institution': "erebor_mx_retail",
-            'institution__in': "erebor_mx_retail,gringotts_mx_retail",
-            'link__in': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",
-            'name': "Cuenta Perfiles- M.N. - MXN-666",
-            'name__icontains': "Perfiles",
-            'number': "4057068115181",
-            'number__in': "4057068115181,7809346821648",
-            'public_identification_name': "CLABE",
-            'public_identification_value': "150194683119900273",
-            'type': "Cuentas de efectivo",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        balance__available="4000.00",  # optional
+        balance__available__lt="6000.00",  # optional
+        balance__available__lte="5999.00",  # optional
+        balance__available__gt="2000.00",  # optional
+        balance__available__gte="1999.00",  # optional
+        balance__available__range="3000.00,4350.00",  # optional
+        balance__current="4000.00",  # optional
+        balance__current__lt="6000.00",  # optional
+        balance__current__lte="5999.00",  # optional
+        balance__current__gt="2000.00",  # optional
+        balance__current__gte="1999.00",  # optional
+        balance__current__range="3000.00,4350.00",  # optional
+        category="CREDIT_ACCOUNT",  # optional
+        category__in="CHECKING_ACCOUNT,SAVINGS_ACCOUNT",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        currency="COP",  # optional
+        currency__in="COP,MXN",  # optional
+        id="24ccab1d-3a86-4136-a6eb-e04bf52b356f",  # optional
+        id__in="24ccab1d-3a86-4136-a6eb-e04bf52b356f,beb2b197-3cf7-428d-bef3-f415c0d57509",  # optional
+        institution="erebor_mx_retail",  # optional
+        institution__in="erebor_mx_retail,gringotts_mx_retail",  # optional
+        link__in="8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",  # optional
+        name="Cuenta Perfiles- M.N. - MXN-666",  # optional
+        name__icontains="Perfiles",  # optional
+        number="4057068115181",  # optional
+        number__in="4057068115181,7809346821648",  # optional
+        public_identification_name="CLABE",  # optional
+        public_identification_value="150194683119900273",  # optional
+        type="Cuentas de efectivo",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])
@@ -945,8 +920,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> AccountsRetrieveResponse retrieve(standard_request)
 
 Retrieve accounts for a link
 
@@ -956,31 +929,25 @@ Retrieve accounts from an existing link.    > 🚧 Scheduled field deprecation  
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "link": "2ccd5e15-194a-4a19-a45a-e7223c7e6717",
-        "token": "1234ab",
-        "save_data": True,
-    }
 try:
     # Retrieve accounts for a link
     retrieve_response = belvo.accounts.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        link="2ccd5e15-194a-4a19-a45a-e7223c7e6717",  # required
+        token="1234ab",  # optional
+        save_data=True,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.headers)

@@ -45,6 +45,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -150,6 +151,9 @@ public class Account {
   }
 
   public Account id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -169,12 +173,18 @@ public class Account {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Account link(String link) {
+
+    
+    
     
     
     this.link = link;
@@ -194,12 +204,18 @@ public class Account {
 
 
   public void setLink(String link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public Account institution(InstitutionAccount institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -219,12 +235,18 @@ public class Account {
 
 
   public void setInstitution(InstitutionAccount institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public Account collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -244,12 +266,18 @@ public class Account {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public Account createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -269,12 +297,18 @@ public class Account {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Account category(EnumAccountCategory category) {
+
+    
+    
     
     
     this.category = category;
@@ -294,12 +328,18 @@ public class Account {
 
 
   public void setCategory(EnumAccountCategory category) {
+
+    
+    
     
     this.category = category;
   }
 
 
   public Account balanceType(String balanceType) {
+
+    
+    
     
     
     this.balanceType = balanceType;
@@ -319,12 +359,18 @@ public class Account {
 
 
   public void setBalanceType(String balanceType) {
+
+    
+    
     
     this.balanceType = balanceType;
   }
 
 
   public Account type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -344,12 +390,18 @@ public class Account {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public Account name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -369,12 +421,18 @@ public class Account {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public Account number(String number) {
+
+    
+    
     
     
     this.number = number;
@@ -394,12 +452,18 @@ public class Account {
 
 
   public void setNumber(String number) {
+
+    
+    
     
     this.number = number;
   }
 
 
   public Account balance(AccountsBalance balance) {
+
+    
+    
     
     
     this.balance = balance;
@@ -419,12 +483,18 @@ public class Account {
 
 
   public void setBalance(AccountsBalance balance) {
+
+    
+    
     
     this.balance = balance;
   }
 
 
   public Account currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -444,12 +514,18 @@ public class Account {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public Account publicIdentificationName(String publicIdentificationName) {
+
+    
+    
     
     
     this.publicIdentificationName = publicIdentificationName;
@@ -469,12 +545,18 @@ public class Account {
 
 
   public void setPublicIdentificationName(String publicIdentificationName) {
+
+    
+    
     
     this.publicIdentificationName = publicIdentificationName;
   }
 
 
   public Account publicIdentificationValue(String publicIdentificationValue) {
+
+    
+    
     
     
     this.publicIdentificationValue = publicIdentificationValue;
@@ -494,12 +576,18 @@ public class Account {
 
 
   public void setPublicIdentificationValue(String publicIdentificationValue) {
+
+    
+    
     
     this.publicIdentificationValue = publicIdentificationValue;
   }
 
 
   public Account lastAccessedAt(OffsetDateTime lastAccessedAt) {
+
+    
+    
     
     
     this.lastAccessedAt = lastAccessedAt;
@@ -519,12 +607,18 @@ public class Account {
 
 
   public void setLastAccessedAt(OffsetDateTime lastAccessedAt) {
+
+    
+    
     
     this.lastAccessedAt = lastAccessedAt;
   }
 
 
   public Account creditData(AccountsCreditData creditData) {
+
+    
+    
     
     
     this.creditData = creditData;
@@ -544,12 +638,18 @@ public class Account {
 
 
   public void setCreditData(AccountsCreditData creditData) {
+
+    
+    
     
     this.creditData = creditData;
   }
 
 
   public Account loanData(AccountsLoanData loanData) {
+
+    
+    
     
     
     this.loanData = loanData;
@@ -569,12 +669,18 @@ public class Account {
 
 
   public void setLoanData(AccountsLoanData loanData) {
+
+    
+    
     
     this.loanData = loanData;
   }
 
 
   public Account fundsData(List<AccountsFundsData> fundsData) {
+
+    
+    
     
     
     this.fundsData = fundsData;
@@ -602,12 +708,18 @@ public class Account {
 
 
   public void setFundsData(List<AccountsFundsData> fundsData) {
+
+    
+    
     
     this.fundsData = fundsData;
   }
 
 
   public Account receivablesData(AccountsReceivablesData receivablesData) {
+
+    
+    
     
     
     this.receivablesData = receivablesData;
@@ -627,12 +739,18 @@ public class Account {
 
 
   public void setReceivablesData(AccountsReceivablesData receivablesData) {
+
+    
+    
     
     this.receivablesData = receivablesData;
   }
 
 
   public Account bankProductId(String bankProductId) {
+
+    
+    
     
     
     this.bankProductId = bankProductId;
@@ -654,12 +772,18 @@ public class Account {
 
 
   public void setBankProductId(String bankProductId) {
+
+    
+    
     
     this.bankProductId = bankProductId;
   }
 
 
   public Account internalIdentification(String internalIdentification) {
+
+    
+    
     
     
     this.internalIdentification = internalIdentification;
@@ -681,6 +805,9 @@ public class Account {
 
 
   public void setInternalIdentification(String internalIdentification) {
+
+    
+    
     
     this.internalIdentification = internalIdentification;
   }

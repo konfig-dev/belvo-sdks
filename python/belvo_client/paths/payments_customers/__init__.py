@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._PAYMENTS_CUSTOMERS
+path = PathValues.PAYMENTS_CUSTOMERS

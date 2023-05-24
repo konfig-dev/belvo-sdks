@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -75,6 +76,9 @@ public class PatchPaymentMethodDetailsPse {
   }
 
   public PatchPaymentMethodDetailsPse payerInstitution(UUID payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -94,12 +98,18 @@ public class PatchPaymentMethodDetailsPse {
 
 
   public void setPayerInstitution(UUID payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }
 
 
   public PatchPaymentMethodDetailsPse username(String username) {
+
+    
+    
     
     
     this.username = username;
@@ -119,12 +129,18 @@ public class PatchPaymentMethodDetailsPse {
 
 
   public void setUsername(String username) {
+
+    
+    
     
     this.username = username;
   }
 
 
   public PatchPaymentMethodDetailsPse password(String password) {
+
+    
+    
     
     
     this.password = password;
@@ -144,12 +160,18 @@ public class PatchPaymentMethodDetailsPse {
 
 
   public void setPassword(String password) {
+
+    
+    
     
     this.password = password;
   }
 
 
   public PatchPaymentMethodDetailsPse payerToken(String payerToken) {
+
+    
+    
     
     
     this.payerToken = payerToken;
@@ -169,12 +191,18 @@ public class PatchPaymentMethodDetailsPse {
 
 
   public void setPayerToken(String payerToken) {
+
+    
+    
     
     this.payerToken = payerToken;
   }
 
 
   public PatchPaymentMethodDetailsPse payerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     
     this.payerBankAccount = payerBankAccount;
@@ -194,6 +222,9 @@ public class PatchPaymentMethodDetailsPse {
 
 
   public void setPayerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     this.payerBankAccount = payerBankAccount;
   }

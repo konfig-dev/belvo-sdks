@@ -46,7 +46,7 @@ class EnumInvoiceSatPaymentMethod(
             "PUE": "PUE",
             "PIP": "PIP",
             "PPD": "PPD",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -73,6 +74,9 @@ public class DisplayConfirmationRequiredOfpi {
   }
 
   public DisplayConfirmationRequiredOfpi beneficiaryBankAccount(BeneficiaryBankAccountOfpi beneficiaryBankAccount) {
+
+    
+    
     
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
@@ -92,12 +96,18 @@ public class DisplayConfirmationRequiredOfpi {
 
 
   public void setBeneficiaryBankAccount(BeneficiaryBankAccountOfpi beneficiaryBankAccount) {
+
+    
+    
     
     this.beneficiaryBankAccount = beneficiaryBankAccount;
   }
 
 
   public DisplayConfirmationRequiredOfpi payerName(String payerName) {
+
+    
+    
     
     
     this.payerName = payerName;
@@ -117,12 +127,18 @@ public class DisplayConfirmationRequiredOfpi {
 
 
   public void setPayerName(String payerName) {
+
+    
+    
     
     this.payerName = payerName;
   }
 
 
   public DisplayConfirmationRequiredOfpi payerIdentifier(UUID payerIdentifier) {
+
+    
+    
     
     
     this.payerIdentifier = payerIdentifier;
@@ -142,12 +158,18 @@ public class DisplayConfirmationRequiredOfpi {
 
 
   public void setPayerIdentifier(UUID payerIdentifier) {
+
+    
+    
     
     this.payerIdentifier = payerIdentifier;
   }
 
 
   public DisplayConfirmationRequiredOfpi payerInstitution(PaymentInstitution payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -167,6 +189,9 @@ public class DisplayConfirmationRequiredOfpi {
 
 
   public void setPayerInstitution(PaymentInstitution payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }

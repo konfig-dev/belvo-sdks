@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -89,6 +90,9 @@ public class CreateCustomerOfpi {
   }
 
   public CreateCustomerOfpi customerType(EnumCustomerType customerType) {
+
+    
+    
     
     
     this.customerType = customerType;
@@ -108,13 +112,21 @@ public class CreateCustomerOfpi {
 
 
   public void setCustomerType(EnumCustomerType customerType) {
+
+    
+    
     
     this.customerType = customerType;
   }
 
 
   public CreateCustomerOfpi name(String name) {
+
     
+    
+    if (name.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for name. Length must be greater than or equal to 5.");
+    }
     
     this.name = name;
     return this;
@@ -133,12 +145,20 @@ public class CreateCustomerOfpi {
 
 
   public void setName(String name) {
+
     
+    
+    if (name.length() < 5) {
+      throw new IllegalArgumentException("Invalid value for name. Length must be greater than or equal to 5.");
+    }
     this.name = name;
   }
 
 
   public CreateCustomerOfpi country(EnumPaymentsCountry country) {
+
+    
+    
     
     
     this.country = country;
@@ -158,12 +178,18 @@ public class CreateCustomerOfpi {
 
 
   public void setCountry(EnumPaymentsCountry country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public CreateCustomerOfpi email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -183,13 +209,21 @@ public class CreateCustomerOfpi {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }
 
 
   public CreateCustomerOfpi identifier(String identifier) {
+
     
+    
+    if (identifier.length() < 1) {
+      throw new IllegalArgumentException("Invalid value for identifier. Length must be greater than or equal to 1.");
+    }
     
     this.identifier = identifier;
     return this;
@@ -208,12 +242,20 @@ public class CreateCustomerOfpi {
 
 
   public void setIdentifier(String identifier) {
+
     
+    
+    if (identifier.length() < 1) {
+      throw new IllegalArgumentException("Invalid value for identifier. Length must be greater than or equal to 1.");
+    }
     this.identifier = identifier;
   }
 
 
   public CreateCustomerOfpi identifierType(EnumCustomerIdentifierTypeOfpi identifierType) {
+
+    
+    
     
     
     this.identifierType = identifierType;
@@ -233,12 +275,18 @@ public class CreateCustomerOfpi {
 
 
   public void setIdentifierType(EnumCustomerIdentifierTypeOfpi identifierType) {
+
+    
+    
     
     this.identifierType = identifierType;
   }
 
 
   public CreateCustomerOfpi address(String address) {
+
+    
+    
     
     
     this.address = address;
@@ -258,12 +306,18 @@ public class CreateCustomerOfpi {
 
 
   public void setAddress(String address) {
+
+    
+    
     
     this.address = address;
   }
 
 
   public CreateCustomerOfpi phone(String phone) {
+
+    
+    
     
     
     this.phone = phone;
@@ -283,6 +337,9 @@ public class CreateCustomerOfpi {
 
 
   public void setPhone(String phone) {
+
+    
+    
     
     this.phone = phone;
   }

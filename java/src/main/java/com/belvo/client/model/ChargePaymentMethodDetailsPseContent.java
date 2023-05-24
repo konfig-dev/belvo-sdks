@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -63,6 +64,9 @@ public class ChargePaymentMethodDetailsPseContent {
   }
 
   public ChargePaymentMethodDetailsPseContent payerInstitution(UUID payerInstitution) {
+
+    
+    
     
     
     this.payerInstitution = payerInstitution;
@@ -82,12 +86,18 @@ public class ChargePaymentMethodDetailsPseContent {
 
 
   public void setPayerInstitution(UUID payerInstitution) {
+
+    
+    
     
     this.payerInstitution = payerInstitution;
   }
 
 
   public ChargePaymentMethodDetailsPseContent payerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     
     this.payerBankAccount = payerBankAccount;
@@ -107,6 +117,9 @@ public class ChargePaymentMethodDetailsPseContent {
 
 
   public void setPayerBankAccount(UUID payerBankAccount) {
+
+    
+    
     
     this.payerBankAccount = payerBankAccount;
   }

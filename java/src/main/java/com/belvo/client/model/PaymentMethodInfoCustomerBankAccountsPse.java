@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -81,6 +82,9 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
   }
 
   public PaymentMethodInfoCustomerBankAccountsPse id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -100,12 +104,18 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentMethodInfoCustomerBankAccountsPse customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -125,12 +135,18 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public PaymentMethodInfoCustomerBankAccountsPse institution(PaymentInstitution institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -150,12 +166,18 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setInstitution(PaymentInstitution institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public PaymentMethodInfoCustomerBankAccountsPse number(String number) {
+
+    
+    
     
     
     this.number = number;
@@ -175,12 +197,18 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setNumber(String number) {
+
+    
+    
     
     this.number = number;
   }
 
 
   public PaymentMethodInfoCustomerBankAccountsPse holder(HolderBankAccountPse holder) {
+
+    
+    
     
     
     this.holder = holder;
@@ -200,12 +228,18 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setHolder(HolderBankAccountPse holder) {
+
+    
+    
     
     this.holder = holder;
   }
 
 
   public PaymentMethodInfoCustomerBankAccountsPse details(PaymentMethodInformationDetailsPse details) {
+
+    
+    
     
     
     this.details = details;
@@ -225,6 +259,9 @@ public class PaymentMethodInfoCustomerBankAccountsPse {
 
 
   public void setDetails(PaymentMethodInformationDetailsPse details) {
+
+    
+    
     
     this.details = details;
   }

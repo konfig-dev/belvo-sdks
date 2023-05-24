@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class SessionExpiredError {
   }
 
   public SessionExpiredError code(String code) {
+
+    
+    
     
     
     this.code = code;
@@ -85,12 +89,18 @@ public class SessionExpiredError {
 
 
   public void setCode(String code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public SessionExpiredError message(String message) {
+
+    
+    
     
     
     this.message = message;
@@ -110,12 +120,18 @@ public class SessionExpiredError {
 
 
   public void setMessage(String message) {
+
+    
+    
     
     this.message = message;
   }
 
 
   public SessionExpiredError requestId(String requestId) {
+
+    
+    
     
     
     this.requestId = requestId;
@@ -135,6 +151,9 @@ public class SessionExpiredError {
 
 
   public void setRequestId(String requestId) {
+
+    
+    
     
     this.requestId = requestId;
   }

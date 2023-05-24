@@ -42,6 +42,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -103,6 +104,9 @@ public class EmploymentRecord {
   }
 
   public EmploymentRecord id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -122,12 +126,18 @@ public class EmploymentRecord {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public EmploymentRecord link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -147,12 +157,18 @@ public class EmploymentRecord {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public EmploymentRecord createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -172,12 +188,18 @@ public class EmploymentRecord {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public EmploymentRecord collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -197,12 +219,18 @@ public class EmploymentRecord {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public EmploymentRecord reportDate(LocalDate reportDate) {
+
+    
+    
     
     
     this.reportDate = reportDate;
@@ -222,12 +250,18 @@ public class EmploymentRecord {
 
 
   public void setReportDate(LocalDate reportDate) {
+
+    
+    
     
     this.reportDate = reportDate;
   }
 
 
   public EmploymentRecord internalIdentification(String internalIdentification) {
+
+    
+    
     
     
     this.internalIdentification = internalIdentification;
@@ -247,12 +281,18 @@ public class EmploymentRecord {
 
 
   public void setInternalIdentification(String internalIdentification) {
+
+    
+    
     
     this.internalIdentification = internalIdentification;
   }
 
 
   public EmploymentRecord personalData(EmploymentRecordPersonalData personalData) {
+
+    
+    
     
     
     this.personalData = personalData;
@@ -272,12 +312,18 @@ public class EmploymentRecord {
 
 
   public void setPersonalData(EmploymentRecordPersonalData personalData) {
+
+    
+    
     
     this.personalData = personalData;
   }
 
 
   public EmploymentRecord socialSecuritySummary(EmploymentRecordSocialSecuritySummary socialSecuritySummary) {
+
+    
+    
     
     
     this.socialSecuritySummary = socialSecuritySummary;
@@ -297,12 +343,18 @@ public class EmploymentRecord {
 
 
   public void setSocialSecuritySummary(EmploymentRecordSocialSecuritySummary socialSecuritySummary) {
+
+    
+    
     
     this.socialSecuritySummary = socialSecuritySummary;
   }
 
 
   public EmploymentRecord employmentRecords(List<EmploymentRecordDetail> employmentRecords) {
+
+    
+    
     
     
     this.employmentRecords = employmentRecords;
@@ -330,12 +382,18 @@ public class EmploymentRecord {
 
 
   public void setEmploymentRecords(List<EmploymentRecordDetail> employmentRecords) {
+
+    
+    
     
     this.employmentRecords = employmentRecords;
   }
 
 
   public EmploymentRecord files(List<EmploymentRecordFile> files) {
+
+    
+    
     
     
     this.files = files;
@@ -363,6 +421,9 @@ public class EmploymentRecord {
 
 
   public void setFiles(List<EmploymentRecordFile> files) {
+
+    
+    
     
     this.files = files;
   }

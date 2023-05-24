@@ -41,6 +41,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -186,6 +187,9 @@ public class Charge {
   }
 
   public Charge description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -205,12 +209,18 @@ public class Charge {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public Charge id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -230,12 +240,18 @@ public class Charge {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Charge createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -255,12 +271,18 @@ public class Charge {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Charge createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -280,12 +302,18 @@ public class Charge {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public Charge customer(UUID customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -305,12 +333,18 @@ public class Charge {
 
 
   public void setCustomer(UUID customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public Charge failureCode(String failureCode) {
+
+    
+    
     
     
     this.failureCode = failureCode;
@@ -330,12 +364,18 @@ public class Charge {
 
 
   public void setFailureCode(String failureCode) {
+
+    
+    
     
     this.failureCode = failureCode;
   }
 
 
   public Charge failureMessage(String failureMessage) {
+
+    
+    
     
     
     this.failureMessage = failureMessage;
@@ -355,12 +395,18 @@ public class Charge {
 
 
   public void setFailureMessage(String failureMessage) {
+
+    
+    
     
     this.failureMessage = failureMessage;
   }
 
 
   public Charge status(StatusEnum status) {
+
+    
+    
     
     
     this.status = status;
@@ -380,12 +426,18 @@ public class Charge {
 
 
   public void setStatus(StatusEnum status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public Charge amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -405,12 +457,18 @@ public class Charge {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public Charge currency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -430,12 +488,18 @@ public class Charge {
 
 
   public void setCurrency(EnumPaymentsCurrency currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public Charge metadata(Object metadata) {
+
+    
+    
     
     
     this.metadata = metadata;
@@ -455,12 +519,18 @@ public class Charge {
 
 
   public void setMetadata(Object metadata) {
+
+    
+    
     
     this.metadata = metadata;
   }
 
 
   public Charge beneficiary(UUID beneficiary) {
+
+    
+    
     
     
     this.beneficiary = beneficiary;
@@ -480,12 +550,18 @@ public class Charge {
 
 
   public void setBeneficiary(UUID beneficiary) {
+
+    
+    
     
     this.beneficiary = beneficiary;
   }
 
 
   public Charge provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -505,12 +581,18 @@ public class Charge {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public Charge paymentMethodType(EnumPaymentLinkAllowedPaymentMethod paymentMethodType) {
+
+    
+    
     
     
     this.paymentMethodType = paymentMethodType;
@@ -530,12 +612,18 @@ public class Charge {
 
 
   public void setPaymentMethodType(EnumPaymentLinkAllowedPaymentMethod paymentMethodType) {
+
+    
+    
     
     this.paymentMethodType = paymentMethodType;
   }
 
 
   public Charge paymentMethodDetails(Object paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -555,12 +643,18 @@ public class Charge {
 
 
   public void setPaymentMethodDetails(Object paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public Charge paymentMethodInformation(Object paymentMethodInformation) {
+
+    
+    
     
     
     this.paymentMethodInformation = paymentMethodInformation;
@@ -580,12 +674,18 @@ public class Charge {
 
 
   public void setPaymentMethodInformation(Object paymentMethodInformation) {
+
+    
+    
     
     this.paymentMethodInformation = paymentMethodInformation;
   }
 
 
   public Charge paymentIntent(UUID paymentIntent) {
+
+    
+    
     
     
     this.paymentIntent = paymentIntent;
@@ -605,12 +705,18 @@ public class Charge {
 
 
   public void setPaymentIntent(UUID paymentIntent) {
+
+    
+    
     
     this.paymentIntent = paymentIntent;
   }
 
 
   public Charge transactions(List<PaymentTransaction> transactions) {
+
+    
+    
     
     
     this.transactions = transactions;
@@ -638,12 +744,18 @@ public class Charge {
 
 
   public void setTransactions(List<PaymentTransaction> transactions) {
+
+    
+    
     
     this.transactions = transactions;
   }
 
 
   public Charge updatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     
     this.updatedAt = updatedAt;
@@ -663,6 +775,9 @@ public class Charge {
 
 
   public void setUpdatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     this.updatedAt = updatedAt;
   }

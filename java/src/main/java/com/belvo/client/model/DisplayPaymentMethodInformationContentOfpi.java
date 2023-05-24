@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -61,6 +62,9 @@ public class DisplayPaymentMethodInformationContentOfpi {
   }
 
   public DisplayPaymentMethodInformationContentOfpi institutions(List<PaymentInstitution> institutions) {
+
+    
+    
     
     
     this.institutions = institutions;
@@ -88,6 +92,9 @@ public class DisplayPaymentMethodInformationContentOfpi {
 
 
   public void setInstitutions(List<PaymentInstitution> institutions) {
+
+    
+    
     
     this.institutions = institutions;
   }

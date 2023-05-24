@@ -48,7 +48,7 @@ We return one of the following enum values:
         enum_value_to_name = {
             "single": "SINGLE",
             "recurrent": "RECURRENT",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

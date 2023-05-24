@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -67,6 +68,9 @@ public class RecurringExpenseSourceTransaction {
   }
 
   public RecurringExpenseSourceTransaction description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -86,12 +90,18 @@ public class RecurringExpenseSourceTransaction {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public RecurringExpenseSourceTransaction amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -111,12 +121,18 @@ public class RecurringExpenseSourceTransaction {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public RecurringExpenseSourceTransaction valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -136,6 +152,9 @@ public class RecurringExpenseSourceTransaction {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }

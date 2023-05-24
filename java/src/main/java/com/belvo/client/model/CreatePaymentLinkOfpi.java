@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -91,6 +92,9 @@ public class CreatePaymentLinkOfpi {
   }
 
   public CreatePaymentLinkOfpi description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -110,12 +114,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public CreatePaymentLinkOfpi amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -135,12 +145,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public CreatePaymentLinkOfpi customer(String customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -160,12 +176,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setCustomer(String customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public CreatePaymentLinkOfpi allowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -190,12 +212,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setAllowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
 
   public CreatePaymentLinkOfpi provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -215,12 +243,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public CreatePaymentLinkOfpi paymentMethodDetails(PaymentMethodDetailsOfpi paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -240,12 +274,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setPaymentMethodDetails(PaymentMethodDetailsOfpi paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public CreatePaymentLinkOfpi callbackUrls(PaymentLinkCallbackUrls callbackUrls) {
+
+    
+    
     
     
     this.callbackUrls = callbackUrls;
@@ -265,12 +305,18 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setCallbackUrls(PaymentLinkCallbackUrls callbackUrls) {
+
+    
+    
     
     this.callbackUrls = callbackUrls;
   }
 
 
   public CreatePaymentLinkOfpi expiresIn(String expiresIn) {
+
+    
+    
     
     
     this.expiresIn = expiresIn;
@@ -290,6 +336,9 @@ public class CreatePaymentLinkOfpi {
 
 
   public void setExpiresIn(String expiresIn) {
+
+    
+    
     
     this.expiresIn = expiresIn;
   }

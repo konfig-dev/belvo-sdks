@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -86,6 +87,9 @@ public class TaxComplianceStatus {
   }
 
   public TaxComplianceStatus id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -105,12 +109,18 @@ public class TaxComplianceStatus {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxComplianceStatus collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -130,12 +140,18 @@ public class TaxComplianceStatus {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxComplianceStatus createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -155,12 +171,18 @@ public class TaxComplianceStatus {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxComplianceStatus internalIdentification(String internalIdentification) {
+
+    
+    
     
     
     this.internalIdentification = internalIdentification;
@@ -180,12 +202,18 @@ public class TaxComplianceStatus {
 
 
   public void setInternalIdentification(String internalIdentification) {
+
+    
+    
     
     this.internalIdentification = internalIdentification;
   }
 
 
   public TaxComplianceStatus pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -197,7 +225,7 @@ public class TaxComplianceStatus {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@28ff9b4e", required = true, value = "Tax compliance status PDF as a binary.")
+  @ApiModelProperty(example = "[B@78f7e40f", required = true, value = "Tax compliance status PDF as a binary.")
 
   public File getPdf() {
     return pdf;
@@ -205,12 +233,18 @@ public class TaxComplianceStatus {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }
 
 
   public TaxComplianceStatus rfc(String rfc) {
+
+    
+    
     
     
     this.rfc = rfc;
@@ -230,12 +264,18 @@ public class TaxComplianceStatus {
 
 
   public void setRfc(String rfc) {
+
+    
+    
     
     this.rfc = rfc;
   }
 
 
   public TaxComplianceStatus outcome(EnumTaxComplianceStatusOutcome outcome) {
+
+    
+    
     
     
     this.outcome = outcome;
@@ -255,6 +295,9 @@ public class TaxComplianceStatus {
 
 
   public void setOutcome(EnumTaxComplianceStatusOutcome outcome) {
+
+    
+    
     
     this.outcome = outcome;
   }

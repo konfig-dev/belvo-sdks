@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class TaxStatusRequest {
   }
 
   public TaxStatusRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -85,12 +89,18 @@ public class TaxStatusRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxStatusRequest attachPdf(Boolean attachPdf) {
+
+    
+    
     
     
     this.attachPdf = attachPdf;
@@ -110,12 +120,18 @@ public class TaxStatusRequest {
 
 
   public void setAttachPdf(Boolean attachPdf) {
+
+    
+    
     
     this.attachPdf = attachPdf;
   }
 
 
   public TaxStatusRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -135,6 +151,9 @@ public class TaxStatusRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

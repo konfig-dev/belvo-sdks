@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -96,6 +97,9 @@ public class AccountsCreditData {
   }
 
   public AccountsCreditData creditLimit(Float creditLimit) {
+
+    
+    
     
     
     this.creditLimit = creditLimit;
@@ -115,12 +119,18 @@ public class AccountsCreditData {
 
 
   public void setCreditLimit(Float creditLimit) {
+
+    
+    
     
     this.creditLimit = creditLimit;
   }
 
 
   public AccountsCreditData collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -140,12 +150,18 @@ public class AccountsCreditData {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public AccountsCreditData cuttingDate(String cuttingDate) {
+
+    
+    
     
     
     this.cuttingDate = cuttingDate;
@@ -165,12 +181,18 @@ public class AccountsCreditData {
 
 
   public void setCuttingDate(String cuttingDate) {
+
+    
+    
     
     this.cuttingDate = cuttingDate;
   }
 
 
   public AccountsCreditData nextPaymentDate(String nextPaymentDate) {
+
+    
+    
     
     
     this.nextPaymentDate = nextPaymentDate;
@@ -190,12 +212,18 @@ public class AccountsCreditData {
 
 
   public void setNextPaymentDate(String nextPaymentDate) {
+
+    
+    
     
     this.nextPaymentDate = nextPaymentDate;
   }
 
 
   public AccountsCreditData minimumPayment(Float minimumPayment) {
+
+    
+    
     
     
     this.minimumPayment = minimumPayment;
@@ -215,12 +243,18 @@ public class AccountsCreditData {
 
 
   public void setMinimumPayment(Float minimumPayment) {
+
+    
+    
     
     this.minimumPayment = minimumPayment;
   }
 
 
   public AccountsCreditData noInterestPayment(Float noInterestPayment) {
+
+    
+    
     
     
     this.noInterestPayment = noInterestPayment;
@@ -240,12 +274,18 @@ public class AccountsCreditData {
 
 
   public void setNoInterestPayment(Float noInterestPayment) {
+
+    
+    
     
     this.noInterestPayment = noInterestPayment;
   }
 
 
   public AccountsCreditData interestRate(Float interestRate) {
+
+    
+    
     
     
     this.interestRate = interestRate;
@@ -265,12 +305,18 @@ public class AccountsCreditData {
 
 
   public void setInterestRate(Float interestRate) {
+
+    
+    
     
     this.interestRate = interestRate;
   }
 
 
   public AccountsCreditData endDate(String endDate) {
+
+    
+    
     
     
     this.endDate = endDate;
@@ -292,12 +338,18 @@ public class AccountsCreditData {
 
 
   public void setEndDate(String endDate) {
+
+    
+    
     
     this.endDate = endDate;
   }
 
 
   public AccountsCreditData monthlyPayment(Double monthlyPayment) {
+
+    
+    
     
     
     this.monthlyPayment = monthlyPayment;
@@ -305,6 +357,9 @@ public class AccountsCreditData {
   }
 
   public AccountsCreditData monthlyPayment(Integer monthlyPayment) {
+
+    
+    
     
     
     this.monthlyPayment = monthlyPayment.doubleValue();
@@ -326,12 +381,18 @@ public class AccountsCreditData {
 
 
   public void setMonthlyPayment(Double monthlyPayment) {
+
+    
+    
     
     this.monthlyPayment = monthlyPayment;
   }
 
 
   public AccountsCreditData lastPaymentDate(String lastPaymentDate) {
+
+    
+    
     
     
     this.lastPaymentDate = lastPaymentDate;
@@ -353,6 +414,9 @@ public class AccountsCreditData {
 
 
   public void setLastPaymentDate(String lastPaymentDate) {
+
+    
+    
     
     this.lastPaymentDate = lastPaymentDate;
   }

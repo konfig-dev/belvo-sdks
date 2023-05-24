@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -105,6 +106,9 @@ public class Owner {
   }
 
   public Owner id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -124,12 +128,18 @@ public class Owner {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Owner link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -149,12 +159,18 @@ public class Owner {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public Owner internalIdentification(String internalIdentification) {
+
+    
+    
     
     
     this.internalIdentification = internalIdentification;
@@ -174,12 +190,18 @@ public class Owner {
 
 
   public void setInternalIdentification(String internalIdentification) {
+
+    
+    
     
     this.internalIdentification = internalIdentification;
   }
 
 
   public Owner collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -199,12 +221,18 @@ public class Owner {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public Owner createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -224,12 +252,18 @@ public class Owner {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Owner displayName(String displayName) {
+
+    
+    
     
     
     this.displayName = displayName;
@@ -249,12 +283,18 @@ public class Owner {
 
 
   public void setDisplayName(String displayName) {
+
+    
+    
     
     this.displayName = displayName;
   }
 
 
   public Owner email(String email) {
+
+    
+    
     
     
     this.email = email;
@@ -274,12 +314,18 @@ public class Owner {
 
 
   public void setEmail(String email) {
+
+    
+    
     
     this.email = email;
   }
 
 
   public Owner phoneNumber(String phoneNumber) {
+
+    
+    
     
     
     this.phoneNumber = phoneNumber;
@@ -299,12 +345,18 @@ public class Owner {
 
 
   public void setPhoneNumber(String phoneNumber) {
+
+    
+    
     
     this.phoneNumber = phoneNumber;
   }
 
 
   public Owner address(String address) {
+
+    
+    
     
     
     this.address = address;
@@ -324,12 +376,18 @@ public class Owner {
 
 
   public void setAddress(String address) {
+
+    
+    
     
     this.address = address;
   }
 
 
   public Owner documentId(OwnerDocumentId documentId) {
+
+    
+    
     
     
     this.documentId = documentId;
@@ -349,12 +407,18 @@ public class Owner {
 
 
   public void setDocumentId(OwnerDocumentId documentId) {
+
+    
+    
     
     this.documentId = documentId;
   }
 
 
   public Owner lastName(String lastName) {
+
+    
+    
     
     
     this.lastName = lastName;
@@ -376,12 +440,18 @@ public class Owner {
 
 
   public void setLastName(String lastName) {
+
+    
+    
     
     this.lastName = lastName;
   }
 
 
   public Owner secondLastName(String secondLastName) {
+
+    
+    
     
     
     this.secondLastName = secondLastName;
@@ -403,6 +473,9 @@ public class Owner {
 
 
   public void setSecondLastName(String secondLastName) {
+
+    
+    
     
     this.secondLastName = secondLastName;
   }

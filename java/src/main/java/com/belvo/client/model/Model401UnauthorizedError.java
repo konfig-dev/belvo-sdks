@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class Model401UnauthorizedError {
   }
 
   public Model401UnauthorizedError code(String code) {
+
+    
+    
     
     
     this.code = code;
@@ -85,12 +89,18 @@ public class Model401UnauthorizedError {
 
 
   public void setCode(String code) {
+
+    
+    
     
     this.code = code;
   }
 
 
   public Model401UnauthorizedError message(String message) {
+
+    
+    
     
     
     this.message = message;
@@ -110,12 +120,18 @@ public class Model401UnauthorizedError {
 
 
   public void setMessage(String message) {
+
+    
+    
     
     this.message = message;
   }
 
 
   public Model401UnauthorizedError requestId(String requestId) {
+
+    
+    
     
     
     this.requestId = requestId;
@@ -135,6 +151,9 @@ public class Model401UnauthorizedError {
 
 
   public void setRequestId(String requestId) {
+
+    
+    
     
     this.requestId = requestId;
   }

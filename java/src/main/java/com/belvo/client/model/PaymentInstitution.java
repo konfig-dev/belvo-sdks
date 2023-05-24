@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -102,6 +103,9 @@ public class PaymentInstitution {
   }
 
   public PaymentInstitution id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -121,12 +125,18 @@ public class PaymentInstitution {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentInstitution active(Boolean active) {
+
+    
+    
     
     
     this.active = active;
@@ -146,12 +156,18 @@ public class PaymentInstitution {
 
 
   public void setActive(Boolean active) {
+
+    
+    
     
     this.active = active;
   }
 
 
   public PaymentInstitution name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -171,12 +187,18 @@ public class PaymentInstitution {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public PaymentInstitution displayName(String displayName) {
+
+    
+    
     
     
     this.displayName = displayName;
@@ -196,12 +218,18 @@ public class PaymentInstitution {
 
 
   public void setDisplayName(String displayName) {
+
+    
+    
     
     this.displayName = displayName;
   }
 
 
   public PaymentInstitution website(String website) {
+
+    
+    
     
     
     this.website = website;
@@ -221,12 +249,18 @@ public class PaymentInstitution {
 
 
   public void setWebsite(String website) {
+
+    
+    
     
     this.website = website;
   }
 
 
   public PaymentInstitution logo(String logo) {
+
+    
+    
     
     
     this.logo = logo;
@@ -246,12 +280,18 @@ public class PaymentInstitution {
 
 
   public void setLogo(String logo) {
+
+    
+    
     
     this.logo = logo;
   }
 
 
   public PaymentInstitution iconLogo(String iconLogo) {
+
+    
+    
     
     
     this.iconLogo = iconLogo;
@@ -271,12 +311,18 @@ public class PaymentInstitution {
 
 
   public void setIconLogo(String iconLogo) {
+
+    
+    
     
     this.iconLogo = iconLogo;
   }
 
 
   public PaymentInstitution textLogo(String textLogo) {
+
+    
+    
     
     
     this.textLogo = textLogo;
@@ -296,12 +342,18 @@ public class PaymentInstitution {
 
 
   public void setTextLogo(String textLogo) {
+
+    
+    
     
     this.textLogo = textLogo;
   }
 
 
   public PaymentInstitution primaryColor(String primaryColor) {
+
+    
+    
     
     
     this.primaryColor = primaryColor;
@@ -321,12 +373,18 @@ public class PaymentInstitution {
 
 
   public void setPrimaryColor(String primaryColor) {
+
+    
+    
     
     this.primaryColor = primaryColor;
   }
 
 
   public PaymentInstitution country(EnumPaymentsCountry country) {
+
+    
+    
     
     
     this.country = country;
@@ -346,12 +404,18 @@ public class PaymentInstitution {
 
 
   public void setCountry(EnumPaymentsCountry country) {
+
+    
+    
     
     this.country = country;
   }
 
 
   public PaymentInstitution formFields(List<InstitutionFormField> formFields) {
+
+    
+    
     
     
     this.formFields = formFields;
@@ -379,6 +443,9 @@ public class PaymentInstitution {
 
 
   public void setFormFields(List<InstitutionFormField> formFields) {
+
+    
+    
     
     this.formFields = formFields;
   }

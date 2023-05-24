@@ -50,7 +50,7 @@ class EnumTransactionStatus(
             "PENDING": "PENDING",
             "PROCESSED": "PROCESSED",
             "UNCATEGORIZED": "UNCATEGORIZED",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

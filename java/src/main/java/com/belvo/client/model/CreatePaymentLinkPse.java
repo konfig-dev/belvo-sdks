@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -91,6 +92,9 @@ public class CreatePaymentLinkPse {
   }
 
   public CreatePaymentLinkPse description(String description) {
+
+    
+    
     
     
     this.description = description;
@@ -110,12 +114,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setDescription(String description) {
+
+    
+    
     
     this.description = description;
   }
 
 
   public CreatePaymentLinkPse amount(String amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -135,12 +145,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setAmount(String amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public CreatePaymentLinkPse customer(String customer) {
+
+    
+    
     
     
     this.customer = customer;
@@ -160,12 +176,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setCustomer(String customer) {
+
+    
+    
     
     this.customer = customer;
   }
 
 
   public CreatePaymentLinkPse allowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
@@ -193,12 +215,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setAllowedPaymentMethodTypes(List<EnumPaymentLinkAllowedPaymentMethod> allowedPaymentMethodTypes) {
+
+    
+    
     
     this.allowedPaymentMethodTypes = allowedPaymentMethodTypes;
   }
 
 
   public CreatePaymentLinkPse provider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     
     this.provider = provider;
@@ -218,12 +246,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setProvider(EnumPaymentLinkProvider provider) {
+
+    
+    
     
     this.provider = provider;
   }
 
 
   public CreatePaymentLinkPse paymentMethodDetails(PaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     
     this.paymentMethodDetails = paymentMethodDetails;
@@ -243,12 +277,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setPaymentMethodDetails(PaymentMethodDetailsPse paymentMethodDetails) {
+
+    
+    
     
     this.paymentMethodDetails = paymentMethodDetails;
   }
 
 
   public CreatePaymentLinkPse callbackUrls(PaymentLinkCallbackUrls callbackUrls) {
+
+    
+    
     
     
     this.callbackUrls = callbackUrls;
@@ -268,12 +308,18 @@ public class CreatePaymentLinkPse {
 
 
   public void setCallbackUrls(PaymentLinkCallbackUrls callbackUrls) {
+
+    
+    
     
     this.callbackUrls = callbackUrls;
   }
 
 
   public CreatePaymentLinkPse expiresIn(String expiresIn) {
+
+    
+    
     
     
     this.expiresIn = expiresIn;
@@ -293,6 +339,9 @@ public class CreatePaymentLinkPse {
 
 
   public void setExpiresIn(String expiresIn) {
+
+    
+    
     
     this.expiresIn = expiresIn;
   }

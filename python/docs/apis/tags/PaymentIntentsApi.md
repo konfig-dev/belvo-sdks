@@ -11,8 +11,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/payment-intents | List all payment intents
 
 # **complete**
-<a name="complete"></a>
-> PaymentIntentsCompleteResponse complete(id)
 
 Complete a payment intent
 
@@ -22,29 +20,23 @@ Complete a new payment intent.  During the payment intent flow, you'll need to p
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = {
-        "payment_method_details": None,
-        "confirm": True,
-    }
 try:
     # Complete a payment intent
     complete_response = belvo.payment_intents.complete(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
-        body=body
+        payment_method_details=None,  # required
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
+        confirm=True,  # optional
     )
     pprint(complete_response.body)
     pprint(complete_response.headers)
@@ -147,8 +139,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **create**
-<a name="create"></a>
-> PaymentIntentsCreateResponse create()
 
 Create a new payment intent
 
@@ -158,23 +148,36 @@ Create a payment intent.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = None
 try:
     # Create a new payment intent
     create_response = belvo.payment_intents.create(
-        body=body
+        body=None,  # optional
+        description="Training shoes",  # optional
+        amount="350000",  # optional
+        customer="06dc2f14-1217-4480-9b36-550a944a39d1",  # optional
+        allowed_payment_method_types=["string_example"],  # optional
+        payment_method_details={
+            "pse": {
+                "beneficiary_bank_account": "a80d5a9d-20ae-479a-8dd7-ff3443bcbbfc",
+                "callback_url": "https://www.acmecorp.com/checkout/3487321",
+                "belvo_flow": True,
+            },
+        },  # optional
+        provider="belvo",  # optional
+        metadata={
+            "internal_reference_id": "GGq73487w2",
+        },  # optional
     )
     pprint(create_response.body)
     pprint(create_response.headers)
@@ -290,8 +293,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> PaymentIntentsGetDetailsResponse get_details(id)
 
 Get details about a payment intent.
 
@@ -301,24 +302,21 @@ Get the details about a specific payment intent.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a payment intent.
     get_details_response = belvo.payment_intents.get_details(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -411,8 +409,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> PaymentIntentPaginatedResponse list()
 
 List all payment intents
 
@@ -422,42 +418,39 @@ List all payment intents associated with your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all payment intents
     list_response = belvo.payment_intents.list(
-        query_params = {
-            'page': 1,
-            'id__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-            'provider': "payments_way",
-            'payment_method_type': "pse",
-            'customer': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'customer__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'amount': "1000",
-            'amount__gt': "1000",
-            'amount__gte': "1000",
-            'amount__lt': "1000",
-            'amount__lte': "1000",
-            'status': "SUCCEEDED",
-            'status__in': "PROCESSING,SUCCEEDED",
-        },
+        page=1,  # optional
+        id__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
+        provider="payments_way",  # optional
+        payment_method_type="pse",  # optional
+        customer="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        customer__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        amount="1000",  # optional
+        amount__gt="1000",  # optional
+        amount__gte="1000",  # optional
+        amount__lt="1000",  # optional
+        amount__lte="1000",  # optional
+        status="SUCCEEDED",  # optional
+        status__in="PROCESSING,SUCCEEDED",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

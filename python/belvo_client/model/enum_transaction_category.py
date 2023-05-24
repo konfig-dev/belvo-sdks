@@ -83,7 +83,7 @@ We return one of the following enum values:
             "Transport & Travel": "TRANSPORT__TRAVEL",
             "Unknown": "UNKNOWN",
             "Withdrawal & ATM": "WITHDRAWAL__ATM",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

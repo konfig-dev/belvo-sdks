@@ -38,6 +38,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -103,6 +104,9 @@ public class EmploymentRecordDetail {
   }
 
   public EmploymentRecordDetail collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -122,12 +126,18 @@ public class EmploymentRecordDetail {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public EmploymentRecordDetail employer(String employer) {
+
+    
+    
     
     
     this.employer = employer;
@@ -147,12 +157,18 @@ public class EmploymentRecordDetail {
 
 
   public void setEmployer(String employer) {
+
+    
+    
     
     this.employer = employer;
   }
 
 
   public EmploymentRecordDetail employerId(String employerId) {
+
+    
+    
     
     
     this.employerId = employerId;
@@ -172,12 +188,18 @@ public class EmploymentRecordDetail {
 
 
   public void setEmployerId(String employerId) {
+
+    
+    
     
     this.employerId = employerId;
   }
 
 
   public EmploymentRecordDetail startDate(LocalDate startDate) {
+
+    
+    
     
     
     this.startDate = startDate;
@@ -197,12 +219,18 @@ public class EmploymentRecordDetail {
 
 
   public void setStartDate(LocalDate startDate) {
+
+    
+    
     
     this.startDate = startDate;
   }
 
 
   public EmploymentRecordDetail endDate(LocalDate endDate) {
+
+    
+    
     
     
     this.endDate = endDate;
@@ -222,12 +250,18 @@ public class EmploymentRecordDetail {
 
 
   public void setEndDate(LocalDate endDate) {
+
+    
+    
     
     this.endDate = endDate;
   }
 
 
   public EmploymentRecordDetail weeksEmployed(Integer weeksEmployed) {
+
+    
+    
     
     
     this.weeksEmployed = weeksEmployed;
@@ -247,12 +281,18 @@ public class EmploymentRecordDetail {
 
 
   public void setWeeksEmployed(Integer weeksEmployed) {
+
+    
+    
     
     this.weeksEmployed = weeksEmployed;
   }
 
 
   public EmploymentRecordDetail state(String state) {
+
+    
+    
     
     
     this.state = state;
@@ -272,12 +312,18 @@ public class EmploymentRecordDetail {
 
 
   public void setState(String state) {
+
+    
+    
     
     this.state = state;
   }
 
 
   public EmploymentRecordDetail mostRecentBaseSalary(Float mostRecentBaseSalary) {
+
+    
+    
     
     
     this.mostRecentBaseSalary = mostRecentBaseSalary;
@@ -297,12 +343,18 @@ public class EmploymentRecordDetail {
 
 
   public void setMostRecentBaseSalary(Float mostRecentBaseSalary) {
+
+    
+    
     
     this.mostRecentBaseSalary = mostRecentBaseSalary;
   }
 
 
   public EmploymentRecordDetail monthlySalary(Float monthlySalary) {
+
+    
+    
     
     
     this.monthlySalary = monthlySalary;
@@ -322,12 +374,18 @@ public class EmploymentRecordDetail {
 
 
   public void setMonthlySalary(Float monthlySalary) {
+
+    
+    
     
     this.monthlySalary = monthlySalary;
   }
 
 
   public EmploymentRecordDetail currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -347,12 +405,18 @@ public class EmploymentRecordDetail {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public EmploymentRecordDetail employmentStatusUpdates(List<EmploymentRecordEmploymentStatusUpdates> employmentStatusUpdates) {
+
+    
+    
     
     
     this.employmentStatusUpdates = employmentStatusUpdates;
@@ -380,6 +444,9 @@ public class EmploymentRecordDetail {
 
 
   public void setEmploymentStatusUpdates(List<EmploymentRecordEmploymentStatusUpdates> employmentStatusUpdates) {
+
+    
+    
     
     this.employmentStatusUpdates = employmentStatusUpdates;
   }

@@ -59,7 +59,7 @@ We return one of the following enum values:
             "RECEIVABLES_ACCOUNT": "RECEIVABLES_ACCOUNT",
             "SAVINGS_ACCOUNT": "SAVINGS_ACCOUNT",
             "UNCATEGORIZED": "UNCATEGORIZED",
-            schemas.NoneClass.NONE: "NONE",
+            None: "NONE",
         }
     
     @schemas.classproperty

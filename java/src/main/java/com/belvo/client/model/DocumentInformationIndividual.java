@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -70,6 +71,9 @@ public class DocumentInformationIndividual {
   }
 
   public DocumentInformationIndividual name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -89,12 +93,18 @@ public class DocumentInformationIndividual {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public DocumentInformationIndividual type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -114,12 +124,18 @@ public class DocumentInformationIndividual {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public DocumentInformationIndividual formNumber(String formNumber) {
+
+    
+    
     
     
     this.formNumber = formNumber;
@@ -139,12 +155,18 @@ public class DocumentInformationIndividual {
 
 
   public void setFormNumber(String formNumber) {
+
+    
+    
     
     this.formNumber = formNumber;
   }
 
 
   public DocumentInformationIndividual year(Integer year) {
+
+    
+    
     
     
     this.year = year;
@@ -164,6 +186,9 @@ public class DocumentInformationIndividual {
 
 
   public void setYear(Integer year) {
+
+    
+    
     
     this.year = year;
   }

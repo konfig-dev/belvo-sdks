@@ -10,8 +10,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/bank-accounts | List all bank accounts
 
 # **create**
-<a name="create"></a>
-> BankAccountsCreateResponse create()
 
 Create a new bank account
 
@@ -21,23 +19,28 @@ Create a new bank account from which to send or request funds.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = None
 try:
     # Create a new bank account
     create_response = belvo.bank_accounts.create(
-        body=body
+        body=None,  # optional
+        institution="f512d996-583a-4a91-8b5b-eba2e103b068",  # optional
+        holder=None,  # optional
+        details=None,  # optional
+        providers=None,  # optional
+        metadata={
+            "internal_reference_id": "GGq73487w2",
+        },  # optional
     )
     pprint(create_response.body)
     pprint(create_response.headers)
@@ -153,8 +156,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> BankAccountsGetDetailsResponse get_details(id)
 
 Get details about a bank account
 
@@ -164,24 +165,21 @@ Get the details about a specific bank account
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a bank account
     get_details_response = belvo.bank_accounts.get_details(
-        path_params = {
-            'id': "a3b92311-1888-449f-acaa-49ae28d68fcd",
-        },
+        id="a3b92311-1888-449f-acaa-49ae28d68fcd",  # required
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -274,8 +272,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> BankAccountPaginatedResponse list()
 
 List all bank accounts
 
@@ -285,38 +281,35 @@ List all bank accounts associated with your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all bank accounts
     list_response = belvo.bank_accounts.list(
-        query_params = {
-            'page': 1,
-            'id__in': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-            'number': "1231564526",
-            'number__in': "1231564526,15648325",
-            'customer': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'institution': "24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",
-            'holder__type': "INDIVIDUAL",
-            'holder__type__in': "INDIVIDUAL,BUSINESS",
-            'providers': "payments_way",
-        },
+        page=1,  # optional
+        id__in="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d,bfe57b64-f033-4a00-97f8-83ec88440264",  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
+        number="1231564526",  # optional
+        number__in="1231564526,15648325",  # optional
+        customer="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        institution="24e5b3a5-19aa-40fe-91e5-4db7f22ecc2d",  # optional
+        holder__type="INDIVIDUAL",  # optional
+        holder__type__in="INDIVIDUAL,BUSINESS",  # optional
+        providers="payments_way",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

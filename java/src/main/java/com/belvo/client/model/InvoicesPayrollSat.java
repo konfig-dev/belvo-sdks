@@ -36,6 +36,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -89,6 +90,9 @@ public class InvoicesPayrollSat {
   }
 
   public InvoicesPayrollSat version(String version) {
+
+    
+    
     
     
     this.version = version;
@@ -108,12 +112,18 @@ public class InvoicesPayrollSat {
 
 
   public void setVersion(String version) {
+
+    
+    
     
     this.version = version;
   }
 
 
   public InvoicesPayrollSat days(Integer days) {
+
+    
+    
     
     
     this.days = days;
@@ -133,12 +143,18 @@ public class InvoicesPayrollSat {
 
 
   public void setDays(Integer days) {
+
+    
+    
     
     this.days = days;
   }
 
 
   public InvoicesPayrollSat type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -158,12 +174,18 @@ public class InvoicesPayrollSat {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvoicesPayrollSat amount(Float amount) {
+
+    
+    
     
     
     this.amount = amount;
@@ -183,12 +205,18 @@ public class InvoicesPayrollSat {
 
 
   public void setAmount(Float amount) {
+
+    
+    
     
     this.amount = amount;
   }
 
 
   public InvoicesPayrollSat dateFrom(LocalDate dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -208,12 +236,18 @@ public class InvoicesPayrollSat {
 
 
   public void setDateFrom(LocalDate dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public InvoicesPayrollSat dateTo(LocalDate dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -233,12 +267,18 @@ public class InvoicesPayrollSat {
 
 
   public void setDateTo(LocalDate dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public InvoicesPayrollSat collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -258,12 +298,18 @@ public class InvoicesPayrollSat {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public InvoicesPayrollSat paymentDate(LocalDate paymentDate) {
+
+    
+    
     
     
     this.paymentDate = paymentDate;
@@ -283,6 +329,9 @@ public class InvoicesPayrollSat {
 
 
   public void setPaymentDate(LocalDate paymentDate) {
+
+    
+    
     
     this.paymentDate = paymentDate;
   }

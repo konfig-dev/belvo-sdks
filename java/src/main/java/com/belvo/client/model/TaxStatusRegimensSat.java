@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,6 +67,9 @@ public class TaxStatusRegimensSat {
   }
 
   public TaxStatusRegimensSat endDate(LocalDate endDate) {
+
+    
+    
     
     
     this.endDate = endDate;
@@ -85,12 +89,18 @@ public class TaxStatusRegimensSat {
 
 
   public void setEndDate(LocalDate endDate) {
+
+    
+    
     
     this.endDate = endDate;
   }
 
 
   public TaxStatusRegimensSat initialDate(LocalDate initialDate) {
+
+    
+    
     
     
     this.initialDate = initialDate;
@@ -110,12 +120,18 @@ public class TaxStatusRegimensSat {
 
 
   public void setInitialDate(LocalDate initialDate) {
+
+    
+    
     
     this.initialDate = initialDate;
   }
 
 
   public TaxStatusRegimensSat regimen(String regimen) {
+
+    
+    
     
     
     this.regimen = regimen;
@@ -135,6 +151,9 @@ public class TaxStatusRegimensSat {
 
 
   public void setRegimen(String regimen) {
+
+    
+    
     
     this.regimen = regimen;
   }

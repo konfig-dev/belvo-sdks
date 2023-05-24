@@ -4,4 +4,4 @@
 
 from belvo_client.paths import PathValues
 
-path = PathValues._RECEIVABLES_TRANSACTIONS
+path = PathValues.RECEIVABLES_TRANSACTIONS

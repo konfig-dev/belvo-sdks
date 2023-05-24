@@ -34,6 +34,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -63,6 +64,9 @@ public class InstitutionAccount {
   }
 
   public InstitutionAccount name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -82,12 +86,18 @@ public class InstitutionAccount {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public InstitutionAccount type(EnumInstitutionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -107,6 +117,9 @@ public class InstitutionAccount {
 
 
   public void setType(EnumInstitutionType type) {
+
+    
+    
     
     this.type = type;
   }

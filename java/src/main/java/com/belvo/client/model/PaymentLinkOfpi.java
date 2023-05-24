@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -103,6 +104,9 @@ public class PaymentLinkOfpi {
   }
 
   public PaymentLinkOfpi id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -122,12 +126,18 @@ public class PaymentLinkOfpi {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public PaymentLinkOfpi createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -147,12 +157,18 @@ public class PaymentLinkOfpi {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public PaymentLinkOfpi createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -172,12 +188,18 @@ public class PaymentLinkOfpi {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public PaymentLinkOfpi paymentUrl(String paymentUrl) {
+
+    
+    
     
     
     this.paymentUrl = paymentUrl;
@@ -197,12 +219,18 @@ public class PaymentLinkOfpi {
 
 
   public void setPaymentUrl(String paymentUrl) {
+
+    
+    
     
     this.paymentUrl = paymentUrl;
   }
 
 
   public PaymentLinkOfpi accessToken(String accessToken) {
+
+    
+    
     
     
     this.accessToken = accessToken;
@@ -222,12 +250,18 @@ public class PaymentLinkOfpi {
 
 
   public void setAccessToken(String accessToken) {
+
+    
+    
     
     this.accessToken = accessToken;
   }
 
 
   public PaymentLinkOfpi callbackUrls(PaymentLinkCallbackUrlsResponse callbackUrls) {
+
+    
+    
     
     
     this.callbackUrls = callbackUrls;
@@ -247,12 +281,18 @@ public class PaymentLinkOfpi {
 
 
   public void setCallbackUrls(PaymentLinkCallbackUrlsResponse callbackUrls) {
+
+    
+    
     
     this.callbackUrls = callbackUrls;
   }
 
 
   public PaymentLinkOfpi paymentIntent(PaymentIntentOfpi paymentIntent) {
+
+    
+    
     
     
     this.paymentIntent = paymentIntent;
@@ -272,12 +312,18 @@ public class PaymentLinkOfpi {
 
 
   public void setPaymentIntent(PaymentIntentOfpi paymentIntent) {
+
+    
+    
     
     this.paymentIntent = paymentIntent;
   }
 
 
   public PaymentLinkOfpi updatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     
     this.updatedAt = updatedAt;
@@ -297,12 +343,18 @@ public class PaymentLinkOfpi {
 
 
   public void setUpdatedAt(OffsetDateTime updatedAt) {
+
+    
+    
     
     this.updatedAt = updatedAt;
   }
 
 
   public PaymentLinkOfpi status(EnumPaymentLinksStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -322,12 +374,18 @@ public class PaymentLinkOfpi {
 
 
   public void setStatus(EnumPaymentLinksStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public PaymentLinkOfpi expiresIn(String expiresIn) {
+
+    
+    
     
     
     this.expiresIn = expiresIn;
@@ -347,12 +405,18 @@ public class PaymentLinkOfpi {
 
 
   public void setExpiresIn(String expiresIn) {
+
+    
+    
     
     this.expiresIn = expiresIn;
   }
 
 
   public PaymentLinkOfpi expiresAt(OffsetDateTime expiresAt) {
+
+    
+    
     
     
     this.expiresAt = expiresAt;
@@ -372,6 +436,9 @@ public class PaymentLinkOfpi {
 
 
   public void setExpiresAt(OffsetDateTime expiresAt) {
+
+    
+    
     
     this.expiresAt = expiresAt;
   }

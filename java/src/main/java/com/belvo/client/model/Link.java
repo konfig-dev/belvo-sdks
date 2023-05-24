@@ -39,6 +39,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -99,6 +100,9 @@ public class Link {
   }
 
   public Link id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -118,12 +122,18 @@ public class Link {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Link institution(String institution) {
+
+    
+    
     
     
     this.institution = institution;
@@ -143,12 +153,18 @@ public class Link {
 
 
   public void setInstitution(String institution) {
+
+    
+    
     
     this.institution = institution;
   }
 
 
   public Link accessMode(EnumLinkAccessModeResponse accessMode) {
+
+    
+    
     
     
     this.accessMode = accessMode;
@@ -168,12 +184,18 @@ public class Link {
 
 
   public void setAccessMode(EnumLinkAccessModeResponse accessMode) {
+
+    
+    
     
     this.accessMode = accessMode;
   }
 
 
   public Link lastAccessedAt(OffsetDateTime lastAccessedAt) {
+
+    
+    
     
     
     this.lastAccessedAt = lastAccessedAt;
@@ -193,12 +215,18 @@ public class Link {
 
 
   public void setLastAccessedAt(OffsetDateTime lastAccessedAt) {
+
+    
+    
     
     this.lastAccessedAt = lastAccessedAt;
   }
 
 
   public Link createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -218,13 +246,21 @@ public class Link {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public Link externalId(String externalId) {
+
     
+    
+    if (externalId.length() < 3) {
+      throw new IllegalArgumentException("Invalid value for externalId. Length must be greater than or equal to 3.");
+    }
     
     this.externalId = externalId;
     return this;
@@ -243,12 +279,20 @@ public class Link {
 
 
   public void setExternalId(String externalId) {
+
     
+    
+    if (externalId.length() < 3) {
+      throw new IllegalArgumentException("Invalid value for externalId. Length must be greater than or equal to 3.");
+    }
     this.externalId = externalId;
   }
 
 
   public Link institutionUserId(String institutionUserId) {
+
+    
+    
     
     
     this.institutionUserId = institutionUserId;
@@ -268,12 +312,18 @@ public class Link {
 
 
   public void setInstitutionUserId(String institutionUserId) {
+
+    
+    
     
     this.institutionUserId = institutionUserId;
   }
 
 
   public Link status(EnumLinkStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -293,12 +343,18 @@ public class Link {
 
 
   public void setStatus(EnumLinkStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public Link createdBy(UUID createdBy) {
+
+    
+    
     
     
     this.createdBy = createdBy;
@@ -318,12 +374,18 @@ public class Link {
 
 
   public void setCreatedBy(UUID createdBy) {
+
+    
+    
     
     this.createdBy = createdBy;
   }
 
 
   public Link refreshRate(EnumLinkRefreshRate refreshRate) {
+
+    
+    
     
     
     this.refreshRate = refreshRate;
@@ -343,6 +405,9 @@ public class Link {
 
 
   public void setRefreshRate(EnumLinkRefreshRate refreshRate) {
+
+    
+    
     
     this.refreshRate = refreshRate;
   }

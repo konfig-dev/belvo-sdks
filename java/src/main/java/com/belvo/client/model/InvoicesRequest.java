@@ -35,6 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -79,6 +80,9 @@ public class InvoicesRequest {
   }
 
   public InvoicesRequest link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -98,12 +102,18 @@ public class InvoicesRequest {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public InvoicesRequest dateFrom(String dateFrom) {
+
+    
+    
     
     
     this.dateFrom = dateFrom;
@@ -123,12 +133,18 @@ public class InvoicesRequest {
 
 
   public void setDateFrom(String dateFrom) {
+
+    
+    
     
     this.dateFrom = dateFrom;
   }
 
 
   public InvoicesRequest dateTo(String dateTo) {
+
+    
+    
     
     
     this.dateTo = dateTo;
@@ -148,12 +164,18 @@ public class InvoicesRequest {
 
 
   public void setDateTo(String dateTo) {
+
+    
+    
     
     this.dateTo = dateTo;
   }
 
 
   public InvoicesRequest type(EnumInvoiceType type) {
+
+    
+    
     
     
     this.type = type;
@@ -173,12 +195,18 @@ public class InvoicesRequest {
 
 
   public void setType(EnumInvoiceType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvoicesRequest attachXml(Boolean attachXml) {
+
+    
+    
     
     
     this.attachXml = attachXml;
@@ -198,12 +226,18 @@ public class InvoicesRequest {
 
 
   public void setAttachXml(Boolean attachXml) {
+
+    
+    
     
     this.attachXml = attachXml;
   }
 
 
   public InvoicesRequest saveData(Boolean saveData) {
+
+    
+    
     
     
     this.saveData = saveData;
@@ -223,6 +257,9 @@ public class InvoicesRequest {
 
 
   public void setSaveData(Boolean saveData) {
+
+    
+    
     
     this.saveData = saveData;
   }

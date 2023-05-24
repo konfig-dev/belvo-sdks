@@ -11,8 +11,6 @@ Method | HTTP request | Description
 [**retrieve**](#retrieve) | **post** /api/tax-returns | Retrieve tax returns for a link
 
 # **delete**
-<a name="delete"></a>
-> delete(id)
 
 Delete a tax return
 
@@ -22,24 +20,21 @@ Delete a specific tax return from your Belvo account.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Delete a tax return
     belvo.tax_returns.delete(
-        path_params = {
-            'id': "id_example",
-        },
+        id="id_example",  # required
     )
     pprint(delete_response.headers)
     pprint(delete_response.status)
@@ -125,8 +120,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> TaxReturnsGetDetailsResponse get_details(id)
 
 Get a tax return&#x27;s details
 
@@ -136,28 +129,23 @@ Get the details of a specific tax return.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get a tax return's details
     get_details_response = belvo.tax_returns.get_details(
-        path_params = {
-            'id': "id_example",
-        },
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
+        id="id_example",  # required
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -274,8 +262,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> TaxReturnsListResponse list()
 
 List all tax returns
 
@@ -285,44 +271,41 @@ Get a paginated list of all existing tax returns in your Belvo account. By defau
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all tax returns
     list_response = belvo.tax_returns.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-            'link': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4",
-            'created_at__gt': "2022-05-05",
-            'created_at__gte': "2022-05-04",
-            'created_at__lt': "2022-04-01",
-            'created_at__lte': "2022-03-30",
-            'created_at__range': "2022-03-03,2022-05-04",
-            'id': "eb42c21c-2d9e-4dc1-89b8-9401d4beca73",
-            'id__in': "eb42c21c-2d9e-4dc1-89b8-9401d4beca73,82b3f18c-055b-4f82-9fae-d2201815ab0c",
-            'ejercicio': "2018",
-            'ejercicio__lt': "2020",
-            'ejercicio__lte': "2021",
-            'ejercicio__gt': "2019",
-            'ejercicio__gte': "2017",
-            'ejercicio__range': "2015,2021",
-            'tipo_declaracion': "Normal",
-            'tipo_declaracion__in': "Normal,Commercial",
-            'link__in': "8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
+        link="8848bd0c-9c7e-4f53-a732-ec896b11d4c4",  # optional
+        created_at__gt="2022-05-05",  # optional
+        created_at__gte="2022-05-04",  # optional
+        created_at__lt="2022-04-01",  # optional
+        created_at__lte="2022-03-30",  # optional
+        created_at__range="2022-03-03,2022-05-04",  # optional
+        id="eb42c21c-2d9e-4dc1-89b8-9401d4beca73",  # optional
+        id__in="eb42c21c-2d9e-4dc1-89b8-9401d4beca73,82b3f18c-055b-4f82-9fae-d2201815ab0c",  # optional
+        ejercicio="2018",  # optional
+        ejercicio__lt="2020",  # optional
+        ejercicio__lte="2021",  # optional
+        ejercicio__gt="2019",  # optional
+        ejercicio__gte="2017",  # optional
+        ejercicio__range="2015,2021",  # optional
+        tipo_declaracion="Normal",  # optional
+        tipo_declaracion__in="Normal,Commercial",  # optional
+        link__in="8848bd0c-9c7e-4f53-a732-ec896b11d4c4,cc2b13cf-336e-497c-9fad-e074b580df65",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.headers)
@@ -562,8 +545,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **retrieve**
-<a name="retrieve"></a>
-> TaxReturnsRetrieveResponse retrieve(tax_returns_retrieve_request)
 
 Retrieve tax returns for a link
 
@@ -573,27 +554,31 @@ Retrieve tax return information for a specific fiscal link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = None
 try:
     # Retrieve tax returns for a link
     retrieve_response = belvo.tax_returns.retrieve(
-        query_params = {
-            'omit': "link,balance",
-            'fields': "link,balance,account",
-        },
-        body=body
+        body=None,  # required
+        link="d4617561-1c01-4b2f-83b6-a594f7b3bc57",  # optional
+        attach_pdf=False,  # optional
+        save_data=True,  # optional
+        type="yearly",  # optional
+        date_from="2018-01-01",  # optional
+        date_to="2019-01-01",  # optional
+        year_from="2018",  # optional
+        year_to="2019",  # optional
+        omit="link,balance",  # optional
+        fields="link,balance,account",  # optional
     )
     pprint(retrieve_response.body)
     pprint(retrieve_response.headers)

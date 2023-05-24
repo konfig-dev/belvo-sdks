@@ -10,8 +10,6 @@ Method | HTTP request | Description
 [**list**](#list) | **get** /payments/payment-links | List all payment links
 
 # **create**
-<a name="create"></a>
-> PaymentLinksCreateResponse create()
 
 Create a payment link
 
@@ -21,23 +19,38 @@ Create a new payment link to start a hosted-widget payment.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
-body = None
 try:
     # Create a payment link
     create_response = belvo.payment_links.create(
-        body=body
+        body=None,  # optional
+        description="Shoe payment",  # optional
+        amount="1452",  # optional
+        customer="06dc2f14-1217-4480-9b36-550a944a39d1",  # optional
+        allowed_payment_method_types=["string_example"],  # optional
+        provider="belvo",  # optional
+        payment_method_details={
+            "pse": {
+                "beneficiary_bank_account": "a80d5a9d-20ae-479a-8dd7-ff3443bcbbfc",
+                "callback_url": "https://www.acmecorp.com/checkout/3487321",
+                "belvo_flow": True,
+            },
+        },  # optional
+        callback_urls={
+            "cancel": "https://www.acmecorp.com/checkout/3487548/cancel",
+            "success": "https://www.acmecorp.com/checkout/3487548/success",
+        },  # optional
+        expires_in="7d",  # optional
     )
     pprint(create_response.body)
     pprint(create_response.headers)
@@ -153,8 +166,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **get_details**
-<a name="get_details"></a>
-> PaymentLinksGetDetailsResponse get_details(access_token)
 
 Get details about a payment link
 
@@ -164,24 +175,21 @@ Get the details about a payment link.
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # Get details about a payment link
     get_details_response = belvo.payment_links.get_details(
-        path_params = {
-            'access_token': "YggaKvPbM5aJhksu1BEwDI5FKTcUc5wZqNB-wH7MFGU",
-        },
+        access_token="YggaKvPbM5aJhksu1BEwDI5FKTcUc5wZqNB-wH7MFGU",  # required
     )
     pprint(get_details_response.body)
     pprint(get_details_response.headers)
@@ -274,8 +282,6 @@ Type | Description  | Notes
 [[Back to top]](#__pageTop) [[Back to API list]](../../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../../README.md#documentation-for-models) [[Back to README]](../../../README.md)
 
 # **list**
-<a name="list"></a>
-> PaymentLinkPaginatedResponse list()
 
 List all payment links
 
@@ -285,34 +291,31 @@ List all payment links associated with your Belvo account. By default, we return
 
 ```python
 from pprint import pprint
-from belvo_client import Belvo
+from belvo_client import Belvo, ApiException
 
 belvo = Belvo(
     # Defining the host is optional and defaults to https://sandbox.belvo.com
     # See configuration.py for a list of all supported configuration parameters.
-    host = "https://sandbox.belvo.com",
-
+    host="https://sandbox.belvo.com",
     # Configure HTTP basic authorization: basicAuth
-    username = 'YOUR_USERNAME',
-    password = 'YOUR_PASSWORD'
+    username="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
 )
 
 try:
     # List all payment links
     list_response = belvo.payment_links.list(
-        query_params = {
-            'page': 1,
-            'page_size': 100,
-            'created_at': "2022-09-15",
-            'created_at__gt': "2022-09-15",
-            'created_at__gte': "2022-09-15",
-            'created_at__lt': "2022-09-15",
-            'created_at__lte': "2022-09-15",
-            'created_at__range': "2022-09-15,2022-09-20",
-            'status': "ACTIVE",
-            'ordering': "-created_at",
-            'search': "trai",
-        },
+        page=1,  # optional
+        page_size=100,  # optional
+        created_at="2022-09-15",  # optional
+        created_at__gt="2022-09-15",  # optional
+        created_at__gte="2022-09-15",  # optional
+        created_at__lt="2022-09-15",  # optional
+        created_at__lte="2022-09-15",  # optional
+        created_at__range="2022-09-15,2022-09-20",  # optional
+        status="ACTIVE",  # optional
+        ordering="-created_at",  # optional
+        search="trai",  # optional
     )
     pprint(list_response.body)
     pprint(list_response.body["count"])

@@ -77,6 +77,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#completeRequest");
@@ -258,6 +259,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#getDetails");
@@ -462,6 +464,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#list");
@@ -600,6 +603,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#retrieve");

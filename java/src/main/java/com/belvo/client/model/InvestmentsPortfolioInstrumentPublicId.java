@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -62,6 +63,9 @@ public class InvestmentsPortfolioInstrumentPublicId {
   }
 
   public InvestmentsPortfolioInstrumentPublicId type(String type) {
+
+    
+    
     
     
     this.type = type;
@@ -81,12 +85,18 @@ public class InvestmentsPortfolioInstrumentPublicId {
 
 
   public void setType(String type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public InvestmentsPortfolioInstrumentPublicId value(String value) {
+
+    
+    
     
     
     this.value = value;
@@ -106,6 +116,9 @@ public class InvestmentsPortfolioInstrumentPublicId {
 
 
   public void setValue(String value) {
+
+    
+    
     
     this.value = value;
   }

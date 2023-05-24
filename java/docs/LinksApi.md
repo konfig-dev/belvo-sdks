@@ -73,6 +73,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#changeAccessMode");
@@ -175,6 +176,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#completeRequest");
@@ -355,6 +357,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#getDetails");
@@ -514,6 +517,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#list");
@@ -668,6 +672,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#register");
@@ -781,6 +786,7 @@ public class Example {
       System.out.println(response.getData());
       System.out.println(response.getHeaders());
       System.out.println(response.getStatusCode());
+      System.out.println(response.getRoundTripTime());
       System.out.println(response.getRequest());
     } catch (ApiException e) {
       System.err.println("Exception when calling LinksApi#update");

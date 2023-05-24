@@ -41,6 +41,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -121,6 +122,9 @@ public class Institution {
   }
 
   public Institution id(Integer id) {
+
+    
+    
     
     
     this.id = id;
@@ -140,12 +144,18 @@ public class Institution {
 
 
   public void setId(Integer id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public Institution name(String name) {
+
+    
+    
     
     
     this.name = name;
@@ -165,12 +175,18 @@ public class Institution {
 
 
   public void setName(String name) {
+
+    
+    
     
     this.name = name;
   }
 
 
   public Institution type(EnumInstitutionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -190,12 +206,18 @@ public class Institution {
 
 
   public void setType(EnumInstitutionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public Institution website(String website) {
+
+    
+    
     
     
     this.website = website;
@@ -215,12 +237,18 @@ public class Institution {
 
 
   public void setWebsite(String website) {
+
+    
+    
     
     this.website = website;
   }
 
 
   public Institution displayName(String displayName) {
+
+    
+    
     
     
     this.displayName = displayName;
@@ -240,12 +268,18 @@ public class Institution {
 
 
   public void setDisplayName(String displayName) {
+
+    
+    
     
     this.displayName = displayName;
   }
 
 
   public Institution countryCodes(List<String> countryCodes) {
+
+    
+    
     
     
     this.countryCodes = countryCodes;
@@ -273,12 +307,18 @@ public class Institution {
 
 
   public void setCountryCodes(List<String> countryCodes) {
+
+    
+    
     
     this.countryCodes = countryCodes;
   }
 
 
   public Institution primaryColor(String primaryColor) {
+
+    
+    
     
     
     this.primaryColor = primaryColor;
@@ -298,12 +338,18 @@ public class Institution {
 
 
   public void setPrimaryColor(String primaryColor) {
+
+    
+    
     
     this.primaryColor = primaryColor;
   }
 
 
   public Institution logo(String logo) {
+
+    
+    
     
     
     this.logo = logo;
@@ -323,12 +369,18 @@ public class Institution {
 
 
   public void setLogo(String logo) {
+
+    
+    
     
     this.logo = logo;
   }
 
 
   public Institution iconLogo(String iconLogo) {
+
+    
+    
     
     
     this.iconLogo = iconLogo;
@@ -348,12 +400,18 @@ public class Institution {
 
 
   public void setIconLogo(String iconLogo) {
+
+    
+    
     
     this.iconLogo = iconLogo;
   }
 
 
   public Institution textLogo(String textLogo) {
+
+    
+    
     
     
     this.textLogo = textLogo;
@@ -373,12 +431,18 @@ public class Institution {
 
 
   public void setTextLogo(String textLogo) {
+
+    
+    
     
     this.textLogo = textLogo;
   }
 
 
   public Institution formFields(List<InstitutionsFormField> formFields) {
+
+    
+    
     
     
     this.formFields = formFields;
@@ -406,12 +470,18 @@ public class Institution {
 
 
   public void setFormFields(List<InstitutionsFormField> formFields) {
+
+    
+    
     
     this.formFields = formFields;
   }
 
 
   public Institution features(List<InstitutionsFeature> features) {
+
+    
+    
     
     
     this.features = features;
@@ -439,12 +509,18 @@ public class Institution {
 
 
   public void setFeatures(List<InstitutionsFeature> features) {
+
+    
+    
     
     this.features = features;
   }
 
 
   public Institution resources(List<String> resources) {
+
+    
+    
     
     
     this.resources = resources;
@@ -472,12 +548,18 @@ public class Institution {
 
 
   public void setResources(List<String> resources) {
+
+    
+    
     
     this.resources = resources;
   }
 
 
   public Institution integrationType(EnumInstitutionIntegrationType integrationType) {
+
+    
+    
     
     
     this.integrationType = integrationType;
@@ -497,12 +579,18 @@ public class Institution {
 
 
   public void setIntegrationType(EnumInstitutionIntegrationType integrationType) {
+
+    
+    
     
     this.integrationType = integrationType;
   }
 
 
   public Institution status(EnumInstitutionStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -522,6 +610,9 @@ public class Institution {
 
 
   public void setStatus(EnumInstitutionStatus status) {
+
+    
+    
     
     this.status = status;
   }

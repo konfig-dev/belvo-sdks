@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -86,6 +87,9 @@ public class EquityStatementBusiness {
   }
 
   public EquityStatementBusiness cashAndCashEquivalents(Float cashAndCashEquivalents) {
+
+    
+    
     
     
     this.cashAndCashEquivalents = cashAndCashEquivalents;
@@ -105,12 +109,18 @@ public class EquityStatementBusiness {
 
 
   public void setCashAndCashEquivalents(Float cashAndCashEquivalents) {
+
+    
+    
     
     this.cashAndCashEquivalents = cashAndCashEquivalents;
   }
 
 
   public EquityStatementBusiness investmentsAndDerivativeFinancialInstruments(Float investmentsAndDerivativeFinancialInstruments) {
+
+    
+    
     
     
     this.investmentsAndDerivativeFinancialInstruments = investmentsAndDerivativeFinancialInstruments;
@@ -130,12 +140,18 @@ public class EquityStatementBusiness {
 
 
   public void setInvestmentsAndDerivativeFinancialInstruments(Float investmentsAndDerivativeFinancialInstruments) {
+
+    
+    
     
     this.investmentsAndDerivativeFinancialInstruments = investmentsAndDerivativeFinancialInstruments;
   }
 
 
   public EquityStatementBusiness accountsDocumentsAndFinanceLeasesReceivable(Float accountsDocumentsAndFinanceLeasesReceivable) {
+
+    
+    
     
     
     this.accountsDocumentsAndFinanceLeasesReceivable = accountsDocumentsAndFinanceLeasesReceivable;
@@ -155,12 +171,18 @@ public class EquityStatementBusiness {
 
 
   public void setAccountsDocumentsAndFinanceLeasesReceivable(Float accountsDocumentsAndFinanceLeasesReceivable) {
+
+    
+    
     
     this.accountsDocumentsAndFinanceLeasesReceivable = accountsDocumentsAndFinanceLeasesReceivable;
   }
 
 
   public EquityStatementBusiness inventory(Float inventory) {
+
+    
+    
     
     
     this.inventory = inventory;
@@ -180,12 +202,18 @@ public class EquityStatementBusiness {
 
 
   public void setInventory(Float inventory) {
+
+    
+    
     
     this.inventory = inventory;
   }
 
 
   public EquityStatementBusiness propertyPlantAndEquipmentInvestmentProperties(Float propertyPlantAndEquipmentInvestmentProperties) {
+
+    
+    
     
     
     this.propertyPlantAndEquipmentInvestmentProperties = propertyPlantAndEquipmentInvestmentProperties;
@@ -205,12 +233,18 @@ public class EquityStatementBusiness {
 
 
   public void setPropertyPlantAndEquipmentInvestmentProperties(Float propertyPlantAndEquipmentInvestmentProperties) {
+
+    
+    
     
     this.propertyPlantAndEquipmentInvestmentProperties = propertyPlantAndEquipmentInvestmentProperties;
   }
 
 
   public EquityStatementBusiness totalGrossEquity(Float totalGrossEquity) {
+
+    
+    
     
     
     this.totalGrossEquity = totalGrossEquity;
@@ -230,12 +264,18 @@ public class EquityStatementBusiness {
 
 
   public void setTotalGrossEquity(Float totalGrossEquity) {
+
+    
+    
     
     this.totalGrossEquity = totalGrossEquity;
   }
 
 
   public EquityStatementBusiness debts(Float debts) {
+
+    
+    
     
     
     this.debts = debts;
@@ -255,12 +295,18 @@ public class EquityStatementBusiness {
 
 
   public void setDebts(Float debts) {
+
+    
+    
     
     this.debts = debts;
   }
 
 
   public EquityStatementBusiness totalNetEquity(Float totalNetEquity) {
+
+    
+    
     
     
     this.totalNetEquity = totalNetEquity;
@@ -280,6 +326,9 @@ public class EquityStatementBusiness {
 
 
   public void setTotalNetEquity(Float totalNetEquity) {
+
+    
+    
     
     this.totalNetEquity = totalNetEquity;
   }

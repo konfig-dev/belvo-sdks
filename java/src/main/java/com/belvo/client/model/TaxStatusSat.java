@@ -44,6 +44,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -124,6 +125,9 @@ public class TaxStatusSat {
   }
 
   public TaxStatusSat id(UUID id) {
+
+    
+    
     
     
     this.id = id;
@@ -143,12 +147,18 @@ public class TaxStatusSat {
 
 
   public void setId(UUID id) {
+
+    
+    
     
     this.id = id;
   }
 
 
   public TaxStatusSat link(UUID link) {
+
+    
+    
     
     
     this.link = link;
@@ -168,12 +178,18 @@ public class TaxStatusSat {
 
 
   public void setLink(UUID link) {
+
+    
+    
     
     this.link = link;
   }
 
 
   public TaxStatusSat collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -193,12 +209,18 @@ public class TaxStatusSat {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public TaxStatusSat createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -218,12 +240,18 @@ public class TaxStatusSat {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public TaxStatusSat placeAndDateOfIssuance(String placeAndDateOfIssuance) {
+
+    
+    
     
     
     this.placeAndDateOfIssuance = placeAndDateOfIssuance;
@@ -243,12 +271,18 @@ public class TaxStatusSat {
 
 
   public void setPlaceAndDateOfIssuance(String placeAndDateOfIssuance) {
+
+    
+    
     
     this.placeAndDateOfIssuance = placeAndDateOfIssuance;
   }
 
 
   public TaxStatusSat officialName(String officialName) {
+
+    
+    
     
     
     this.officialName = officialName;
@@ -268,12 +302,18 @@ public class TaxStatusSat {
 
 
   public void setOfficialName(String officialName) {
+
+    
+    
     
     this.officialName = officialName;
   }
 
 
   public TaxStatusSat idCif(String idCif) {
+
+    
+    
     
     
     this.idCif = idCif;
@@ -293,12 +333,18 @@ public class TaxStatusSat {
 
 
   public void setIdCif(String idCif) {
+
+    
+    
     
     this.idCif = idCif;
   }
 
 
   public TaxStatusSat taxPayerInformation(TaxStatusTaxPayerInformationSat taxPayerInformation) {
+
+    
+    
     
     
     this.taxPayerInformation = taxPayerInformation;
@@ -318,12 +364,18 @@ public class TaxStatusSat {
 
 
   public void setTaxPayerInformation(TaxStatusTaxPayerInformationSat taxPayerInformation) {
+
+    
+    
     
     this.taxPayerInformation = taxPayerInformation;
   }
 
 
   public TaxStatusSat address(TaxStatusAddressSat address) {
+
+    
+    
     
     
     this.address = address;
@@ -343,12 +395,18 @@ public class TaxStatusSat {
 
 
   public void setAddress(TaxStatusAddressSat address) {
+
+    
+    
     
     this.address = address;
   }
 
 
   public TaxStatusSat economicActivity(List<TaxStatusEconomicActivitySat> economicActivity) {
+
+    
+    
     
     
     this.economicActivity = economicActivity;
@@ -373,12 +431,18 @@ public class TaxStatusSat {
 
 
   public void setEconomicActivity(List<TaxStatusEconomicActivitySat> economicActivity) {
+
+    
+    
     
     this.economicActivity = economicActivity;
   }
 
 
   public TaxStatusSat regimens(List<TaxStatusRegimensSat> regimens) {
+
+    
+    
     
     
     this.regimens = regimens;
@@ -406,12 +470,18 @@ public class TaxStatusSat {
 
 
   public void setRegimens(List<TaxStatusRegimensSat> regimens) {
+
+    
+    
     
     this.regimens = regimens;
   }
 
 
   public TaxStatusSat obligations(List<TaxStatusObligationsSat> obligations) {
+
+    
+    
     
     
     this.obligations = obligations;
@@ -436,12 +506,18 @@ public class TaxStatusSat {
 
 
   public void setObligations(List<TaxStatusObligationsSat> obligations) {
+
+    
+    
     
     this.obligations = obligations;
   }
 
 
   public TaxStatusSat digitalStamp(String digitalStamp) {
+
+    
+    
     
     
     this.digitalStamp = digitalStamp;
@@ -461,12 +537,18 @@ public class TaxStatusSat {
 
 
   public void setDigitalStamp(String digitalStamp) {
+
+    
+    
     
     this.digitalStamp = digitalStamp;
   }
 
 
   public TaxStatusSat digitalStampChain(String digitalStampChain) {
+
+    
+    
     
     
     this.digitalStampChain = digitalStampChain;
@@ -486,12 +568,18 @@ public class TaxStatusSat {
 
 
   public void setDigitalStampChain(String digitalStampChain) {
+
+    
+    
     
     this.digitalStampChain = digitalStampChain;
   }
 
 
   public TaxStatusSat pdf(File pdf) {
+
+    
+    
     
     
     this.pdf = pdf;
@@ -503,7 +591,7 @@ public class TaxStatusSat {
    * @return pdf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "[B@672c3646", required = true, value = "Tax status PDF as a binary string.")
+  @ApiModelProperty(example = "[B@a8ddc3c", required = true, value = "Tax status PDF as a binary string.")
 
   public File getPdf() {
     return pdf;
@@ -511,6 +599,9 @@ public class TaxStatusSat {
 
 
   public void setPdf(File pdf) {
+
+    
+    
     
     this.pdf = pdf;
   }

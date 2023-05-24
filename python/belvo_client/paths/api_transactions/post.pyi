@@ -16,6 +16,7 @@ import urllib3
 import json
 from urllib3._collections import HTTPHeaderDict
 
+from belvo_client.api_response import AsyncGeneratorResponse
 from belvo_client import api_client, exceptions
 from datetime import date, datetime  # noqa: F401
 import decimal  # noqa: F401
@@ -30,15 +31,25 @@ import frozendict  # noqa: F401
 
 from belvo_client import schemas  # noqa: F401
 
-from belvo_client.model.transactions_retrieve_response import TransactionsRetrieveResponse
-from belvo_client.model.transactions_request import TransactionsRequest
-from belvo_client.model.transactions_retrieve428_response import TransactionsRetrieve428Response
-from belvo_client.model.transactions_retrieve401_response import TransactionsRetrieve401Response
-from belvo_client.model.transactions_retrieve201_response import TransactionsRetrieve201Response
-from belvo_client.model.asynchronous_accepted202 import AsynchronousAccepted202
-from belvo_client.model.transactions_retrieve408_response import TransactionsRetrieve408Response
-from belvo_client.model.transactions_retrieve400_response import TransactionsRetrieve400Response
-from belvo_client.model.transactions_retrieve500_response import TransactionsRetrieve500Response
+from belvo_client.model.transactions_retrieve500_response import TransactionsRetrieve500Response as TransactionsRetrieve500ResponseSchema
+from belvo_client.model.transactions_retrieve408_response import TransactionsRetrieve408Response as TransactionsRetrieve408ResponseSchema
+from belvo_client.model.transactions_retrieve401_response import TransactionsRetrieve401Response as TransactionsRetrieve401ResponseSchema
+from belvo_client.model.transactions_retrieve428_response import TransactionsRetrieve428Response as TransactionsRetrieve428ResponseSchema
+from belvo_client.model.transactions_retrieve400_response import TransactionsRetrieve400Response as TransactionsRetrieve400ResponseSchema
+from belvo_client.model.transactions_retrieve201_response import TransactionsRetrieve201Response as TransactionsRetrieve201ResponseSchema
+from belvo_client.model.asynchronous_accepted202 import AsynchronousAccepted202 as AsynchronousAccepted202Schema
+from belvo_client.model.transactions_request import TransactionsRequest as TransactionsRequestSchema
+from belvo_client.model.transactions_retrieve_response import TransactionsRetrieveResponse as TransactionsRetrieveResponseSchema
+
+from belvo_client.type.transactions_retrieve408_response import TransactionsRetrieve408Response
+from belvo_client.type.transactions_retrieve400_response import TransactionsRetrieve400Response
+from belvo_client.type.transactions_request import TransactionsRequest
+from belvo_client.type.transactions_retrieve201_response import TransactionsRetrieve201Response
+from belvo_client.type.transactions_retrieve401_response import TransactionsRetrieve401Response
+from belvo_client.type.asynchronous_accepted202 import AsynchronousAccepted202
+from belvo_client.type.transactions_retrieve428_response import TransactionsRetrieve428Response
+from belvo_client.type.transactions_retrieve500_response import TransactionsRetrieve500Response
+from belvo_client.type.transactions_retrieve_response import TransactionsRetrieveResponse
 
 # Query params
 OmitSchema = schemas.StrSchema
@@ -109,7 +120,7 @@ request_header_x_belvo_request_mode = api_client.HeaderParameter(
     schema=XBelvoRequestModeSchema,
 )
 # body param
-SchemaForRequestBodyApplicationJson = TransactionsRequest
+SchemaForRequestBodyApplicationJson = TransactionsRequestSchema
 
 
 request_body_transactions_request = api_client.RequestBody(
@@ -119,137 +130,169 @@ request_body_transactions_request = api_client.RequestBody(
     },
     required=True,
 )
-SchemaFor200ResponseBodyApplicationJson = TransactionsRetrieveResponse
+SchemaFor200ResponseBodyApplicationJson = TransactionsRetrieveResponseSchema
 
 
 @dataclass
 class ApiResponseFor200(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor200ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieveResponse
+
+
+@dataclass
+class ApiResponseFor200Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieveResponse
 
 
 _response_for_200 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor200,
+    response_cls_async=ApiResponseFor200Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor200ResponseBodyApplicationJson),
     },
 )
-SchemaFor201ResponseBodyApplicationJson = TransactionsRetrieve201Response
+SchemaFor201ResponseBodyApplicationJson = TransactionsRetrieve201ResponseSchema
 
 
 @dataclass
 class ApiResponseFor201(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor201ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve201Response
+
+
+@dataclass
+class ApiResponseFor201Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve201Response
 
 
 _response_for_201 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor201,
+    response_cls_async=ApiResponseFor201Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor201ResponseBodyApplicationJson),
     },
 )
-SchemaFor202ResponseBodyApplicationJson = AsynchronousAccepted202
+SchemaFor202ResponseBodyApplicationJson = AsynchronousAccepted202Schema
 
 
 @dataclass
 class ApiResponseFor202(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor202ResponseBodyApplicationJson,
-    ]
+    body: AsynchronousAccepted202
+
+
+@dataclass
+class ApiResponseFor202Async(api_client.AsyncApiResponse):
+    body: AsynchronousAccepted202
 
 
 _response_for_202 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor202,
+    response_cls_async=ApiResponseFor202Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor202ResponseBodyApplicationJson),
     },
 )
-SchemaFor400ResponseBodyApplicationJson = TransactionsRetrieve400Response
+SchemaFor400ResponseBodyApplicationJson = TransactionsRetrieve400ResponseSchema
 
 
 @dataclass
 class ApiResponseFor400(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor400ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve400Response
+
+
+@dataclass
+class ApiResponseFor400Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve400Response
 
 
 _response_for_400 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor400,
+    response_cls_async=ApiResponseFor400Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor400ResponseBodyApplicationJson),
     },
 )
-SchemaFor401ResponseBodyApplicationJson = TransactionsRetrieve401Response
+SchemaFor401ResponseBodyApplicationJson = TransactionsRetrieve401ResponseSchema
 
 
 @dataclass
 class ApiResponseFor401(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor401ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve401Response
+
+
+@dataclass
+class ApiResponseFor401Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve401Response
 
 
 _response_for_401 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor401,
+    response_cls_async=ApiResponseFor401Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor401ResponseBodyApplicationJson),
     },
 )
-SchemaFor408ResponseBodyApplicationJson = TransactionsRetrieve408Response
+SchemaFor408ResponseBodyApplicationJson = TransactionsRetrieve408ResponseSchema
 
 
 @dataclass
 class ApiResponseFor408(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor408ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve408Response
+
+
+@dataclass
+class ApiResponseFor408Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve408Response
 
 
 _response_for_408 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor408,
+    response_cls_async=ApiResponseFor408Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor408ResponseBodyApplicationJson),
     },
 )
-SchemaFor428ResponseBodyApplicationJson = TransactionsRetrieve428Response
+SchemaFor428ResponseBodyApplicationJson = TransactionsRetrieve428ResponseSchema
 
 
 @dataclass
 class ApiResponseFor428(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor428ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve428Response
+
+
+@dataclass
+class ApiResponseFor428Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve428Response
 
 
 _response_for_428 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor428,
+    response_cls_async=ApiResponseFor428Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor428ResponseBodyApplicationJson),
     },
 )
-SchemaFor500ResponseBodyApplicationJson = TransactionsRetrieve500Response
+SchemaFor500ResponseBodyApplicationJson = TransactionsRetrieve500ResponseSchema
 
 
 @dataclass
 class ApiResponseFor500(api_client.ApiResponse):
-    body: typing.Union[
-        SchemaFor500ResponseBodyApplicationJson,
-    ]
+    body: TransactionsRetrieve500Response
+
+
+@dataclass
+class ApiResponseFor500Async(api_client.AsyncApiResponse):
+    body: TransactionsRetrieve500Response
 
 
 _response_for_500 = api_client.OpenApiResponse(
     response_cls=ApiResponseFor500,
+    response_cls_async=ApiResponseFor500Async,
     content={
         'application/json': api_client.MediaType(
             schema=SchemaFor500ResponseBodyApplicationJson),
@@ -261,83 +304,63 @@ _all_accept_content_types = (
 
 
 class BaseApi(api_client.Api):
-    @typing.overload
-    def _retrieve_oapg(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: typing_extensions.Literal["application/json"] = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
 
-    @typing.overload
-    def _retrieve_oapg(
+    def _retrieve_mapped_args(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
+        link: str,
+        date_from: str,
+        date_to: str,
+        account: typing.Optional[str] = None,
+        token: typing.Optional[str] = None,
+        save_data: typing.Optional[bool] = None,
+        x_belvo_request_mode: typing.Optional[str] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
+    ) -> api_client.MappedArgs:
+        args: api_client.MappedArgs = api_client.MappedArgs()
+        _query_params = {}
+        _header_params = {}
+        _body = {}
+        if link is not None:
+            _body["link"] = link
+        if account is not None:
+            _body["account"] = account
+        if date_from is not None:
+            _body["date_from"] = date_from
+        if date_to is not None:
+            _body["date_to"] = date_to
+        if token is not None:
+            _body["token"] = token
+        if save_data is not None:
+            _body["save_data"] = save_data
+        args.body = _body
+        if omit is not None:
+            _query_params["omit"] = omit
+        if fields is not None:
+            _query_params["fields"] = fields
+        if x_belvo_request_mode is not None:
+            _header_params["X-Belvo-Request-Mode"] = x_belvo_request_mode
+        args.query = _query_params
+        args.header = _header_params
+        return args
 
-
-    @typing.overload
-    def _retrieve_oapg(
+    async def _aretrieve_oapg(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        skip_deserialization: typing_extensions.Literal[True],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
-
-    @typing.overload
-    def _retrieve_oapg(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-        api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def _retrieve_oapg(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = 'application/json',
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        body: typing.Any = None,
+            query_params: typing.Optional[dict] = {},
+            header_params: typing.Optional[dict] = {},
         skip_deserialization: bool = False,
-    ):
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        content_type: str = 'application/json',
+        stream: bool = False,
+    ) -> typing.Union[
+        ApiResponseFor200Async,
+        ApiResponseFor201Async,
+        ApiResponseFor202Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
         """
         Retrieve transactions for a link
         :param skip_deserialization: If true then api_response.response will be set but
@@ -347,7 +370,7 @@ class BaseApi(api_client.Api):
         self._verify_typed_dict_inputs_oapg(RequestQueryParams, query_params)
         self._verify_typed_dict_inputs_oapg(RequestHeaderParams, header_params)
         used_path = path.value
-
+    
         prefix_separator_iterator = None
         for parameter in (
             request_query_omit,
@@ -361,7 +384,7 @@ class BaseApi(api_client.Api):
             serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
             for serialized_value in serialized_data.values():
                 used_path += serialized_value
-
+    
         _headers = HTTPHeaderDict()
         for parameter in (
             request_header_x_belvo_request_mode,
@@ -375,7 +398,7 @@ class BaseApi(api_client.Api):
         if accept_content_types:
             for accept_content_type in accept_content_types:
                 _headers.add('Accept', accept_content_type)
-
+    
         if body is schemas.unset:
             raise exceptions.ApiValueError(
                 'The required body parameter has an invalid value of: unset. Set a valid value instead')
@@ -386,7 +409,129 @@ class BaseApi(api_client.Api):
         if 'fields' in serialized_data:
             _fields = serialized_data['fields']
         elif 'body' in serialized_data:
-            _body = serialized_data['body']
+            _body = serialized_data['body']    
+        response = await self.api_client.async_call_api(
+            resource_path=used_path,
+            method='post'.upper(),
+            headers=_headers,
+            fields=_fields,
+            serialized_body=_body,
+            body=body,
+            auth_settings=_auth,
+            prefix_separator_iterator=prefix_separator_iterator,
+            timeout=timeout,
+        )
+        
+        if stream:
+            async def stream_iterator():
+                """
+                iterates over response.http_response.content and closes connection once iteration has finished
+                """
+                async for line in response.http_response.content:
+                    if line == b'\r\n':
+                        continue
+                    yield line
+                response.http_response.close()
+                await response.session.close()
+            return AsyncGeneratorResponse(
+                content=stream_iterator(),
+                headers=response.http_response.headers,
+                status=response.http_response.status,
+                response=response.http_response
+            )
+    
+        response_for_status = _status_code_to_response.get(str(response.http_response.status))
+        if response_for_status:
+            api_response = await response_for_status.deserialize_async(
+                                                    response,
+                                                    self.api_client.configuration,
+                                                    skip_deserialization=skip_deserialization
+                                                )
+        else:
+            # If response data is JSON then deserialize for SDK consumer convenience
+            is_json = api_client.JSONDetector._content_type_is_json(response.http_response.headers.get('Content-Type', ''))
+            api_response = api_client.ApiResponseWithoutDeserializationAsync(
+                body=await response.http_response.json() if is_json else await response.http_response.text(),
+                response=response.http_response,
+                round_trip_time=response.round_trip_time,
+                status=response.http_response.status,
+                headers=response.http_response.headers,
+            )
+    
+        if not 200 <= api_response.status <= 299:
+            raise exceptions.ApiException(api_response=api_response)
+    
+        # cleanup session / response
+        response.http_response.close()
+        await response.session.close()
+    
+        return api_response
+
+    def _retrieve_oapg(
+        self,
+        body: typing.Any = None,
+            query_params: typing.Optional[dict] = {},
+            header_params: typing.Optional[dict] = {},
+        skip_deserialization: bool = False,
+        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
+        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
+        content_type: str = 'application/json',
+        stream: bool = False,
+    ) -> typing.Union[
+        ApiResponseFor200,
+        ApiResponseFor201,
+        ApiResponseFor202,
+        api_client.ApiResponseWithoutDeserialization,
+    ]:
+        """
+        Retrieve transactions for a link
+        :param skip_deserialization: If true then api_response.response will be set but
+            api_response.body and api_response.headers will not be deserialized into schema
+            class instances
+        """
+        self._verify_typed_dict_inputs_oapg(RequestQueryParams, query_params)
+        self._verify_typed_dict_inputs_oapg(RequestHeaderParams, header_params)
+        used_path = path.value
+    
+        prefix_separator_iterator = None
+        for parameter in (
+            request_query_omit,
+            request_query_fields,
+        ):
+            parameter_data = query_params.get(parameter.name, schemas.unset)
+            if parameter_data is schemas.unset:
+                continue
+            if prefix_separator_iterator is None:
+                prefix_separator_iterator = parameter.get_prefix_separator_iterator()
+            serialized_data = parameter.serialize(parameter_data, prefix_separator_iterator)
+            for serialized_value in serialized_data.values():
+                used_path += serialized_value
+    
+        _headers = HTTPHeaderDict()
+        for parameter in (
+            request_header_x_belvo_request_mode,
+        ):
+            parameter_data = header_params.get(parameter.name, schemas.unset)
+            if parameter_data is schemas.unset:
+                continue
+            serialized_data = parameter.serialize(parameter_data)
+            _headers.extend(serialized_data)
+        # TODO add cookie handling
+        if accept_content_types:
+            for accept_content_type in accept_content_types:
+                _headers.add('Accept', accept_content_type)
+    
+        if body is schemas.unset:
+            raise exceptions.ApiValueError(
+                'The required body parameter has an invalid value of: unset. Set a valid value instead')
+        _fields = None
+        _body = None
+        serialized_data = request_body_transactions_request.serialize(body, content_type)
+        _headers.add('Content-Type', content_type)
+        if 'fields' in serialized_data:
+            _fields = serialized_data['fields']
+        elif 'body' in serialized_data:
+            _body = serialized_data['body']    
         response = self.api_client.call_api(
             resource_path=used_path,
             method='post'.upper(),
@@ -396,17 +541,16 @@ class BaseApi(api_client.Api):
             body=body,
             auth_settings=_auth,
             prefix_separator_iterator=prefix_separator_iterator,
-            stream=stream,
             timeout=timeout,
         )
-
+    
         response_for_status = _status_code_to_response.get(str(response.http_response.status))
         if response_for_status:
             api_response = response_for_status.deserialize(
-                                                   response,
-                                                   self.api_client.configuration,
-                                                   skip_deserialization=skip_deserialization
-                                               )
+                                                    response,
+                                                    self.api_client.configuration,
+                                                    skip_deserialization=skip_deserialization
+                                                )
         else:
             # If response data is JSON then deserialize for SDK consumer convenience
             is_json = api_client.JSONDetector._content_type_is_json(response.http_response.headers.get('Content-Type', ''))
@@ -417,194 +561,153 @@ class BaseApi(api_client.Api):
                 status=response.http_response.status,
                 headers=response.http_response.headers,
             )
-
+    
         if not 200 <= api_response.status <= 299:
             raise exceptions.ApiException(api_response=api_response)
-
+    
         return api_response
-
 
 class Retrieve(BaseApi):
     # this class is used by api classes that refer to endpoints with operationId fn names
 
-    @typing.overload
-    def retrieve(
+    async def aretrieve(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: typing_extensions.Literal["application/json"] = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
+        link: str,
+        date_from: str,
+        date_to: str,
+        account: typing.Optional[str] = None,
+        token: typing.Optional[str] = None,
+        save_data: typing.Optional[bool] = None,
+        x_belvo_request_mode: typing.Optional[str] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
     ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
-
-    @typing.overload
+        ApiResponseFor200Async,
+        ApiResponseFor201Async,
+        ApiResponseFor202Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
+        args = self._retrieve_mapped_args(
+            link=link,
+            date_from=date_from,
+            date_to=date_to,
+            account=account,
+            token=token,
+            save_data=save_data,
+            x_belvo_request_mode=x_belvo_request_mode,
+            omit=omit,
+            fields=fields,
+        )
+        return await self._aretrieve_oapg(
+            body=args.body,
+            query_params=args.query,
+            header_params=args.header,
+        )
+    
     def retrieve(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
-
-
-    @typing.overload
-    def retrieve(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        skip_deserialization: typing_extensions.Literal[True],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
-
-    @typing.overload
-    def retrieve(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
+        link: str,
+        date_from: str,
+        date_to: str,
+        account: typing.Optional[str] = None,
+        token: typing.Optional[str] = None,
+        save_data: typing.Optional[bool] = None,
+        x_belvo_request_mode: typing.Optional[str] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
     ) -> typing.Union[
         ApiResponseFor200,
         ApiResponseFor201,
         ApiResponseFor202,
         api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def retrieve(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = 'application/json',
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = False,
-    ):
-        return self._retrieve_oapg(
-            body=body,
-            query_params=query_params,
-            header_params=header_params,
-            content_type=content_type,
-            accept_content_types=accept_content_types,
-            stream=stream,
-            timeout=timeout,
-            skip_deserialization=skip_deserialization
+    ]:
+        args = self._retrieve_mapped_args(
+            link=link,
+            date_from=date_from,
+            date_to=date_to,
+            account=account,
+            token=token,
+            save_data=save_data,
+            x_belvo_request_mode=x_belvo_request_mode,
+            omit=omit,
+            fields=fields,
         )
-
+        return self._retrieve_oapg(
+            body=args.body,
+            query_params=args.query,
+            header_params=args.header,
+        )
 
 class ApiForpost(BaseApi):
     # this class is used by api classes that refer to endpoints by path and http method names
 
-    @typing.overload
-    def post(
+    async def apost(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: typing_extensions.Literal["application/json"] = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
+        link: str,
+        date_from: str,
+        date_to: str,
+        account: typing.Optional[str] = None,
+        token: typing.Optional[str] = None,
+        save_data: typing.Optional[bool] = None,
+        x_belvo_request_mode: typing.Optional[str] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
     ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
-
-    @typing.overload
+        ApiResponseFor200Async,
+        ApiResponseFor201Async,
+        ApiResponseFor202Async,
+        api_client.ApiResponseWithoutDeserializationAsync,
+        AsyncGeneratorResponse,
+    ]:
+        args = self._retrieve_mapped_args(
+            link=link,
+            date_from=date_from,
+            date_to=date_to,
+            account=account,
+            token=token,
+            save_data=save_data,
+            x_belvo_request_mode=x_belvo_request_mode,
+            omit=omit,
+            fields=fields,
+        )
+        return await self._aretrieve_oapg(
+            body=args.body,
+            query_params=args.query,
+            header_params=args.header,
+        )
+    
     def post(
         self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: typing_extensions.Literal[False] = ...,
-    ) -> typing.Union[
-        ApiResponseFor200,
-        ApiResponseFor201,
-        ApiResponseFor202,
-    ]: ...
-
-
-    @typing.overload
-    def post(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        skip_deserialization: typing_extensions.Literal[True],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-    ) -> api_client.ApiResponseWithoutDeserialization: ...
-
-    @typing.overload
-    def post(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = ...,
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = ...,
+        link: str,
+        date_from: str,
+        date_to: str,
+        account: typing.Optional[str] = None,
+        token: typing.Optional[str] = None,
+        save_data: typing.Optional[bool] = None,
+        x_belvo_request_mode: typing.Optional[str] = None,
+        omit: typing.Optional[str] = None,
+        fields: typing.Optional[str] = None,
     ) -> typing.Union[
         ApiResponseFor200,
         ApiResponseFor201,
         ApiResponseFor202,
         api_client.ApiResponseWithoutDeserialization,
-    ]: ...
-
-    def post(
-        self,
-        body: typing.Union[SchemaForRequestBodyApplicationJson,],
-        content_type: str = 'application/json',
-        query_params: RequestQueryParams = frozendict.frozendict(),
-        header_params: RequestHeaderParams = frozendict.frozendict(),
-        accept_content_types: typing.Tuple[str] = _all_accept_content_types,
-        stream: bool = False,
-        timeout: typing.Optional[typing.Union[int, typing.Tuple]] = None,
-        skip_deserialization: bool = False,
-    ):
-        return self._retrieve_oapg(
-            body=body,
-            query_params=query_params,
-            header_params=header_params,
-            content_type=content_type,
-            accept_content_types=accept_content_types,
-            stream=stream,
-            timeout=timeout,
-            skip_deserialization=skip_deserialization
+    ]:
+        args = self._retrieve_mapped_args(
+            link=link,
+            date_from=date_from,
+            date_to=date_to,
+            account=account,
+            token=token,
+            save_data=save_data,
+            x_belvo_request_mode=x_belvo_request_mode,
+            omit=omit,
+            fields=fields,
         )
-
+        return self._retrieve_oapg(
+            body=args.body,
+            query_params=args.query,
+            header_params=args.header,
+        )
 

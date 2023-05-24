@@ -43,6 +43,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -141,6 +142,9 @@ public class ReceivablesTransaction {
 
 
   public ReceivablesTransaction account(ReceivablesTransactionAccount account) {
+
+    
+    
     
     
     this.account = account;
@@ -160,12 +164,18 @@ public class ReceivablesTransaction {
 
 
   public void setAccount(ReceivablesTransactionAccount account) {
+
+    
+    
     
     this.account = account;
   }
 
 
   public ReceivablesTransaction createdAt(OffsetDateTime createdAt) {
+
+    
+    
     
     
     this.createdAt = createdAt;
@@ -185,12 +195,18 @@ public class ReceivablesTransaction {
 
 
   public void setCreatedAt(OffsetDateTime createdAt) {
+
+    
+    
     
     this.createdAt = createdAt;
   }
 
 
   public ReceivablesTransaction collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -210,12 +226,18 @@ public class ReceivablesTransaction {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public ReceivablesTransaction valueHour(String valueHour) {
+
+    
+    
     
     
     this.valueHour = valueHour;
@@ -235,12 +257,18 @@ public class ReceivablesTransaction {
 
 
   public void setValueHour(String valueHour) {
+
+    
+    
     
     this.valueHour = valueHour;
   }
 
 
   public ReceivablesTransaction valueDate(LocalDate valueDate) {
+
+    
+    
     
     
     this.valueDate = valueDate;
@@ -260,12 +288,18 @@ public class ReceivablesTransaction {
 
 
   public void setValueDate(LocalDate valueDate) {
+
+    
+    
     
     this.valueDate = valueDate;
   }
 
 
   public ReceivablesTransaction institutionTransactionId(String institutionTransactionId) {
+
+    
+    
     
     
     this.institutionTransactionId = institutionTransactionId;
@@ -285,12 +319,18 @@ public class ReceivablesTransaction {
 
 
   public void setInstitutionTransactionId(String institutionTransactionId) {
+
+    
+    
     
     this.institutionTransactionId = institutionTransactionId;
   }
 
 
   public ReceivablesTransaction currency(String currency) {
+
+    
+    
     
     
     this.currency = currency;
@@ -310,12 +350,18 @@ public class ReceivablesTransaction {
 
 
   public void setCurrency(String currency) {
+
+    
+    
     
     this.currency = currency;
   }
 
 
   public ReceivablesTransaction type(EnumReceivableTransactionType type) {
+
+    
+    
     
     
     this.type = type;
@@ -335,12 +381,18 @@ public class ReceivablesTransaction {
 
 
   public void setType(EnumReceivableTransactionType type) {
+
+    
+    
     
     this.type = type;
   }
 
 
   public ReceivablesTransaction grossAmount(Float grossAmount) {
+
+    
+    
     
     
     this.grossAmount = grossAmount;
@@ -360,12 +412,18 @@ public class ReceivablesTransaction {
 
 
   public void setGrossAmount(Float grossAmount) {
+
+    
+    
     
     this.grossAmount = grossAmount;
   }
 
 
   public ReceivablesTransaction netAmount(Float netAmount) {
+
+    
+    
     
     
     this.netAmount = netAmount;
@@ -385,12 +443,18 @@ public class ReceivablesTransaction {
 
 
   public void setNetAmount(Float netAmount) {
+
+    
+    
     
     this.netAmount = netAmount;
   }
 
 
   public ReceivablesTransaction fees(List<RecevablesTransactionFees> fees) {
+
+    
+    
     
     
     this.fees = fees;
@@ -415,12 +479,18 @@ public class ReceivablesTransaction {
 
 
   public void setFees(List<RecevablesTransactionFees> fees) {
+
+    
+    
     
     this.fees = fees;
   }
 
 
   public ReceivablesTransaction status(EnumReceivableTransactionStatus status) {
+
+    
+    
     
     
     this.status = status;
@@ -440,12 +510,18 @@ public class ReceivablesTransaction {
 
 
   public void setStatus(EnumReceivableTransactionStatus status) {
+
+    
+    
     
     this.status = status;
   }
 
 
   public ReceivablesTransaction numberOfInstallments(ReceivablesTransactionNumberOfInstallments numberOfInstallments) {
+
+    
+    
     
     
     this.numberOfInstallments = numberOfInstallments;
@@ -465,6 +541,9 @@ public class ReceivablesTransaction {
 
 
   public void setNumberOfInstallments(ReceivablesTransactionNumberOfInstallments numberOfInstallments) {
+
+    
+    
     
     this.numberOfInstallments = numberOfInstallments;
   }

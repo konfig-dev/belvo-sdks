@@ -859,7 +859,7 @@ public class ApiClient {
                     "Content type \"" + contentType + "\" is not supported for type: " + returnType,
                     response.code(),
                     response.headers().toMultimap(),
-                    respBody);
+                    respBody, response.receivedResponseAtMillis() - response.sentRequestAtMillis());
         }
     }
 
@@ -985,7 +985,13 @@ public class ApiClient {
         try {
             Response response = call.execute();
             T data = handleResponse(response, returnType);
-            return new ApiResponse<T>(call.request(), response.code(), response.headers().toMultimap(), data);
+            return new ApiResponse<T>(
+                    call.request(),
+                    response.code(),
+                    response.headers().toMultimap(),
+                    data,
+                    response.receivedResponseAtMillis() -
+                            response.sentRequestAtMillis());
         } catch (IOException e) {
             throw new ApiException(e);
         }
@@ -1055,7 +1061,7 @@ public class ApiClient {
                     try {
                         response.body().close();
                     } catch (Exception e) {
-                        throw new ApiException(response.message(), e, response.code(), response.headers().toMultimap());
+                        throw new ApiException(response.message(), e, response.code(), response.headers().toMultimap(), response.receivedResponseAtMillis() - response.sentRequestAtMillis());
                     }
                 }
                 return null;
@@ -1068,10 +1074,10 @@ public class ApiClient {
                 try {
                     respBody = response.body().string();
                 } catch (IOException e) {
-                    throw new ApiException(response.message(), e, response.code(), response.headers().toMultimap());
+                    throw new ApiException(response.message(), e, response.code(), response.headers().toMultimap(), response.receivedResponseAtMillis() - response.sentRequestAtMillis());
                 }
             }
-            throw new ApiException(response.message(), response.code(), response.headers().toMultimap(), respBody);
+            throw new ApiException(response.message(), response.code(), response.headers().toMultimap(), respBody, response.receivedResponseAtMillis() - response.sentRequestAtMillis());
         }
     }
 

@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -66,9 +67,12 @@ public class RiskInsightsCreditCardMetrics {
   }
 
   public RiskInsightsCreditCardMetrics numAccounts(Integer numAccounts) {
+
     if (numAccounts < 0) {
       throw new IllegalArgumentException("Invalid value for numAccounts. Must be greater than or equal to 0.");
     }
+    
+    
     
     this.numAccounts = numAccounts;
     return this;
@@ -88,14 +92,20 @@ public class RiskInsightsCreditCardMetrics {
 
 
   public void setNumAccounts(Integer numAccounts) {
+
     if (numAccounts < 0) {
       throw new IllegalArgumentException("Invalid value for numAccounts. Must be greater than or equal to 0.");
     }
+    
+    
     this.numAccounts = numAccounts;
   }
 
 
   public RiskInsightsCreditCardMetrics sumCreditLimit(Float sumCreditLimit) {
+
+    
+    
     
     
     this.sumCreditLimit = sumCreditLimit;
@@ -115,12 +125,18 @@ public class RiskInsightsCreditCardMetrics {
 
 
   public void setSumCreditLimit(Float sumCreditLimit) {
+
+    
+    
     
     this.sumCreditLimit = sumCreditLimit;
   }
 
 
   public RiskInsightsCreditCardMetrics sumCreditUsed(Float sumCreditUsed) {
+
+    
+    
     
     
     this.sumCreditUsed = sumCreditUsed;
@@ -140,6 +156,9 @@ public class RiskInsightsCreditCardMetrics {
 
 
   public void setSumCreditUsed(Float sumCreditUsed) {
+
+    
+    
     
     this.sumCreditUsed = sumCreditUsed;
   }

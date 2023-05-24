@@ -37,6 +37,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -98,6 +99,9 @@ public class TaxStatusAddressSat {
   }
 
   public TaxStatusAddressSat postalCode(String postalCode) {
+
+    
+    
     
     
     this.postalCode = postalCode;
@@ -117,12 +121,18 @@ public class TaxStatusAddressSat {
 
 
   public void setPostalCode(String postalCode) {
+
+    
+    
     
     this.postalCode = postalCode;
   }
 
 
   public TaxStatusAddressSat streetType(String streetType) {
+
+    
+    
     
     
     this.streetType = streetType;
@@ -142,12 +152,18 @@ public class TaxStatusAddressSat {
 
 
   public void setStreetType(String streetType) {
+
+    
+    
     
     this.streetType = streetType;
   }
 
 
   public TaxStatusAddressSat street(String street) {
+
+    
+    
     
     
     this.street = street;
@@ -167,12 +183,18 @@ public class TaxStatusAddressSat {
 
 
   public void setStreet(String street) {
+
+    
+    
     
     this.street = street;
   }
 
 
   public TaxStatusAddressSat exteriorNumber(String exteriorNumber) {
+
+    
+    
     
     
     this.exteriorNumber = exteriorNumber;
@@ -192,12 +214,18 @@ public class TaxStatusAddressSat {
 
 
   public void setExteriorNumber(String exteriorNumber) {
+
+    
+    
     
     this.exteriorNumber = exteriorNumber;
   }
 
 
   public TaxStatusAddressSat interiorNumber(String interiorNumber) {
+
+    
+    
     
     
     this.interiorNumber = interiorNumber;
@@ -217,12 +245,18 @@ public class TaxStatusAddressSat {
 
 
   public void setInteriorNumber(String interiorNumber) {
+
+    
+    
     
     this.interiorNumber = interiorNumber;
   }
 
 
   public TaxStatusAddressSat suburb(String suburb) {
+
+    
+    
     
     
     this.suburb = suburb;
@@ -242,12 +276,18 @@ public class TaxStatusAddressSat {
 
 
   public void setSuburb(String suburb) {
+
+    
+    
     
     this.suburb = suburb;
   }
 
 
   public TaxStatusAddressSat locality(String locality) {
+
+    
+    
     
     
     this.locality = locality;
@@ -267,12 +307,18 @@ public class TaxStatusAddressSat {
 
 
   public void setLocality(String locality) {
+
+    
+    
     
     this.locality = locality;
   }
 
 
   public TaxStatusAddressSat municipality(String municipality) {
+
+    
+    
     
     
     this.municipality = municipality;
@@ -292,12 +338,18 @@ public class TaxStatusAddressSat {
 
 
   public void setMunicipality(String municipality) {
+
+    
+    
     
     this.municipality = municipality;
   }
 
 
   public TaxStatusAddressSat state(String state) {
+
+    
+    
     
     
     this.state = state;
@@ -317,12 +369,18 @@ public class TaxStatusAddressSat {
 
 
   public void setState(String state) {
+
+    
+    
     
     this.state = state;
   }
 
 
   public TaxStatusAddressSat betweenStreet(List<TaxStatusAddressBetweenStreetSat> betweenStreet) {
+
+    
+    
     
     
     this.betweenStreet = betweenStreet;
@@ -350,6 +408,9 @@ public class TaxStatusAddressSat {
 
 
   public void setBetweenStreet(List<TaxStatusAddressBetweenStreetSat> betweenStreet) {
+
+    
+    
     
     this.betweenStreet = betweenStreet;
   }

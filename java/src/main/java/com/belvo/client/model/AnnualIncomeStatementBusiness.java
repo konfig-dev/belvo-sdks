@@ -33,6 +33,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -78,6 +79,9 @@ public class AnnualIncomeStatementBusiness {
   }
 
   public AnnualIncomeStatementBusiness grossIncomeFromOrdinaryActivities(Float grossIncomeFromOrdinaryActivities) {
+
+    
+    
     
     
     this.grossIncomeFromOrdinaryActivities = grossIncomeFromOrdinaryActivities;
@@ -97,12 +101,18 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setGrossIncomeFromOrdinaryActivities(Float grossIncomeFromOrdinaryActivities) {
+
+    
+    
     
     this.grossIncomeFromOrdinaryActivities = grossIncomeFromOrdinaryActivities;
   }
 
 
   public AnnualIncomeStatementBusiness dividends(Float dividends) {
+
+    
+    
     
     
     this.dividends = dividends;
@@ -122,12 +132,18 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setDividends(Float dividends) {
+
+    
+    
     
     this.dividends = dividends;
   }
 
 
   public AnnualIncomeStatementBusiness otherIncome(Float otherIncome) {
+
+    
+    
     
     
     this.otherIncome = otherIncome;
@@ -147,12 +163,18 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setOtherIncome(Float otherIncome) {
+
+    
+    
     
     this.otherIncome = otherIncome;
   }
 
 
   public AnnualIncomeStatementBusiness totalGrossIncome(Float totalGrossIncome) {
+
+    
+    
     
     
     this.totalGrossIncome = totalGrossIncome;
@@ -172,12 +194,18 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setTotalGrossIncome(Float totalGrossIncome) {
+
+    
+    
     
     this.totalGrossIncome = totalGrossIncome;
   }
 
 
   public AnnualIncomeStatementBusiness returnsRebatesAndDiscountsOnSales(Float returnsRebatesAndDiscountsOnSales) {
+
+    
+    
     
     
     this.returnsRebatesAndDiscountsOnSales = returnsRebatesAndDiscountsOnSales;
@@ -197,12 +225,18 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setReturnsRebatesAndDiscountsOnSales(Float returnsRebatesAndDiscountsOnSales) {
+
+    
+    
     
     this.returnsRebatesAndDiscountsOnSales = returnsRebatesAndDiscountsOnSales;
   }
 
 
   public AnnualIncomeStatementBusiness totalNetIncome(Float totalNetIncome) {
+
+    
+    
     
     
     this.totalNetIncome = totalNetIncome;
@@ -222,6 +256,9 @@ public class AnnualIncomeStatementBusiness {
 
 
   public void setTotalNetIncome(Float totalNetIncome) {
+
+    
+    
     
     this.totalNetIncome = totalNetIncome;
   }

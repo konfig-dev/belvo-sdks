@@ -40,6 +40,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -153,6 +154,9 @@ public class AccountsLoanData {
   }
 
   public AccountsLoanData collectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     
     this.collectedAt = collectedAt;
@@ -172,12 +176,18 @@ public class AccountsLoanData {
 
 
   public void setCollectedAt(OffsetDateTime collectedAt) {
+
+    
+    
     
     this.collectedAt = collectedAt;
   }
 
 
   public AccountsLoanData contractAmount(Float contractAmount) {
+
+    
+    
     
     
     this.contractAmount = contractAmount;
@@ -197,12 +207,18 @@ public class AccountsLoanData {
 
 
   public void setContractAmount(Float contractAmount) {
+
+    
+    
     
     this.contractAmount = contractAmount;
   }
 
 
   public AccountsLoanData principal(Float principal) {
+
+    
+    
     
     
     this.principal = principal;
@@ -222,12 +238,18 @@ public class AccountsLoanData {
 
 
   public void setPrincipal(Float principal) {
+
+    
+    
     
     this.principal = principal;
   }
 
 
   public AccountsLoanData loanType(String loanType) {
+
+    
+    
     
     
     this.loanType = loanType;
@@ -247,12 +269,18 @@ public class AccountsLoanData {
 
 
   public void setLoanType(String loanType) {
+
+    
+    
     
     this.loanType = loanType;
   }
 
 
   public AccountsLoanData paymentDay(String paymentDay) {
+
+    
+    
     
     
     this.paymentDay = paymentDay;
@@ -272,12 +300,18 @@ public class AccountsLoanData {
 
 
   public void setPaymentDay(String paymentDay) {
+
+    
+    
     
     this.paymentDay = paymentDay;
   }
 
 
   public AccountsLoanData outstandingPrincipal(Float outstandingPrincipal) {
+
+    
+    
     
     
     this.outstandingPrincipal = outstandingPrincipal;
@@ -297,12 +331,18 @@ public class AccountsLoanData {
 
 
   public void setOutstandingPrincipal(Float outstandingPrincipal) {
+
+    
+    
     
     this.outstandingPrincipal = outstandingPrincipal;
   }
 
 
   public AccountsLoanData outstandingBalance(Float outstandingBalance) {
+
+    
+    
     
     
     this.outstandingBalance = outstandingBalance;
@@ -322,12 +362,18 @@ public class AccountsLoanData {
 
 
   public void setOutstandingBalance(Float outstandingBalance) {
+
+    
+    
     
     this.outstandingBalance = outstandingBalance;
   }
 
 
   public AccountsLoanData monthlyPayment(Float monthlyPayment) {
+
+    
+    
     
     
     this.monthlyPayment = monthlyPayment;
@@ -347,12 +393,18 @@ public class AccountsLoanData {
 
 
   public void setMonthlyPayment(Float monthlyPayment) {
+
+    
+    
     
     this.monthlyPayment = monthlyPayment;
   }
 
 
   public AccountsLoanData interestRates(List<AccountsLoanDataInterestRate> interestRates) {
+
+    
+    
     
     
     this.interestRates = interestRates;
@@ -377,12 +429,18 @@ public class AccountsLoanData {
 
 
   public void setInterestRates(List<AccountsLoanDataInterestRate> interestRates) {
+
+    
+    
     
     this.interestRates = interestRates;
   }
 
 
   public AccountsLoanData fees(List<AccountsLoanDataFees> fees) {
+
+    
+    
     
     
     this.fees = fees;
@@ -410,12 +468,18 @@ public class AccountsLoanData {
 
 
   public void setFees(List<AccountsLoanDataFees> fees) {
+
+    
+    
     
     this.fees = fees;
   }
 
 
   public AccountsLoanData numberOfInstallmentsTotal(Integer numberOfInstallmentsTotal) {
+
+    
+    
     
     
     this.numberOfInstallmentsTotal = numberOfInstallmentsTotal;
@@ -435,12 +499,18 @@ public class AccountsLoanData {
 
 
   public void setNumberOfInstallmentsTotal(Integer numberOfInstallmentsTotal) {
+
+    
+    
     
     this.numberOfInstallmentsTotal = numberOfInstallmentsTotal;
   }
 
 
   public AccountsLoanData numberOfInstallmentsOutstanding(Integer numberOfInstallmentsOutstanding) {
+
+    
+    
     
     
     this.numberOfInstallmentsOutstanding = numberOfInstallmentsOutstanding;
@@ -460,12 +530,18 @@ public class AccountsLoanData {
 
 
   public void setNumberOfInstallmentsOutstanding(Integer numberOfInstallmentsOutstanding) {
+
+    
+    
     
     this.numberOfInstallmentsOutstanding = numberOfInstallmentsOutstanding;
   }
 
 
   public AccountsLoanData contractStartDate(LocalDate contractStartDate) {
+
+    
+    
     
     
     this.contractStartDate = contractStartDate;
@@ -485,12 +561,18 @@ public class AccountsLoanData {
 
 
   public void setContractStartDate(LocalDate contractStartDate) {
+
+    
+    
     
     this.contractStartDate = contractStartDate;
   }
 
 
   public AccountsLoanData contractEndDate(LocalDate contractEndDate) {
+
+    
+    
     
     
     this.contractEndDate = contractEndDate;
@@ -510,12 +592,18 @@ public class AccountsLoanData {
 
 
   public void setContractEndDate(LocalDate contractEndDate) {
+
+    
+    
     
     this.contractEndDate = contractEndDate;
   }
 
 
   public AccountsLoanData contractNumber(String contractNumber) {
+
+    
+    
     
     
     this.contractNumber = contractNumber;
@@ -535,12 +623,18 @@ public class AccountsLoanData {
 
 
   public void setContractNumber(String contractNumber) {
+
+    
+    
     
     this.contractNumber = contractNumber;
   }
 
 
   public AccountsLoanData creditLimit(Double creditLimit) {
+
+    
+    
     
     
     this.creditLimit = creditLimit;
@@ -548,6 +642,9 @@ public class AccountsLoanData {
   }
 
   public AccountsLoanData creditLimit(Integer creditLimit) {
+
+    
+    
     
     
     this.creditLimit = creditLimit.doubleValue();
@@ -569,12 +666,18 @@ public class AccountsLoanData {
 
 
   public void setCreditLimit(Double creditLimit) {
+
+    
+    
     
     this.creditLimit = creditLimit;
   }
 
 
   public AccountsLoanData lastPeriodBalance(Double lastPeriodBalance) {
+
+    
+    
     
     
     this.lastPeriodBalance = lastPeriodBalance;
@@ -582,6 +685,9 @@ public class AccountsLoanData {
   }
 
   public AccountsLoanData lastPeriodBalance(Integer lastPeriodBalance) {
+
+    
+    
     
     
     this.lastPeriodBalance = lastPeriodBalance.doubleValue();
@@ -603,12 +709,18 @@ public class AccountsLoanData {
 
 
   public void setLastPeriodBalance(Double lastPeriodBalance) {
+
+    
+    
     
     this.lastPeriodBalance = lastPeriodBalance;
   }
 
 
   public AccountsLoanData interestRate(Double interestRate) {
+
+    
+    
     
     
     this.interestRate = interestRate;
@@ -616,6 +728,9 @@ public class AccountsLoanData {
   }
 
   public AccountsLoanData interestRate(Integer interestRate) {
+
+    
+    
     
     
     this.interestRate = interestRate.doubleValue();
@@ -637,12 +752,18 @@ public class AccountsLoanData {
 
 
   public void setInterestRate(Double interestRate) {
+
+    
+    
     
     this.interestRate = interestRate;
   }
 
 
   public AccountsLoanData limitDay(String limitDay) {
+
+    
+    
     
     
     this.limitDay = limitDay;
@@ -664,12 +785,18 @@ public class AccountsLoanData {
 
 
   public void setLimitDay(String limitDay) {
+
+    
+    
     
     this.limitDay = limitDay;
   }
 
 
   public AccountsLoanData cuttingDay(String cuttingDay) {
+
+    
+    
     
     
     this.cuttingDay = cuttingDay;
@@ -691,12 +818,18 @@ public class AccountsLoanData {
 
 
   public void setCuttingDay(String cuttingDay) {
+
+    
+    
     
     this.cuttingDay = cuttingDay;
   }
 
 
   public AccountsLoanData cuttingDate(String cuttingDate) {
+
+    
+    
     
     
     this.cuttingDate = cuttingDate;
@@ -718,12 +851,18 @@ public class AccountsLoanData {
 
 
   public void setCuttingDate(String cuttingDate) {
+
+    
+    
     
     this.cuttingDate = cuttingDate;
   }
 
 
   public AccountsLoanData lastPaymentDate(String lastPaymentDate) {
+
+    
+    
     
     
     this.lastPaymentDate = lastPaymentDate;
@@ -745,12 +884,18 @@ public class AccountsLoanData {
 
 
   public void setLastPaymentDate(String lastPaymentDate) {
+
+    
+    
     
     this.lastPaymentDate = lastPaymentDate;
   }
 
 
   public AccountsLoanData noInterestPayment(Double noInterestPayment) {
+
+    
+    
     
     
     this.noInterestPayment = noInterestPayment;
@@ -758,6 +903,9 @@ public class AccountsLoanData {
   }
 
   public AccountsLoanData noInterestPayment(Integer noInterestPayment) {
+
+    
+    
     
     
     this.noInterestPayment = noInterestPayment.doubleValue();
@@ -779,6 +927,9 @@ public class AccountsLoanData {
 
 
   public void setNoInterestPayment(Double noInterestPayment) {
+
+    
+    
     
     this.noInterestPayment = noInterestPayment;
   }
