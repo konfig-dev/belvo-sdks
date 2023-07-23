@@ -1,10 +1,10 @@
 # belvo-sdks
 
-
 |Language|Version|Package Manager|Documentation|Source|
 |-|-|-|-|-|
 |Java|1.0.0|[Maven Central](https://central.sonatype.com/artifact/com.belvo/belvo-java-sdk/1.0.0)|[Documentation](https://github.com/konfig-dev/belvo-sdks/tree/main/java/README.md)|[Source](https://github.com/konfig-dev/belvo-sdks/tree/main/java)|
 |Python|1.0.0|[PyPI](https://pypi.org/project/belvo-python-sdk/1.0.0)|[Documentation](https://github.com/konfig-dev/belvo-sdks/tree/main/python/README.md)|[Source](https://github.com/konfig-dev/belvo-sdks/tree/main/python)|
+|TypeScript|1.0.0|[npm](https://www.npmjs.com/package/belvo-typescript-sdk/v/1.0.0)|[Documentation](https://github.com/konfig-dev/belvo-sdks/tree/main/typescript/README.md)|[Source](https://github.com/konfig-dev/belvo-sdks/tree/main/typescript)|
 
 
 ## How to regenerate SDKs
@@ -29,4 +29,4 @@ Successfully logged in as dylan@konfigthis.com
 
 4. Generate SDKs with `konfig generate`
 
-### [Documentation](https://docs.konfigthis.com/)
+### [Documentation](https://konfigthis.com/docs)

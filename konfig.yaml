@@ -6,6 +6,7 @@ specPath: api-fixed.yaml
 generators:
   java:
     version: 1.0.0
+    clientName: Belvo
     groupId: com.belvo
     artifactId: belvo-java-sdk
     outputDirectory: java
@@ -22,7 +23,6 @@ generators:
       userId: konfig-dev
       repoId: belvo-sdks/tree/main/python
   typescript:
-    disabled: true
     version: 1.0.0
     npmName: belvo-typescript-sdk
     outputDirectory: typescript
